@@ -10,7 +10,7 @@ import { BodyLayout } from './BodyLayout'
 export const metadata: Metadata = {
   title: 'Aluplast',
   description: 'Aluplast',
-  keywords: "aluminio, Entre Ríos, Concordia, pvc, aberturas, cerramientos, sistemas complementarios, portones, control solar, vidrios, garage, diseño, puertas, ventanas, industria"
+  keywords: "aluminio, Entre Ríos, Concordia, pvc, aberturas, cerramientos, sistemas complementarios, portones, control solar, vidrios, garage, diseño, puertas, ventanas, industria",
 }
 
 export const dynamic = 'force-static';
@@ -24,6 +24,10 @@ export default function RootLayout({
   return (
     <html className="homepage-box" lang="es">
       <head>
+        <meta property="og:image" content="https://aluplast.com.ar/img/whoweare/we-are-01.jpg" />
+        <meta property="og:image:width" content="100" />
+        <meta content="text/html;charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="/font/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" type="text/css" href="/font/mdi-font/css/material-design-iconic-font.min.css" />
         <link rel="stylesheet" type="text/css" href="/vendor/bootstrap4/bootstrap.min.css" />

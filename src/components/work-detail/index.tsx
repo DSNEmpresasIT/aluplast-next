@@ -1,0 +1,41 @@
+'use client'
+import { projects } from "@/utils/data/projects";
+import { PAGES_PATH } from "@/utils/pages";
+import { useRouter, useSearchParams } from "next/navigation";
+import React, { useEffect } from "react";
+import { ProjectDetailComponent } from "./ProjectDetailComponent";
+
+export const  Index = () => {
+  const router = useRouter();
+  const projectId = useSearchParams().get('projectId');
+  const projectSelected = projects.filter(project => project.id === projectId)[0];
+  useEffect(() => {
+    if (!projectSelected) {
+      router.push(`/${PAGES_PATH.SOME_PROJECTS}?errorProject=true`);
+    }
+  }, [projectId])
+  return (
+    <div className="page-wrap">
+      <section className="breadcrumbs-wrap" style={{ paddingTop: "13vh" }}>
+        <div className="section-content section-content--w1140">
+          <div className="container clearfix">
+            <div className="breadcrumbs-inner">
+              <ul className="breadcrumbs1 ul--inline ul--no-style">
+                <li>
+                  <a href="/">Home</a>
+                </li>
+                <span className="span-active"> / </span>
+                <li>
+                  <a>Proyectos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      {
+        projectSelected && <ProjectDetailComponent projectDetail={projectSelected} />
+      }
+    </div>
+  );
+};
