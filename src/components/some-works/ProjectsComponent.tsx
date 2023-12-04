@@ -82,7 +82,7 @@ export const ProjectsComponent = () => {
                       </div>
                       <a type='button' style={{ cursor: 'pointer' }} className="pro-link">
                         <div className="pro-info pro-info--darker">
-                          <h2 className="company">
+                          <h2 className="company" style={{ color: 'white' }}>
                             { project.client }
                           </h2>
                           <p className="cat-name">

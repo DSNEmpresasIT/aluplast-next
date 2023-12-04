@@ -22,8 +22,8 @@ export const ProductDetail = ({
           >
             <Image
               alt={`${productSelected.name}--main-img`}
-              width={400}
-              height={400}
+              width={465}
+              height={465}
               src={
                 productSelected.img?.length
                   ? `/img/products/${productSelected.id}/${productSelected.img[0]}.png`
@@ -48,8 +48,8 @@ export const ProductDetail = ({
                       data-lightbox="product"
                     >
                       <Image
-                        width={400}
-                        height={400}
+                        width={465}
+                        height={465}
                         alt={`${productSelected.name} ${index}`}
                         src={
                           img

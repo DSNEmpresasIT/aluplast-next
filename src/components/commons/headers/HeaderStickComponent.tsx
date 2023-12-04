@@ -8,70 +8,70 @@ export const HeaderStickComponent = () => {
     <header className="header-stick header-stick--dark">
       <div className="container clearfix">
         <h1 className="logo pull-left">
-          <Link href="/">
+          <a href="/">
             <img alt="Logo" src="/img/logo-white.png" />
-          </Link>
+          </a>
         </h1>
         <nav className="menu-desktop pull-right">
-          <ul className="ul--inline ul--no-style">
+        <ul className="ul--inline ul--no-style">
             <li className="li-has-sub">
-              <Link href="/"> Home</Link>
+              <a href="/"> Home</a>
             </li>
             <li className="li-has-sub">
               <Link href={`/${PAGES_PATH.CATALOG_PATH}`}> Productos</Link>
               <ul className="sub-menu ul--no-style">
                 <li>
-                  <Link
-                    href={`/${PAGES_PATH.CATALOG_PATH}/${ProductFathersTypes.OPENERS_TYPES}`}
+                  <a
+                    href={`${PAGES_PATH.CATALOG_PATH}?categoria=${ProductFathersTypes.OPENERS_TYPES}`}
                   >
                     Aberturas
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href={`/${PAGES_PATH.CATALOG_PATH}/${ProductFathersTypes.CLOSERS_TYPES}`}
+                  <a
+                    href={`${PAGES_PATH.CATALOG_PATH}?categoria=${ProductFathersTypes.CLOSERS_TYPES}`}
                   >
                     Cerramientos
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href={`/${PAGES_PATH.CATALOG_PATH}/${ProductFathersTypes.CS_TYPES}`}
+                  <a
+                    href={`${PAGES_PATH.CATALOG_PATH}?categoria=${ProductFathersTypes.CS_TYPES}`}
                   >
                     Sistemas Complementarios
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href={`/${PAGES_PATH.CATALOG_PATH}/${ProductFathersTypes.GARAGE_DOORS}`}
+                  <a
+                    href={`${PAGES_PATH.CATALOG_PATH}?categoria=${ProductFathersTypes.GARAGE_DOORS}`}
                   >
                     Portones Garage
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href={`/${PAGES_PATH.CATALOG_PATH}/${ProductFathersTypes.WINDOWS}`}
+                  <a
+                    href={`${PAGES_PATH.CATALOG_PATH}?categoria=${ProductFathersTypes.WINDOWS}`}
                   >
                     Vidrios
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href={`/${PAGES_PATH.CATALOG_PATH}/${ProductFathersTypes.SOLAR_CONTROL}`}
+                  <a
+                    href={`${PAGES_PATH.CATALOG_PATH}?categoria=${ProductFathersTypes.SOLAR_CONTROL}`}
                   >
                     Control Solar
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href={`/${PAGES_PATH.CATALOG_PATH}/${ProductFathersTypes.RESALES}`}
+                  <a
+                    href={`${PAGES_PATH.CATALOG_PATH}?categoria=${ProductFathersTypes.RESALES}`}
                   >
                     Reventa
-                  </Link>
+                  </a>
                 </li>
-                <li>
-                  <Link href={`/${PAGES_PATH.CATALOG_PATH}/texturas`}> Texturas</Link>
-                </li>
+                {/* <li>
+                  <a href={`/${PAGES_PATH.CATALOG_PATH}/texturas`}> Texturas</a>
+                </li> */}
               </ul>
             </li>
             <li>

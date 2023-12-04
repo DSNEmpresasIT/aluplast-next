@@ -3,15 +3,16 @@ import 'animate.css';
 import React, { ReactNode, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import Script from 'next/script'
-import { PAGES } from '@/utils/pages'
+import { PAGES, PAGES_PATH } from '@/utils/pages'
 import { LoaderComponent } from '@/components/commons/LoaderComponent'
 
 export const BodyLayout = ({ children }: { children: ReactNode }) => {
   const [ isJQueryLoad, setIsJQueryLoad ] = useState<boolean>(false);
   const pathname = usePathname();
+  console.log(pathname)
 
   return (
-    <body className={ (pathname === `/${PAGES.HOME}` || pathname === `/${PAGES.CONTACT}` || "Blog") ? '' : 'box' }>
+    <body className={ (pathname === `/${PAGES_PATH.CATALOG_PATH}`) ? 'box' : '' }>
       {children}
       {!isJQueryLoad && <LoaderComponent />}
       <Script async type="text/javascript" src="/vendor/jquery-3.2.1.min.js" onLoad={() => setIsJQueryLoad(true)} />

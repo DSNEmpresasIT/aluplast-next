@@ -26,8 +26,8 @@ const ShopCardComponent:FC<ShopCardComponentProps> = ({ product, isHome = false 
           <Image 
             src={img} 
             alt="Product 1" 
-            width={400}
-            height={400}
+            width={465}
+            height={465}
           />
           <div className="pro-link">
             <div className="pro-info pro-info--dark pro-info--center">

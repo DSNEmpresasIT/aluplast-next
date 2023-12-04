@@ -60,4 +60,16 @@ export const projects: ProjectDetail[] = [
     img: ['1', '2', '3', '4'],
     title: "Casa residencial aberturas simil madera"
   },
+  {
+    id: "bureau",
+    client: "Bureau",
+    type: ProjectTypes.EDIFICIOS,
+    description: `
+    Una vez mas Aluplast en grandes obras. Con diseño del estudio Berdichevsky Cherny y Asociados, este edificio de oficinas con 11 pisos y 3 subsuelos abarca 17,000m2, en las cuales Aluplast fue adjudicada para la ejecución de la totalidad de cerramientos del Edificio.
+
+      Ubicación: Bureau Diagonal (Bs. As.)
+    `,
+    img: ['1', '3', '2', '4'],
+    title: "Edificio de oficinas Bureau Diagonal (Bs. As.)"
+  },
 ]

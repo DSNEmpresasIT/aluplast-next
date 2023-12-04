@@ -299,7 +299,7 @@ export const windowsData: CatalogData[] = [
   },
   {
     name: "Ventana desplazable",
-    // img: 'paralela',
+    img: ['1', '2', '3', '4'],
     id: 'desplazable',
     filters: [
       ProductFathersTypes.OPENERS_TYPES,
