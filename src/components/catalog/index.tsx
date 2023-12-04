@@ -7,7 +7,7 @@ import { ProductFathersTypes } from '@/utils/types';
 
 const Index = () => {
   const [category, setCategory] = useState();
-  const query = useSearchParams().get('category');
+  const query = useSearchParams().get('categoria');
 
   useEffect(() => {
     // @ts-ignore

@@ -43,7 +43,7 @@ const ShopCardComponent:FC<ShopCardComponentProps> = ({ product, isHome = false 
         </div>
         <div className="pro__detail">
           <h5>
-            <a href="single-product.html" style={{ textTransform: 'none' }}>{productName}</a>
+            <Link href={{ pathname: PAGES_PATH.PRODUCT_PATH, query: { productId: product.id } }} style={{ textTransform: 'none' }}>{productName}</Link>
           </h5>
         </div>
       </div>

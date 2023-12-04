@@ -5,21 +5,12 @@ import { getProductTypeName } from "../helpers/helpers";
 import { ProductFathersTypes, TypeProduct } from "@/utils/types";
 import { allCatalogData } from "@/utils/data/catalog";
 import { SearchComponent } from "./SearchComponent";
+import { useSearchParams } from "next/navigation";
 
 const navData = [
   {
     name: getProductTypeName(ProductFathersTypes.OPENERS_TYPES),
     filter: ProductFathersTypes.OPENERS_TYPES,
-    subCategories: [
-      {
-        name: getProductTypeName(TypeProduct.DOOR_PRODUCT),
-        filter: TypeProduct.DOOR_PRODUCT,
-      },
-      {
-        name: getProductTypeName(TypeProduct.WINDOW_PRODUCT),
-        filter: TypeProduct.WINDOW_PRODUCT,
-      },
-    ],
   },
   {
     name: getProductTypeName(ProductFathersTypes.CLOSERS_TYPES),
@@ -47,6 +38,17 @@ const navData = [
   },
 ];
 
+const subCategories = [
+  {
+    name: getProductTypeName(TypeProduct.DOOR_PRODUCT),
+    filter: TypeProduct.DOOR_PRODUCT,
+  },
+  {
+    name: getProductTypeName(TypeProduct.WINDOW_PRODUCT),
+    filter: TypeProduct.WINDOW_PRODUCT,
+  },
+]
+
 interface ShopNavComponentProps {
   handleToggleFilter: (string: ProductFathersTypes) => void;
   filters: ProductFathersTypes[];
@@ -58,11 +60,10 @@ export const ShopNavComponent: FC<ShopNavComponentProps> = ({
   filters,
   totalProducts,
 }) => {
-  const [subCategories, setSubCategories] = useState<any>();
+  const category = useSearchParams().get('categoria');
 
   const handleSetFilters = (data: any) => {
     handleToggleFilter(data.filter);
-    setSubCategories(data.subCategories);
   };
 
   return (
@@ -85,7 +86,7 @@ export const ShopNavComponent: FC<ShopNavComponentProps> = ({
                   key={`shop-nav-filters-${filter}`}
                   href={{
                     pathname: PAGES_PATH.CATALOG_PATH,
-                    query: { category: undefined },
+                    query: { categoria: undefined },
                   }}
                 >
                   {getProductTypeName(filter)}{" "}
@@ -132,7 +133,7 @@ export const ShopNavComponent: FC<ShopNavComponentProps> = ({
                 <Link
                   href={{
                     pathname: PAGES_PATH.CATALOG_PATH,
-                    query: { category: buttonData.filter },
+                    query: { categoria: buttonData.filter },
                   }}
                 >
                   {buttonData.name}
@@ -155,36 +156,36 @@ export const ShopNavComponent: FC<ShopNavComponentProps> = ({
       ) : (
         ""
       )}
-      {subCategories && (
+      {category === ProductFathersTypes.OPENERS_TYPES && (
         <ul className="blog__cate ul--no-style">
           <h4 className="title-sidebar">Tipos de {filters[0]}</h4>
-          {subCategories?.map((buttonData: any) => {
-            return (
-              <li
-                key={`shop-nav-${buttonData.name}`}
-                style={{
-                  cursor: "pointer",
-                  color: filters.includes(buttonData.filter) ? "red" : "",
-                }}
-                onClick={() => handleSetFilters(buttonData)}
-              >
-                <a type="button">
-                  {buttonData.name}
-                  <span>
-                    <em>
-                      (
-                      {
-                        allCatalogData.filter((product) =>
-                          product.filters.includes(buttonData.filter)
-                        ).length
-                      }
-                      )
-                    </em>
-                  </span>
-                </a>
-              </li>
-            );
-          })}
+            {subCategories?.map((buttonData: any) => {
+              return (
+                <li
+                  key={`shop-nav-${buttonData.name}`}
+                  style={{
+                    cursor: "pointer",
+                    color: filters.includes(buttonData.filter) ? "red" : "",
+                  }}
+                  onClick={() => handleSetFilters(buttonData)}
+                >
+                  <a type="button">
+                    {buttonData.name}
+                    <span>
+                      <em>
+                        (
+                        {
+                          allCatalogData.filter((product) =>
+                            product.filters.includes(buttonData.filter)
+                          ).length
+                        }
+                        )
+                      </em>
+                    </span>
+                  </a>
+                </li>
+              );
+            })}
         </ul>
       )}
     </div>

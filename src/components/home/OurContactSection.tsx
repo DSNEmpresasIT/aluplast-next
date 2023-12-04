@@ -1,4 +1,5 @@
 import { PAGES_PATH } from '@/utils/pages';
+import Link from 'next/link';
 import React from 'react'
 
 const OurContactSection = () => {
@@ -29,10 +30,10 @@ const OurContactSection = () => {
               <div className="contact2__item">
                 <p style={{ color: '#555555' }}>Estemos en contacto</p>
                 <div>
-                  <a
-                    href={`/${PAGES_PATH.CONTACT_PATH}`}
+                  <Link
+                    href={PAGES_PATH.CONTACT_PATH}
                     className="au-btn au-btn--pill au-btn--yellow au-btn--medium"
-                    style={{ color: 'white' }}>Contacto</a>
+                    style={{ color: 'white' }}>Contacto</Link>
                 </div>
               </div>
             </div>
