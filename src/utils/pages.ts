@@ -14,9 +14,10 @@ export enum PAGES_PATH {
   ABOUT_US_PATH = 'sobre-aluplast-aberturas-y-cerramientos-de-aluminio-y-pvc',
   CONTACT_PATH = 'contacto-aluplast-entre-rios-argentina',
   CATALOG_PATH = 'productos-de-aluminio-y-pvc',
-  PRODUCT_PATH = 'detalle-producto',
+  PRODUCT_PATH = 'producto-detalle',
   NEWS_PATH = 'ultimas-noticias-aluplast',
   SOME_PROJECTS = 'nuestro-trabajo',
   PROJECT_DETAIL = 'proyecto-detalle',
+  NEWS_DETAIL = 'noticia-detalle',
   TEXTURES = 'texturas',
 }

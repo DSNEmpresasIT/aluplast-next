@@ -9,7 +9,6 @@ import { LoaderComponent } from '@/components/commons/LoaderComponent'
 export const BodyLayout = ({ children }: { children: ReactNode }) => {
   const [ isJQueryLoad, setIsJQueryLoad ] = useState<boolean>(false);
   const pathname = usePathname();
-  console.log(pathname)
 
   return (
     <body className={ (pathname === `/${PAGES_PATH.CATALOG_PATH}`) ? 'box' : '' }>

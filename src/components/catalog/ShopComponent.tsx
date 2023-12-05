@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
-import ShopCardComponent from "./ShopCardComponent";
+import React, { lazy, useEffect, useState, Suspense } from "react";
+import dynamic from "next/dynamic";
+// import ShopCardComponent from "./ShopCardComponent";
 import { allCatalogData } from "@/utils/data/catalog";
 import { CatalogData, ProductFathersTypes } from "@/utils/types";
 import { getProductTypeName, getProdutTypeText, pagination } from "../helpers/helpers";
@@ -10,6 +11,8 @@ import { PAGES_PATH } from "@/utils/pages";
 const initialState = [
   ...allCatalogData
 ].sort(() => { return Math.random() - 0.5 });
+
+const ShopCardComponent = dynamic(() => import("./ShopCardComponent"));
 
 export const ShopComponent = ({ query }: any) => {
   const router = useRouter();
@@ -130,7 +133,7 @@ export const ShopComponent = ({ query }: any) => {
                     )
                   }
                   {
-                    dataPaginated?.map(product => {
+                    catalogData?.map(product => {
                       return (
                         <ShopCardComponent product={product} key={product.name} />
                       )

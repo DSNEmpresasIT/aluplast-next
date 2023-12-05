@@ -66,7 +66,7 @@ export const windowsData: CatalogData[] = [
     },
   },
   {
-    name: "Ventana corrediza",
+    name: "Ventana corrediza lineal recta",
     img: ['1', '2', '3', '4'],
     id: 'corrediza',
     filters: [

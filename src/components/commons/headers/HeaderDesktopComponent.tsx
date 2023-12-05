@@ -7,7 +7,7 @@ export const HeaderDesktopComponent = () => {
   return (
     <header
       className="header-desktop header2 header--bg-dark"
-      style={{top: "inherit"}}
+      style={{top: "inherit" }}
     >
       <div className="container clearfix">
         <h1 className="logo pull-left">

@@ -20,13 +20,13 @@ export const BlogDetailRelatedPost = ({ relatedPosts }: { relatedPosts: Facebook
             return (
               <div className="blog__recent-item clearfix" key={relatedPost.url}>
                 <div className="img pull-left" style={{ overflow: 'hidden', maxHeight: '100px', minHeight: '100px' }}>
-                  <Link href={{ pathname: `/${PAGES_PATH.NEWS_PATH}`, query: { postId: relatedPost.target.id } }}>
+                  <Link href={{ pathname: `/${PAGES_PATH.NEWS_DETAIL}`, query: { postId: relatedPost.target.id } }}>
                     <img alt="related-post-image" src={relatedPost.image.src} />
                   </Link>
                 </div>
                 <div className="text">
                   <h6>
-                    <Link href={{ pathname: `/${PAGES_PATH.NEWS_PATH}`, query: { postId: relatedPost.target.id } }}>
+                    <Link href={{ pathname: `/${PAGES_PATH.NEWS_DETAIL}`, query: { postId: relatedPost.target.id } }}>
                       {getFormatDate(relatedPost.created_time)}
                     </Link>
                   </h6>

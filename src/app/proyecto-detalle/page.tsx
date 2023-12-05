@@ -1,13 +1,10 @@
 import { Index } from '@/components/work-detail';
-import { Metadata } from 'next';
-import React from 'react'
-
-export const metadata: Metadata = {
-  title: 'Proyecto'
-}
+import React from 'react';
 
 const Page = () => {
-  return <Index />
+  return (
+    <Index />
+  )
 }
 
 export default Page;
