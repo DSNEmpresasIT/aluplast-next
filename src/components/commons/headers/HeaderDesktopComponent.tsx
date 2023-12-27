@@ -72,9 +72,9 @@ export const HeaderDesktopComponent = () => {
                     Reventa
                   </a>
                 </li>
-                {/* <li>
-                  <a href={`/${PAGES_PATH.CATALOG_PATH}/texturas`}> Texturas</a>
-                </li> */}
+                <li>
+                  <a href={PAGES_PATH.TEXTURES}> Texturas</a>
+                </li>
               </ul>
             </li>
             <li>
