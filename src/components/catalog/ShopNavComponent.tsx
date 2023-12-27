@@ -47,7 +47,7 @@ const subCategories = [
     name: getProductTypeName(TypeProduct.WINDOW_PRODUCT),
     filter: TypeProduct.WINDOW_PRODUCT,
   },
-]
+];
 
 interface ShopNavComponentProps {
   handleToggleFilter: (string: ProductFathersTypes) => void;
@@ -60,7 +60,7 @@ export const ShopNavComponent: FC<ShopNavComponentProps> = ({
   filters,
   totalProducts,
 }) => {
-  const category = useSearchParams().get('categoria');
+  const category = useSearchParams().get("categoria");
 
   const handleSetFilters = (data: any) => {
     handleToggleFilter(data.filter);
@@ -152,6 +152,15 @@ export const ShopNavComponent: FC<ShopNavComponentProps> = ({
               </li>
             );
           })}
+          <li
+            style={{
+              cursor: "pointer",
+            }}
+          >
+            <Link href={PAGES_PATH.TEXTURES}>
+              Texturas
+            </Link>
+          </li>
         </ul>
       ) : (
         ""
@@ -159,33 +168,33 @@ export const ShopNavComponent: FC<ShopNavComponentProps> = ({
       {category === ProductFathersTypes.OPENERS_TYPES && (
         <ul className="blog__cate ul--no-style">
           <h4 className="title-sidebar">Tipos de {filters[0]}</h4>
-            {subCategories?.map((buttonData: any) => {
-              return (
-                <li
-                  key={`shop-nav-${buttonData.name}`}
-                  style={{
-                    cursor: "pointer",
-                    color: filters.includes(buttonData.filter) ? "red" : "",
-                  }}
-                  onClick={() => handleSetFilters(buttonData)}
-                >
-                  <a type="button">
-                    {buttonData.name}
-                    <span>
-                      <em>
-                        (
-                        {
-                          allCatalogData.filter((product) =>
-                            product.filters.includes(buttonData.filter)
-                          ).length
-                        }
-                        )
-                      </em>
-                    </span>
-                  </a>
-                </li>
-              );
-            })}
+          {subCategories?.map((buttonData: any) => {
+            return (
+              <li
+                key={`shop-nav-${buttonData.name}`}
+                style={{
+                  cursor: "pointer",
+                  color: filters.includes(buttonData.filter) ? "red" : "",
+                }}
+                onClick={() => handleSetFilters(buttonData)}
+              >
+                <a type="button">
+                  {buttonData.name}
+                  <span>
+                    <em>
+                      (
+                      {
+                        allCatalogData.filter((product) =>
+                          product.filters.includes(buttonData.filter)
+                        ).length
+                      }
+                      )
+                    </em>
+                  </span>
+                </a>
+              </li>
+            );
+          })}
         </ul>
       )}
     </div>

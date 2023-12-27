@@ -9,39 +9,48 @@ import MainIcon from '@/assets/img/wpp-icon.png'
 const PhonesData = [
   {
     phone: '543446374867',
-    area: 'Ventas Concordia',
+    city: 'Concordia',
+    type: 'Ventas'
   },
   {
     phone: '543446507870',
-    area: 'Adm. Concordia',
+    city: 'Concordia',
+    type: "Administración"  
   },
   {
     phone: '543446604155',
-    area: 'Ventas Colon',
+    city: 'Colon',
+    type: 'Ventas'  
   },
   {
     phone: '543446583228',
-    area: 'Adm. Colón',
+    city: 'Colón',
+    type: 'Administración'  
   },
   {
     phone: '543446354009',
-    area: 'Ventas/adm. CdelU',
+    city: 'Concepción del Uruguay',
+    type: "Administración/Ventas"
   },
   {
     phone: '543446636419',
-    area: 'Ventas Gualeguaychu',
+    city: 'Gualeguaychu',
+    type: "Ventas"
   },
   {
     phone: '543446385621',
-    area: 'Adm. Gualeguaychu',
+    city: 'Gualeguaychu',
+    type: 'Administración'
   },
   {
     phone: '543446347821',
-    area: 'Ventas Urdinarrain',
+    city: 'Urdinarrain',
+    type: "Ventas"
   },
   {
     phone: '543446598417',
-    area: 'Adm. Urdinarrain',
+    city: 'Urdinarrain',
+    type: "Administración"
   },
 ];
 
@@ -50,13 +59,15 @@ const ButtonLink = ({ data, index }: any) => {
     <Link 
       className='link-ws-button'
       style={{ 
-        backgroundColor: (index % 2) ? '#e91d25' : '#0a75ba', 
       }} 
       target='_blank' 
       href={`https://api.whatsapp.com/send?phone=${data.phone}&text=`}
     >
-      <h5 style={{ color: 'white' }}>{data.area}</h5>
-      <i style={{fontSize: "20px", color:"white"}} className="zmdi zmdi-arrow-right-top"></i>
+      <div style={{ color: 'white' }}>
+        <h5 style={{ color: 'white' }}>{data.city}</h5>
+        <span>{data.type}</span>
+      </div>
+      <i style={{fontSize: "20px", color:"white"}} className="zmdi zmdi-phone-msg"></i>
     </Link>
   )
 }
@@ -73,13 +84,9 @@ const WhatsAppButtonComponent = () => {
               style={{ display: isLinksDisplayActive ? 'flex' : 'none' }}
             >
               <div className='container-header'>
-                <Image src={IconHead} width={70} alt="ws-logo" />
-                <span className='title-header'>
-                  ¡Comunícate 
-                  <br />
-                  con nosotros!
-                </span>
-                <button className='close-button-header' onClick={() => setIsLinksDisplayActive(false)}> 
+                <Image src={IconHead} width={30} alt="ws-logo" />
+            
+                <button className='close-button-header' onClick={() => setIsLinksDisplayActive(false)}>
                   X
                 </button>
               </div>
@@ -87,7 +94,7 @@ const WhatsAppButtonComponent = () => {
                 <div className='body-overflow'
                 >
                   {
-                    PhonesData.map((data, i )=> <ButtonLink data={data} index={i} />)
+                    PhonesData.map((data, i )=> <ButtonLink key={`${i}-wp-buttonk-key`} data={data} index={i} />)
                   }
                 </div>  
               </div>

@@ -6319,16 +6319,17 @@ input[type=number] {
     flex-direction: column;
     height: 400px;
     width: 400px;
+    z-index: 100;
 }
 
 .whatsapp-chat-container 
 .container-header {
-    height: 100px;
+    height: 60px;
     background-color: #d1d2d4;
     border-radius: 10px 10px 0px 0px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 20px;
 }
 
@@ -6337,7 +6338,7 @@ input[type=number] {
 .title-header {
     color: #126fb2; 
     font-weight: 700; 
-    font-size: 20px;
+    font-size: 12px;
 }
 
 .whatsapp-chat-container 
@@ -6375,9 +6376,17 @@ input[type=number] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 150px 150px 150px 150px;
+    border-radius: 0px 150px 150px 0px;
+    background-color: #0a75ba;
     padding: 0px 30px;
     width: 90%;
+    border-left: 3px solid  #e91d25;
+}
+
+.link-ws-button:hover {
+    background-color: #e91d25;
+    border-left: #0a75ba;
+    scale: 1.1;
 }
 
 /*Responsive*/

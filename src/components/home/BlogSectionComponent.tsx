@@ -71,8 +71,8 @@ const BlogSectionComponent: FC = () => {
                     <div className="img-blog">
                       <Link href={ 
                         lastFacebookPosts 
-                          ? { pathname: `/${PAGES_PATH.NEWS_PATH}`, query: { postId: lastFacebookPosts[0].target.id } } 
-                          : `/${PAGES_PATH.NEWS_PATH}` 
+                          ? { pathname: `/${PAGES_PATH.NEWS_DETAIL}`, query: { postId: lastFacebookPosts[0].target.id } } 
+                          : `/${PAGES_PATH.NEWS_DETAIL}` 
                           }
                         >
                         <img
@@ -105,8 +105,8 @@ const BlogSectionComponent: FC = () => {
                       <h4 className="blog-title">
                         <Link href={ 
                           lastFacebookPosts 
-                            ? { pathname: `/${PAGES_PATH.NEWS_PATH}`, query: { postId: lastFacebookPosts[0].target.id } } 
-                            : `/${PAGES_PATH.NEWS_PATH}` 
+                            ? { pathname: `/${PAGES_PATH.NEWS_DETAIL}`, query: { postId: lastFacebookPosts[0].target.id } } 
+                            : `/${PAGES_PATH.NEWS_DETAIL}` 
                             }
                           >
                           {lastFacebookPosts && lastFacebookPosts[0].description?.split(",")[0]}
@@ -148,7 +148,7 @@ const BlogSectionComponent: FC = () => {
                                       overflow: "hidden",
                                     }}
                                   >
-                                    <Link href={{ pathname: `/${PAGES_PATH.NEWS_PATH}`, query: { postId: lastFacebookPosts[0].target.id }}}>
+                                    <Link href={{ pathname: `/${PAGES_PATH.NEWS_DETAIL}`, query: { postId: post.target.id }}}>
                                       <img alt="Blog 2" src={post.image.src} />
                                       <div className="date">
                                         <div className="date__inner">
@@ -174,7 +174,7 @@ const BlogSectionComponent: FC = () => {
                                 <div className="col-md-7 col-12">
                                   <div className="blog-content">
                                     <h4 className="blog-title">
-                                      <Link href={{ pathname: `/${PAGES_PATH.NEWS_PATH}`, query: { postId: lastFacebookPosts[0].target.id }}}>
+                                      <Link href={{ pathname: `/${PAGES_PATH.NEWS_DETAIL}`, query: { postId: post.target.id }}}>
                                         {post.description?.split(",")[0]}
                                       </Link>
                                     </h4>
@@ -201,7 +201,7 @@ const BlogSectionComponent: FC = () => {
                     )}
                   <div className="see-more">
                     <Link
-                      href={`/${PAGES_PATH.NEWS_PATH}`}
+                      href={`/${PAGES_PATH.NEWS_DETAIL}`}
                       className="au-btn au-btn--big au-btn--pill au-btn--yellow au-btn--white"
                     >
                       Ver publicaciones

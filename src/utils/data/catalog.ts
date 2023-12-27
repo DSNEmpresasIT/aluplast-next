@@ -1686,6 +1686,7 @@ export const windowsFatherData:CatalogData[] = [
 export const garageDoorsData: CatalogData[] = [
   {
     name: 'Porton corredizo riel curvo',
+    img: ["1", "2", "3", "4",],
     id: 'portoncorredizorielcurvo',
     filters: [ProductFathersTypes.GARAGE_DOORS, 'corredizorielcurvo'],
     description: '-',
@@ -1940,10 +1941,10 @@ export const texturesData: TexturesTypes[] = [
     name: "Bronce claro",
     img: "BRONCECLARO",
   },
-  {
-    name: "Bronce colonial",
-    img: "BRONCECOLONIAL",
-  },
+  // {
+  //   name: "Bronce colonial",
+  //   img: "BRONCECOLONIAL",
+  // },
   {
     name: "Bronce medio",
     img: "BRONCEMEDIO",
@@ -1964,14 +1965,14 @@ export const texturesData: TexturesTypes[] = [
     name: "Negro semi texturado",
     img: "NEGROSEMITEXTURADO",
   },
-  {
-    name: "Nogal claro",
-    img: "NOGALCLARO",
-  },
-  {
-    name: "Roble oscuro",
-    img: "ROBLEOSCURO",
-  }
+  // {
+  //   name: "Nogal claro",
+  //   img: "NOGALCLARO",
+  // },
+  // {
+  //   name: "Roble oscuro",
+  //   img: "ROBLEOSCURO",
+  // }
 ];
 
 export const allCatalogData: CatalogData[] = [

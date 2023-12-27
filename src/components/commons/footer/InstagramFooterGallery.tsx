@@ -9,38 +9,44 @@ interface InstagramObject {
 
 export const InstagramGalleryFooter = ({ instagramToken }: any) => {
   const [ imagesData, setImagesData ] = useState<InstagramObject[]>();
-
+  const [ fetchError, setError ] = useState<boolean>(false);
   useEffect(() => {
     getInstagramImages(instagramToken)
       .then((response) => setImagesData(response))
-      .catch((err) => console.log(err))
+      .catch((err) => (console.log(err), setError(true)))
   }, [])
   
   return (
     <div className="col-lg-4 col-md-6">
-      <h5 className="title-footer m-b-30">Instagram</h5>
-      <div className="gallery clearfix">
-        {
-          imagesData 
-          ? (
-            imagesData.map((img, i) => {
-              if (i < 9) {
-                return (
-                  <div className="gallery__item" key={`${img.id}${i}`}>
-                    <img alt={`Gallery ${i+1}`} src={img.media_url} style={{ maxHeight: '82.5px', minWidth: '82.5px', minHeight: '82.5px' }}/>
-                    <a href={img.permalink} target="_blank" rel="noreferrer" className="pro-link">
-                      <div className="overlay overlay--invisible overlay--yellow"></div>
-                    </a>
-                  </div>
+      {
+         !fetchError && (
+          <>
+            <h5 className="title-footer m-b-30">Instagram</h5>
+            <div className="gallery clearfix">
+              {
+                imagesData
+                ? (
+                  imagesData.map((img, i) => {
+                    if (i < 9) {
+                      return (
+                        <div className="gallery__item" key={`${img.id}${i}`}>
+                          <img alt={`Gallery ${i+1}`} src={img.media_url} style={{ maxHeight: '82.5px', minWidth: '82.5px', minHeight: '82.5px' }}/>
+                          <a href={img.permalink} target="_blank" rel="noreferrer" className="pro-link">
+                            <div className="overlay overlay--invisible overlay--yellow"></div>
+                          </a>
+                        </div>
+                      )
+                    }
+                  })
+                )
+                : (
+                  <span style={{ marginTop: '30px' }} className='page-loader__spin'></span>   
                 )
               }
-            })
-          )
-          : (
-            <span style={{ marginTop: '30px' }} className='page-loader__spin'></span>   
-          )
-        }
-      </div>
+            </div>
+          </>
+        )
+      }
       <h5 className="title-footer">Nuestra redes</h5>
       <div className="social-footer">
         <a href="https://www.facebook.com/AluplastAberturas">

@@ -15,6 +15,8 @@ const VideoComponent = ({ videoData }: any) => {
 
 export const InstagramVideoFooter = ({ instagramToken }: any) => {
   const [ videoData, setVideoData ] = useState<any>(undefined);
+  const [ fetchError, setFetchError ] = useState<boolean>(false);
+
   useEffect(() => {
     getTheLastInstagramVideo(instagramToken)
       .then(response => {
@@ -22,6 +24,7 @@ export const InstagramVideoFooter = ({ instagramToken }: any) => {
       })
       .catch(error => {
         console.log(error.message)
+        setFetchError(true)
       })
   }, [instagramToken])
 
@@ -40,7 +43,7 @@ export const InstagramVideoFooter = ({ instagramToken }: any) => {
             <VideoComponent videoData={videoData} />
           )
           : (
-            <span style={{ marginTop: '30px' }} className='page-loader__spin'></span>   
+          !fetchError && <span style={{ marginTop: '30px' }} className='page-loader__spin'></span>   
         )
       }
     </p>

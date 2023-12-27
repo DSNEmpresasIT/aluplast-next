@@ -19,5 +19,5 @@ export enum PAGES_PATH {
   SOME_PROJECTS = 'nuestro-trabajo',
   PROJECT_DETAIL = 'proyecto-detalle',
   NEWS_DETAIL = 'noticia-detalle',
-  TEXTURES = 'texturas',
+  TEXTURES = 'texturas-tipos-y-tratamientos',
 }

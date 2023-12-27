@@ -1,5 +1,6 @@
 import { PAGES_PATH } from '@/utils/pages';
 import { ProjectDetail } from '@/utils/types';
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { Dispatch, FC, SetStateAction, useState } from 'react'
 
@@ -26,7 +27,14 @@ export const ProjectDetailComponent:FC<ProjectDetailComponentProps> = ({ project
                     projectDetail?.img.map((img, index) => {
                       if (index === 0) return;
                       return (
-                        <div className="port1-img">
+                        <div 
+                          className="port1-img" 
+                          key={`${index}-project-detail-key`}
+                          style={{
+                            maxHeight: '150px',
+                            overflow: 'hidden'
+                          }}
+                        >
                           <a href={`/img/projects/${projectDetail?.id}/${img}.jpg`} data-lightbox="portfolio">
                             <img alt="Portfolio Small 1" src={`/img/projects/${projectDetail?.id}/${img}.jpg`} />
                           </a>
