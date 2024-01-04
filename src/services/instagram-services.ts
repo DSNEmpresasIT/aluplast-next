@@ -1,4 +1,4 @@
-const url:string = `https://graph.instagram.com/me/media?fields=id,media_type,media_url,permalink,thumbnail_url&access_token=`;
+const url:string = `https://graph.instagram.com/me/media?fields=id,media_type,media_url,permalink,caption,timestamp,thumbnail_url&access_token=`;
 
 export async function getInstagramImages(token: string) {
   try {

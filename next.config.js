@@ -14,6 +14,7 @@ const nextConfig = {
     FACEBOOK_PAGE_ID: process.env.FACEBOOK_PAGE_ID,
     GLOBAL_API_BASE_URL_DEVELOPMENT: process.env.GLOBAL_API_BASE_URL_DEVELOPMENT,
     GLOBAL_API_BASE_URL_PRODUCTION: process.env.GLOBAL_API_BASE_URL_PRODUCTION,
+    CLIENT_ID: process.env.CLIENT_ID,
     MODE: process.env.MODE
   }
 }

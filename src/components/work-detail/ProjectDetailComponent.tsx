@@ -18,13 +18,13 @@ export const ProjectDetailComponent:FC<ProjectDetailComponentProps> = ({ project
               <div className="col-lg-8 mt-4 col-md-12">
                 
                 <div className="port1__big-img">
-                  <a href={`/img/projects/${projectDetail?.id}/${projectDetail?.img[0]}.jpg`} data-lightbox="portfolio">
-                    <img alt="Portfolio 1" src={`/img/projects/${projectDetail?.id}/${projectDetail?.img[0]}.jpg`} />
+                  <a href={projectDetail?.imageUrl[0].url} data-lightbox="portfolio">
+                    <img alt="Portfolio 1" src={projectDetail?.imageUrl[0].url} />
                   </a>
                 </div>
                 <div className="port1__img-wrap">
                   {
-                    projectDetail?.img.map((img, index) => {
+                    projectDetail?.imageUrl.map((img, index) => {
                       if (index === 0) return;
                       return (
                         <div 
@@ -35,8 +35,8 @@ export const ProjectDetailComponent:FC<ProjectDetailComponentProps> = ({ project
                             overflow: 'hidden'
                           }}
                         >
-                          <a href={`/img/projects/${projectDetail?.id}/${img}.jpg`} data-lightbox="portfolio">
-                            <img alt="Portfolio Small 1" src={`/img/projects/${projectDetail?.id}/${img}.jpg`} />
+                          <a href={img.url} data-lightbox="portfolio">
+                            <img alt="Portfolio Small 1" src={img.url} />
                           </a>
                         </div>
                       )
@@ -57,7 +57,7 @@ export const ProjectDetailComponent:FC<ProjectDetailComponentProps> = ({ project
                   <ul className="port__info-list clearfix ul--no-style">
                     <li>
                       <span className="port__info-title">Cliente</span>
-                      <span className="port__info-value">{projectDetail?.client}</span>
+                      <span className="port__info-value">{projectDetail?.projectClient}</span>
                     </li>
                     {/* <li>
                       <span className="port__info-title">Acreage</span>

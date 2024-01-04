@@ -4,6 +4,7 @@ import { pagination } from '../helpers/helpers';
 import { projects } from '@/utils/data/projects';
 import { useRouter } from 'next/navigation';
 import { PAGES_PATH } from '@/utils/pages';
+import { getAllProjects, getProjectTypes } from '@/services/projects-service';
 
 interface paginationIndex {
   startIndex: number;
@@ -12,30 +13,40 @@ interface paginationIndex {
 
 export const ProjectsComponent = () => {
   const router = useRouter();
+  const [ projectData, setProjectData ] = useState<ProjectDetail[]>();
   const [ projectBlog, setProjectBlog ] = useState<ProjectDetail[]>();
-  const [ projectBlogFilter, setProjectBlogFilter ] = useState<ProjectDetail[]>(projects);
-  const [ sliceIndex, setSliceIndex ] = useState<paginationIndex>({ startIndex: 0, lastIndex: 2 });
+  const [ projectBlogFilter, setProjectBlogFilter ] = useState<ProjectDetail[]>();
+  const [ sliceIndex, setSliceIndex ] = useState<paginationIndex>({ startIndex: 0, lastIndex: 6 });
   const [ projectFilter, setProjectFilter ] = useState<ProjectTypes | undefined>(undefined);
 
   useEffect(() => {
-    setProjectBlog(pagination(projectBlogFilter, sliceIndex))
+    if (projectBlogFilter) {
+      setProjectBlog(pagination(projectBlogFilter, sliceIndex))
+    }
   }, [projectBlogFilter, sliceIndex]);
 
   const handlePagination = () => {
     setSliceIndex({
       startIndex: sliceIndex.startIndex,
-      lastIndex: sliceIndex.lastIndex + 2,
+      lastIndex: sliceIndex.lastIndex + 6,
     })
   }
 
   useEffect(() => {
-    if (projectFilter) {
-      setProjectBlogFilter(projects.filter(project => project.type === projectFilter));
+    getAllProjects()
+      .then(response => setProjectData(response))
+      .catch(err => console.log(err))
+    // getProjectTypes()
+  }, [])
+
+  useEffect(() => {
+    if (projectFilter && projectData) {
+      setProjectBlogFilter(projectData.filter(project => project.type === projectFilter));
     } else {
-      setProjectBlogFilter(projects);
+      setProjectBlogFilter(projectData);
     }
-    setSliceIndex({ startIndex: 0, lastIndex: 4 })
-  }, [projectFilter]);
+    setSliceIndex({ startIndex: 0, lastIndex: 6 })
+  }, [projectFilter, projectData]);
 
   return (
     <>
@@ -71,19 +82,19 @@ export const ProjectsComponent = () => {
             { projectBlog?.map( project => {
               return (
                 <div 
-                  onClick={() => router.push(`/${PAGES_PATH.PROJECT_DETAIL}?projectId=${project.id}`)}
+                  onClick={() => router.push(`/${PAGES_PATH.PROJECT_DETAIL}?projectId=${project._id}`)}
                   className={`col-md-6 col-sm-12 item ${project.type} animate__animated animate__fadeIn`}
                   key={project.title}
                 >
                   <div className="project__item">
                     <div className="pro__img">
                       <div style={{  maxHeight: '350px', overflow: 'hidden' }}>
-                        <img alt="Project 1" src={`/img/projects/${project.id}/${project.img[0]}.jpg`} />
+                        <img alt="Project 1" src={project.imageUrl[0].url} />
                       </div>
                       <a type='button' style={{ cursor: 'pointer' }} className="pro-link">
                         <div className="pro-info pro-info--darker">
                           <h2 className="company" style={{ color: 'white' }}>
-                            { project.client }
+                            { project.projectClient }
                           </h2>
                           <p className="cat-name">
                             <em>
@@ -99,7 +110,7 @@ export const ProjectsComponent = () => {
             }) }
           </div>
           {
-            !(sliceIndex.lastIndex >= projectBlogFilter.length) && (
+            !(projectBlogFilter && sliceIndex.lastIndex >= projectBlogFilter.length) && (
               <div className="see-more">
                 <a 
                   onClick={handlePagination}

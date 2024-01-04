@@ -54,6 +54,11 @@ export interface FacebookPost {
   url: string;
 }
 
+export interface ImageUrl {
+  id: string;
+  url: string
+}
+
 export interface FacebookPostComments {
   created_time: string;
   message: string;
@@ -93,15 +98,15 @@ export interface Target {
 }
 
 export interface ProjectDetail {
-  id: string;
-  img: string[];
+  _id: string;
+  imageUrl: ImageUrl[];
   title: string;
   description: string;
   type: ProjectTypes;
-  client: string;
+  clientId: string;
+  projectClient: string;
   project_date?: string;
 }
-
 
 export enum ProjectTypes {
   RESIDENCIAL = 'residencial',

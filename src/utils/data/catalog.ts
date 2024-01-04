@@ -66,7 +66,7 @@ export const windowsData: CatalogData[] = [
     },
   },
   {
-    name: "Ventana corrediza lineal recta",
+    name: "Ventana corrediza",
     img: ['1', '2', '3', '4'],
     id: 'corrediza',
     filters: [
@@ -480,7 +480,7 @@ export const doorsData: CatalogData[] = [
   },
   {
     name: "Puerta pivotante",
-    // img: 'puertamachimbre',
+    img: ['1', '2', '3', '4'],
     id: "puertapivotante",
       filters: [
       ProductFathersTypes.OPENERS_TYPES,
@@ -1702,6 +1702,8 @@ export const garageDoorsData: CatalogData[] = [
   },
   {
     name: 'Porton corredizo riel lineal',
+    img: ["1", "2", "3", "4",],
+    id: 'portoncorredizoriellineal',
     filters: [ProductFathersTypes.GARAGE_DOORS, 'corredizorielineal'],
     description: '-',
     specs: {
@@ -1733,6 +1735,7 @@ export const garageDoorsData: CatalogData[] = [
   },
   {
     name: 'Porton enrollable',
+    img: ["1", "2", "3", "4",],
     id: 'portonenrollable',
     filters: [ProductFathersTypes.GARAGE_DOORS, 'portonenrollable'],
     description: '-',

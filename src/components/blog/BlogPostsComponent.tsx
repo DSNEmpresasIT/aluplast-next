@@ -8,6 +8,7 @@ import { getFormatDate, pagination } from "../helpers/helpers";
 import Link from "next/link";
 import { PAGES_PATH } from "@/utils/pages";
 import Image from "next/image";
+import { InstagramNewsComponent } from "./InstagramNewsComponent";
 
 const months = [
   "Ene",
@@ -111,63 +112,7 @@ export const BlogPosts = ({ posts, nextUrl }: BlogPostsProps) => {
                           Mantente al tanto de innovaciones en materiales, proyectos destacados y consejos útiles para mejorar tu hogar o espacio comercial. En Aluplast, nos enorgullece compartir contigo nuestras noticias.
                         </p>
                       </div>
-                      {/* <div className="blog__recent">
-                        <h4 className="title-sidebar">Recent Post</h4>
-                        <div className="blog__recent-item clearfix">
-                          <div className="img pull-left">
-                            <a href="#">
-                              <img
-                                alt="Blog Thumb 1"
-                                src="img/blog-item-01.jpg"
-                              />
-                            </a>
-                          </div>
-                          <div className="text">
-                            <h6>
-                              <a href="#">details are the key of interior</a>
-                            </h6>
-                            <p>
-                              <em>November , 24 , 2017</em>
-                            </p>
-                          </div>
-                        </div>
-                        <div className="blog__recent-item clearfix">
-                          <div className="img pull-left">
-                            <a href="#">
-                              <img
-                                alt="Blog Thumb 2"
-                                src="img/blog-item-02.jpg"
-                              />
-                            </a>
-                          </div>
-                          <div className="text">
-                            <h6>
-                              <a href="#">morden interior and human ability</a>
-                            </h6>
-                            <p>
-                              <em>November , 15 , 2017</em>
-                            </p>
-                          </div>
-                        </div>
-                        <div className="blog__recent-item clearfix">
-                          <div className="img pull-left">
-                            <a href="#">
-                              <img
-                                alt="Blog Thumb 3"
-                                src="img/blog-item-03.jpg"
-                              />
-                            </a>
-                          </div>
-                          <div className="text">
-                            <h6>
-                              <a href="#">5 things you need to fix your room</a>
-                            </h6>
-                            <p>
-                              <em>November , 24 , 2017</em>
-                            </p>
-                          </div>
-                        </div>
-                      </div> */}
+                      <InstagramNewsComponent />
                     </div>
                   </div>
                 </div>
