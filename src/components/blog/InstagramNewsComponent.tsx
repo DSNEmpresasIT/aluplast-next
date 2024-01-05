@@ -30,10 +30,10 @@ export const InstagramNewsComponent = () => {
     <>
       {posts && posts?.length && (
         <>
-          <h4 className="title-sidebar mt-5">Lo último de Instagram</h4>
+          <h4 className="title-sidebar animate__animated animate__fadeIn mt-5">Lo último de Instagram</h4>
           {posts.map((post, index) => (
             <div
-              className="blog__recent"
+              className="blog__recent animate__animated animate__fadeInDown"
               key={`${index}-instagram-recent-posts`}
             >
               <div className="blog__recent-item clearfix">

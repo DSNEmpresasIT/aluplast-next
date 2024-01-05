@@ -103,7 +103,6 @@ export interface ProjectDetail {
   title: string;
   description: string;
   type: ProjectTypes;
-  clientId: string;
   projectClient: string;
   project_date?: string;
 }

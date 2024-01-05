@@ -18,7 +18,15 @@ export async function getProjectTypes() {
 export async function getAllProjects() {
   try {
     const response = await (
-      await fetch(`${BASE_URL}/projects/${CLIENT_ID}/client`)
+      await fetch(`${BASE_URL}/projects/client/${CLIENT_ID}`, {
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Credentials': 'true',
+          'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+          'Access-Control-Allow-Headers': 'Set-Cookie'
+        },
+      })
     ).json();
 
     return response.projects
