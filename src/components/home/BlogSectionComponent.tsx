@@ -30,8 +30,9 @@ const BlogSectionComponent: FC = () => {
   useEffect(() => {
     if (facebookToken) {
       getFacebookPhotos(facebookToken, process.env.FACEBOOK_PAGE_ID || "")
-        .then((res) => (setLastFacebookPosts(res), setIsLoading(false)))
-        .catch(() => setIsError(true));
+        .then((res) => (setLastFacebookPosts(res)))
+        .catch(() => setIsError(true))
+        .finally(() => setIsLoading(false))
     }
   }, [facebookToken]);
 
@@ -42,7 +43,8 @@ const BlogSectionComponent: FC = () => {
         process.env.FACEBOOK_PAGE_ID || ""
       )
         .then((res) => setFacebookToken(res.access_token))
-        .catch(() => setIsError(true));
+        .catch(() => setIsError(true))
+        .finally(() => setIsLoading(false))
     }
   }, []);
 

@@ -1308,6 +1308,7 @@ export const controlSolar: CatalogData[] = [
   },
   {
     name: "Celosias con tablilla fija",
+    img: ['1', '2', '3', '4'],
     id: 'celosiastablillafija',
     filters: [ProductFathersTypes.SOLAR_CONTROL, "celosiastablillafija"],
     description:
@@ -1361,6 +1362,7 @@ export const controlSolar: CatalogData[] = [
   },
   {
     name: "Celosias con tablilla regulable",
+    img: ['1', '2', '3', '4'],
     id: 'celosiastablillaregulable',
     filters: [ProductFathersTypes.SOLAR_CONTROL, "celosiastablillaregulable"],
     description:

@@ -12,9 +12,11 @@ const SliderComponent = () => {
     {
       text: () => (
         <>
-          <span>Unicenter</span>
+          Soluciones que
+          <br /> 
+          <span>transforman</span> espacios, 
           <br />
-          Shopping
+          <span>Unicenter Shopping</span>
         </>
       ),
       transition: transitionTypes.incube,
@@ -22,9 +24,11 @@ const SliderComponent = () => {
     {
       text: () => (
         <>
-          <span>Bureau</span>
+          Edificio <span>Bureau Diagonal</span>: 
           <br />
-          Diagonal
+          cerramientos de <span>última</span>
+          <br />
+          generación
         </>
       ),
       transition: transitionTypes.slidedown,
@@ -32,11 +36,10 @@ const SliderComponent = () => {
     {
       text: () => (
         <>
-          Aperturas de
+          Aberturas de <span>alta</span> prestación
           <br />
-          <span>alta</span>
-          <br />
-          prestación
+           para residencias <span>exclusivas</span>
+
         </>
       ),
       transition: transitionTypes.incube,
