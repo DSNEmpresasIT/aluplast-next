@@ -3,44 +3,26 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 
-import { BlogPosts } from '@/components/blog/BlogPostsComponent';
 import { getFacebookImagePosts, getFacebookPageToken } from '@/services/facebook-services';
 import { PAGES_PATH } from '@/utils/pages';
-import { FacebookPost } from '@/utils/types';
+import { InstagramPost } from '@/utils/types';
 import { SkeletonLoaderComponent } from '@/components/blog/SkeletonLoaderComponent';
 import { BlogDetail } from '@/components/blog-detail/BlogDetailComponent';
+import { getInstagramPosts } from '@/services/instagram-services';
 
 const Index = () => {
   const router = useRouter()
   const postId = useSearchParams().get('postId');
-  const [ posts, setPosts ] = useState<FacebookPost[]>();
+  const [ posts, setPosts ] = useState<InstagramPost[]>();
   const [ isPostIdValid, setIsPostIdValid ] = useState<boolean>();
-  const [ pageAccessToken, setPageAccessToken ] = useState<string>();
-  const [ postDetail, setPostDetail ] = useState<FacebookPost>();
+  const [ postDetail, setPostDetail ] = useState<InstagramPost>();
 
-  const handlePostDetail = () => posts?.filter(post => post.target.id === postId)[0] ?? null
-
-  useEffect(() => {
-    if (process.env.FACEBOOK_PAGE_ID && process.env.FACEBOOK_TOKEN) {
-      getFacebookPageToken(process.env.FACEBOOK_TOKEN, process.env.FACEBOOK_PAGE_ID)
-        .then(res => setPageAccessToken(res.access_token))
-        .catch(error => {
-          console.log(error)
-        })
-    }
-  },[process.env]);
+  const handlePostDetail = () => posts?.filter(post => post.id === postId)[0] ?? null
 
   useEffect(() => {
-    if (pageAccessToken && process.env.FACEBOOK_PAGE_ID) {
-      getFacebookImagePosts(pageAccessToken, process.env.FACEBOOK_PAGE_ID)
-        .then(res => {
-          setPosts(res.data)
-        })
-        .catch(error => {
-          console.log(error)
-        });
-    }
-  },[pageAccessToken])
+    getInstagramPosts(process.env.INSTAGRAM_TOKEN || '')
+      .then(response => (setPosts(response), console.log(response)))
+  }, [process.env.INSTAGRAM_TOKEN])
 
   useEffect(() => (postId ? setIsPostIdValid(true) : setIsPostIdValid(false)), [postId])
   
@@ -74,7 +56,7 @@ const Index = () => {
       </section>
       {
          (posts && isPostIdValid && postDetail)
-          ? (<BlogDetail facebookPostDetail={postDetail} facebookPosts={posts} /> )
+          ? (<BlogDetail instagramPostDetail={postDetail} instagramPosts={posts} /> )
           : (<SkeletonLoaderComponent />)
       }
     </>

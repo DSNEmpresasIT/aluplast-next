@@ -1,3 +1,9 @@
+export enum InstagramPostMediaTypes {
+  VIDEO = 'VIDEO',
+  IMAGE = 'IMAGE',
+  CAROUSEL = "CAROUSEL_ALBUM"
+}
+
 export interface CatalogData { 
   name: string;
   img?: string[];
@@ -42,6 +48,16 @@ export enum CatalogFiltersTypes {
 export interface TexturesTypes {
   name: string;
   img: string;
+}
+
+export interface InstagramPost { 
+  caption: string;
+  id: string;
+  media_type: InstagramPostMediaTypes; 
+  media_url: string;
+  permalink: string;
+  timestamp: string;
+  thumbnail_url: string;
 }
 
 export interface FacebookPost {

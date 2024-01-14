@@ -1,27 +1,28 @@
 import React, { useEffect, useState } from "react";
 import { getFormatDate } from "../helpers/helpers";
-import { FacebookPost } from "@/utils/types";
+import { InstagramPost } from "@/utils/types";
+import { InstagramPostMediaTypes } from "@/utils/types";
 import { PAGES_PATH } from "@/utils/pages";
 import { BlogDetailRelatedPost } from "./RelatedPostsSection";
 import Link from "next/link";
 import Image from "next/image";
 
 export const BlogDetail = ({
-  facebookPostDetail,
-  facebookPosts,
+  instagramPostDetail,
+  instagramPosts,
 }: {
-  facebookPostDetail: FacebookPost;
-  facebookPosts: FacebookPost[];
+  instagramPostDetail: InstagramPost;
+  instagramPosts: InstagramPost[];
 }) => {
   const [animation, setAnimation] = useState<boolean>(false);
-  const [relatedPosts, setRelatedPosts] = useState<FacebookPost[]>();
+  const [relatedPosts, setRelatedPosts] = useState<InstagramPost[]>();
 
   function relatedPostSetter() {
-    if (facebookPosts?.length) {
-      const filteredPosts = facebookPosts.filter(
-        (post: FacebookPost) => post !== facebookPostDetail
+    if (instagramPosts?.length) {
+      const filteredPosts = instagramPosts.filter(
+        (post: InstagramPost) => post !== instagramPostDetail
       );
-      let newRelatedPosts: FacebookPost[] = [];
+      let newRelatedPosts: InstagramPost[] = [];
       for (let i = 0; i < filteredPosts.length; i++) {
         if (i < 5 && filteredPosts[i]) {
           newRelatedPosts = [...newRelatedPosts, filteredPosts[i]];
@@ -41,7 +42,7 @@ export const BlogDetail = ({
   useEffect(() => {
     relatedPostSetter();
     doAnimation();
-  }, [facebookPostDetail]);
+  }, [instagramPostDetail]);
 
   return (
     <section
@@ -53,36 +54,33 @@ export const BlogDetail = ({
         <div className="row pt-0">
           <div className="col-lg-8 col-md-7">
             <div className="blog-thumb justify-content-center mt-2">
-              <Image
-                alt="facebook-post-image"
-                width={facebookPostDetail.image.width}
-                height={facebookPostDetail.image.height}
-                src={facebookPostDetail.image.src}
-              />
+              {
+                // instagramPostDetail.media_type === InstagramPostMediaTypes.IMAGE Here we have to do dynamics on image and video post  
+              }
             </div>
             <h4 className="blog-title">
-              {getFormatDate(facebookPostDetail.created_time)}
+              {getFormatDate(instagramPostDetail.timestamp)}
             </h4>
             <p className="blog-meta">
               {/* <em className="author">Aluplast</em> */}
-              {/* <em className="cate"><img src={facebookPostDetail.icon} alt="facebook-icon" /></em> */}
-              <em className="time">Facebook</em>
+              {/* <em className="cate"><img src={instagramPostDetail.icon} alt="facebook-icon" /></em> */}
+              <em className="time">Instagram</em>
             </p>
             <div className="blog-content">
-              <p className="m-t-20">{facebookPostDetail.description}</p>
+              <p className="m-t-20">{instagramPostDetail.caption}</p>
               <div className="col-12 mt-5">
                 <span className="d-flex justify-content-end">
                   <a
-                    href={facebookPostDetail.url}
+                    href={instagramPostDetail.permalink}
                     style={{ color: "#e91d25" }}
                     target="_blank"
                   >
-                    Ver publicación en Facebook
+                    Ver publicación en Instagram
                   </a>
                 </span>
               </div>
               {/* <blockquote className="blog-quote">
-                      {facebookPostDetail.description}
+                      {instagramPostDetail.description}
                     </blockquote> */}
               {/* <p className="m-b-20">
                       Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi mather
@@ -98,7 +96,7 @@ export const BlogDetail = ({
                     </p> */}
             </div>
             <div className="blog-footer"></div>
-            {/* <BlogDetailComments comments={facebookPostDetail.comments.data} /> */}
+            {/* <BlogDetailComments comments={instagramPostDetail.comments.data} /> */}
           </div>
           <div className="col-lg-4 col-md-5">
             <BlogDetailRelatedPost relatedPosts={relatedPosts} />
