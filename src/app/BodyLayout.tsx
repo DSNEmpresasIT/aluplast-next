@@ -1,8 +1,10 @@
 'use client'
 import 'animate.css';
 import React, { ReactNode, useState } from 'react'
-import { usePathname } from 'next/navigation'
 import Script from 'next/script'
+import { usePathname } from 'next/navigation'
+import { Toaster } from 'react-hot-toast';
+
 import { PAGES, PAGES_PATH } from '@/utils/pages'
 import { LoaderComponent } from '@/components/commons/LoaderComponent'
 
@@ -13,6 +15,7 @@ export const BodyLayout = ({ children }: { children: ReactNode }) => {
   return (
     <body className={ (pathname === `/${PAGES_PATH.CATALOG_PATH}`) ? 'box' : '' }>
       {children}
+      <Toaster position='bottom-center' />
       {!isJQueryLoad && <LoaderComponent />}
       <Script async type="text/javascript" src="/vendor/jquery-3.2.1.min.js" onLoad={() => setIsJQueryLoad(true)} />
       <Script type="text/javascript" src="/vendor/wow/wow.min.js" />

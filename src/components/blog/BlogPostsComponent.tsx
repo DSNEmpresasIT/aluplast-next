@@ -2,7 +2,7 @@ import {
   getFacebookImagePosts,
   getFacebookPageToken,
 } from "@/services/facebook-services";
-import { FacebookPost } from "@/utils/types";
+import { InstagramPost, InstagramPostMediaTypes } from "@/utils/types";
 import React, { useEffect, useState } from "react";
 import { getFormatDate, pagination } from "../helpers/helpers";
 import Link from "next/link";
@@ -26,8 +26,8 @@ const months = [
 ];
 
 interface BlogPostsProps {
-  posts: FacebookPost[] | undefined;
-  nextUrl: string | null;
+  posts: InstagramPost[] ;
+  nextUrl?: string | undefined;
 }
 
 export const BlogPosts = ({ posts, nextUrl }: BlogPostsProps) => {
@@ -44,20 +44,30 @@ export const BlogPosts = ({ posts, nextUrl }: BlogPostsProps) => {
                       {posts?.map((post, index) => (
                         <div className="blog-item" key={`${index}-news-post-key`}>
                           <div className="img-blog" style={{ maxHeight: '300px', overflow: 'hidden' }}>
-                            <Link href={{ pathname: PAGES_PATH.NEWS_DETAIL, query: { postId: post.target.id } }}>
-                              <Image alt="Blog 1" width={post.image.width} height={post.image.height} src={post.image.src} />
+                            <Link href={{ pathname: PAGES_PATH.NEWS_DETAIL, query: { postId: post.id } }}>
+                              {
+                                post.media_type === InstagramPostMediaTypes.IMAGE && <Image alt="Blog 1" width={0} height={0} src={post.media_url} />
+                              }
+                              {
+                                post.media_type === InstagramPostMediaTypes.CAROUSEL && <Image alt="Blog 1" width={0} height={0} src={post.media_url} />
+                              }
+                              {
+                                post.media_type === InstagramPostMediaTypes.VIDEO && (
+                                  <video autoPlay muted loop src={post.media_url}></video>
+                                )
+                              }
                               <div className="date date--big">
                               <div className="date__inner">
                                 <span className="day">
                                   {
                                     new Date(
-                                      post.created_time
+                                      post.timestamp
                                     ).getDay()
                                   }
                                 </span>
                                 <span className="month">
                                   {
-                                    months[new Date(post.created_time).getMonth()]
+                                    months[new Date(post.timestamp).getMonth()]
                                   }
                                 </span>
                               </div>
@@ -66,18 +76,18 @@ export const BlogPosts = ({ posts, nextUrl }: BlogPostsProps) => {
                           </div>
                           <div className="blog-content">
                             <h4 className="blog-title">
-                              <Link href={{ pathname: PAGES_PATH.NEWS_DETAIL, query: { postId: post.target.id } }}>
+                              <Link href={{ pathname: PAGES_PATH.NEWS_DETAIL, query: { postId: post.id } }}>
                               </Link>
                             </h4>
                             <p className="author">
                               <em>Via Facebook</em>
                             </p>
                             <p style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: '350px' }}>
-                              {post.description}
+                              {post.caption}
                             </p>
                           </div>
                           <div className="see-more see-more--left">
-                            <Link className="au-btn au-btn--big au-btn--pill au-btn--yellow au-btn--white" href={{ pathname: PAGES_PATH.NEWS_DETAIL, query: { postId: post.target.id } }}>
+                            <Link className="au-btn au-btn--big au-btn--pill au-btn--yellow au-btn--white" href={{ pathname: PAGES_PATH.NEWS_DETAIL, query: { postId: post.id } }}>
                               Ver mas
                             </Link>
                           </div>

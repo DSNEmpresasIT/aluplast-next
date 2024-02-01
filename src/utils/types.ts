@@ -129,3 +129,11 @@ export enum ProjectTypes {
   EDIFICIOS = 'edificios',
   INTERIORISMO = 'interiorismo'
 }
+
+export interface SendEmailDto {
+  fullName: string;
+  from: string;
+  subject: string;
+  message: string;
+}
+

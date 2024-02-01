@@ -38,15 +38,15 @@ const Contact = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <div className="m-t-40">
+            <div>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6716.896210460304!2d-58.8893424!3d-32.6741277!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95baa828f2d32b47%3A0xbe4d5bd6a4354bd!2sAluplast%20SRL!5e0!3m2!1ses!2sar!4v1691100660476!5m2!1ses!2sar"
-                style={{ border: '0', width: '100%', height: '65vh' }} 
+                className='contact-map-styles'
                 loading="lazy" />
             </div>
           </div>
           <div className="col-md-6">
-            <div className="form-contact-wrap m-t-40">
+            <div className="form-contact-wrap">
               <h4>Mandanos un mensaje</h4>
               <FormContact />
             </div>

@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
+
 import { getFormatDate } from "../helpers/helpers";
 import { InstagramPost } from "@/utils/types";
 import { InstagramPostMediaTypes } from "@/utils/types";
 import { PAGES_PATH } from "@/utils/pages";
 import { BlogDetailRelatedPost } from "./RelatedPostsSection";
-import Link from "next/link";
-import Image from "next/image";
+
+const VideoComponent = ({instagramPost}: { instagramPost: InstagramPost }) => (
+  <video autoPlay muted loop width="70%" src={instagramPost.media_url}></video>
+)
 
 export const BlogDetail = ({
   instagramPostDetail,
@@ -52,10 +56,24 @@ export const BlogDetail = ({
     >
       <div className="container">
         <div className="row pt-0">
-          <div className="col-lg-8 col-md-7">
+          <div className="col-lg-6 col-md-7">
             <div className="blog-thumb justify-content-center mt-2">
               {
-                // instagramPostDetail.media_type === InstagramPostMediaTypes.IMAGE Here we have to do dynamics on image and video post  
+                instagramPostDetail.media_type === InstagramPostMediaTypes.IMAGE && (
+                  <img src={instagramPostDetail.media_url} alt="blog-detail-image" />
+                )  
+                
+              }
+              {
+                instagramPostDetail.media_type === InstagramPostMediaTypes.CAROUSEL && (
+                  <img src={instagramPostDetail.media_url} alt="blog-detail-image" />
+                )  
+                
+              }
+              {
+                instagramPostDetail && instagramPostDetail.media_type === InstagramPostMediaTypes.VIDEO && (
+                   <VideoComponent instagramPost={instagramPostDetail} />
+                )
               }
             </div>
             <h4 className="blog-title">
@@ -64,7 +82,7 @@ export const BlogDetail = ({
             <p className="blog-meta">
               {/* <em className="author">Aluplast</em> */}
               {/* <em className="cate"><img src={instagramPostDetail.icon} alt="facebook-icon" /></em> */}
-              <em className="time">Instagram</em>
+              <em className="time">Vía Instagram</em>
             </p>
             <div className="blog-content">
               <p className="m-t-20">{instagramPostDetail.caption}</p>

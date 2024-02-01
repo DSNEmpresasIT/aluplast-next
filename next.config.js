@@ -2,6 +2,7 @@
 const nextConfig = {
   output: 'export',
   images: { unoptimized: true },
+  reactStrictMode: false,
   env: {
     EMAILJS_PUBLIC_KEY: process.env.EMAILJS_PUBLIC_KEY,
     EMAILJS_SERVICE: process.env.EMAILJS_SERVICE,

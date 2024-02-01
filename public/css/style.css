@@ -32,8 +32,24 @@ body {
     position: relative;
 }
 
+.contact-map-styles {
+    border: 0;
+    width: 100%;
+    height: 65vh;
+}
+
 .youtube-inframe-video {
-    display: flex; align-items: center; justify-content: center; padding: 40px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 40px;
+}
+
+.parragraph-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
 
 section {

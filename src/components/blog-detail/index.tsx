@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 
-import { getFacebookImagePosts, getFacebookPageToken } from '@/services/facebook-services';
 import { PAGES_PATH } from '@/utils/pages';
 import { InstagramPost } from '@/utils/types';
 import { SkeletonLoaderComponent } from '@/components/blog/SkeletonLoaderComponent';
@@ -20,9 +19,12 @@ const Index = () => {
   const handlePostDetail = () => posts?.filter(post => post.id === postId)[0] ?? null
 
   useEffect(() => {
-    getInstagramPosts(process.env.INSTAGRAM_TOKEN || '')
+    if (process.env.INSTAGRAM_TOKEN) {
+      getInstagramPosts(process.env.INSTAGRAM_TOKEN)
       .then(response => (setPosts(response), console.log(response)))
-  }, [process.env.INSTAGRAM_TOKEN])
+      .catch(err => console.log(err))
+    }
+  }, [])
 
   useEffect(() => (postId ? setIsPostIdValid(true) : setIsPostIdValid(false)), [postId])
   
