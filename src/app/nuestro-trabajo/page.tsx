@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 import React from 'react'
 
 export const metadata: Metadata = {
-  title: 'Trabajos',
+  title: 'Nuestros proyectos - Aluplast fabrica de aberturas.',
   description: 'En esta sección encontrarás algunos de los trabajaso de Aluplast, desde edificios, casas, residencias, obras publicas e institucionales.',
   keywords: 'trabajos, aluplast, portfolio, residenciales, edificios, fotos, clientes, casas, obras'
 }

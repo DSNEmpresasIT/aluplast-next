@@ -4,8 +4,8 @@ import { Metadata } from 'next';
 import React from 'react'
 
 export const metadata: Metadata = {
-  title: 'Contacto',
-  description: 'Mantengamos el contacto.',
+  title: 'Contacto - Aluplast fabrica de aberturas.',
+  description: 'Comunicate con nosotros.',
   keywords: 'contacto, aluplast, formulario, mail, input, aluminio, pvc'
 }
 

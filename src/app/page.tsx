@@ -1,31 +1,15 @@
-'use client'
-import React, { useEffect } from 'react'
-import dynamic from 'next/dynamic';
+import Home from '@/components/home'
+import { Metadata } from 'next'
+import React from 'react'
 
-import OurContactSection from '@/components/home/OurContactSection';
-import SliderComponent from '@/components/home/SliderComponent';
-import { ProjectsComponent } from '@/components/home/ProjectsComponent';
-
-// const SliderComponent = dynamic(() => import('@/components/home/SliderComponent'), { ssr: false })
-const WhoWeAreSection = dynamic(() => import('@/components/home/WhoWeAreSection'), { ssr: false })
-const HomeVideoSection = dynamic(() => import('@/components/home/HomeVideoSection'), { ssr: false })
-const OurProcessSection = dynamic(() => import('@/components/home/OurProcessSection'), { ssr: false })
-const BlogSectionComponent = dynamic(() => import('@/components/home/BlogSectionComponent'), { ssr: false })
-const OurBestProductsSection = dynamic(() => import('@/components/home/OurBestProductsSection'), { ssr: false })
-
-const page = () => {
-  return (
-    <div className='page-wrap'>
-      <SliderComponent />
-      <WhoWeAreSection />
-      <HomeVideoSection />
-      <OurProcessSection />
-      <ProjectsComponent />
-      <BlogSectionComponent />
-      <OurBestProductsSection />
-      <OurContactSection />
-    </div>
-  )
+export const metadata: Metadata = {
+  title: 'Aluplast fabrica de aberturas - Urdinarrain, Colon, Gualeguaychu, Concordia, C del Uruguay.',
+  description: 'Empresa líder en fabricación de aberturas, cerramientos y más productos edilicios. Entre Ríos, Concordia.',
+  keywords: "aluminio, Entre Ríos, Concordia, pvc, aberturas, cerramientos, sistemas complementarios, portones, control solar, vidrios, garage, diseño, puertas, ventanas, industria",
 }
 
-export default page;
+export default function Index() {
+  return (
+    <Home />
+  )
+}
