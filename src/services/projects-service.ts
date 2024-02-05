@@ -1,13 +1,13 @@
-const BASE_URL: string =
-  (process.env.MODE === "development"
-    ? process.env.GLOBAL_API_BASE_URL_DEVELOPMENT
-    : process.env.GLOBAL_API_BASE_URL_PRODUCTION) || "";
+import { API_SERVICE } from "./api";
 
 const CLIENT_ID = process.env.CLIENT_ID;
 
 export async function getProjectTypes() {
   try {
-    const response = await (await fetch(`${BASE_URL}/cms/${CLIENT_ID}/projects-types`)).json();
+    const response = await API_SERVICE({
+      method: 'GET',
+      url: `/cms/${CLIENT_ID}/projects-types`
+    })
 
     console.log(response)
   } catch (error) {
@@ -17,19 +17,12 @@ export async function getProjectTypes() {
 
 export async function getAllProjects() {
   try {
-    const response = await (
-      await fetch(`${BASE_URL}/projects/client/${CLIENT_ID}`, {
-        headers: {
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Credentials': 'true',
-          'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
-          'Access-Control-Allow-Headers': 'Set-Cookie'
-        },
-      })
-    ).json();
+    const response = await API_SERVICE({
+      method: 'GET',
+      url: `/projects/client/${CLIENT_ID}`
+    })
 
-    return response.projects
+    return response.data.projects
   } catch (error) {
     console.log(error);
   }
@@ -37,13 +30,12 @@ export async function getAllProjects() {
 
 export async function getProjectDetail(projectId: string) {
   try {
-    const response = await (
-      await fetch(`${BASE_URL}/projects/${projectId}`)
-    ).json()
+    const response = await API_SERVICE({
+      url: `/projects/${projectId}`,
+      method: 'GET'
+    })
 
-    if (response.error) throw new Error('Proyecto no encontrado')
-
-    return response;
+    return response.data;
   } catch (error) {
     throw new Error()
   }

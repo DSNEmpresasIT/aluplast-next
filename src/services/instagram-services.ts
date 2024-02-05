@@ -1,13 +1,13 @@
+import axios from "axios";
 import { InstagramPost } from "@/utils/types";
 
 const url:string = `https://graph.instagram.com/me/media?fields=id,media_type,media_url,permalink,caption,timestamp,thumbnail_url&access_token=`;
 
 export async function getInstagramImages(token: string) {
   try {
-    const dataFetched = await fetch(`${url}${token}`)
-    const dataParsed = (await dataFetched.json()).data;
+    const data = await axios.get(`${url}${token}`)
 
-    return dataParsed.filter(
+    return data.data.data.filter(
       (photo:any) => photo.media_type === 'IMAGE' || photo.media_type === "CAROUSEL_ALBUM" 
     );
   } catch (error) {

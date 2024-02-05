@@ -6,34 +6,23 @@ import { useSearchParams } from 'next/navigation';
 import { BlogPosts } from '@/components/blog/BlogPostsComponent';
 import { getFacebookImagePosts, getFacebookPageToken } from '@/services/facebook-services';
 import { PAGES_PATH } from '@/utils/pages';
-import { FacebookPost } from '@/utils/types';
+import { FacebookPost, InstagramPost } from '@/utils/types';
 import { SkeletonLoaderComponent } from '@/components/blog/SkeletonLoaderComponent';
+import { getInstagramPosts } from '@/services/instagram-services';
 
 const Index = () => {
   const postDetailError = useSearchParams().get('postNotFound');
-  const [ posts, setPosts ] = useState<FacebookPost[]>();
-  const [ pageAccessToken, setPageAccessToken ] = useState<string>();
+  const [ posts, setPosts ] = useState<InstagramPost[]>();
   const [ postNotFoundNotification, setPostNotFoundNotification ] = useState<boolean>();
-  const [ nextLink, setNextLink ] = useState<string | null>(null);
+  // const [ nextLink, setNextLink ] = useState<string | null>(null);
 
   useEffect(() => {
-    if (process.env.FACEBOOK_PAGE_ID && process.env.FACEBOOK_TOKEN) {
-      getFacebookPageToken(process.env.FACEBOOK_TOKEN, process.env.FACEBOOK_PAGE_ID)
-        .then(res => setPageAccessToken(res.access_token))
+    if (process.env.INSTAGRAM_TOKEN) {
+      getInstagramPosts(process.env.INSTAGRAM_TOKEN)
+        .then(response => setPosts(response))
         .catch(error => console.log(error))
     }
-  },[process.env]);
-
-  useEffect(() => {
-    if (pageAccessToken && process.env.FACEBOOK_PAGE_ID) {
-      getFacebookImagePosts(pageAccessToken, process.env.FACEBOOK_PAGE_ID)
-        .then(res => {
-          setPosts(res.data)
-          setNextLink(res.next);
-        })
-        .catch(error => console.log(error));
-    }
-  },[pageAccessToken])
+  },[process.env.INSTAGRAM_TOKEN]);
 
   useEffect(() => {
     if (postDetailError === 'true') {
@@ -43,10 +32,6 @@ const Index = () => {
       }, 5000)
     }
   }, [postDetailError])
-
-  const handleLoadMorePosts = () => {
-
-  }
 
   return ( 
     <>
@@ -93,7 +78,7 @@ const Index = () => {
       }
       {
         posts 
-          ? (<BlogPosts posts={posts} nextUrl={nextLink} />)
+          ? (<BlogPosts posts={posts} />)
           : (<SkeletonLoaderComponent />)
       }
     </>
