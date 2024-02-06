@@ -2358,7 +2358,6 @@ a.pro-link:hover {
 }
 
 .blog-title>a {
-    text-transform: uppercase!important;
     color: var(--grey-3);
     font-size: 18px;
     text-transform: none;
@@ -4997,7 +4996,7 @@ body.box {
 .port__text>h3 {
     font-weight: 400;
     margin-bottom: 20px;
-    text-transform: capitalize;
+    text-transform: none;
 }
 
 .port__info {
@@ -5022,7 +5021,6 @@ body.box {
     min-width: 100px;
     display: inline-block;
     text-align: left;
-    text-transform: uppercase;
 }
 
 .port__info-title span:last-child {

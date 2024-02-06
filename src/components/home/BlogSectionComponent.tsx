@@ -53,6 +53,7 @@ const BlogSectionComponent: FC = () => {
                   <div className="col-lg-4 col-md-6 col-12">
                     <h2 className="title">
                       Últimas
+                      <br />
                       <span> noticias</span>
                     </h2>
                     <p className="title-detail"></p>
@@ -132,7 +133,7 @@ const BlogSectionComponent: FC = () => {
                             maxHeight: "100px",
                           }}
                         >
-                          {lastInstagramPost[0].caption}
+                          {/* {lastInstagramPost[0].caption} */}
                         </p>
                       </div>
                     </div>
@@ -221,7 +222,7 @@ const BlogSectionComponent: FC = () => {
                                           maxHeight: "100px",
                                         }}
                                       >
-                                        {post.caption}
+                                        {/* {post.caption} */}
                                       </p>
                                     </div>
                                   </div>

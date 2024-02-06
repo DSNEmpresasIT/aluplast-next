@@ -19,7 +19,8 @@ export const ProjectsComponent = () => {
         <div className="row justify-content-center">
           <div className="col-lg-4 col-md-6 col-12">
             <h2 className="title">
-              Nuetros
+              Nuestros
+              <br />
               <span>Proyectos</span>
             </h2>
             <p className="title-detail">

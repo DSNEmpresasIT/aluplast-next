@@ -122,7 +122,7 @@ export const BlogPosts = ({ posts, nextUrl }: BlogPostsProps) => {
                           Mantente al tanto de innovaciones en materiales, proyectos destacados y consejos útiles para mejorar tu hogar o espacio comercial. En Aluplast, nos enorgullece compartir contigo nuestras noticias.
                         </p>
                       </div>
-                      <InstagramNewsComponent />
+                      {/* <InstagramNewsComponent /> */}
                     </div>
                   </div>
                 </div>

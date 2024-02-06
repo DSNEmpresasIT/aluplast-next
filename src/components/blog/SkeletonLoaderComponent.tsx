@@ -31,7 +31,7 @@ export const SkeletonLoaderComponent = () => {
                     <Skeleton count={1} style={{ width: '200px' }} />
                     <Skeleton count={5} />
                   </div>
-                  <div style={{ marginTop: '50px', display: 'flex', gap: '20px' }}>
+                  {/* <div style={{ marginTop: '50px', display: 'flex', gap: '20px' }}>
                     <div>
                       <Skeleton count={1} style={{ height: '100px', width: '100px' }} />
                     </div>
@@ -54,7 +54,7 @@ export const SkeletonLoaderComponent = () => {
                     <div>
                       <Skeleton count={5} style={{ height: '10px', width: '250px' }}/>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

@@ -18,7 +18,7 @@ export const FooterComponent = () => {
     },
     {
       title: 'Showroom C. Del Uruguay',
-      phone: '03442-440690',
+      phone: '03442-448001',
       addressLink: "https://www.google.com/maps/dir//Aluplast+CdelU,+Blvd.+D%C3%ADaz+V%C3%A9lez+36,+E3260+Concepci%C3%B3n+del+Uruguay,+Entre+R%C3%ADos/@-32.4875399,-58.2526592,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x95afdbaa09862079:0x3036262b8f0e3377!2m2!1d-58.2498133!2d-32.4871794?entry=ttu"
     },
     {
