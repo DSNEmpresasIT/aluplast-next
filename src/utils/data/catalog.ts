@@ -536,59 +536,59 @@ export const doorsData: CatalogData[] = [
       ],
     },
   },
-  {
-    name: "Puerta corrediza colgante",
-    // img: 'puertamachimbre',
-    id: "puertacorredizacolgante",
-      filters: [
-      ProductFathersTypes.OPENERS_TYPES,
-      TypeProduct.DOOR_PRODUCT,
-      "puertacorredizacolgante",
-    ],
-    description:
-      "La puerta corrediza colgante es una solución práctica para espacios reducidos. Su deslizamiento suave y sin obstáculos ahorra espacio y agrega un toque moderno. Esta tipología es especialmente adecuada para áreas donde el espacio es una consideración importante. La Hoja se desplaza de forma lateral sobre un riel superior fijado al muro logrando la apertura sin trazar un barrido de apertura tradicional. Se pueden hacer hojas de tamaño considerable y múltiples diseños.",
-    specs: {
-      description: [
-        {
-          title: "Tipo",
-          text: "Puertas corredizas colgantes de aluminio.",
-        },
-        {
-          title: "Material",
-          text: "Aluminio de alta calidad.",
-        },
-        {
-          title: "Diseño",
-          text: "Ideal para lugares con limitaciones de espacio. Crea una transición suave entre espacios interiores y exteriores.",
-        },
-        {
-          title: "Durabilidad",
-          text: "Construcción robusta y resistente.",
-        },
-        {
-          title: "Entrada de Luz",
-          text: "Maximiza la entrada de luz natural en el interior.",
-        },
-        {
-          title: "Seguridad",
-          text: "Cerraduras de alta calidad para una mayor seguridad.",
-        },
-        {
-          title: "Personalización",
-          text: "Disponible en diversos acabados y colores.",
-        },
-      ],
-      features: [
-        "Estilo contemporáneo y elegante.",
-        "Ideal para lugares con limitaciones de espacio.",
-        "Crean una transición suave entre espacios interiores y exteriores.",
-        "Maximizan la entrada de luz natural en el interior.",
-      ],
-    },
-  },
+  // {
+  //   name: "Puerta corrediza colgante",
+  //   // img: 'puertamachimbre',
+  //   id: "puertacorredizacolgante",
+  //     filters: [
+  //     ProductFathersTypes.OPENERS_TYPES,
+  //     TypeProduct.DOOR_PRODUCT,
+  //     "puertacorredizacolgante",
+  //   ],
+  //   description:
+  //     "La puerta corrediza colgante es una solución práctica para espacios reducidos. Su deslizamiento suave y sin obstáculos ahorra espacio y agrega un toque moderno. Esta tipología es especialmente adecuada para áreas donde el espacio es una consideración importante. La Hoja se desplaza de forma lateral sobre un riel superior fijado al muro logrando la apertura sin trazar un barrido de apertura tradicional. Se pueden hacer hojas de tamaño considerable y múltiples diseños.",
+  //   specs: {
+  //     description: [
+  //       {
+  //         title: "Tipo",
+  //         text: "Puertas corredizas colgantes de aluminio.",
+  //       },
+  //       {
+  //         title: "Material",
+  //         text: "Aluminio de alta calidad.",
+  //       },
+  //       {
+  //         title: "Diseño",
+  //         text: "Ideal para lugares con limitaciones de espacio. Crea una transición suave entre espacios interiores y exteriores.",
+  //       },
+  //       {
+  //         title: "Durabilidad",
+  //         text: "Construcción robusta y resistente.",
+  //       },
+  //       {
+  //         title: "Entrada de Luz",
+  //         text: "Maximiza la entrada de luz natural en el interior.",
+  //       },
+  //       {
+  //         title: "Seguridad",
+  //         text: "Cerraduras de alta calidad para una mayor seguridad.",
+  //       },
+  //       {
+  //         title: "Personalización",
+  //         text: "Disponible en diversos acabados y colores.",
+  //       },
+  //     ],
+  //     features: [
+  //       "Estilo contemporáneo y elegante.",
+  //       "Ideal para lugares con limitaciones de espacio.",
+  //       "Crean una transición suave entre espacios interiores y exteriores.",
+  //       "Maximizan la entrada de luz natural en el interior.",
+  //     ],
+  //   },
+  // },
   {
     name: "Puerta plegadiza",
-    // img: 'puertamachimbre',
+    img: ['1', '2', '3', '4',],
     id: "puertaplegadiza",
       filters: [
       ProductFathersTypes.OPENERS_TYPES,
@@ -788,6 +788,7 @@ export const complementarySystemData: CatalogData[] = [
   },
   {
     name: 'Baranda balcón',
+    img: ['1', '2', '3', '4', ],
     id: 'barandabalcon',
     filters: [ProductFathersTypes.CS_TYPES, "barandabalcon"],
     description: 'Usos:',
@@ -837,6 +838,7 @@ export const complementarySystemData: CatalogData[] = [
   },
   {
     name: 'Mampara de baño',
+    img: ['1', '2', '3', '4', ],
     id: 'mamparadebaño',
     filters: [ProductFathersTypes.CS_TYPES, "mamparadebaño"],
     description: 'Usos:',
@@ -936,6 +938,7 @@ export const complementarySystemData: CatalogData[] = [
   },
   {
     name: 'Mosquiteros',
+    img: ['1', '2'],
     id: 'mosquiteros',
     filters: [ProductFathersTypes.CS_TYPES, ""],
     description: 'Usos:',
@@ -1799,6 +1802,59 @@ export const garageDoorsData: CatalogData[] = [
         'Construcción resistente para una mayor seguridad.',
       ]
     }
+  },
+  {
+    name: "Puerta plegadiza",
+    img: ['1', '2', '3', '4',],
+    id: "puertaplegadiza",
+      filters: [
+      ProductFathersTypes.GARAGE_DOORS,
+      "puertaplegadiza",
+    ],
+    description:
+      "La puerta Plegadiza es una solución práctica para cerrar grandes luces. Su forma de plegarse permite una cantidad de hojas variables según la longitud del vano a cubrir y agrega un toque moderno a la obra. Esta tipología permite el casi 100% de la apertura, ideal para quinchos, galerías.",
+    specs: {
+      description: [
+        {
+          title: "Tipo",
+          text: "Puertas plegadizas de aluminio.",
+        },
+        {
+          title: "Material",
+          text: "Aluminio de alta calidad.",
+        },
+        {
+          title: "Diseño",
+          text: "Estilo contemporáneo y elegante, Ideal para maximizar el espacio en áreas con limitaciones.",
+        },
+        {
+          title: "Durabilidad",
+          text: "Construcción resistente y duradera.",
+        },
+        {
+          title: "Entrada de Luz",
+          text: "Maximiza la entrada de luz natural, creando ambientes luminosos.",
+        },
+        {
+          title: "Transición sin Barreras",
+          text: "Facilita la conexión entre espacios interiores y exteriores.",
+        },
+        {
+          title: "Mantenimiento",
+          text: "Requieren poco mantenimiento para una vida útil prolongada.",
+        },
+        {
+          title: "Personalización",
+          text: "Disponibles en diversos acabados y colores.",
+        },
+      ],
+      features: [
+        "Amplían galerías y quinchos al conectar espacios.",
+        "Facilitan la transición suave entre interiores y exteriores.",
+        "Ofrecen ventilación natural al abrir parcialmente.",
+        "Aumentan la entrada de luz para un ambiente acogedor.",
+      ],
+    },
   },
 ]
 

@@ -5,7 +5,7 @@ export const InfoSection = () => {
     title: 'Aluplast Planta Industrial',
     address: 'RP20, E2826, Urdinarrain, E.R.',
     phone: '03446 48-0213',
-    mail: 'ventas@aluplast.com.ar'
+    mail: 'info@aluplast.com.ar'
   }
 
   return (

@@ -1,5 +1,5 @@
-import { getTheLastInstagramVideo } from '@/services/instagram-services';
 import React, { useEffect, useState } from 'react';
+import { getTheLastInstagramVideo } from '@/services/instagram-services';
 
 const VideoComponent = ({ videoData }: any) => {
   return (

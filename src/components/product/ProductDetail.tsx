@@ -1,6 +1,6 @@
 import { CatalogData, ProductFathersTypes } from "@/utils/types";
 import React, { Fragment } from "react";
-import { getThePlaceholderImage } from "../helpers/helpers";
+import { getThePlaceholderImage } from "@/components/helpers/helpers";
 import Image from "next/image";
 
 export const ProductDetail = ({
@@ -37,9 +37,8 @@ export const ProductDetail = ({
             productSelected.img.map((img: string, index: number) => {
               if (img && index) {
                 return (
-                  <li>
+                  <li key={`${index}-key-gallery-product-detail`}>
                     <a
-                      key={`${index}-key-gallery-product-detail`}
                       href={
                         img
                           ? `/img/products/${productSelected.id}/${img}.png`
