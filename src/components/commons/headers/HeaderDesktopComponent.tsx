@@ -12,20 +12,21 @@ export const HeaderDesktopComponent = () => {
       <div className="container clearfix">
         <h1 className="logo pull-left">
           <a href="/">
-            <img alt="Logo" src="/img/logo-white.png" />
+            <img alt="aluplast-logo" title="logo Aluplast - fábrica de aberturas de aluminio" src="/img/logo-white.png" />
           </a>
         </h1>
         <nav className="menu-desktop menu-desktop--show pull-right">
           <ul className="ul--inline ul--no-style">
             <li className="li-has-sub">
-              <a href="/"> Home</a>
+              <a href="/" title="Home - Aluplast"> Home</a>
             </li>
             <li className="li-has-sub">
-              <Link href={`/${PAGES_PATH.CATALOG_PATH}`}> Productos</Link>
+              <Link href={`/${PAGES_PATH.CATALOG_PATH}`} title="Visitar Productos"> Productos</Link>
               <ul className="sub-menu ul--no-style">
                 <li>
                   <a
                     href={`${PAGES_PATH.CATALOG_PATH}?categoria=${ProductFathersTypes.OPENERS_TYPES}`}
+                    title="Visitar Productos"
                   >
                     Aberturas
                   </a>
@@ -33,6 +34,7 @@ export const HeaderDesktopComponent = () => {
                 <li>
                   <a
                     href={`${PAGES_PATH.CATALOG_PATH}?categoria=${ProductFathersTypes.CLOSERS_TYPES}`}
+                    title="Visitar Productos"
                   >
                     Cerramientos
                   </a>
@@ -40,6 +42,7 @@ export const HeaderDesktopComponent = () => {
                 <li>
                   <a
                     href={`${PAGES_PATH.CATALOG_PATH}?categoria=${ProductFathersTypes.CS_TYPES}`}
+                    title="Visitar Productos"
                   >
                     Sistemas Complementarios
                   </a>
@@ -47,6 +50,7 @@ export const HeaderDesktopComponent = () => {
                 <li>
                   <a
                     href={`${PAGES_PATH.CATALOG_PATH}?categoria=${ProductFathersTypes.GARAGE_DOORS}`}
+                    title="Visitar Productos"
                   >
                     Portones Garage
                   </a>
@@ -54,6 +58,7 @@ export const HeaderDesktopComponent = () => {
                 <li>
                   <a
                     href={`${PAGES_PATH.CATALOG_PATH}?categoria=${ProductFathersTypes.WINDOWS}`}
+                    title="Visitar Productos"
                   >
                     Vidrios
                   </a>
@@ -61,6 +66,7 @@ export const HeaderDesktopComponent = () => {
                 <li>
                   <a
                     href={`${PAGES_PATH.CATALOG_PATH}?categoria=${ProductFathersTypes.SOLAR_CONTROL}`}
+                    title="Visitar Productos"
                   >
                     Control Solar
                   </a>
@@ -68,23 +74,24 @@ export const HeaderDesktopComponent = () => {
                 <li>
                   <a
                     href={`${PAGES_PATH.CATALOG_PATH}?categoria=${ProductFathersTypes.RESALES}`}
+                    title="Visitar Productos"
                   >
                     Reventa
                   </a>
                 </li>
                 <li>
-                  <a href={PAGES_PATH.TEXTURES}> Texturas</a>
+                  <a href={PAGES_PATH.TEXTURES} title="Visitar Texturas"> Texturas</a>
                 </li>
               </ul>
             </li>
             <li>
-              <Link href={`/${PAGES_PATH.NEWS_PATH}`}> Noticias</Link>
+              <Link href={`/${PAGES_PATH.NEWS_PATH}`} title="Visitar noticias"> Noticias</Link>
             </li>
             <li>
-              <Link href={`/${PAGES_PATH.SOME_PROJECTS}`}> Proyectos</Link>
+              <Link href={`/${PAGES_PATH.SOME_PROJECTS}`} title="Visitar proyectos"> Proyectos</Link>
             </li>
             <li>
-              <Link href={`/${PAGES_PATH.CONTACT_PATH}`}> Contacto</Link>
+              <Link href={`/${PAGES_PATH.CONTACT_PATH}`} title="Visitar contacto"> Contacto</Link>
             </li>
           </ul>
         </nav>

@@ -5,9 +5,18 @@ import { HeaderDesktopComponent } from '@/components/commons/headers/HeaderDeskt
 import { HeaderMobileComponent } from '@/components/commons/headers/HeaderMobileComponent'
 import { HeaderStickComponent } from '@/components/commons/headers/HeaderStickComponent'
 import { BodyLayout } from './BodyLayout'
+import { Metadata } from 'next'
 
 export const dynamic = 'force-static';
 
+
+export const metadata: Metadata = {
+  keywords: 'Aberturas en Urdinarrain, Fabrica de Aberturas en Entre Ríos, Aberturas de Aluminio y PVC en Argentina, Tipologías de Aberturas, Oscilobatientes Urdinarrain, Corredizas de Calidad Argentina, Pivotantes Aluminio Entre Ríos, Soluciones en Aberturas Argentina, Excelencia en Aberturas, Satisfacción del Cliente Aberturas, Ventanas de PVC en Urdinarrain, Puertas de Aluminio Argentina, Ventanas de Diseño en Entre Ríos, Fabricante de Aberturas de Calidad, Ventanas Modernas Urdinarrain, Soluciones Innovadoras en Aberturas, Aberturas a Medida Entre Ríos, Cerramientos de Aluminio Urdinarrain, Calidad Certificada en Aberturas, Diseños Exclusivos de Ventanas, Fachadas de Aluminio en Argentina, Aberturas Eficientes Energéticamente, Puertas de Seguridad Urdinarrain, Ventanas Resistentes al Clima, Fabricante de Puertas Pivotantes, Aberturas para Proyectos Residenciales, Ventanas de Alta Gama Argentina, Aberturas Personalizadas Urdinarrain, Puertas de Entrada de Lujo, Ventanas Antirruido en Entre Ríos', 
+  authors: {
+    name: 'DSN Empresas',
+    url: 'https://www.dsnempresas.com.ar/'
+  }
+}
 
 export default function RootLayout({
   children,
@@ -20,7 +29,7 @@ export default function RootLayout({
         <meta property="og:image" content="https://aluplast.com.ar/img/whoweare/we-are-01.jpg" />
         <meta property="og:image:width" content="100" />
         <meta content="text/html;charset=UTF-8" />
-        <meta name="googlebot" content="noindex,nofollow" />
+        <meta name="googlebot" content="index, follow" />
         <meta name="robots" content="index, follow, revisit-after=604800"></meta>
         <meta name="google" content="notranslate" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

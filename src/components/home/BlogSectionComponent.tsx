@@ -3,6 +3,7 @@ import { PAGES_PATH } from "@/utils/pages";
 import { InstagramPost, InstagramPostMediaTypes, Keys } from "@/utils/types";
 import Image from "next/image";
 import Link from "next/link";
+import { title } from "process";
 import React, { FC, useEffect, useState } from "react";
 
 const months = [
@@ -63,7 +64,7 @@ const BlogSectionComponent: FC = () => {
                   <div className="col-lg-5 col-md-12">
                     <div className="blog-single">
                       <div className="img-blog" style={{ overflow: 'hidden', height: '350px' }}>
-                        <Link href={{ pathname: `/${PAGES_PATH.NEWS_DETAIL}`, query: { postId: lastInstagramPost[0].id }}}
+                        <Link title="Visitar detalle de noticias en Aluplast" href={{ pathname: `/${PAGES_PATH.NEWS_DETAIL}`, query: { postId: lastInstagramPost[0].id }}}
                           >
                           {
                             lastInstagramPost[0].media_type === InstagramPostMediaTypes.IMAGE && (
@@ -72,6 +73,7 @@ const BlogSectionComponent: FC = () => {
                               width={0}
                               height={0}
                               src={lastInstagramPost[0].media_url}
+                              title="Vista previa noticia Aluplast"
                             />
                             )
                           }
@@ -82,6 +84,7 @@ const BlogSectionComponent: FC = () => {
                               width={0}
                               height={0}
                               src={lastInstagramPost[0].media_url}
+                              title="Vista previa noticia Aluplast"
                             />
                             )
                           }
@@ -117,7 +120,8 @@ const BlogSectionComponent: FC = () => {
                               ? { pathname: `/${PAGES_PATH.NEWS_DETAIL}`, query: { postId: lastInstagramPost[0].id } } 
                               : `/${PAGES_PATH.NEWS_DETAIL}` 
                               }
-                            >
+                            title="Visitar detalle noticia Aluplast"
+                          >
                             {lastInstagramPost[0].caption?.split(",")[0]}
                           </Link>
                         </h4>
@@ -157,7 +161,7 @@ const BlogSectionComponent: FC = () => {
                                         overflow: "hidden",
                                       }}
                                     >
-                                      <Link href={{ pathname: `/${PAGES_PATH.NEWS_DETAIL}`, query: { postId: post.id }}}>
+                                      <Link title="Visitar detalle noticia Aluplast" href={{ pathname: `/${PAGES_PATH.NEWS_DETAIL}`, query: { postId: post.id }}}>
                                         {
                                           post.media_type === InstagramPostMediaTypes.IMAGE && (
                                             <Image
@@ -207,7 +211,7 @@ const BlogSectionComponent: FC = () => {
                                   <div className="col-md-7 col-12">
                                     <div className="blog-content">
                                       <h4 className="blog-title">
-                                        <Link href={{ pathname: `/${PAGES_PATH.NEWS_DETAIL}`, query: { postId: post.id }}}>
+                                        <Link title="Visitar detalle noticia Aluplast" href={{ pathname: `/${PAGES_PATH.NEWS_DETAIL}`, query: { postId: post.id }}}>
                                           {post.caption?.split(",")[0]}
                                         </Link>
                                       </h4>

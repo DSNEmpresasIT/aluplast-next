@@ -3,9 +3,11 @@ import { Metadata } from 'next'
 import React from 'react'
 
 export const metadata: Metadata = {
-  title: 'Últimas noticias - ALuplast fabrica de aberturas.',
-  description: 'Descubre lo último de Aluplast y acompáñanos a crecer junto a nuestra numerosa comunidad!',
-  keywords: 'blog, noticias, post, posteos, publicacion, publicaciones, facebook, instagram, aluplast, pvc, aberturas, cerramientos'
+  title: 'Últimas noticias | Aluplast fábrica de aberturas.',
+  description: 'Descubre las últimas novedades y tendencias en aberturas de aluminio. Mantente informado sobre nuestros productos, proyectos destacados y avances tecnológicos. En Aluplast, estamos comprometidos con la excelencia y la innovación en cada detalle. ¡Explora nuestras noticias ahora!',
+  alternates: {
+    canonical: "https://aluplast.com.ar/ultimas-noticias-aluplast"
+  }
 }
 
 export default function Page() {

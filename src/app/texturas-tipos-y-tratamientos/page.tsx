@@ -5,7 +5,11 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata  = {
-  title: 'Texturas, tratamientos y anodizados'
+  title: 'Descubre Nuestras Texturas | Aluplast aberturas de Aluminio',
+  description: 'Explora nuestra colección exclusiva de texturas para aberturas de aluminio en Aluplast. Descubre cómo nuestras innovadoras texturas pueden agregar elegancia y personalidad a tus ventanas y puertas.¡Sumérgete en el mundo de las texturas únicas para aberturas de aluminio ahora!',
+  alternates: {
+    canonical: ''
+  }
 }
 
 const page = () => {

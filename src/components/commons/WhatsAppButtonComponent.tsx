@@ -57,6 +57,7 @@ const PhonesData = [
 const ButtonLink = ({ data, index }: any) => {
   return (
     <Link 
+      title='Contacto whatsapp Aluplast'
       className='link-ws-button'
       style={{ 
       }} 
@@ -84,7 +85,7 @@ const WhatsAppButtonComponent = () => {
               style={{ display: isLinksDisplayActive ? 'flex' : 'none' }}
             >
               <div className='container-header'>
-                <Image src={IconHead} width={30} alt="ws-logo" />
+                <Image src={IconHead} width={30} alt="whatsapp-logo" title='Icono de whatsapp'/>
             
                 <button className='close-button-header' onClick={() => setIsLinksDisplayActive(false)}>
                   X
@@ -105,7 +106,7 @@ const WhatsAppButtonComponent = () => {
               className='whatsapp-glove-button animate__animated animate__fadeInUp' 
               onClick={() => setIsLinksDisplayActive(!isLinksDisplayActive)}
             >
-              <Image src={MainIcon} width={35} alt="whatsapp" /> 
+              <Image src={MainIcon} width={35} alt="whatsapp-image" title='imagen logo de whatsapp'/> 
             </div>
           )
       }

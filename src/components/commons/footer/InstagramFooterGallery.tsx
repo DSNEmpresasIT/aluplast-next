@@ -30,8 +30,8 @@ export const InstagramGalleryFooter = ({ instagramToken }: any) => {
                     if (i < 9) {
                       return (
                         <div className="gallery__item" key={`${img.id}${i}`}>
-                          <img alt={`Gallery ${i+1}`} src={img.media_url} style={{ maxHeight: '82.5px', minWidth: '82.5px', minHeight: '82.5px' }}/>
-                          <a href={img.permalink} target="_blank" rel="noreferrer" className="pro-link">
+                          <img title={`Imagen ${i+1} traida del Instagram oficial de Alupast`} alt={`Imagen instagram ${i+1}`} src={img.media_url} style={{ maxHeight: '82.5px', minWidth: '82.5px', minHeight: '82.5px' }}/>
+                          <a title="Visitar instagram Aluplast" href={img.permalink} target="_blank" rel="noreferrer" className="pro-link">
                             <div className="overlay overlay--invisible overlay--yellow"></div>
                           </a>
                         </div>
@@ -49,16 +49,16 @@ export const InstagramGalleryFooter = ({ instagramToken }: any) => {
       }
       <h5 className="title-footer">Nuestra redes</h5>
       <div className="social-footer">
-        <a href="https://www.facebook.com/AluplastAberturas">
+        <a title="Enlaces de las redes sociales de Alupast | fábrica de aperturas de Aluminio" href="https://www.facebook.com/AluplastAberturas">
           <i className="zmdi zmdi-facebook"></i>
         </a>
-        <a href="https://www.instagram.com/aluplast.aberturas/">
+        <a title="Enlaces de las redes sociales de Alupast | fábrica de aperturas de Aluminio" href="https://www.instagram.com/aluplast.aberturas/">
           <i className="zmdi zmdi-instagram"></i>
         </a>
-        <a href="https://www.youtube.com/@aluplastmedia">
+        <a title="Enlaces de las redes sociales de Alupast | fábrica de aperturas de Aluminio" href="https://www.youtube.com/@aluplastmedia">
           <i className="zmdi zmdi-youtube"></i>
         </a>
-        <a href="https://wa.me/+5493446598417">
+        <a title="Enlaces de las redes sociales de Alupast | fábrica de aperturas de Aluminio" href="https://wa.me/+5493446598417">
           <i className="zmdi zmdi-whatsapp"></i>
         </a>
       </div>

@@ -19,25 +19,25 @@ const OurBestProductsSection = () => {
               Productos de calidad que transformarán tu espacio.
             </p>
             <div>
-              <Link href={PAGES_PATH.CATALOG_PATH} className="au-btn au-btn--big au-btn--pill au-btn--white au-btn--border au-btn--big">Ver todos</Link>
+              <Link title='Visitar catálogo' href={PAGES_PATH.CATALOG_PATH} className="au-btn au-btn--big au-btn--pill au-btn--white au-btn--border au-btn--big">Ver todos</Link>
             </div>
           </div>
         </div>
-        <Link href={{ pathname: PAGES_PATH.CATALOG_PATH, query: { categoria: ProductFathersTypes.CS_TYPES } }} className="service__item" style={{backgroundImage: "url('/img/products/courtainwall/courtainwall.png')" }}>
+        <Link title="Visitar detalle producto Aluplast" href={{ pathname: PAGES_PATH.CATALOG_PATH, query: { categoria: ProductFathersTypes.CS_TYPES } }} className="service__item" style={{backgroundImage: "url('/img/products/courtainwall/courtainwall.png')" }}>
           <div className="service__item-inner">
-            <img alt="Icon 1" src="/img/icon/icon-service-01.png" />
+            <img title='icono de seccion algunos de nuestros productos en la home Aluplast' alt="Icono complementario sección alguno de nuestros productos 1" src="/img/icon/icon-service-01.png" />
             <h4>COMPLEMENTOS</h4>
           </div>
         </Link>
-        <Link href={{ pathname: PAGES_PATH.CATALOG_PATH, query: { categoria: ProductFathersTypes.OPENERS_TYPES } }} className="service__item" style={{ backgroundImage: "url('/img/products/puertarebatir/puertarebatir.png')" }}>
+        <Link title="Visitar detalle producto Aluplast" href={{ pathname: PAGES_PATH.CATALOG_PATH, query: { categoria: ProductFathersTypes.OPENERS_TYPES } }} className="service__item" style={{ backgroundImage: "url('/img/products/puertarebatir/puertarebatir.png')" }}>
           <div className="service__item-inner">
-            <img alt="Icon 2" src="/img/icon/icon-service-02.png" />
+            <img title='icono de seccion algunos de nuestros productos en la home Aluplast' alt="Icono complementario sección alguno de nuestros productos 2" src="/img/icon/icon-service-02.png" />
             <h4>PUERTAS</h4>
           </div> 
         </Link>
-        <Link href={{ pathname: PAGES_PATH.CATALOG_PATH, query: { categoria: ProductFathersTypes.OPENERS_TYPES } }} className="service__item" style={{ backgroundImage: "url('/img/products/banderola/banderola.png')" }}>
+        <Link title="Visitar detalle producto Aluplast" href={{ pathname: PAGES_PATH.CATALOG_PATH, query: { categoria: ProductFathersTypes.OPENERS_TYPES } }} className="service__item" style={{ backgroundImage: "url('/img/products/banderola/banderola.png')" }}>
           <div className="service__item-inner">
-            <img alt="Icon 3" src="/img/icon/icon-service-03.png" />
+            <img title='icono de seccion algunos de nuestros productos en la home Aluplast' alt="Icono complementario sección alguno de nuestros productos 3" src="/img/icon/icon-service-03.png" />
             <h4>VENTANAS</h4>
           </div>
         </Link>

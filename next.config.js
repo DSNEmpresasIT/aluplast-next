@@ -18,7 +18,7 @@ const nextConfig = {
     CLIENT_ID: process.env.CLIENT_ID,
     MODE: process.env.MODE
   },
-  experimental: { appDir: true, serverComponentsExternalPackages: ["axios"] },
+  experimental: { serverComponentsExternalPackages: ["axios"] },
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.externals.push({
         'utf-8-validate': 'commonjs utf-8-validate',

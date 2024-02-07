@@ -35,8 +35,9 @@ export const ProjectsComponent = () => {
             return (
               <div className="col-lg-4 col-md-6">
                 <div className="latest__item" style={{ overflow: 'hidden', maxHeight: '270px'}}>
-                  <img alt="Project 7" src={project.imageUrl[0].url} />
+                  <img alt={`Proyecto ${index} de Aluplast`} title="Imagen ilustrativa de un proyecto en aluminio | Aluplast" src={project.imageUrl[0].url} />
                   <Link
+                    title="Visitar detalle de proyecto"
                     href={{
                       pathname: PAGES_PATH.PROJECT_DETAIL,
                       query: { projectId: project._id },
@@ -49,6 +50,7 @@ export const ProjectsComponent = () => {
                   <div className="latest__item--content">
                     <div className="latest__item--inner">
                       <Link
+                        title="Visitar detalle de proyecto"
                         href={{
                           pathname: PAGES_PATH.PROJECT_DETAIL,
                           query: { projectId: project._id },

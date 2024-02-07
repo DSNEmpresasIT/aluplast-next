@@ -1,11 +1,13 @@
-import Home from '@/components/home'
-import { Metadata } from 'next'
 import React from 'react'
+import { Metadata } from 'next'
+import Home from '@/components/home'
 
 export const metadata: Metadata = {
-  title: 'Aluplast fabrica de aberturas - Urdinarrain, Colon, Gualeguaychu, Concordia, C del Uruguay.',
-  description: 'Empresa líder en fabricación de aberturas, cerramientos y más productos edilicios. Entre Ríos, Concordia.',
-  keywords: "aluminio, Entre Ríos, Concordia, pvc, aberturas, cerramientos, sistemas complementarios, portones, control solar, vidrios, garage, diseño, puertas, ventanas, industria",
+  title: 'Especialistas en Aluminio y PVC | Urdinarrain, Entre Ríos',
+  description: 'Descubre la excelencia en aberturas de aluminio y PVC en Urdinarrain, Entre Ríos. Fabricamos oscilobatientes, corredizas, pivotantes y más. Garantizamos calidad y satisfacción para nuestros clientes.',
+  alternates: {
+    canonical: 'https://aluplast.com.ar/texturas-tipos-y-tratamientos'
+  }
 }
 
 export default function Index() {

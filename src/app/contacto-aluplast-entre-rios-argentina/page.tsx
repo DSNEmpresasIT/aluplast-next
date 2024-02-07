@@ -4,9 +4,11 @@ import { Metadata } from 'next';
 import React from 'react'
 
 export const metadata: Metadata = {
-  title: 'Contacto - Aluplast fabrica de aberturas.',
-  description: 'Comunicate con nosotros.',
-  keywords: 'contacto, aluplast, formulario, mail, input, aluminio, pvc'
+  title: 'Contacto | Aluplast - Entre Ríos',
+  description: '¡Conecta con nosotros! En Aluplast, te ofrecemos soluciones personalizadas en aberturas de aluminio. Completa el formulario de contacto y descubre cómo podemos ayudarte a transformar tus proyectos con productos de alta calidad y diseño único. Estamos aquí para brindarte asesoramiento experto. ¡Contáctanos ahora!',
+  alternates: {
+    canonical: 'https://aluplast.com.ar/contacto-aluplast-entre-rios-argentina'
+  }
 }
 
 const Contact = () => {

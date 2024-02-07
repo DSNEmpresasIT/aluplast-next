@@ -13,18 +13,18 @@ const WhoWeAreSection = () => {
             <div className="we-are__left">
               <div className="top">
                 <div className="we-are__item">
-                  <img alt="Image 1" src="/img/whoweare/we-are-01.jpg" />
+                  <img title="Imagenes complementarias a la sección de quienes somos" alt="Quienes somos imagen 1" src="/img/whoweare/we-are-01.jpg" />
                 </div>
                 <div className="we-are__item mt-xl-5">
-                  <img alt="Image 2" src="/img/whoweare/we-are-02.jpg" />
+                  <img title="Imagenes complementarias a la sección de quienes somos" alt="Quienes somos imagen 2" src="/img/whoweare/we-are-02.jpg" />
                 </div>
               </div>
               <div className="bottom d-none d-xl-block">
                 <div className="we-are__item">
-                  <img alt="Image 3" src="/img/whoweare/we-are-03.jpg" />
+                  <img title="Imagenes complementarias a la sección de quienes somos" alt="Quienes somos imagen 3" src="/img/whoweare/we-are-03.jpg" />
                 </div>
                 <div className="we-are__item">
-                  <img alt="Image 4" src="/img/whoweare/we-are-04.jpg" />
+                  <img title="Imagenes complementarias a la sección de quienes somos" alt="Quienes somos imagen 4" src="/img/whoweare/we-are-04.jpg" />
                 </div>
               </div>
             </div>

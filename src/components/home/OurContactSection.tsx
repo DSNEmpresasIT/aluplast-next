@@ -41,7 +41,7 @@ const OurContactSection = () => {
               <div className="partner-wrap1 owl-carousel owl-theme" id="owl-partner-2">
                 {
                   partners.map((img, i) => (
-                    <a key={`${i}-ourcontactsection-key`} type="button" className="partner__item item">
+                    <a title='Visitar contacto Aluplast' key={`${i}-ourcontactsection-key`} type="button" className="partner__item item">
                       <img alt="Distribuitor" src={`/img/partners/${i + 1}.png`} />
                     </a>
                   ))
