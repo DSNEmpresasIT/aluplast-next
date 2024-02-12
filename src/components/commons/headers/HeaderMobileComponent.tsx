@@ -1,3 +1,4 @@
+import { navData } from "@/utils/data/navdata";
 import { PAGES_PATH } from "@/utils/pages";
 import { ProductFathersTypes } from "@/utils/types";
 import Link from "next/link";
@@ -20,79 +21,35 @@ export const HeaderMobileComponent = () => {
             <li className="li-has-sub">
               <a href="/" title="Visitar home"> Home</a>
             </li>
-            <li className="li-has-sub">
-              <Link href={`/${PAGES_PATH.CATALOG_PATH}`} title="Visitar Productos"> Productos</Link>
-              <ul className="sub-menu ul--no-style">
-                <li>
-                  <a
-                    href={`${PAGES_PATH.CATALOG_PATH}?categoria=${ProductFathersTypes.OPENERS_TYPES}`}
-                    title="Visitar Productos"
-                  >
-                    Aberturas
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={`${PAGES_PATH.CATALOG_PATH}?categoria=${ProductFathersTypes.CLOSERS_TYPES}`}
-                    title="Visitar Productos"
-                  >
-                    Cerramientos
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={`${PAGES_PATH.CATALOG_PATH}?categoria=${ProductFathersTypes.CS_TYPES}`}
-                    title="Visitar Productos"
-                  >
-                    Sistemas Complementarios
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={`${PAGES_PATH.CATALOG_PATH}?categoria=${ProductFathersTypes.GARAGE_DOORS}`}
-                    title="Visitar Productos"
-                  >
-                    Portones Garage
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={`${PAGES_PATH.CATALOG_PATH}?categoria=${ProductFathersTypes.WINDOWS}`}
-                    title="Visitar Productos"
-                  >
-                    Vidrios
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={`${PAGES_PATH.CATALOG_PATH}?categoria=${ProductFathersTypes.SOLAR_CONTROL}`}
-                    title="Visitar Productos"
-                  >
-                    Control Solar
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={`${PAGES_PATH.CATALOG_PATH}?categoria=${ProductFathersTypes.RESALES}`}
-                    title="Visitar Productos"
-                  >
-                    Reventa
-                  </a>
-                </li>
-                <li>
-                  <a href={PAGES_PATH.TEXTURES} title="Visitar Texturas"> Texturas</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link href={`/${PAGES_PATH.NEWS_PATH}`} title="Visitar ultimas noticias"> Noticias</Link>
-            </li>
-            <li>
-              <Link href={`/${PAGES_PATH.SOME_PROJECTS}`} title="Visitar proyectos"> Proyectos</Link>
-            </li>
-            <li>
-              <Link href={`/${PAGES_PATH.CONTACT_PATH}`} title="Visitar contacto"> Contacto</Link>
-            </li>
+            {
+              navData.map((data, index: number) => {
+                return (
+                  <li className={data.subPages ? "li-has-sub" : ''} key={`header-desktop-key-${index}`}>
+                    <Link title={`Visitar ${data.label.toLocaleLowerCase()}`} href={data.link}>{data.label}</Link> 
+                    {
+                      data.subPages && (
+                        <ul className="sub-menu ul--no-style">
+                          {
+                            data.subPages.map((sub, index: number) => {
+                              return ( 
+                                <li key={`header-desktop-sub-key-${index}`}>
+                                  <Link 
+                                    title={`Visitar ${sub.label.toLocaleLowerCase()}`} 
+                                    href={{ pathname: sub.link, query: { categoria: sub.query?.query } }}
+                                  >
+                                    {sub.label}
+                                  </Link>
+                                </li>
+                              )
+                            })
+                          }
+                        </ul>
+                      )
+                    }
+                  </li> 
+                )
+              })
+            }
           </ul>
         </nav>
       </div>

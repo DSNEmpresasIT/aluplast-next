@@ -1,12 +1,15 @@
 export enum PAGES {
-  HOME = "Fábrica de Aberturas de Aluminio - Aluplast",
+  HOME = "Especialistas en Aluminio y PVC | Urdinarrain, Entre Ríos",
   ABOUT_US = "Sobre Nosotros",
-  CONTACT = "Contacto",
-  CATALOG = 'Catálogo',
-  PRODUCT = 'Producto',
-  TEXTURES = 'Texturas',
-  LAST_NEWS = 'Nuestras ultimas noticias',
-  SOME_PROJECTS = 'Algunos Trabajos'
+  CONTACT = "Contacto | Aluplast - Entre Ríos",
+  CATALOG = 'Catálogo | Lo mejor en aluminio y PVC',
+  PRODUCT = 'Producto detalle',
+  TEXTURES = 'Descubre Nuestras Texturas | Aluplast aberturas de aluminio',
+  LAST_NEWS = 'Últimas noticias | Aluplast fábrica de aberturas',
+  NEWS_DETAIL = 'Noticias detalle | Urdinarrain, Entre Ríos',
+  SOME_PROJECTS = 'Proyectos Destacados | Aluplast - Aberturas de aluminio',
+  PROJECT_DETAIL = 'Proyecto detalle',
+  SERVICES = 'Nuestros servicios'
 }
 
 export enum PAGES_PATH {
@@ -20,4 +23,5 @@ export enum PAGES_PATH {
   PROJECT_DETAIL = 'proyecto-detalle',
   NEWS_DETAIL = 'noticia-detalle',
   TEXTURES = 'texturas-tipos-y-tratamientos',
+  SERVICES = 'servicios-aluplast-aluminio-pvc'
 }

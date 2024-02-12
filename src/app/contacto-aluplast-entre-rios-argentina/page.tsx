@@ -1,10 +1,12 @@
-import FormContact from '@/components/contact/FormContact';
-import { InfoSection } from '@/components/contact/InfoSection';
-import { Metadata } from 'next';
 import React from 'react'
+import { Metadata } from 'next';
+
+import { PAGES } from '@/utils/pages';
+import { InfoSection } from '@/components/contact/InfoSection';
+import FormContact from '@/components/contact/FormContact';
 
 export const metadata: Metadata = {
-  title: 'Contacto | Aluplast - Entre Ríos',
+  title: PAGES.CONTACT,
   description: '¡Conecta con nosotros! En Aluplast, te ofrecemos soluciones personalizadas en aberturas de aluminio. Completa el formulario de contacto y descubre cómo podemos ayudarte a transformar tus proyectos con productos de alta calidad y diseño único. Estamos aquí para brindarte asesoramiento experto. ¡Contáctanos ahora!',
   alternates: {
     canonical: 'https://aluplast.com.ar/contacto-aluplast-entre-rios-argentina'

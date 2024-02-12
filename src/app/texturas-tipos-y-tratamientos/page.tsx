@@ -1,11 +1,11 @@
 import { TexturesComponent } from "@/components/textures/TexturesComponent";
-import { PAGES_PATH } from "@/utils/pages";
+import { PAGES, PAGES_PATH } from "@/utils/pages";
 import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata  = {
-  title: 'Descubre Nuestras Texturas | Aluplast aberturas de Aluminio',
+  title: PAGES.TEXTURES,
   description: 'Explora nuestra colección exclusiva de texturas para aberturas de aluminio en Aluplast. Descubre cómo nuestras innovadoras texturas pueden agregar elegancia y personalidad a tus ventanas y puertas.¡Sumérgete en el mundo de las texturas únicas para aberturas de aluminio ahora!',
   alternates: {
     canonical: ''
