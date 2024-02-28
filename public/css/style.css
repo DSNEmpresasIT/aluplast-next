@@ -4553,7 +4553,7 @@ body.box {
 }
 
 .project--hover .project__item .company {
-    color: var(--main-color);
+    color: var(--main-blue);
     text-transform: capitalize;
     text-align: left;
     position: absolute;
@@ -4747,8 +4747,8 @@ body.box {
 /*About Us*/
 
 .parallax--nav-1 {
-    padding: 125px 0;
-    background-image: url('../img/about-banner.jpg');
+    padding: 200px 0;
+    background-image: url('../img/about-banner.png');
 }
 
 

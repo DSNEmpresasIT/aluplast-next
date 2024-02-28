@@ -66,14 +66,6 @@ export const navData:NavData[] = [
       },
       {
         label: 'Reventa',
-        link: PAGES_PATH.CATALOG_PATH,
-        query: {
-          queryName: 'categoria',
-          query: ProductFathersTypes.RESALES
-        }
-      },
-      {
-        label: 'Reventa',
         link: PAGES_PATH.TEXTURES
       },
     ]

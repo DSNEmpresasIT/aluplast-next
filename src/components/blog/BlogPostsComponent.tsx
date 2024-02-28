@@ -30,118 +30,60 @@ interface BlogPostsProps {
   nextUrl?: string | undefined;
 }
 
+const IconSelector = ({ type }: { type: string }) => {
+  if (type === 'VIDEO') {
+    return (
+      <i className="fa fa-video"></i>
+    )
+  }
+
+  if (type === "CAROUSEL_ALBUM") {
+    return (
+      <i className="fa-solid fa-photo-film"></i>
+    )
+  }
+  return (
+    <i className="fa-solid fa-image"></i>
+  )
+}
+
 export const BlogPosts = ({ posts, nextUrl }: BlogPostsProps) => {
   return (
-    <>
-      <div className="blog1 animate__animated animate__fadeIn" style={{ paddingTop: '0px' }}>
-        <div className="container">
-          <div className="clearfix row justify-content-center">
-            <section className="blog-list-wrap">
-              <div className="container">
-                <div className="row">
-                  <div className="col-lg-8 col-md-7">
-                    <div className="blog-list">
-                      {posts?.map((post, index) => (
-                        <div className="blog-item" key={`${index}-news-post-key`}>
-                          <div className="img-blog" style={{ maxHeight: '300px', overflow: 'hidden' }}>
-                            <Link href={{ pathname: PAGES_PATH.NEWS_DETAIL, query: { postId: post.id } }}>
-                              {
-                                post.media_type === InstagramPostMediaTypes.IMAGE && <Image alt="Blog 1" width={0} height={0} src={post.media_url} />
-                              }
-                              {
-                                post.media_type === InstagramPostMediaTypes.CAROUSEL && <Image alt="Blog 1" width={0} height={0} src={post.media_url} />
-                              }
-                              {
-                                post.media_type === InstagramPostMediaTypes.VIDEO && (
-                                  <video autoPlay muted loop src={post.media_url}></video>
-                                )
-                              }
-                              <div className="date date--big">
-                              <div className="date__inner">
-                                <span className="day">
-                                  {
-                                    new Date(
-                                      post.timestamp
-                                    ).getDay()
-                                  }
-                                </span>
-                                <span className="month">
-                                  {
-                                    months[new Date(post.timestamp).getMonth()]
-                                  }
-                                </span>
-                              </div>
-                              </div>
-                            </Link>
-                          </div>
-                          <div className="blog-content">
-                            <h4 className="blog-title">
-                              <Link href={{ pathname: PAGES_PATH.NEWS_DETAIL, query: { postId: post.id } }}>
-                              </Link>
-                            </h4>
-                            <p className="author">
-                              <em>Via Facebook</em>
-                            </p>
-                            <p style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: '350px' }}>
-                              {post.caption}
-                            </p>
-                          </div>
-                          <div className="see-more see-more--left">
-                            <Link className="au-btn au-btn--big au-btn--pill au-btn--yellow au-btn--white" href={{ pathname: PAGES_PATH.NEWS_DETAIL, query: { postId: post.id } }}>
-                              Ver mas
-                            </Link>
-                          </div>
-                        </div>
-                      ))}
+    <section className="project5 px-5">
+      <div id="isotope-grid" className="project--hover clearfix row no-gutters">
+        {
+          posts.map((post, index) => (
+            <div className="col-lg-3 col-md-6 col-sm-12 item agency" key={`blog-post-key-${index}`}>
+              <div className="project__item">
+                <div className="pro__img" style={{ overflow: "hidden", height: '350px' }}>
+                  <img 
+                    src={post.media_type === 'VIDEO' ? post.thumbnail_url : post.media_url} 
+                    style={{ width: '100%' }} 
+                    alt="Project 1" 
+                  />
+                  <Link href={{ pathname: PAGES_PATH.NEWS_DETAIL, query: { postId: post.id }}} className="pro-link">
+                    <div className="pro-info pro-info--darker">
+                      <h4 className="company">
+                        { new Date(post.timestamp).toLocaleDateString('es-AR',{ day: '2-digit', month: 'short', year: 'numeric' }) }
+                      </h4>
+                      <p className="cat-name">
+                        <em>
+                          <IconSelector type={post.media_type} />
+                        </em>
+                      </p>
                     </div>
-                  </div>
-                  <div className="col-lg-4 col-md-5">
-                    <div className="blog-sidebar">
-                      {/* <div className="blog__search">
-                        <form
-                          action=""
-                          method="get"
-                          role="search"
-                          className="search-form"
-                        >
-                          <input
-                            type="text"
-                            name="search"
-                            placeholder="Search here..."
-                          />
-                          <button type="submit">
-                            <i className="fa fa-search"></i>
-                          </button>
-                        </form>
-                      </div> */}
-                      <div className="blog__about">
-                        <h4 className="title-sidebar">Nuestras noticias</h4>
-                        <p>
-                          Descubre las últimas noticias y tendencias en el mundo de las aberturas y cerramientos en nuestro espacio de noticias. 
-                          <br />
-                          Mantente al tanto de innovaciones en materiales, proyectos destacados y consejos útiles para mejorar tu hogar o espacio comercial. En Aluplast, nos enorgullece compartir contigo nuestras noticias.
-                        </p>
-                      </div>
-                      {/* <InstagramNewsComponent /> */}
-                    </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
-            </section>
-            {!nextUrl && (
-              <div className="see-more">
-                <a
-                  type="button"
-                  style={{ color: "white", cursor: "pointer" }}
-                  className="au-btn au-btn--pill au-btn--yellow au-btn--big au-btn--white"
-                >
-                  Cargar Más
-                </a>
-              </div>
-            )}
-          </div>
-        </div>
+            </div>
+          ))
+        }
       </div>
-    </>
+      {/* <div className="see-more">
+        <a href="" className="au-btn au-btn--pill au-btn--yellow au-btn--big au-btn--white">
+          Load more
+        </a>
+      </div> */}
+    </section>
   );
 };

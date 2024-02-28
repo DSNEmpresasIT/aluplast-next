@@ -1,140 +1,99 @@
 import React from 'react'
 import { BreadcumbsComponent } from './BreadcumbsComponent'
 
+interface ServicesData {
+  image: string;
+  title: string;
+  description: string 
+}
+
+const LeftComponent = ({ data }: { data: ServicesData }) => (
+  <div className="process-item">
+    <div className="process__left wow fadeInLeft" data-wow-delay="1s">
+      <div className="pro__img">
+        <img alt="Process 1" src={`/img/services/${data.image}.png`} />
+      </div>
+    </div>
+    <div className="process__right pro__text-wrap bg-f8 wow fadeInRight" data-wow-delay="1s">
+      <div className="pro__text">
+        <h2>
+          {/* <span>01</span> */}
+          { data.title }
+        </h2>
+        <p>
+          {data.description}
+        </p>
+      </div>
+    </div>
+  </div>
+)
+
+const RightComponent = ({ data }: { data: ServicesData }) => (
+  <div className="process-item">
+    <div className="process__left pro__text-wrap bg-f8 wow fadeInLeft" data-wow-delay="1s">
+      <div className="pro__text">
+        <h2>
+          {/* <span>02</span> */}
+          {data.title}
+        </h2>
+        <p className="mb-0">
+          { data.description }
+        </p>
+        <p>
+        </p>
+      </div>
+    </div>
+    <div className="process__right wow fadeInRight" data-wow-delay="1s">
+      <div className="pro__img">
+        <img alt="Process 2" src={`/img/services/${data.image}.png`} />
+      </div>
+    </div>
+  </div>
+)
+
 export const Index = () => {
+  const servicesData: ServicesData[] = [
+    {
+      image: '1',
+      title: '🤝 Acompañamiento y Seguimiento en Obra',
+      description: 'Con Aluplast, tu proyecto está respaldado. Nuestro equipo ofrece un acompañamiento integral y seguimiento en obra, garantizando la excelencia en cada paso. ¡Confía en nosotros para tus aberturas!'
+    },
+    {
+      image: '2',
+      title: '🖼️ Diseño Asistido por Profesionales',
+      description: 'Transforma tu visión en realidad con nuestro diseño asistido por profesionales. En Aluplast, combinamos tu estilo con la funcionalidad óptima, creando aberturas que destacan en estética y rendimiento.'
+    },
+    {
+      image: '3',
+      title: '📈 Evaluamos la Mejor Opción para tu Proyecto',
+      description: 'En Aluplast, entendemos la singularidad de cada proyecto. Nuestros expertos evalúan meticulosamente tus necesidades para ofrecerte la mejor opción en aberturas, asegurando resultados excepcionales y duraderos.'
+    },
+    {
+      image: '4',
+      title: '🏢 ShowRoom en Sucursales',
+      description: 'Descubre la calidad y variedad de nuestras aberturas en persona. Visita nuestro ShowRoom en nuestras sucursales, donde podrás apreciar de cerca la elegancia y durabilidad de nuestros productos.'
+    },
+    {
+      image: '5',
+      title: '👷‍♂️ Logística y Distribución',
+      description: 'Agilidad y eficiencia definen nuestra logística y distribución. Aluplast garantiza la entrega puntual de tus aberturas en cualquier punto de Entre Ríos y Provincias vecinas, asegurando la satisfacción total de nuestros clientes.'
+    },
+  ]
+
   return (
     <div className='page-wrap'>
       <BreadcumbsComponent />
       <section className="process-page">
         <div className="container">
-          <div className="process-item">
-            <div className="process__left wow fadeInLeft" data-wow-delay="1s">
-              <div className="pro__img">
-                <img alt="Process 1" src="/img/services/process-05.jpg" />
-              </div>
-            </div>
-            <div className="process__right pro__text-wrap bg-f8 wow fadeInRight" data-wow-delay="1s">
-              <div className="pro__text">
-                <h2>
-                  <span>01</span>
-                  meet
-                </h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <div className="row no-gutters">
-                  <div className="col-md-6">
-                    <div className="li-item">
-                      <i className="fa fa-check-circle" aria-hidden="true"></i>
-                      Duis aute irure dolor in
-                    </div>
-                    <div className="li-item">
-                      <i className="fa fa-check-circle" aria-hidden="true"></i>
-                      Excepteur sint occaecat
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="li-item">
-                      <i className="fa fa-check-circle" aria-hidden="true"></i>
-                      Sunt in culpa qui
-                    </div>
-                    <div className="li-item">
-                      <i className="fa fa-check-circle" aria-hidden="true"></i>
-                      Ut enim ad minima veniam
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="process-item">
-            <div className="process__left pro__text-wrap bg-f8 wow fadeInLeft" data-wow-delay="1s">
-              <div className="pro__text">
-                <h2>
-                  <span>02</span>
-                  disscusion
-                </h2>
-                <p className="mb-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem huska ax accuntium doloremque laudantium, totam rem aperiam,
-                  eaque ipsam .quae ab illo inven
-                </p>
-              </div>
-            </div>
-            <div className="process__right wow fadeInRight" data-wow-delay="1s">
-              <div className="pro__img">
-                <img alt="Process 2" src="/img/services/process-05.jpg" />
-              </div>
-            </div>
-          </div>
-          <div className="process-item">
-            <div className="process__left wow fadeInLeft">
-              <div className="pro__img">
-                <img alt="Process 3" src="/img/services/process-05.jpg" />
-              </div>
-            </div>
-            <div className="process__right pro__text-wrap bg-f8 wow fadeInRight">
-              <div className="pro__text">
-                <h2>
-                  <span>03</span>
-                  ideal
-                </h2>
-                <p className="m-b-30">
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa quison al officia deserunt mollit anim id est laborum.
-                </p>
-                <div className="row no-gutters pro-bar-wrap">
-                  <div className="col-md-3">
-                    <p className="bar__title">Creative</p>
-                    <p className="bar__title">Effective</p>
-                    <p className="bar__title">Suport</p>
-                  </div>
-                  <div className="col-md-9">
-                    <div className="pro-bar-container color-333">
-                      <div className="pro-bar color-e1" data-pro-bar-percent="80" data-pro-bar-delay="500">
-                      </div>
-                    </div>
-                    <div className="pro-bar-container color-333 m-y-15">
-                      <div className="pro-bar color-e1" data-pro-bar-percent="90" data-pro-bar-delay="500">
-                      </div>
-                    </div>
-                    <div className="pro-bar-container color-333">
-                      <div className="pro-bar color-e1" data-pro-bar-percent="75" data-pro-bar-delay="500">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="process-item">
-            <div className="process__left pro__text-wrap bg-f8 wow fadeInLeft">
-              <div className="pro__text">
-                <h2 className="m-b-20">
-                  <span>04</span>
-                  contruct
-                </h2>
-                <p className="m-b-0">
-                  <span>saving money: </span>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <p>
-                  <span>fast: </span>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem huska ax accuntium doloremque laudantium, totam rem aperiam,
-                  eaque ipsam .quae ab illo inven
-                </p>
-              </div>
-            </div>
-            <div className="process__right wow fadeInRight">
-              <div className="pro__img">
-                <img alt="Process 4" src="/img/services/process-05.jpg" />
-              </div>
-            </div>
-          </div>
+          {
+            servicesData.map((service: ServicesData, index: number) => {
+              if (index % 2) {
+                return <RightComponent data={service} key={`services-key-${index}`} />
+              }
+              
+              return <LeftComponent data={service} key={`services-key-${index}`} />
+            }) 
+          }
         </div>
       </section>
     </div>

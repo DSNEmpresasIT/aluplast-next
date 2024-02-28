@@ -122,12 +122,21 @@ const BlogSectionComponent: FC = () => {
                               }
                             title="Visitar detalle noticia Aluplast"
                           >
-                            {lastInstagramPost[0].caption?.split(",")[0]}
+                            <p
+                              style={{
+                                maxWidth: '160ch',
+                                overflow: 'hidden',
+                                textOverflow: 'ellipsis',
+                                whiteSpace: 'nowrap'
+                              }}
+                            >
+                              {lastInstagramPost[0].caption?.split(",")[0]}
+                            </p>
                           </Link>
                         </h4>
   
                         <p className="author">
-                          <em>Vía Facebook</em>
+                          <em>Vía Instagram</em>
                         </p>
                         <p
                           style={{
@@ -212,11 +221,20 @@ const BlogSectionComponent: FC = () => {
                                     <div className="blog-content">
                                       <h4 className="blog-title">
                                         <Link title="Visitar detalle noticia Aluplast" href={{ pathname: `/${PAGES_PATH.NEWS_DETAIL}`, query: { postId: post.id }}}>
+                                        <p
+                                          style={{
+                                            maxWidth: '1000ch',
+                                            overflow: 'hidden',
+                                            textOverflow: 'ellipsis',
+                                            whiteSpace: 'nowrap'
+                                          }}
+                                        >
                                           {post.caption?.split(",")[0]}
+                                        </p>
                                         </Link>
                                       </h4>
                                       <p className="author">
-                                        <em>Vía Facebook</em>
+                                        <em>Vía Instagram</em>
                                       </p>
                                       <p
                                         style={{

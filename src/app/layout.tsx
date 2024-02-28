@@ -34,6 +34,7 @@ export default function RootLayout({
         <meta name="google" content="notranslate" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="/font/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
         <link rel="stylesheet" type="text/css" href="/font/mdi-font/css/material-design-iconic-font.min.css" />
         <link rel="stylesheet" type="text/css" href="/vendor/bootstrap4/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="/vendor/owl-carousel/animate.css" />
