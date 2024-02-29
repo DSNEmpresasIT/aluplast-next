@@ -36,6 +36,8 @@ export const BlogDetail = ({
     }
   }
 
+  console.log(instagramPostDetail.caption)
+
   function doAnimation() {
     setAnimation(true);
     setTimeout(() => {
@@ -85,7 +87,7 @@ export const BlogDetail = ({
               <em className="time">Vía Instagram</em>
             </p>
             <div className="blog-content">
-              <p className="m-t-20">{instagramPostDetail.caption}</p>
+              <p className="m-t-20 pre-wrap">{instagramPostDetail.caption}</p>
               <div className="col-12 mt-5">
                 <span className="d-flex justify-content-end">
                   <a

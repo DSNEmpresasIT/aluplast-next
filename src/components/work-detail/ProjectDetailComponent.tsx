@@ -47,7 +47,7 @@ export const ProjectDetailComponent:FC<ProjectDetailComponentProps> = ({ project
               <div className="col-lg-4 col-md-12">
                 <div className="port__text">
                   <h3>{ projectDetail?.title }</h3>
-                  <p className="m-b-20" >
+                  <p className="m-b-20 pre-wrap" >
                     { projectDetail?.description }
                   </p>
                   <p>

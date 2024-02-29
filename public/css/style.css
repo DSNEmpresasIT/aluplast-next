@@ -31,6 +31,9 @@ body {
     line-height: calc(22/13);
     position: relative;
 }
+.pre-wrap {
+    white-space: pre-wrap;
+}
 
 .contact-map-styles {
     border: 0;

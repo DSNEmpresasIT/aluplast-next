@@ -21,7 +21,7 @@ const Index = () => {
   useEffect(() => {
     if (process.env.INSTAGRAM_TOKEN) {
       getInstagramPosts(process.env.INSTAGRAM_TOKEN)
-      .then(response => (setPosts(response), console.log(response)))
+      .then(response => (setPosts(response)))
       .catch(err => console.log(err))
     }
   }, [])
