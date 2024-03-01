@@ -49,7 +49,7 @@ const IconSelector = ({ type }: { type: string }) => {
 
 export const BlogPosts = ({ posts, nextUrl }: BlogPostsProps) => {
   return (
-    <section className="project5 px-5">
+    <section className="project5 px-5 pt-0">
       <div id="isotope-grid" className="project--hover clearfix row no-gutters">
         {
           posts.map((post, index) => (

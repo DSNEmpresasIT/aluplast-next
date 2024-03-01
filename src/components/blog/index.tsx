@@ -35,7 +35,7 @@ const Index = () => {
 
   return ( 
     <>
-      <section className="breadcrumbs-wrap" style={{ height: '15vh', paddingTop: '13vh' }}>
+      <section className="breadcrumbs-wrap">
         <div className="section-content section-content--w1140">
           <div className="container clearfix">
             <div className="breadcrumbs-inner">
@@ -53,6 +53,13 @@ const Index = () => {
             </div>
           </div>
         </div>
+      </section>
+      <section className='instagram-section-wrap'>
+        <a href="https://www.instagram.com/aluplast.aberturas/" target='_blank'>
+          <i className="fa-brands fa-instagram"></i>
+          {" "}
+          aluplast.aberturas
+        </a>
       </section>
       {
         postNotFoundNotification && (
