@@ -12,10 +12,10 @@ const navData = [
     name: getProductTypeName(ProductFathersTypes.OPENERS_TYPES),
     filter: ProductFathersTypes.OPENERS_TYPES,
   },
-  {
-    name: getProductTypeName(ProductFathersTypes.CLOSERS_TYPES),
-    filter: ProductFathersTypes.CLOSERS_TYPES,
-  },
+  // {
+  //   name: getProductTypeName(ProductFathersTypes.CLOSERS_TYPES),
+  //   filter: ProductFathersTypes.CLOSERS_TYPES,
+  // },
   {
     name: getProductTypeName(ProductFathersTypes.CS_TYPES),
     filter: ProductFathersTypes.CS_TYPES,

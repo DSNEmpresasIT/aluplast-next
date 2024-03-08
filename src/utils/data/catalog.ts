@@ -586,60 +586,7 @@ export const doorsData: CatalogData[] = [
   //     ],
   //   },
   // },
-  {
-    name: "Puerta plegadiza",
-    img: ['1', '2', '3', '4',],
-    id: "puertaplegadiza",
-      filters: [
-      ProductFathersTypes.OPENERS_TYPES,
-      TypeProduct.DOOR_PRODUCT,
-      "puertaplegadiza",
-    ],
-    description:
-      "La puerta Plegadiza es una solución práctica para cerrar grandes luces. Su forma de plegarse permite una cantidad de hojas variables según la longitud del vano a cubrir y agrega un toque moderno a la obra. Esta tipología permite el casi 100% de la apertura, ideal para quinchos, galerías.",
-    specs: {
-      description: [
-        {
-          title: "Tipo",
-          text: "Puertas plegadizas de aluminio.",
-        },
-        {
-          title: "Material",
-          text: "Aluminio de alta calidad.",
-        },
-        {
-          title: "Diseño",
-          text: "Estilo contemporáneo y elegante, Ideal para maximizar el espacio en áreas con limitaciones.",
-        },
-        {
-          title: "Durabilidad",
-          text: "Construcción resistente y duradera.",
-        },
-        {
-          title: "Entrada de Luz",
-          text: "Maximiza la entrada de luz natural, creando ambientes luminosos.",
-        },
-        {
-          title: "Transición sin Barreras",
-          text: "Facilita la conexión entre espacios interiores y exteriores.",
-        },
-        {
-          title: "Mantenimiento",
-          text: "Requieren poco mantenimiento para una vida útil prolongada.",
-        },
-        {
-          title: "Personalización",
-          text: "Disponibles en diversos acabados y colores.",
-        },
-      ],
-      features: [
-        "Amplían galerías y quinchos al conectar espacios.",
-        "Facilitan la transición suave entre interiores y exteriores.",
-        "Ofrecen ventilación natural al abrir parcialmente.",
-        "Aumentan la entrada de luz para un ambiente acogedor.",
-      ],
-    },
-  },
+ 
 ];
 
 export const complementarySystemData: CatalogData[] = [
@@ -988,225 +935,225 @@ export const complementarySystemData: CatalogData[] = [
   },
 ];
 
-export const closersData: CatalogData[] = [
-  {
-    name: "Piel de vidrio",
-    id: 'pieldevidrio',
-    filters: [ProductFathersTypes.CLOSERS_TYPES, "pieldevidrio"],
-    description: `
-    Nuestro sistema de piel de vidrio es la respuesta ideal para optimizar las envolventes vidriadas de edificios de gran altura, pero su versatilidad lo hace perfecto para proyectos de menor escala e incluso viviendas. Esta estructura innovadora utiliza columnas de aluminio precisamente fijadas en la obra, junto con cuadros de aluminio que albergan vidrios de alta calidad (DVH). Los cuadros pueden instalarse desde el interior o exterior, ofreciendo una vista exterior de vidrio puro sin aluminio visible. Nuestro sistema de piel de vidrio es adaptable para diferentes tipologías de aberturas, ya sea para paños fijos o proyectantes.
+// export const closersData: CatalogData[] = [
+//   {
+//     name: "Piel de vidrio",
+//     id: 'pieldevidrio',
+//     filters: [ProductFathersTypes.CLOSERS_TYPES, "pieldevidrio"],
+//     description: `
+//     Nuestro sistema de piel de vidrio es la respuesta ideal para optimizar las envolventes vidriadas de edificios de gran altura, pero su versatilidad lo hace perfecto para proyectos de menor escala e incluso viviendas. Esta estructura innovadora utiliza columnas de aluminio precisamente fijadas en la obra, junto con cuadros de aluminio que albergan vidrios de alta calidad (DVH). Los cuadros pueden instalarse desde el interior o exterior, ofreciendo una vista exterior de vidrio puro sin aluminio visible. Nuestro sistema de piel de vidrio es adaptable para diferentes tipologías de aberturas, ya sea para paños fijos o proyectantes.
 
-    Aluplast es una empresa con amplia experiencia y conocimientos en sistemas de vidriados envolventes, brindando soluciones tanto para edificios comerciales como residenciales. Nuestro equipo de ingenieros altamente capacitado se encarga de dimensionar perfiles, anclajes, tamaños de paños y las características de vidrios que mejor se ajusten a las condiciones climáticas y de viento de la zona.
-    `,
-    specs: {
-      description: [
-        {
-          title: "Tipo de Producto",
-          text: "Sistema de Piel de Vidrio de Aluplast.",
-        },
-        {
-          title: "Composición",
-          text: "Paneles de vidrio de alta calidad, columnas de aluminio.",
-        },
-        {
-          title: "Diseño Estético",
-          text: "Ofrece una estética moderna y elegante, maximizando la entrada de luz natural.",
-        },
-        {
-          title: "Eficiencia Energética",
-          text: "Vidrios de alto rendimiento que brindan un aislamiento térmico y acústico excepcional.",
-        },
-        {
-          title: "Durabilidad",
-          text: "Construcción resistente que garantiza una larga vida útil con mantenimiento mínimo.",
-        },
-        {
-          title: "Versatilidad de Uso",
-          text: "Adecuado para aplicaciones comerciales y residenciales, adaptándose a proyectos de diferentes escalas.",
-        },
-        {
-          title: "Instalación Profesional",
-          text: "Se recomienda la instalación por expertos para un rendimiento óptimo.",
-        },
-      ],
-      features: [
-        "Ofrece una vista sin obstáculos.",
-        "Se adapta a las necesidades del cliente.",
-        "Valor Estético Superior.",
-        "Eficiencia a Largo Plazo",
-      ],
-    },
-  },
-  {
-    name: "Frente integral",
-    // img: 'frenteintegral',
-    id: 'frenteintegral',
-    filters: [ProductFathersTypes.CLOSERS_TYPES, "frenteintegral"],
-    description:
-      "Esta solución es la elección definitiva para aquellos que desean transformar sus espacios de manera elegante y funcional. Representa la combinación perfecta de diseño moderno y versatilidad, ofreciendo una experiencia única en la integración de espacios interiores y exteriores.",
-    specs: {
-      description: [
-        {
-          title: "Tipo de Producto",
-          text: "Solución de Cerramiento con Frente Integral de Aluminio.",
-        },
-        {
-          title: "Material de Fabricación",
-          text: "Aluminio de alta calidad.",
-        },
-        {
-          title: "Diseño Vanguardista",
-          text: "Aporta un toque moderno y sofisticado a cualquier espacio.",
-        },
-        {
-          title: "Integración de Espacios",
-          text: "Permite la integración perfecta de espacios interiores y exteriores.",
-        },
-        {
-          title: "Amplia Entrada de Luz Natural",
-          text: "Maximiza la entrada de luz, creando espacios luminosos y agradables.",
-        },
-        {
-          title: "Eficiencia Energética",
-          text: "Ofrece un excelente aislamiento térmico, reduciendo los costos energéticos.",
-        },
-        {
-          title: "Durabilidad",
-          text: "Construcción resistente y duradera.",
-        },
-        {
-          title: "Bajo Mantenimiento",
-          text: "Requiere poco mantenimiento para una larga vida útil.",
-        },
-        {
-          title: "Personalización",
-          text: "Disponible en varios tamaños y diseños para adaptarse a las necesidades de diseño de cada proyecto.",
-        },
-        {
-          title: "Fácil Instalación",
-          text: "Se puede instalar de manera eficiente y rápida por profesionales capacitados.",
-        },
-        {
-          title: "Versatilidad de Uso",
-          text: "Adecuado para aplicaciones residenciales y comerciales.",
-        },
-        {
-          title: "Mejora la Conexión Interior-Exterior",
-          text: "Crea una transición fluida y mejora la conectividad de los espacios.",
-        },
-      ],
-      features: [
-        "Diseño Versátil y elegante",
-        "Eficiencia Energética",
-        "Amplia Entrada de Luz Natural",
-        "Solución resistente y estructural",
-      ],
-    },
-  },
-  {
-    name: "Sistema frame",
-    // img: 'courtainwall',
-    id: 'sistemaframe',
-    description: `
-      En la clasificación de muros cortina, presentamos nuestro sistema frame, que consiste en la fabricación previa de módulos en nuestra fábrica y su posterior instalación directa en el sitio de construcción, entre las losas.
+//     Aluplast es una empresa con amplia experiencia y conocimientos en sistemas de vidriados envolventes, brindando soluciones tanto para edificios comerciales como residenciales. Nuestro equipo de ingenieros altamente capacitado se encarga de dimensionar perfiles, anclajes, tamaños de paños y las características de vidrios que mejor se ajusten a las condiciones climáticas y de viento de la zona.
+//     `,
+//     specs: {
+//       description: [
+//         {
+//           title: "Tipo de Producto",
+//           text: "Sistema de Piel de Vidrio de Aluplast.",
+//         },
+//         {
+//           title: "Composición",
+//           text: "Paneles de vidrio de alta calidad, columnas de aluminio.",
+//         },
+//         {
+//           title: "Diseño Estético",
+//           text: "Ofrece una estética moderna y elegante, maximizando la entrada de luz natural.",
+//         },
+//         {
+//           title: "Eficiencia Energética",
+//           text: "Vidrios de alto rendimiento que brindan un aislamiento térmico y acústico excepcional.",
+//         },
+//         {
+//           title: "Durabilidad",
+//           text: "Construcción resistente que garantiza una larga vida útil con mantenimiento mínimo.",
+//         },
+//         {
+//           title: "Versatilidad de Uso",
+//           text: "Adecuado para aplicaciones comerciales y residenciales, adaptándose a proyectos de diferentes escalas.",
+//         },
+//         {
+//           title: "Instalación Profesional",
+//           text: "Se recomienda la instalación por expertos para un rendimiento óptimo.",
+//         },
+//       ],
+//       features: [
+//         "Ofrece una vista sin obstáculos.",
+//         "Se adapta a las necesidades del cliente.",
+//         "Valor Estético Superior.",
+//         "Eficiencia a Largo Plazo",
+//       ],
+//     },
+//   },
+//   {
+//     name: "Frente integral",
+//     // img: 'frenteintegral',
+//     id: 'frenteintegral',
+//     filters: [ProductFathersTypes.CLOSERS_TYPES, "frenteintegral"],
+//     description:
+//       "Esta solución es la elección definitiva para aquellos que desean transformar sus espacios de manera elegante y funcional. Representa la combinación perfecta de diseño moderno y versatilidad, ofreciendo una experiencia única en la integración de espacios interiores y exteriores.",
+//     specs: {
+//       description: [
+//         {
+//           title: "Tipo de Producto",
+//           text: "Solución de Cerramiento con Frente Integral de Aluminio.",
+//         },
+//         {
+//           title: "Material de Fabricación",
+//           text: "Aluminio de alta calidad.",
+//         },
+//         {
+//           title: "Diseño Vanguardista",
+//           text: "Aporta un toque moderno y sofisticado a cualquier espacio.",
+//         },
+//         {
+//           title: "Integración de Espacios",
+//           text: "Permite la integración perfecta de espacios interiores y exteriores.",
+//         },
+//         {
+//           title: "Amplia Entrada de Luz Natural",
+//           text: "Maximiza la entrada de luz, creando espacios luminosos y agradables.",
+//         },
+//         {
+//           title: "Eficiencia Energética",
+//           text: "Ofrece un excelente aislamiento térmico, reduciendo los costos energéticos.",
+//         },
+//         {
+//           title: "Durabilidad",
+//           text: "Construcción resistente y duradera.",
+//         },
+//         {
+//           title: "Bajo Mantenimiento",
+//           text: "Requiere poco mantenimiento para una larga vida útil.",
+//         },
+//         {
+//           title: "Personalización",
+//           text: "Disponible en varios tamaños y diseños para adaptarse a las necesidades de diseño de cada proyecto.",
+//         },
+//         {
+//           title: "Fácil Instalación",
+//           text: "Se puede instalar de manera eficiente y rápida por profesionales capacitados.",
+//         },
+//         {
+//           title: "Versatilidad de Uso",
+//           text: "Adecuado para aplicaciones residenciales y comerciales.",
+//         },
+//         {
+//           title: "Mejora la Conexión Interior-Exterior",
+//           text: "Crea una transición fluida y mejora la conectividad de los espacios.",
+//         },
+//       ],
+//       features: [
+//         "Diseño Versátil y elegante",
+//         "Eficiencia Energética",
+//         "Amplia Entrada de Luz Natural",
+//         "Solución resistente y estructural",
+//       ],
+//     },
+//   },
+//   {
+//     name: "Sistema frame",
+//     // img: 'courtainwall',
+//     id: 'sistemaframe',
+//     description: `
+//       En la clasificación de muros cortina, presentamos nuestro sistema frame, que consiste en la fabricación previa de módulos en nuestra fábrica y su posterior instalación directa en el sitio de construcción, entre las losas.
 
-      Estos módulos se conectan entre sí mediante columnas o travesaños "semicompletos" que se ensamblan cuando un módulo se coloca junto a otro. El propósito inicial del sistema de muro cortina fue reducir al mínimo el tiempo requerido para la instalación en el lugar de construcción.
-    `,
-    filters: [ProductFathersTypes.CLOSERS_TYPES, "courtainwall"],
-    specs: {
-      description: [
-        {
-          title: "Tipo de Producto",
-          text: "Sistema Frame de Aluplast.",
-        },
-        {
-          title: "Composición",
-          text: "Módulos prefabricados en nuestra fábrica que se instalan directamente en el sitio de la obra entre las losas.",
-        },
-        {
-          title: "Conexión entre Módulos",
-          text: 'Columnas o travesaños "semicompletos" que se ensamblan al unir módulos.',
-        },
-        {
-          title: "Eficiencia en el Montaje",
-          text: "Reducción significativa del tiempo de montaje en comparación con otros sistemas.",
-        },
-        {
-          title: "Estética Elegante",
-          text: "Agrega una apariencia moderna y elegante al edificio.",
-        },
-        {
-          title: "Flexibilidad de Diseño",
-          text: "Adaptable a diferentes estilos arquitectónicos y necesidades específicas.",
-        },
-        {
-          title: "Control de Calidad",
-          text: "Mayor control de calidad debido a la prefabricación en nuestra fábrica.",
-        },
-        {
-          title: "Aplicaciones Versátiles",
-          text: "Adecuado para una variedad de proyectos arquitectónicos.",
-        },
-        {
-          title: "Practicidad",
-          text: "Simplifica la instalación en obra, lo que se traduce en un proceso más rápido y eficiente.",
-        },
-      ],
-      features: [
-        "Rápida Instalación.",
-        "Diseño Elegante excelente",
-        "Se adapta a diversas necesidades.",
-        "La prefabricación garantiza  calidad.",
-      ],
-    },
-  },
-  {
-    name: "Frente vidriado",
-    // img: 'courtainwall',
-    id: 'frentevidriado',
-    filters: [ProductFathersTypes.CLOSERS_TYPES, "courtainwall"],
-    description:
-      "El sistema de frente vidriado optimiza envolventes vidriadas en edificios de gran altura y también en construcciones más pequeñas, incluso viviendas. Este sistema utiliza columnas de aluminio y cuadros de aluminio con vidrios (o DVH) para crear una envolvente de vidrio puro sin aluminio visible. Ofrece ventanas fijas o proyectantes. En Aluplast somos expertos en sistemas de vidriados envolventes para edificios comerciales, residenciales y viviendas. Nuestro equipo de ingenieros dimensiona perfiles, anclajes y vidrios según las condiciones climáticas y de viento de la zona.",
-    specs: {
-      description: [
-        {
-          title: "Tipo de Producto",
-          text: "Frente Vidriado de Aluplast.",
-        },
-        {
-          title: "Composición",
-          text: "Paneles de vidrio templado y estructura de aluminio de alta calidad.",
-        },
-        {
-          title: "Diseño Estético",
-          text: "Ofrece una apariencia moderna y elegante, maximizando la entrada de luz natural.",
-        },
-        {
-          title: "Eficiencia Energética",
-          text: "Vidrios de alta eficiencia que proporcionan aislamiento térmico y acústico de alto rendimiento.",
-        },
-        {
-          title: "Durabilidad",
-          text: "Construcción resistente que garantiza una larga vida útil y requiere bajo mantenimiento.",
-        },
-        {
-          title: "Versatilidad de Uso",
-          text: "Adecuado para aplicaciones comerciales y residenciales.",
-        },
-        {
-          title: "Montaje Profesional",
-          text: "Instalación por profesionales capacitados para un rendimiento óptimo.",
-        },
-      ],
-      features: [
-        "Máxima Transparencia, vista exterior de vidrio puro sin obstrucciones.",
-        "Resistencia, soporta condiciones climáticas y de viento de manera eficiente.",
-        "Construcción de alta calidad para una larga vida útil.",
-        "Excelente aislamiento térmico y acústico.",
-      ],
-    },
-  },
-];
+//       Estos módulos se conectan entre sí mediante columnas o travesaños "semicompletos" que se ensamblan cuando un módulo se coloca junto a otro. El propósito inicial del sistema de muro cortina fue reducir al mínimo el tiempo requerido para la instalación en el lugar de construcción.
+//     `,
+//     filters: [ProductFathersTypes.CLOSERS_TYPES, "courtainwall"],
+//     specs: {
+//       description: [
+//         {
+//           title: "Tipo de Producto",
+//           text: "Sistema Frame de Aluplast.",
+//         },
+//         {
+//           title: "Composición",
+//           text: "Módulos prefabricados en nuestra fábrica que se instalan directamente en el sitio de la obra entre las losas.",
+//         },
+//         {
+//           title: "Conexión entre Módulos",
+//           text: 'Columnas o travesaños "semicompletos" que se ensamblan al unir módulos.',
+//         },
+//         {
+//           title: "Eficiencia en el Montaje",
+//           text: "Reducción significativa del tiempo de montaje en comparación con otros sistemas.",
+//         },
+//         {
+//           title: "Estética Elegante",
+//           text: "Agrega una apariencia moderna y elegante al edificio.",
+//         },
+//         {
+//           title: "Flexibilidad de Diseño",
+//           text: "Adaptable a diferentes estilos arquitectónicos y necesidades específicas.",
+//         },
+//         {
+//           title: "Control de Calidad",
+//           text: "Mayor control de calidad debido a la prefabricación en nuestra fábrica.",
+//         },
+//         {
+//           title: "Aplicaciones Versátiles",
+//           text: "Adecuado para una variedad de proyectos arquitectónicos.",
+//         },
+//         {
+//           title: "Practicidad",
+//           text: "Simplifica la instalación en obra, lo que se traduce en un proceso más rápido y eficiente.",
+//         },
+//       ],
+//       features: [
+//         "Rápida Instalación.",
+//         "Diseño Elegante excelente",
+//         "Se adapta a diversas necesidades.",
+//         "La prefabricación garantiza  calidad.",
+//       ],
+//     },
+//   },
+//   {
+//     name: "Frente vidriado",
+//     // img: 'courtainwall',
+//     id: 'frentevidriado',
+//     filters: [ProductFathersTypes.CLOSERS_TYPES, "courtainwall"],
+//     description:
+//       "El sistema de frente vidriado optimiza envolventes vidriadas en edificios de gran altura y también en construcciones más pequeñas, incluso viviendas. Este sistema utiliza columnas de aluminio y cuadros de aluminio con vidrios (o DVH) para crear una envolvente de vidrio puro sin aluminio visible. Ofrece ventanas fijas o proyectantes. En Aluplast somos expertos en sistemas de vidriados envolventes para edificios comerciales, residenciales y viviendas. Nuestro equipo de ingenieros dimensiona perfiles, anclajes y vidrios según las condiciones climáticas y de viento de la zona.",
+//     specs: {
+//       description: [
+//         {
+//           title: "Tipo de Producto",
+//           text: "Frente Vidriado de Aluplast.",
+//         },
+//         {
+//           title: "Composición",
+//           text: "Paneles de vidrio templado y estructura de aluminio de alta calidad.",
+//         },
+//         {
+//           title: "Diseño Estético",
+//           text: "Ofrece una apariencia moderna y elegante, maximizando la entrada de luz natural.",
+//         },
+//         {
+//           title: "Eficiencia Energética",
+//           text: "Vidrios de alta eficiencia que proporcionan aislamiento térmico y acústico de alto rendimiento.",
+//         },
+//         {
+//           title: "Durabilidad",
+//           text: "Construcción resistente que garantiza una larga vida útil y requiere bajo mantenimiento.",
+//         },
+//         {
+//           title: "Versatilidad de Uso",
+//           text: "Adecuado para aplicaciones comerciales y residenciales.",
+//         },
+//         {
+//           title: "Montaje Profesional",
+//           text: "Instalación por profesionales capacitados para un rendimiento óptimo.",
+//         },
+//       ],
+//       features: [
+//         "Máxima Transparencia, vista exterior de vidrio puro sin obstrucciones.",
+//         "Resistencia, soporta condiciones climáticas y de viento de manera eficiente.",
+//         "Construcción de alta calidad para una larga vida útil.",
+//         "Excelente aislamiento térmico y acústico.",
+//       ],
+//     },
+//   },
+// ];
 
 export const controlSolar: CatalogData[] = [
   {
@@ -1809,7 +1756,6 @@ export const garageDoorsData: CatalogData[] = [
     id: "puertaplegadiza",
       filters: [
       ProductFathersTypes.GARAGE_DOORS,
-      "puertaplegadiza",
     ],
     description:
       "La puerta Plegadiza es una solución práctica para cerrar grandes luces. Su forma de plegarse permite una cantidad de hojas variables según la longitud del vano a cubrir y agrega un toque moderno a la obra. Esta tipología permite el casi 100% de la apertura, ideal para quinchos, galerías.",
@@ -2036,11 +1982,115 @@ export const texturesData: TexturesTypes[] = [
   // }
 ];
 
+export const doorsModel = [
+  {
+    name: "Modelo de puerta 100",
+    img: ['1'],
+    id: '100',
+    filters: [
+      ProductFathersTypes.OPENERS_TYPES,
+      TypeProduct.DOOR_PRODUCT,
+    ],
+  }, 
+  {
+    name: "Modelo de puerta 101",
+    img: ['1'],
+    id: '101',
+    filters: [
+      ProductFathersTypes.OPENERS_TYPES,
+      TypeProduct.DOOR_PRODUCT,
+    ],
+  }, 
+  {
+    name: "Modelo de puerta 102",
+    img: ['1'],
+    id: '102',
+    filters: [
+      ProductFathersTypes.OPENERS_TYPES,
+      TypeProduct.DOOR_PRODUCT,
+    ],
+  }, 
+  {
+    name: "Modelo de puerta 103",
+    img: ['1'],
+    id: '103',
+    filters: [
+      ProductFathersTypes.OPENERS_TYPES,
+      TypeProduct.DOOR_PRODUCT,
+    ],
+  }, 
+  {
+    name: "Modelo de puerta 105",
+    img: ['1'],
+    id: '105',
+    filters: [
+      ProductFathersTypes.OPENERS_TYPES,
+      TypeProduct.DOOR_PRODUCT,
+    ],
+  },
+  {
+    name: "Modelo de puerta 106",
+    img: ['1'],
+    id: '106',
+    filters: [
+      ProductFathersTypes.OPENERS_TYPES,
+      TypeProduct.DOOR_PRODUCT,
+    ],
+  },
+  {
+    name: "Modelo de puerta 109",
+    img: ['1'],
+    id: '109',
+    filters: [
+      ProductFathersTypes.OPENERS_TYPES,
+      TypeProduct.DOOR_PRODUCT,
+    ],
+  },
+  {
+    name: "Modelo de puerta 218",
+    img: ['1'],
+    id: '218',
+    filters: [
+      ProductFathersTypes.OPENERS_TYPES,
+      TypeProduct.DOOR_PRODUCT,
+    ],
+  }, 
+  {
+    name: "Modelo de puerta 219",
+    img: ['219'],
+    id: '219',
+    filters: [
+      ProductFathersTypes.OPENERS_TYPES,
+      TypeProduct.DOOR_PRODUCT,
+    ],
+  }, 
+  {
+    name: "Modelo de puerta 221",
+    img: ['221'],
+    id: '221',
+    filters: [
+      ProductFathersTypes.OPENERS_TYPES,
+      TypeProduct.DOOR_PRODUCT,
+    ],
+  }, 
+  {
+    name: "Modelo de puerta 223",
+    img: ['223'],
+    id: '223',
+    filters: [
+      ProductFathersTypes.OPENERS_TYPES,
+      TypeProduct.DOOR_PRODUCT,
+    ],
+  }, 
+]
+
+
 export const allCatalogData: CatalogData[] = [
   ...windowsData,
   ...doorsData,
+  ...doorsModel,
   ...complementarySystemData,
-  ...closersData,
+  // ...closersData,
   ...controlSolar,
   ...windowsFatherData,
   ...garageDoorsData,

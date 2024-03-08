@@ -291,6 +291,10 @@ section.p-t-50 {
     padding-top: 30px;
 }
 
+.service-description {
+    font-size: 16px;
+}
+
 .title {
     font-size: 36px;
     font-weight: 700;

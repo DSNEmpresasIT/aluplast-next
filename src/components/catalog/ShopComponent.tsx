@@ -139,7 +139,7 @@ export const ShopComponent = ({ query }: any) => {
                       )
                     })
                   }
-                  {
+                  {/* {
                     (catalogData && indexPagination.lastIndex <= catalogData.length) && (
                       <div className="col-12 see-more">
                         <a 
@@ -152,7 +152,7 @@ export const ShopComponent = ({ query }: any) => {
                         </a>
                       </div>
                     )
-                  }
+                  } */}
                 </div>
               </div>
             </div>
