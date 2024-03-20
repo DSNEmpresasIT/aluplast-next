@@ -3,13 +3,18 @@ import { InstagramPost } from "@/utils/types";
 
 const url:string = `https://graph.instagram.com/me/media?fields=id,media_type,media_url,permalink,caption,timestamp,thumbnail_url&access_token=`;
 
-export async function getInstagramImages(token: string) {
+export async function getInstagramImages(token: string, next?: string) {
   try {
-    const data = await axios.get(`${url}${token}`)
+    const data = await axios.get(`${next ?? url+token}`)
 
-    return data.data.data.filter(
+    const filteredData = data.data.data.filter(
       (photo:any) => photo.media_type === 'IMAGE' || photo.media_type === "CAROUSEL_ALBUM" 
     );
+
+    return {
+      images: filteredData,
+      next: data.data.paging.next
+    };
   } catch (error) {
     // @ts-ignore
     throw new Error(error?.message)

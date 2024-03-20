@@ -1984,7 +1984,7 @@ export const texturesData: TexturesTypes[] = [
 
 export const doorsModel = [
   {
-    name: "Modelo de puerta 100",
+    name: "Mod.100",
     img: ['1'],
     id: '100',
     filters: [
@@ -1993,7 +1993,7 @@ export const doorsModel = [
     ],
   }, 
   {
-    name: "Modelo de puerta 101",
+    name: "Mod.101",
     img: ['1'],
     id: '101',
     filters: [
@@ -2002,7 +2002,7 @@ export const doorsModel = [
     ],
   }, 
   {
-    name: "Modelo de puerta 102",
+    name: "Mod.102",
     img: ['1'],
     id: '102',
     filters: [
@@ -2011,7 +2011,7 @@ export const doorsModel = [
     ],
   }, 
   {
-    name: "Modelo de puerta 103",
+    name: "Mod.103",
     img: ['1'],
     id: '103',
     filters: [
@@ -2020,7 +2020,7 @@ export const doorsModel = [
     ],
   }, 
   {
-    name: "Modelo de puerta 105",
+    name: "Mod.105",
     img: ['1'],
     id: '105',
     filters: [
@@ -2029,7 +2029,7 @@ export const doorsModel = [
     ],
   },
   {
-    name: "Modelo de puerta 106",
+    name: "Mod.106",
     img: ['1'],
     id: '106',
     filters: [
@@ -2038,7 +2038,7 @@ export const doorsModel = [
     ],
   },
   {
-    name: "Modelo de puerta 109",
+    name: "Mod.109",
     img: ['1'],
     id: '109',
     filters: [
@@ -2047,7 +2047,7 @@ export const doorsModel = [
     ],
   },
   {
-    name: "Modelo de puerta 218",
+    name: "Mod.218",
     img: ['1'],
     id: '218',
     filters: [
@@ -2056,7 +2056,7 @@ export const doorsModel = [
     ],
   }, 
   {
-    name: "Modelo de puerta 219",
+    name: "Mod.219",
     img: ['219'],
     id: '219',
     filters: [
@@ -2065,7 +2065,7 @@ export const doorsModel = [
     ],
   }, 
   {
-    name: "Modelo de puerta 221",
+    name: "Mod.221",
     img: ['221'],
     id: '221',
     filters: [
@@ -2074,9 +2074,54 @@ export const doorsModel = [
     ],
   }, 
   {
-    name: "Modelo de puerta 223",
+    name: "Mod.223",
     img: ['223'],
     id: '223',
+    filters: [
+      ProductFathersTypes.OPENERS_TYPES,
+      TypeProduct.DOOR_PRODUCT,
+    ],
+  }, 
+  {
+    name: "Mod.223 lisa",
+    img: ['223-lisa'],
+    id: '223-lisa',
+    filters: [
+      ProductFathersTypes.OPENERS_TYPES,
+      TypeProduct.DOOR_PRODUCT,
+    ],
+  },
+  {
+    name: "Mod.227",
+    img: ['227'],
+    id: '227',
+    filters: [
+      ProductFathersTypes.OPENERS_TYPES,
+      TypeProduct.DOOR_PRODUCT,
+    ],
+  },  
+  {
+    name: "Mod.227 con molduras",
+    img: ['227-molduras'],
+    id: '227-molduras',
+    filters: [
+      ProductFathersTypes.OPENERS_TYPES,
+      TypeProduct.DOOR_PRODUCT,
+    ],
+  },  
+  {
+    name: "Mod.228",
+    img: ['228'],
+    id: '228',
+    filters: [
+      ProductFathersTypes.OPENERS_TYPES,
+      TypeProduct.DOOR_PRODUCT,
+    ],
+  }, 
+  {
+    name: "Mod.235",
+    img: ['235'],
+    id: '235',
     filters: [
       ProductFathersTypes.OPENERS_TYPES,
       TypeProduct.DOOR_PRODUCT,

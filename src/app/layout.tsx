@@ -35,17 +35,17 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="/font/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
-        <link rel="stylesheet" type="text/css" href="/font/mdi-font/css/material-design-iconic-font.min.css" />
-        <link rel="stylesheet" type="text/css" href="/vendor/bootstrap4/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="/vendor/owl-carousel/animate.css" />
-        <link rel="stylesheet" type="text/css" href="/vendor/owl-carousel/owl.carousel.min.css" />
-        <link rel="stylesheet" type="text/css" href="/vendor/owl-carousel/owl.theme.default.min.css" />
-        <link rel="stylesheet" type="text/css" href="/vendor/revolution/settings.css" />
-        <link rel="stylesheet" type="text/css" href="/vendor/revolution/navigation.css" />
-        <link rel="stylesheet" type="text/css" href="/vendor/revolution/layers.css" />
-        <link rel="stylesheet" type="text/css" href="/vendor/colorbox/colorbox.css" />
-        <link rel="stylesheet" type="text/css" href="/vendor/lightbox2/src/css/lightbox.css" />
-        <link rel="stylesheet" type="text/css" href="/vendor/smk-accordion/accordion.css" />
+        <link rel="stylesheet" referrerPolicy='no-referrer' type="text/css" href="/font/mdi-font/css/material-design-iconic-font.min.css" />
+        <link rel="stylesheet" referrerPolicy='no-referrer' type="text/css" href="/vendor/bootstrap4/bootstrap.min.css" />
+        <link rel="stylesheet" referrerPolicy='no-referrer' type="text/css" href="/vendor/owl-carousel/animate.css" />
+        <link rel="stylesheet" referrerPolicy='no-referrer' type="text/css" href="/vendor/owl-carousel/owl.carousel.min.css" />
+        <link rel="stylesheet" referrerPolicy='no-referrer' type="text/css" href="/vendor/owl-carousel/owl.theme.default.min.css" />
+        <link rel="stylesheet" referrerPolicy='no-referrer' type="text/css" href="/vendor/revolution/settings.css" />
+        <link rel="stylesheet" referrerPolicy='no-referrer' type="text/css" href="/vendor/revolution/navigation.css" />
+        <link rel="stylesheet" referrerPolicy='no-referrer' type="text/css" href="/vendor/revolution/layers.css" />
+        <link rel="stylesheet" referrerPolicy='no-referrer' type="text/css" href="/vendor/colorbox/colorbox.css" />
+        <link rel="stylesheet" referrerPolicy='no-referrer' type="text/css" href="/vendor/lightbox2/src/css/lightbox.css" />
+        <link rel="stylesheet" referrerPolicy='no-referrer' type="text/css" href="/vendor/smk-accordion/accordion.css" />
         {/* {
           pageTitle === PAGES.ABOUT_US && (
             <link rel="stylesheet" type="text/css" href="/vendor/slick/slick.css">

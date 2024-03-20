@@ -15,19 +15,23 @@ export const ProjectsComponent = () => {
 
   return (
     <section className="latest-project">
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-lg-4 col-md-6 col-12">
-            <h2 className="title">
-              Nuestros
-              <br />
-              <span>Proyectos</span>
-            </h2>
-            <p className="title-detail">
-            </p>
+      {  
+        projectsData?.length && (
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-4 col-md-6 col-12">
+                <h2 className="title">
+                  Nuestros
+                  <br />
+                  <span>Proyectos</span>
+                </h2>
+                <p className="title-detail">
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+        )
+      }
       <div className="row no-gutters">
         {projectsData?.length &&
           projectsData.map((project, index: number) => {
@@ -35,7 +39,7 @@ export const ProjectsComponent = () => {
             return (
               <div className="col-lg-4 col-md-6">
                 <div className="latest__item" style={{ overflow: 'hidden', maxHeight: '270px'}}>
-                  <img alt={`Proyecto ${index} de Aluplast`} title="Imagen ilustrativa de un proyecto en aluminio | Aluplast" src={project.imageUrl[0].url} />
+                  <img alt={`Proyecto ${index} de Aluplast`} referrerPolicy="no-referrer" title="Imagen ilustrativa de un proyecto en aluminio | Aluplast" src={project.imageUrl[0].url} />
                   <Link
                     title="Visitar detalle de proyecto"
                     href={{

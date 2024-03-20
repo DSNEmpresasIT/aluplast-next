@@ -3,7 +3,7 @@ import React from 'react'
 
 export const BreadCumbComponent = ({ product }: { product: string | undefined }) => {
   return (
-    <section className="breadcrumbs-wrap" style={{ paddingTop: '13vh' }}>
+    <section className="breadcrumbs-wrap" style={{ paddingTop: '13vh'}}>
     <div className="section-content section-content--w1140">
       <div className="container clearfix">
         <div className="breadcrumbs-inner">

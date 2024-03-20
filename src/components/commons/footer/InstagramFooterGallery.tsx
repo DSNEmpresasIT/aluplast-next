@@ -9,13 +9,26 @@ interface InstagramObject {
 
 export const InstagramGalleryFooter = ({ instagramToken }: any) => {
   const [ imagesData, setImagesData ] = useState<InstagramObject[]>();
+  const [ nextLink, setNextLink ] = useState<string>()
   const [ fetchError, setError ] = useState<boolean>(false);
+
   useEffect(() => {
     getInstagramImages(instagramToken)
-      .then((response) => setImagesData(response))
+      .then((response) => {
+        setNextLink(response.next)
+        setImagesData(response.images)
+      })
       .catch((err) => (console.log(err), setError(true)))
   }, [])
   
+  useEffect(() => {
+    if (nextLink && imagesData && imagesData?.length < 6) {
+      getInstagramImages(instagramToken, nextLink)
+        .then((response) => setImagesData([...imagesData, ...response.images]))
+        .catch((err) => (console.log(err), setError(true)))
+    }
+  }, [nextLink])
+
   return (
     <div className="col-lg-4 col-md-6">
       {
