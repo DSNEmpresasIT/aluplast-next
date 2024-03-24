@@ -60,7 +60,7 @@ export const InstagramGalleryFooter = ({ instagramToken }: any) => {
           </>
         )
       }
-      <h5 className="title-footer">Nuestra redes</h5>
+      <h5 className="title-footer">Nuestras redes</h5>
       <div className="social-footer">
         <a title="Enlaces de las redes sociales de Alupast | fábrica de aperturas de Aluminio" href="https://www.facebook.com/AluplastAberturas">
           <i className="zmdi zmdi-facebook"></i>

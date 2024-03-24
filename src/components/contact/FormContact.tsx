@@ -40,7 +40,10 @@ const FormContact = () => {
   const handleSendEmail = async() => {
     sendEmail(data)
       .then(() => toast.success('Mail enviado correctamente!'))
-      .catch(() => toast.error('Ha ocurrido un error al enviar el mail'))
+      .catch((err) => {
+        console.log("err: ",err)
+        toast.error('Ha ocurrido un error al enviar el mail')
+      })
       .finally(() => {
         setData(initialValues)
         setShowCaptcha(false)

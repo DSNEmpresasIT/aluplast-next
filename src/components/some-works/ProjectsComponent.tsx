@@ -55,7 +55,7 @@ export const ProjectsComponent = () => {
           <div className="row">
             <div className="col-md-12">
               <div id="filter-wrap">
-                <ul id="filter" className="ul--no-style ul--inline">
+                <ul id="filter" className="ul--no-style ul--inline mt-5">
                   <li 
                     onClick={() => setProjectFilter(undefined)} 
                     className="active"
