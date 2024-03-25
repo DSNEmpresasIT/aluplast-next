@@ -24,14 +24,14 @@ export const navData:NavData[] = [
           query: ProductFathersTypes.OPENERS_TYPES
         }
       },
-      {
-        label: 'Cerramientos',
-        link: PAGES_PATH.CATALOG_PATH,
-        query: {
-          queryName: 'categoria',
-          query: ProductFathersTypes.CLOSERS_TYPES
-        }
-      },
+      // {
+      //   label: 'Cerramientos',
+      //   link: PAGES_PATH.CATALOG_PATH,
+      //   query: {
+      //     queryName: 'categoria',
+      //     query: ProductFathersTypes.CLOSERS_TYPES
+      //   }
+      // },
       {
         label: 'Sistemas complementarios',
         link: PAGES_PATH.CATALOG_PATH,
@@ -66,6 +66,14 @@ export const navData:NavData[] = [
       },
       {
         label: 'Reventa',
+        link: PAGES_PATH.CATALOG_PATH,
+        query: {
+          queryName: 'categoria',
+          query: ProductFathersTypes.RESALES
+        }
+      },
+      {
+        label: 'Texturas',
         link: PAGES_PATH.TEXTURES
       },
     ]

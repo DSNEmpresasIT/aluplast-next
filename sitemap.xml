@@ -1,301 +1,322 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+>
   <url>
     <loc>https://aluplast.com.ar/</loc>
-    <lastmod>Wed Feb 07 2024 17:26:23
-      GMT+0000 (Coordinated Universal Time)</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/contacto-aluplast-entre-rios-argentina</loc>
-    <lastmod>Wed
-      Feb 07 2024 17:26:23 GMT+0000 (Coordinated Universal Time)</lastmod>
-    <priority>0.76</priority>
+    <lastmod>2024-03-08T22:31:32+00:00</lastmod>
+    <priority>1.00</priority>
   </url>
   <url>
     <loc>https://aluplast.com.ar/productos-de-aluminio-y-pvc</loc>
-    <lastmod>Wed Feb 07
-      2024 17:26:23 GMT+0000 (Coordinated Universal Time)</lastmod>
-    <priority>0.76</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/productos-de-aluminio-y-pvc?categoria=aberturas</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
+    <lastmod>2024-03-08T22:31:34+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://aluplast.com.ar/productos-de-aluminio-y-pvc?categoria=cerramientos</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
+    <loc>https://aluplast.com.ar/productos-de-aluminio-y-pvc?categoria=aberturas</loc>
+    <lastmod>2024-03-08T22:31:34+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://aluplast.com.ar/productos-de-aluminio-y-pvc?categoria=sistemas-complementarios</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
+    <lastmod>2024-03-08T22:31:34+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://aluplast.com.ar/productos-de-aluminio-y-pvc?categoria=puertas-garage</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
+    <lastmod>2024-03-08T22:31:34+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://aluplast.com.ar/productos-de-aluminio-y-pvc?categoria=vidrios</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
+    <lastmod>2024-03-08T22:31:34+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://aluplast.com.ar/productos-de-aluminio-y-pvc?categoria=control-solar</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
+    <lastmod>2024-03-08T22:31:34+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://aluplast.com.ar/productos-de-aluminio-y-pvc?categoria=reventas</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
+    <lastmod>2024-03-08T22:31:34+00:00</lastmod>
     <priority>0.80</priority>
   </url>
-
+  <url>
+    <loc>https://aluplast.com.ar/texturas-tipos-y-tratamientos</loc>
+    <lastmod>2024-03-08T22:31:34+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/servicios-aluplast-aluminio-pvc</loc>
+    <lastmod>2024-03-08T22:31:34+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
   <url>
     <loc>https://aluplast.com.ar/ultimas-noticias-aluplast</loc>
-    <lastmod>Wed Feb 07 2024
-      17:26:23 GMT+0000 (Coordinated Universal Time)</lastmod>
-    <priority>0.76</priority>
-  </url>
-
-  <url>
-
-    <loc>https://aluplast.com.ar/texturas-tipos-y-tratamientos</loc>
-    <lastmod>Wed Feb 07
-      2024 17:26:23 GMT+0000 (Coordinated Universal Time)</lastmod>
-    <priority>0.76</priority>
+    <lastmod>2024-03-08T22:31:35+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=portonlevadizo</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
+    <loc>https://aluplast.com.ar/nuestro-trabajo</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/contacto-aluplast-entre-rios-argentina</loc>
+    <lastmod>2024-03-08T22:31:32+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=barandabalcon</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=banderola</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=frenteintegral</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=101</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://aluplast.com.ar/producto-detalle?productId=corrediza</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=persianaregulable</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=celosiastablillafija</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=sistemaframe</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=vidriosdecorativosVIIO</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=cortinasinteriores</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=puertaplegadiza</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=puertarebatir</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=puertasplacasinteriores</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=portoncorredizorielcurvo</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=aberturasPVC</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=divisoriosanitario</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=puertacorredizacolgante</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=pieldevidrio</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=vidriolaminado</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=oscilobatiente</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=portoncorredizoriellineal</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=proyectante</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=portonenrollable</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=pa%C3%B1ofijo</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=mosquiteros</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=cortavistas</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=vidriotemplado</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=cerramientosoificinas</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=termopaneledvh</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=mamparadeba%C3%B1o</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=desplazable</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=cortinadeenrrollar</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=techovidriado</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=rebatir</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=vidriosespeciales</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=celosiastablillaregulable</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=puertapivotante</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=barandabalcon</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=parasol</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://aluplast.com.ar/producto-detalle?productId=frentevidriado</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://aluplast.com.ar/producto-detalle?productId=mamparasypuertasdevidrio</loc>
-    <lastmod>2024-02-06T01:17:05+00:00</lastmod>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=100</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=puertasplacasinteriores</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=puertaplegadiza</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=portoncorredizorielcurvo</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=pa%C3%B1ofijo</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=mamparadeba%C3%B1o</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=vidriolaminado</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=celosiastablillafija</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=divisoriosanitario</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=vidriotemplado</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=vidriosespeciales</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=105</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=223</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=parasol</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=puertarebatir</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=portonlevadizo</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=cortavistas</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=puertapivotante</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=vidriosdecorativosVIIO</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=proyectante</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=desplazable</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=celosiastablillaregulable</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=persianaregulable</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=mosquiteros</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=218</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=cortinasinteriores</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=banderola</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=103</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=109</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=102</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=cortinadeenrrollar</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=oscilobatiente</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=rebatir</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=cerramientosoificinas</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=106</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=221</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=aberturasPVC</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=techovidriado</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=219</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=portoncorredizoriellineal</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=portonenrollable</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://aluplast.com.ar/producto-detalle?productId=termopaneledvh</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://aluplast.com.ar/proyecto-detalle?project=6598849cf99c941cb00722ad</loc>
-
-    <lastmod>Wed Feb 07 2024 17:26:23 GMT+0000 (Coordinated Universal Time)</lastmod>
-    <priority>
-      0.64</priority>
-  </url>
-
-  <url>
-    <loc>
-      https://aluplast.com.ar/proyecto-detalle?project=659887c8f99c941cb00722b3</loc>
-    <lastmod>Wed Feb
-      07 2024 17:26:23 GMT+0000 (Coordinated Universal Time)</lastmod>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
     <priority>0.64</priority>
   </url>
-
-
+  <url>
+    <loc>https://aluplast.com.ar/proyecto-detalle?project=659887c8f99c941cb00722b3</loc>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
   <url>
     <loc>https://aluplast.com.ar/proyecto-detalle?project=659888dff99c941cb00722b7</loc>
-    <lastmod>Wed
-      Feb 07 2024 17:26:23 GMT+0000 (Coordinated Universal Time)</lastmod>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://aluplast.com.ar/proyecto-detalle?project=65a5d1225b505bd89c7ede1b</loc>
-    <lastmod>Wed
-      Feb 07 2024 17:26:23 GMT+0000 (Coordinated Universal Time)</lastmod>
+    <lastmod>2024-03-08T22:31:33+00:00</lastmod>
     <priority>0.64</priority>
   </url>
-</urlset>
-        
+</urlset> 

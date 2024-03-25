@@ -54,7 +54,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      <section className='instagram-section-wrap'>
+      <section className='instagram-section-wrap mt-5'>
         <a href="https://www.instagram.com/aluplast.aberturas/" target='_blank'>
           <i className="fa-brands fa-instagram"></i>
           {" "}

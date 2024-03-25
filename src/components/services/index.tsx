@@ -20,7 +20,7 @@ const LeftComponent = ({ data }: { data: ServicesData }) => (
           {/* <span>01</span> */}
           { data.title }
         </h2>
-        <p>
+        <p className='service-description'>
           {data.description}
         </p>
       </div>
@@ -36,7 +36,7 @@ const RightComponent = ({ data }: { data: ServicesData }) => (
           {/* <span>02</span> */}
           {data.title}
         </h2>
-        <p className="mb-0">
+        <p className="mb-0 service-description">
           { data.description }
         </p>
         <p>
@@ -60,7 +60,7 @@ export const Index = () => {
     },
     {
       image: '2',
-      title: '🖼️ Diseño Asistido por Profesionales',
+      title: '✨ Diseño Asistido por Profesionales',
       description: 'Transforma tu visión en realidad con nuestro diseño asistido por profesionales. En Aluplast, combinamos tu estilo con la funcionalidad óptima, creando aberturas que destacan en estética y rendimiento.'
     },
     {

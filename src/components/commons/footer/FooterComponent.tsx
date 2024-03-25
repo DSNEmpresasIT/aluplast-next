@@ -84,7 +84,7 @@ export const FooterComponent = () => {
           </div>
           <div className="copyright-2">
             <div>
-              <p><span>Aluplast</span>, Fábrica de Aberturas de Aluminio &copy; 2023 <a title="botón footer" href="https://www.dsnempresas.com.ar/" target="_blank"><span>powered by <Image src="/img/dsn.png" width={30} height={30} sizes="maxHeight: 33px" alt="dsn" /></span></a><a title="botón footer" target="_blank"><span></span></a>
+              <p><span>Aluplast</span>, Fábrica de Aberturas de Aluminio &copy; {new Date().getFullYear()} <a title="botón footer" href="https://www.dsnempresas.com.ar/" target="_blank"><span>powered by <Image src="/img/dsn.png" width={30} height={30} sizes="maxHeight: 33px" alt="dsn" /></span></a><a title="botón footer" target="_blank"><span></span></a>
               </p>
             </div>
           </div>

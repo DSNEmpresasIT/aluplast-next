@@ -20,7 +20,7 @@ export const InstagramNewsComponent = () => {
       getInstagramImages(process?.env?.INSTAGRAM_TOKEN).then((response) => {
         const newPosts = [];
         for (let i = 0; i < 4; i++) {
-          newPosts.push(response[i]);
+          newPosts.push(response.images[i]);
         }
         setPosts(newPosts);
       });
