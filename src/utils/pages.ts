@@ -1,13 +1,13 @@
 export enum PAGES {
-  HOME = "Especialistas en Aluminio y PVC | Urdinarrain, Entre Ríos",
-  ABOUT_US = "Sobre Nosotros",
-  CONTACT = "Contacto | Aluplast - Entre Ríos",
-  CATALOG = 'Catálogo | Lo mejor en aluminio y PVC',
+  HOME = "Aluplast | Expertos en aluminio y PVC",
+  ABOUT_US = "Sobre nosotros",
+  CONTACT = "Contacto",
+  CATALOG = 'Catálogo',
   PRODUCT = 'Producto detalle',
-  TEXTURES = 'Descubre Nuestras Texturas | Aluplast aberturas de aluminio',
-  LAST_NEWS = 'Últimas noticias | Aluplast fábrica de aberturas',
-  NEWS_DETAIL = 'Noticias detalle | Urdinarrain, Entre Ríos',
-  SOME_PROJECTS = 'Proyectos Destacados | Aluplast - Aberturas de aluminio',
+  TEXTURES = 'Descubre nuestras nexturas',
+  LAST_NEWS = 'Últimas noticias',
+  NEWS_DETAIL = 'Noticias detalle',
+  SOME_PROJECTS = 'Proyectos destacados',
   PROJECT_DETAIL = 'Proyecto detalle',
   SERVICES = 'Nuestros servicios'
 }
@@ -25,3 +25,36 @@ export enum PAGES_PATH {
   TEXTURES = 'texturas-tipos-y-tratamientos',
   SERVICES = 'servicios-aluplast-aluminio-pvc'
 }
+
+export const keywords = [
+  'Aberturas en Urdinarrain',
+  'Fabrica de Aberturas en Entre Ríos',
+  'Aberturas de Aluminio y PVC en Argentina',
+  'Tipologías de Aberturas',
+  'Oscilobatientes Urdinarrain',
+  'Corredizas de Calidad Argentina',
+  'Pivotantes Aluminio Entre Ríos',
+  'Soluciones en Aberturas Argentina',
+  'Excelencia en Aberturas',
+  'Satisfacción del Cliente Aberturas',
+  'Ventanas de PVC en Urdinarrain',
+  'Puertas de Aluminio Argentina',
+  'Ventanas de Diseño en Entre Ríos',
+  'Fabricante de Aberturas de Calidad',
+  'Ventanas Modernas Urdinarrain',
+  'Soluciones Innovadoras en Aberturas',
+  'Aberturas a Medida Entre Ríos',
+  'Cerramientos de Aluminio Urdinarrain',
+  'Calidad Certificada en Aberturas',
+  'Diseños Exclusivos de Ventanas',
+  'Fachadas de Aluminio en Argentina',
+  'Aberturas Eficientes Energéticamente',
+  'Puertas de Seguridad Urdinarrain',
+  'Ventanas Resistentes al Clima',
+  'Fabricante de Puertas Pivotantes',
+  'Aberturas para Proyectos Residenciales',
+  'Ventanas de Alta Gama Argentina',
+  'Aberturas Personalizadas Urdinarrain',
+  'Puertas de Entrada de Lujo',
+  'Ventanas Antirruido en Entre Ríos'
+]

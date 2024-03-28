@@ -5,16 +5,65 @@ import { HeaderDesktopComponent } from '@/components/commons/headers/HeaderDeskt
 import { HeaderMobileComponent } from '@/components/commons/headers/HeaderMobileComponent'
 import { HeaderStickComponent } from '@/components/commons/headers/HeaderStickComponent'
 import { BodyLayout } from './BodyLayout'
-import { Metadata } from 'next'
+import { Metadata, MetadataRoute } from 'next'
+import { PAGES, keywords } from '@/utils/pages'
+import { ModalComponent } from '@/components/commons/ModalComponent'
 
 export const dynamic = 'force-static';
 
+export function robots(): MetadataRoute.Robots {
+  return {
+    rules: [
+      {
+        userAgent: 'Googlebot',
+        allow: ['/'],
+        disallow: '/dashboard/',
+      },
+    ],
+    sitemap: 'https://aluplast.com.ar/sitemap.xml',
+  }
+}
 
 export const metadata: Metadata = {
-  keywords: 'Aberturas en Urdinarrain, Fabrica de Aberturas en Entre Ríos, Aberturas de Aluminio y PVC en Argentina, Tipologías de Aberturas, Oscilobatientes Urdinarrain, Corredizas de Calidad Argentina, Pivotantes Aluminio Entre Ríos, Soluciones en Aberturas Argentina, Excelencia en Aberturas, Satisfacción del Cliente Aberturas, Ventanas de PVC en Urdinarrain, Puertas de Aluminio Argentina, Ventanas de Diseño en Entre Ríos, Fabricante de Aberturas de Calidad, Ventanas Modernas Urdinarrain, Soluciones Innovadoras en Aberturas, Aberturas a Medida Entre Ríos, Cerramientos de Aluminio Urdinarrain, Calidad Certificada en Aberturas, Diseños Exclusivos de Ventanas, Fachadas de Aluminio en Argentina, Aberturas Eficientes Energéticamente, Puertas de Seguridad Urdinarrain, Ventanas Resistentes al Clima, Fabricante de Puertas Pivotantes, Aberturas para Proyectos Residenciales, Ventanas de Alta Gama Argentina, Aberturas Personalizadas Urdinarrain, Puertas de Entrada de Lujo, Ventanas Antirruido en Entre Ríos', 
+  openGraph: {
+    title: {
+      default: PAGES.HOME,
+      template: '%s | Urdinarrain - Entre Ríos'
+    },
+    description: "Descubre la excelencia en aberturas de aluminio y PVC en Urdinarrain, Entre Ríos. Fabricamos oscilobatientes, corredizas, pivotantes y más. Garantizamos calidad y satisfacción para nuestros clientes.",
+    authors: ['David Caro - @FullStack Developer', 'DSN Empresas @2024'],
+    images: [
+      {
+        url: 'https://aluplast.com.ar/img/whoweare/we-are-01.jpg',
+        height: 200,
+        width: 200,
+        alt: PAGES.HOME
+      }
+    ]
+  },
+  title: {
+    default: PAGES.HOME,
+    template: '%s | Urdinarrain - Entre Ríos'
+  },
+  description: "Descubre la excelencia en aberturas de aluminio y PVC en Urdinarrain, Entre Ríos. Fabricamos oscilobatientes, corredizas, pivotantes y más. Garantizamos calidad y satisfacción para nuestros clientes.",
+  keywords, 
   authors: {
     name: 'DSN Empresas',
     url: 'https://www.dsnempresas.com.ar/'
+  },
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  referrer: 'origin-when-cross-origin',
+  robots: {
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      notranslate: true,
+    }
   }
 }
 
@@ -26,12 +75,12 @@ export default function RootLayout({
   return (
     <html className="homepage-box" lang="es">
       <head>
-        <meta property="og:image" content="https://aluplast.com.ar/img/whoweare/we-are-01.jpg" />
-        <meta property="og:image:width" content="100" />
         <meta content="text/html;charset=UTF-8" />
-        <meta name="googlebot" content="index, follow" />
-        <meta name="robots" content="index, follow, revisit-after=604800"></meta>
-        <meta name="google" content="notranslate" />
+        {/* <meta property="og:image" content="https://aluplast.com.ar/img/whoweare/we-are-01.jpg" /> */}
+        {/* <meta property="og:image:width" content="100" /> */}
+        {/* <meta name="googlebot" content="index, follow" /> */}
+        {/* <meta name="robots" content="index, follow, revisit-after=604800"></meta> */}
+        {/* <meta name="google" content="notranslate" /> */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="/font/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
@@ -54,6 +103,7 @@ export default function RootLayout({
         } */}
         <link rel="stylesheet" type="text/css" href="/css/font.css" />
         <link rel="stylesheet" type="text/css" href="/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="/css/custom.css" />
       </head>
       <BodyLayout>
         <HeaderDesktopComponent />
@@ -63,6 +113,7 @@ export default function RootLayout({
         <BackToTopComponent />
         <FooterComponent />
         <WhatsAppButtonComponent />
+        <ModalComponent />
       </BodyLayout>
     </html>
   )

@@ -1,0 +1,28 @@
+#modal {
+  background-color: rgba(8, 8, 8, 0.53);
+  width: 98.7vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 90000; /* Asegúrate de que el z-index sea mayor que cualquier otro elemento en la página */
+}
+
+#modal .modal-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(232, 232, 232);
+  border: 1px solid var(--main-red);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+@media (min-width: 695px){
+  #modal .modal-container {
+    position: fixed!important;
+  top: 50%!important;
+  left: 50%!important;
+  transform: translate(-50%, -50%)!important;
+  }
+}
