@@ -13,7 +13,7 @@ export const HeaderDesktopComponent = () => {
       <div className="container clearfix">
         <h1 className="logo pull-left">
           <a href="/">
-            <img alt="aluplast-logo" title="logo Aluplast - fábrica de aberturas de aluminio" src="/img/logo-white.png" />
+            <img alt="aluplast-logo" title="logo Aluplast - fábrica de aberturas de aluminio" src="/img/logo.png" />
           </a>
         </h1>
         <nav className="menu-desktop menu-desktop--show pull-right">

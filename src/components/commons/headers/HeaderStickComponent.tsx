@@ -10,7 +10,7 @@ export const HeaderStickComponent = () => {
       <div className="container clearfix">
         <h1 className="logo pull-left">
           <a href="/">
-            <img alt="Logo" src="/img/logo-white.png" />
+            <img alt="Logo" src="/img/logo.png" />
           </a>
         </h1>
         <nav className="menu-desktop pull-right">
