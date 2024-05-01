@@ -18,7 +18,7 @@ const page = () => {
       <section className="breadcrumbs-wrap" style={{ paddingTop: '13vh' }}>
         <div className="section-content section-content--w1140">
           <div className="container clearfix">
-            <div className="breadcrumbs-inner">
+            <div className="breadcrumbs-inner pt-3">
               <ul className="breadcrumbs1 ul--inline ul--no-style">
                 <li>
                   <Link href="/">Home</Link>

@@ -114,6 +114,14 @@ export const ProductDetail = ({
                     aria-labelledby="home-tab"
                   >
                     <p>
+                      <Fragment >
+                        <strong>Prestación:</strong> Alta - Baja - Media
+                        <br />
+                        <span style={{ color: "#999" }}>
+                          _________________________________________________
+                        </span>
+                        <br />
+                      </Fragment>
                       {productSelected.specs?.description?.map((spec: any, index: number) => {
                         return (
                           <Fragment key={`${index}-specs-key-product-detail`}>

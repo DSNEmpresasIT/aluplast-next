@@ -41,7 +41,7 @@ export const navData:NavData[] = [
         }
       },
       {
-        label: 'Portones garage',
+        label: 'Portones garaje',
         link: PAGES_PATH.CATALOG_PATH,
         query: {
           queryName: 'categoria',

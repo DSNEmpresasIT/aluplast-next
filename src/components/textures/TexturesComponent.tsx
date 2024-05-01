@@ -29,10 +29,10 @@ export const TexturesComponent = () => {
           <div className="pro-list">
             <div className="row">
               <div className="col-lg-5 col-md-12">
-                <div className="row">
+                <div className="row pt-3">
                   <div className='col-12'>
                     <h3>Texturas, anodizado y pintura</h3>
-                    <p>
+                    <p className='pt-3'>
                       Nuestros métodos de tratamiento de superficie, pintura y anodizado, pueden reforzar las ventajas del aluminio y rematar tu producto con un hermoso acabado. El anodizado sella y protege el aluminio extruido. La pintura te ofrece una selección ilimitada de colores y en diversos brillos, con una excelente consistencia de color.
                       <br />
                       <br />
@@ -44,7 +44,7 @@ export const TexturesComponent = () => {
                         return (
                           <div key={i} className="col-3 textures-button-container">
                             <button type="button" onClick={() => handleSetNewTexture(texture.img)}>
-                              <img src={`/img/textures/${texture.img}.jpg`}  style={{ border: '1px solid #000' }} alt={`${texture.img}`}/>
+                              <img src={`/img/textures/${texture.img}.png`}  style={{ border: '1px solid #000' }} alt={`${texture.img}`}/>
                               { texture.name }
                             </button>
                           </div>
@@ -56,7 +56,7 @@ export const TexturesComponent = () => {
               </div>
               <div className="col-lg-6 col-md-12">
                 <div className={`row animate__animated ${ isAnimationOn && 'animate__fadeIn' }`}>
-                  <img src={`/img/textures/examples/example_${imageName}.jpg`} alt="example" />
+                  <img src={`/img/textures/examples/${imageName}.png`} alt="example" />
                 </div>
               </div>
             </div>

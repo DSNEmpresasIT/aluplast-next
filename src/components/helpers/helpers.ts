@@ -14,7 +14,7 @@ interface paginationIndex {
 const productNames: any = {
   [ProductFathersTypes.OPENERS_TYPES]: 'Aberturas',
   [ProductFathersTypes.CLOSERS_TYPES]: 'Cerramientos',
-  [ProductFathersTypes.GARAGE_DOORS]: 'Puertas garage',
+  [ProductFathersTypes.GARAGE_DOORS]: 'Puertas garaje',
   [ProductFathersTypes.RESALES]: 'Reventas',
   [ProductFathersTypes.SOLAR_CONTROL]: 'Control solar',
   [ProductFathersTypes.WINDOWS]: 'Vidrios',

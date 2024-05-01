@@ -30,7 +30,7 @@ export enum ProductFathersTypes {
   SERVICES_TYPES = 'servicios',
   SOLAR_CONTROL = 'control-solar',
   WINDOWS = 'vidrios',
-  GARAGE_DOORS = 'puertas-garage',
+  GARAGE_DOORS = 'puertas-garaje',
   RESALES = 'reventas'
 }
 

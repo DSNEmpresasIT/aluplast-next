@@ -536,56 +536,56 @@ export const doorsData: CatalogData[] = [
       ],
     },
   },
-  // {
-  //   name: "Puerta corrediza colgante",
-  //   // img: 'puertamachimbre',
-  //   id: "puertacorredizacolgante",
-  //     filters: [
-  //     ProductFathersTypes.OPENERS_TYPES,
-  //     TypeProduct.DOOR_PRODUCT,
-  //     "puertacorredizacolgante",
-  //   ],
-  //   description:
-  //     "La puerta corrediza colgante es una solución práctica para espacios reducidos. Su deslizamiento suave y sin obstáculos ahorra espacio y agrega un toque moderno. Esta tipología es especialmente adecuada para áreas donde el espacio es una consideración importante. La Hoja se desplaza de forma lateral sobre un riel superior fijado al muro logrando la apertura sin trazar un barrido de apertura tradicional. Se pueden hacer hojas de tamaño considerable y múltiples diseños.",
-  //   specs: {
-  //     description: [
-  //       {
-  //         title: "Tipo",
-  //         text: "Puertas corredizas colgantes de aluminio.",
-  //       },
-  //       {
-  //         title: "Material",
-  //         text: "Aluminio de alta calidad.",
-  //       },
-  //       {
-  //         title: "Diseño",
-  //         text: "Ideal para lugares con limitaciones de espacio. Crea una transición suave entre espacios interiores y exteriores.",
-  //       },
-  //       {
-  //         title: "Durabilidad",
-  //         text: "Construcción robusta y resistente.",
-  //       },
-  //       {
-  //         title: "Entrada de Luz",
-  //         text: "Maximiza la entrada de luz natural en el interior.",
-  //       },
-  //       {
-  //         title: "Seguridad",
-  //         text: "Cerraduras de alta calidad para una mayor seguridad.",
-  //       },
-  //       {
-  //         title: "Personalización",
-  //         text: "Disponible en diversos acabados y colores.",
-  //       },
-  //     ],
-  //     features: [
-  //       "Estilo contemporáneo y elegante.",
-  //       "Ideal para lugares con limitaciones de espacio.",
-  //       "Crean una transición suave entre espacios interiores y exteriores.",
-  //       "Maximizan la entrada de luz natural en el interior.",
-  //     ],
-  //   },
-  // },
+  {
+    name: "Puerta plegadiza",
+    id: "puertaplegadiza",
+    img: ['1', '2', '3', '4'],
+    filters: [
+      ProductFathersTypes.OPENERS_TYPES,
+      TypeProduct.DOOR_PRODUCT,
+      "puertaplegadiza",
+    ],
+    description:
+      "La puerta plegadiza es una solución práctica para espacios reducidos. Su deslizamiento suave y sin obstáculos ahorra espacio y agrega un toque moderno. Esta tipología es especialmente adecuada para áreas donde el espacio es una consideración importante. La Hoja se desplaza de forma lateral sobre un riel superior fijado al muro logrando la apertura sin trazar un barrido de apertura tradicional. Se pueden hacer hojas de tamaño considerable y múltiples diseños.",
+    specs: {
+      description: [
+        {
+          title: "Tipo",
+          text: "Puertas corredizas colgantes de aluminio.",
+        },
+        {
+          title: "Material",
+          text: "Aluminio de alta calidad.",
+        },
+        {
+          title: "Diseño",
+          text: "Ideal para lugares con limitaciones de espacio. Crea una transición suave entre espacios interiores y exteriores.",
+        },
+        {
+          title: "Durabilidad",
+          text: "Construcción robusta y resistente.",
+        },
+        {
+          title: "Entrada de Luz",
+          text: "Maximiza la entrada de luz natural en el interior.",
+        },
+        {
+          title: "Seguridad",
+          text: "Cerraduras de alta calidad para una mayor seguridad.",
+        },
+        {
+          title: "Personalización",
+          text: "Disponible en diversos acabados y colores.",
+        },
+      ],
+      features: [
+        "Estilo contemporáneo y elegante.",
+        "Ideal para lugares con limitaciones de espacio.",
+        "Crean una transición suave entre espacios interiores y exteriores.",
+        "Maximizan la entrada de luz natural en el interior.",
+      ],
+    },
+  },
  
 ];
 
@@ -1914,72 +1914,64 @@ export const resalesData: CatalogData[] = [
 export const texturesData: TexturesTypes[] = [
   {
     name: "Anodizado gris",
-    img: "ANODIZADOGRIS",
+    img: "anodizadogris",
   },
   {
     name: "Anodizado natural",
-    img: "ANODIZADONATURAL",
+    img: "anodizadonatural",
   },
   {
     name: "Anodizado natural brillante",
-    img: "ANODIZADONATURALBRILLANTE",
+    img: "anodizadonaturalbrillante",
   },
   {
     name: "Anodizado natural lijado",
-    img: "ANODIZADONATURALLIJADO",
+    img: "anodizadonaturallijado",
   },
   {
     name: "Anodizado negro",
-    img: "ANODIZADONEGRO",
+    img: "anodizadonegro",
   },
   {
     name: "Anodizado peltre",
-    img: "ANODIZADOPELTRE",
-  },
-  {
-    name: "Blanco brillante",
-    img: "BLANCOBRILLANTE",
-  },
-  {
-    name: "Blanco semi mate",
-    img: "BLANCOSEMIMATE",
+    img: "anodizadopeltre",
   },
   {
     name: "Bronce claro",
-    img: "BRONCECLARO",
+    img: "bronceclaro",
   },
-  // {
-  //   name: "Bronce colonial",
-  //   img: "BRONCECOLONIAL",
-  // },
+  {
+    name: "Bronce colonial",
+    img: "broncecolonial",
+  },
   {
     name: "Bronce medio",
-    img: "BRONCEMEDIO",
-  },
-  {
-    name: "Cedro claro",
-    img: "CEDROCLARO",
+    img: "broncemedio",
   },
   {
     name: "Gris micro texturado",
-    img: "GRISMICROTEXTURADO",
+    img: "grismicrotexturado",
   },
   {
-    name: "Negro semi mate",
-    img: "NEGROSEMIMATE",
+    name: "Negro micro texturado",
+    img: "negromicrotexturado",
   },
   {
-    name: "Negro semi texturado",
-    img: "NEGROSEMITEXTURADO",
+    name: "Negro semimate",
+    img: "negrosemimate",
   },
-  // {
-  //   name: "Nogal claro",
-  //   img: "NOGALCLARO",
-  // },
-  // {
-  //   name: "Roble oscuro",
-  //   img: "ROBLEOSCURO",
-  // }
+  {
+    name: "Simil cedro",
+    img: "similcedro",
+  },
+  {
+    name: "Simil roble oscuro",
+    img: "similrobleoscuro",
+  },
+  {
+    name: "Anodizado natural brillante",
+    img: "anodizadogris",
+  },
 ];
 
 export const doorsModel = [
