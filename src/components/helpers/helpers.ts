@@ -23,7 +23,11 @@ const productNames: any = {
 
 const typeName: any = {
   [TypeProduct.DOOR_PRODUCT]: 'Puertas',
-  [TypeProduct.WINDOW_PRODUCT]: 'Ventanas'
+  [TypeProduct.WINDOW_PRODUCT]: 'Ventanas',
+  [TypeProduct.BAR_PRODDUCT]: 'Barandas',
+  [TypeProduct.BATHROOM_PARTITION_PRODUCT]: 'Mamparas de baño',
+  [TypeProduct.RESALES_DOOR]: 'Puertas placard',
+  [TypeProduct.CURTAINS]: 'Cortinas',
 }
 
 const text: any = {

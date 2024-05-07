@@ -8,6 +8,7 @@ import { BodyLayout } from './BodyLayout'
 import { Metadata, MetadataRoute } from 'next'
 import { PAGES, keywords } from '@/utils/pages'
 import { ModalComponent } from '@/components/commons/ModalComponent'
+import { CartContextProvider } from '@/context/cart-context'
 
 export const dynamic = 'force-static';
 
@@ -106,14 +107,16 @@ export default function RootLayout({
         <link rel="stylesheet" type="text/css" href="/css/custom.css" />
       </head>
       <BodyLayout>
-        <HeaderDesktopComponent />
-        <HeaderMobileComponent />
-        <HeaderStickComponent />
-        {children}
-        <BackToTopComponent />
-        <FooterComponent />
-        <WhatsAppButtonComponent />
-        <ModalComponent />
+        <CartContextProvider>
+          <HeaderDesktopComponent />
+          <HeaderMobileComponent />
+          <HeaderStickComponent />
+          {children}
+          <BackToTopComponent />
+          <FooterComponent />
+          <WhatsAppButtonComponent />
+          <ModalComponent />
+        </CartContextProvider>
       </BodyLayout>
     </html>
   )

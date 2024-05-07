@@ -38,7 +38,7 @@ const navData = [
   },
 ];
 
-const subCategories = [
+const openersSubCategories = [
   {
     name: getProductTypeName(TypeProduct.DOOR_PRODUCT),
     filter: TypeProduct.DOOR_PRODUCT,
@@ -46,6 +46,25 @@ const subCategories = [
   {
     name: getProductTypeName(TypeProduct.WINDOW_PRODUCT),
     filter: TypeProduct.WINDOW_PRODUCT,
+  },
+];
+
+const resalesSubCategories = [
+  {
+    name: getProductTypeName(TypeProduct.BAR_PRODDUCT),
+    filter: TypeProduct.BAR_PRODDUCT
+  },
+  {
+    name: getProductTypeName(TypeProduct.RESALES_DOOR),
+    filter: TypeProduct.RESALES_DOOR
+  },
+  {
+    name: getProductTypeName(TypeProduct.BATHROOM_PARTITION_PRODUCT),
+    filter: TypeProduct.BATHROOM_PARTITION_PRODUCT
+  },
+  {
+    name: getProductTypeName(TypeProduct.CURTAINS),
+    filter: TypeProduct.CURTAINS
   },
 ];
 
@@ -168,7 +187,7 @@ export const ShopNavComponent: FC<ShopNavComponentProps> = ({
       {category === ProductFathersTypes.OPENERS_TYPES && (
         <ul className="blog__cate ul--no-style">
           <h4 className="title-sidebar">Tipos de {filters[0]}</h4>
-          {subCategories?.map((buttonData: any) => {
+          {openersSubCategories?.map((buttonData: any) => {
             return (
               <li
                 key={`shop-nav-${buttonData.name}`}
@@ -197,6 +216,41 @@ export const ShopNavComponent: FC<ShopNavComponentProps> = ({
           })}
         </ul>
       )}
+
+      {
+        category === ProductFathersTypes.RESALES && (
+          <ul className="blog__cate ul--no-style">
+            <h4 className="title-sidebar">Tipos de {filters[0]}</h4>
+            {resalesSubCategories?.map((buttonData: any) => {
+              return (
+                <li
+                  key={`shop-nav-${buttonData.name}`}
+                  style={{
+                    cursor: "pointer",
+                    color: filters.includes(buttonData.filter) ? "red" : "",
+                  }}
+                  onClick={() => handleSetFilters(buttonData)}
+                >
+                  <a type="button">
+                    {buttonData.name}
+                    <span>
+                      <em>
+                        (
+                        {
+                          allCatalogData.filter((product) =>
+                            product.filters.includes(buttonData.filter)
+                          ).length
+                        }
+                        )
+                      </em>
+                    </span>
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        )
+      }
     </div>
   );
 };

@@ -3,6 +3,7 @@ import { PAGES, PAGES_PATH } from "@/utils/pages";
 import { ProductFathersTypes } from "@/utils/types";
 import Link from "next/link";
 import React from "react";
+import { CartNavComponent } from "./CartNavComponent";
 
 export const HeaderDesktopComponent = () => {
   return (
@@ -16,7 +17,7 @@ export const HeaderDesktopComponent = () => {
             <img alt="aluplast-logo" title="logo Aluplast - fábrica de aberturas de aluminio" src="/img/logo.png" />
           </a>
         </h1>
-        <nav className="menu-desktop menu-desktop--show pull-right">
+        <nav className="menu-desktop menu-desktop--show pull-right d-flex">
           <ul className="ul--inline ul--no-style">
             <li className="li-has-sub">
               <a href={PAGES_PATH.HOME_PATH} title="Home - Aluplast"> Home</a>
@@ -51,6 +52,7 @@ export const HeaderDesktopComponent = () => {
               })
             }
           </ul>
+          {/* <CartNavComponent /> */}
         </nav>
       </div>
     </header>

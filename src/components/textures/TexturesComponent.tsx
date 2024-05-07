@@ -4,7 +4,7 @@ import { texturesData } from '@/utils/data/catalog';
 import './texturescomponent.css';
 
 export const TexturesComponent = () => {
-  const [imageName, setImageState] = useState<string>('ANODIZADOGRIS');
+  const [imageName, setImageState] = useState<string>('anodizadogris');
   const [isAnimationOn, setIsAnimationOn] = useState<boolean>(false);
 
   const handleSetNewTexture = (texture:string) => {
@@ -54,9 +54,9 @@ export const TexturesComponent = () => {
                   }
                 </div>
               </div>
-              <div className="col-lg-6 col-md-12">
+              <div className="col-lg-6 col-md-12 pt-5 ">
                 <div className={`row animate__animated ${ isAnimationOn && 'animate__fadeIn' }`}>
-                  <img src={`/img/textures/examples/${imageName}.png`} alt="example" />
+                  <img className='ml-5' src={`/img/textures/examples/${imageName}.png`} alt="example" />
                 </div>
               </div>
             </div>

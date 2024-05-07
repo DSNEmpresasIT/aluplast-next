@@ -1806,87 +1806,321 @@ export const garageDoorsData: CatalogData[] = [
 
 export const resalesData: CatalogData[] = [
   {
-    name: 'Puertas placas interiores',
-    id: 'puertasplacasinteriores',
-    filters: [ProductFathersTypes.RESALES, 'puertasplacasinteriores'],
-    description: '-',
-    specs: {
-      description: [
-        {
-          title: 'Versatilidad Interior',
-          text: 'Solución versátil para separar espacios interiores con amplia gama de productos.'
-        },
-        {
-          title: '  Diseños Elegantes',
-          text: 'Mejora la estética y la funcionalidad de los ambientes con la calidez de la madera.'
-        },
-        {
-          title: '  Amplia Gama de Estilos',
-          text: 'Disponibles en varios diseños y acabados.'
-        },
-        {
-          title: '  Fácil Instalación',
-          text: 'Montaje sencillo para renovar la apariencia de interiores.'
-        }
-      ],
-    }
-  },
-  {
-    name: 'Mamparas y puertas de vidrio',
-    id: 'mamparasypuertasdevidrio',
-    filters: [ProductFathersTypes.RESALES, 'mamparasypuertasdevidrio'],
-    description: '-',
-    specs: {
-      description: [
-        {
-          title: 'Luminosidad y Transparencia',
-          text: 'Aportan luz natural y un aspecto moderno a los espacios.'
-        },
-        {
-          title: '  Personalización',
-          text: 'Diversas opciones de vidrio y marcos para adaptarse a la decoración.'
-        },
-        {
-          title: '  Funcionalidad',
-          text: 'Separan ambientes sin obstruir visualmente, manteniendo la sensación de amplitud.'
-        },
-        {
-          title: '  Calidad Garantizada',
-          text: 'Productos de vidrio resistentes y seguros.'
-        }
-      ],
-    }
-  },
-  {
-    name: 'Cortinas interiores',
-    id: 'cortinasinteriores',
-    filters: [ProductFathersTypes.RESALES, 'cortinasinteriores'],
-    description: '-',
-    specs: {
-      description: [
-        {
-          title: 'Control de Luz',
-          text: 'Regulan la entrada de luz según las preferencias.'
-        },
-        {
-          title: '  Estilo y Decoración',
-          text: 'Complementan la decoración de interiores.'
-        },
-        {
-          title: '  Diseños Variados',
-          text: 'Disponibles en una amplia gama de estilos, telas y colores.'
-        },
-        {
-          title: '  Privacidad',
-          text: 'Proporcionan privacidad sin comprometer la estética.'
-        }
-      ],
-    }
-  },
-  {
-    name: 'Aberturas de PVC',
+    name: 'Baranda',
     id: 'aberturasPVC',
-    filters: [ProductFathersTypes.RESALES, 'aberturasdepvc'],
+    filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
+    description: '-',
+    specs: {
+      description: [
+        {
+          title: 'Eficiencia Energética',
+          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
+        },
+        {
+          title: '  Durabilidad',
+          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
+        },
+        {
+          title: '  Estética y Personalización',
+          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
+        },
+        {
+          title: '  Bajo Mantenimiento',
+          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
+        }
+      ],
+    }
+  },
+  {
+    name: 'Baranda',
+    id: 'aberturasPVC',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
+    description: '-',
+    specs: {
+      description: [
+        {
+          title: 'Eficiencia Energética',
+          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
+        },
+        {
+          title: '  Durabilidad',
+          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
+        },
+        {
+          title: '  Estética y Personalización',
+          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
+        },
+        {
+          title: '  Bajo Mantenimiento',
+          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
+        }
+      ],
+    }
+  },
+  {
+    name: 'Baranda',
+    id: 'aberturasPVC',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
+    description: '-',
+    specs: {
+      description: [
+        {
+          title: 'Eficiencia Energética',
+          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
+        },
+        {
+          title: '  Durabilidad',
+          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
+        },
+        {
+          title: '  Estética y Personalización',
+          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
+        },
+        {
+          title: '  Bajo Mantenimiento',
+          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
+        }
+      ],
+    }
+  },
+  {
+    name: 'Baranda',
+    id: 'aberturasPVC',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
+    description: '-',
+    specs: {
+      description: [
+        {
+          title: 'Eficiencia Energética',
+          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
+        },
+        {
+          title: '  Durabilidad',
+          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
+        },
+        {
+          title: '  Estética y Personalización',
+          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
+        },
+        {
+          title: '  Bajo Mantenimiento',
+          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
+        }
+      ],
+    }
+  },
+  {
+    name: 'Baranda',
+    id: 'aberturasPVC',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
+    description: '-',
+    specs: {
+      description: [
+        {
+          title: 'Eficiencia Energética',
+          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
+        },
+        {
+          title: '  Durabilidad',
+          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
+        },
+        {
+          title: '  Estética y Personalización',
+          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
+        },
+        {
+          title: '  Bajo Mantenimiento',
+          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
+        }
+      ],
+    }
+  },
+  {
+    name: 'Baranda',
+    id: 'aberturasPVC',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
+    description: '-',
+    specs: {
+      description: [
+        {
+          title: 'Eficiencia Energética',
+          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
+        },
+        {
+          title: '  Durabilidad',
+          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
+        },
+        {
+          title: '  Estética y Personalización',
+          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
+        },
+        {
+          title: '  Bajo Mantenimiento',
+          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
+        }
+      ],
+    }
+  },
+  {
+    name: 'Baranda',
+    id: 'aberturasPVC',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
+    description: '-',
+    specs: {
+      description: [
+        {
+          title: 'Eficiencia Energética',
+          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
+        },
+        {
+          title: '  Durabilidad',
+          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
+        },
+        {
+          title: '  Estética y Personalización',
+          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
+        },
+        {
+          title: '  Bajo Mantenimiento',
+          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
+        }
+      ],
+    }
+  },
+  {
+    name: 'Baranda',
+    id: 'aberturasPVC',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
+    description: '-',
+    specs: {
+      description: [
+        {
+          title: 'Eficiencia Energética',
+          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
+        },
+        {
+          title: '  Durabilidad',
+          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
+        },
+        {
+          title: '  Estética y Personalización',
+          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
+        },
+        {
+          title: '  Bajo Mantenimiento',
+          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
+        }
+      ],
+    }
+  },
+  {
+    name: 'Baranda',
+    id: 'aberturasPVC',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
+    description: '-',
+    specs: {
+      description: [
+        {
+          title: 'Eficiencia Energética',
+          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
+        },
+        {
+          title: '  Durabilidad',
+          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
+        },
+        {
+          title: '  Estética y Personalización',
+          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
+        },
+        {
+          title: '  Bajo Mantenimiento',
+          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
+        }
+      ],
+    }
+  },
+  {
+    name: 'Baranda',
+    id: 'aberturasPVC',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
+    description: '-',
+    specs: {
+      description: [
+        {
+          title: 'Eficiencia Energética',
+          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
+        },
+        {
+          title: '  Durabilidad',
+          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
+        },
+        {
+          title: '  Estética y Personalización',
+          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
+        },
+        {
+          title: '  Bajo Mantenimiento',
+          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
+        }
+      ],
+    }
+  },
+  {
+    name: 'Mamapara de baño',
+    id: 'aberturasPVC',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
+    description: '-',
+    specs: {
+      description: [
+        {
+          title: 'Eficiencia Energética',
+          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
+        },
+        {
+          title: '  Durabilidad',
+          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
+        },
+        {
+          title: '  Estética y Personalización',
+          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
+        },
+        {
+          title: '  Bajo Mantenimiento',
+          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
+        }
+      ],
+    }
+  },
+  {
+    name: 'Puerta placard',
+    id: 'aberturasPVC',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.RESALES_DOOR],
+    description: '-',
+    specs: {
+      description: [
+        {
+          title: 'Eficiencia Energética',
+          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
+        },
+        {
+          title: '  Durabilidad',
+          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
+        },
+        {
+          title: '  Estética y Personalización',
+          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
+        },
+        {
+          title: '  Bajo Mantenimiento',
+          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
+        }
+      ],
+    }
+  },
+  {
+    name: 'Cortina',
+    id: 'aberturasPVC',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.CURTAINS],
     description: '-',
     specs: {
       description: [

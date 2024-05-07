@@ -3,6 +3,7 @@ import { PAGES_PATH } from '@/utils/pages'
 import { ProductFathersTypes } from '@/utils/types'
 import Link from 'next/link'
 import React from 'react'
+import { CartNavComponent } from './CartNavComponent'
 
 export const HeaderStickComponent = () => {
   return (
@@ -13,8 +14,8 @@ export const HeaderStickComponent = () => {
             <img alt="Logo" src="/img/logo.png" />
           </a>
         </h1>
-        <nav className="menu-desktop pull-right">
-        <ul className="ul--inline ul--no-style">
+        <nav className="menu-desktop pull-right d-flex">
+          <ul className="ul--inline ul--no-style">
             <li className="li-has-sub">
               <a href="/" title='Visitar home'> Home</a>
             </li>
@@ -48,6 +49,7 @@ export const HeaderStickComponent = () => {
               })
             }
           </ul>
+          {/* <CartNavComponent/> */}
         </nav>
       </div>
     </header>

@@ -1,3 +1,12 @@
+export interface CartContextState {
+  cart: CatalogData[];
+}
+
+export enum CartContextAcions {
+  ADD_PRODUCT = 'ADD_PRODUCT_ACTION',
+  REMOVE_PRODUCT = 'REMOVE_PRODUCT_ACTION'
+}
+
 export enum InstagramPostMediaTypes {
   VIDEO = 'VIDEO',
   IMAGE = 'IMAGE',
@@ -37,6 +46,10 @@ export enum ProductFathersTypes {
 export enum TypeProduct {
   WINDOW_PRODUCT = 'ventanas',
   DOOR_PRODUCT = 'puertas',
+  BAR_PRODDUCT = 'barandas',
+  BATHROOM_PARTITION_PRODUCT = 'mampara-de-baño',
+  RESALES_DOOR = 'puertas-placard',
+  CURTAINS = 'cortinas'
 }
 
 export enum CatalogFiltersTypes {

@@ -1043,6 +1043,8 @@ nav>ul>li>a {
 
 .mini-cart {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .header-button {
@@ -1075,8 +1077,7 @@ nav>ul>li>a {
     border-radius: 50%;
     text-align: center;
     position: absolute;
-    bottom: -6px;
-    right: -8px;
+    left: 10px;
 }
 
 .mini-cart-counter--gray {
@@ -1088,7 +1089,7 @@ nav>ul>li>a {
 .cart-dropdown {
     position: absolute;
     z-index: 1000;
-    top: 47px;
+    top: 70px;
     right: -3px;
     min-width: 241px;
     border-top: 3px solid var(--main-color);
@@ -1113,7 +1114,7 @@ nav>ul>li>a {
 }
 
 .cart-list>li {
-    padding: 15px 10px 15px 17px;
+    padding: 15px 5px 15px 17px;
     border-bottom: 1px solid #f3f3f3;
 }
 
@@ -1121,12 +1122,19 @@ nav>ul>li>a {
     position: relative;
     display: inline-block;
     float: left;
-    width: 50px;
+    width: 30%;
     border: 1px solid white;
 }
 
 .pro-detail {
-    padding: 8px 0 11px 65px;
+    padding-left: 4px;
+    width: 80%;
+}
+
+.cart__item>button {
+    width: 10%;
+    padding: 0;
+    border: none;
 }
 
 .pro-detail>h6 {
@@ -6353,8 +6361,7 @@ input[type=number] {
     background-color: white;
     border-radius: 10px 10px 10px 10px;
     flex-direction: column;
-    height: 400px;
-    width: 400px;
+    width: 350px;
     z-index: 100;
 }
 
@@ -6392,8 +6399,7 @@ input[type=number] {
 
 .whatsapp-chat-container 
 .container-body {
-    height: 340px;
-    padding: 10px;
+    padding: 20px;
     overflow: auto;
 }
 

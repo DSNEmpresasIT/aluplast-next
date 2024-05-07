@@ -1,13 +1,28 @@
-import { CatalogData, ProductFathersTypes } from "@/utils/types";
+import { CartContextAcions, CatalogData, ProductFathersTypes } from "@/utils/types";
 import React, { Fragment } from "react";
 import { getThePlaceholderImage } from "@/components/helpers/helpers";
 import Image from "next/image";
+import { useCartContext } from "@/context/cart-context";
 
 export const ProductDetail = ({
   productSelected,
 }: {
   productSelected: CatalogData;
 }) => {
+  const { state, dispatch }:any = useCartContext();
+ 
+  const handleAddProductToCart = () => {
+    dispatch({
+      type: CartContextAcions.ADD_PRODUCT,
+      payload: {
+        ...productSelected,
+        img: productSelected.img?.length 
+            ? `/img/products/${productSelected.id}/${productSelected.img[0]}.png` 
+            : getThePlaceholderImage(productSelected.filters)
+      }
+    })
+  }
+
   return (
     <div className="row">
       <div className="col-lg-5 col-md-6">
@@ -152,6 +167,17 @@ export const ProductDetail = ({
                 >
                   Pedir cotización
                 </a>
+                {/* {
+                  !state.cart.find((cartProduct: CatalogData) => cartProduct.id === productSelected.id) && (
+                    <button
+                      onClick={handleAddProductToCart}
+                      className="au-btn au-btn--big au-btn--pill au-btn--yellow au-btn--white ml-3"
+                      type="button"
+                    >
+                      Agregar a carrito
+                    </button>
+                  )
+                } */}
               </div>
             </div>
           </div>
