@@ -8,9 +8,22 @@ import { ShopNavComponent } from "./ShopNavComponent";
 import { useRouter, useSearchParams } from "next/navigation";
 import { PAGES_PATH } from "@/utils/pages";
 
+
+const sortFunction = (product_1: CatalogData, product_2: CatalogData) => {
+  if (product_1.name > product_2.name) {
+    return 1;
+  }
+
+  if (product_1.name < product_2.name) {
+    return -1;
+  }
+
+  return 0
+}
+
 const initialState = [
   ...allCatalogData
-].sort(() => { return Math.random() - 0.5 });
+].sort(sortFunction);
 
 const ShopCardComponent = dynamic(() => import("./ShopCardComponent"));
 
@@ -37,7 +50,8 @@ export const ShopComponent = ({ query }: any) => {
       if (data.length) {
         newData = [...newData, ...data]
       }
-      setCatalogData(newData.sort(() => { return Math.random() - 0.5 }));
+      setCatalogData(newData.sort(sortFunction));
+
       setIndexPagination({ startIndex: 0, lastIndex: 6 })
     }
 

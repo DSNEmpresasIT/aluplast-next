@@ -48,7 +48,7 @@ export enum TypeProduct {
   DOOR_PRODUCT = 'puertas',
   BAR_PRODDUCT = 'barandas',
   BATHROOM_PARTITION_PRODUCT = 'mampara-de-baño',
-  RESALES_DOOR = 'puertas-placard',
+  RESALES_DOOR = 'puertas-placar',
   CURTAINS = 'cortinas'
 }
 

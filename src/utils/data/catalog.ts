@@ -1802,348 +1802,469 @@ export const garageDoorsData: CatalogData[] = [
       ],
     },
   },
-]
+];
 
-export const resalesData: CatalogData[] = [
+
+export const barData: CatalogData[] = [
   {
-    name: 'Baranda',
-    id: 'aberturasPVC',
+    name: 'BBA P025-02',
+    img: ['bbap025-02'],
+    id: 'bbap025-02',
     filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
-    description: '-',
+    description: `Baranda BBA, testimonio de elegancia y funcionalidad, diseñado específicamente para satisfacer los estándares más exigentes. 
+    La Baranda BBA es la elección ideal para aquellos que buscan la combinación perfecta de estética moderna y funcionalidad duradera.
+    `,
     specs: {
       description: [
         {
-          title: 'Eficiencia Energética',
-          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
+          title: 'Diseño sofisticado',
+          text: 'Ofrece versatilidad, con opciones de pasamanos elíptico o recto, brindando no solo una imagen agradable sino también una sensación táctil excepcional.'
         },
         {
-          title: '  Durabilidad',
-          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
+          title: 'Amplia visibilidad de vidrio',
+          text: 'Diseñada para resaltar la presencia del vidrio, el pasamanos permite que este nazca dentro de él, maximizando la exposición y la estética.'
         },
         {
-          title: '  Estética y Personalización',
-          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
+          title: 'Compatibilidad con vidrios 3+3 y 4+4',
+          text: 'Adaptabilidad para satisfacer diversas necesidades de diseño y seguridad.'
         },
         {
-          title: '  Bajo Mantenimiento',
-          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
+          title: 'Anclaje químico sencillo',
+          text: 'Facilitamos la instalación con la posibilidad de anclaje químico a través de inserto metálico sobre el hormigón, asegurando una sujeción robusta y duradera.'
         }
       ],
+      features: [
+        'Grampa de Fijación a Frente de Losa: Garantiza una fijación segura y estable.',
+        'Refuerzo de Parante: Aumenta la resistencia estructural para una mayor durabilidad.',
+        'Tapa de Fijación y Soporte Inferior: Detalles que marcan la diferencia en la estética y la funcionalidad.',
+        'Bulonería de Acero Inoxidable: Resistencia a la corrosión para una vida útil prolongada',
+      ]
     }
   },
   {
-    name: 'Baranda',
-    id: 'aberturasPVC',
+    name: 'BBA P028-02',
+    img: ['bbap028-02'],
+    id: 'bbap028-02',
     filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
-    description: '-',
+    description: `Baranda BBA, testimonio de elegancia y funcionalidad, diseñado específicamente para satisfacer los estándares más exigentes.
+    La Baranda BBA es la elección ideal para aquellos que buscan la combinación perfecta de estética moderna y funcionalidad duradera.
+    `,
     specs: {
       description: [
         {
-          title: 'Eficiencia Energética',
-          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
+          title: 'Diseño sofisticado',
+          text: 'Ofrece versatilidad, con opciones de pasamanos elíptico o recto, brindando no solo una imagen agradable sino también una sensación táctil excepcional.'
         },
         {
-          title: '  Durabilidad',
-          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
+          title: 'Amplia visibilidad de vidrio',
+          text: 'Diseñada para resaltar la presencia del vidrio, el pasamanos permite que este nazca dentro de él, maximizando la exposición y la estética.'
         },
         {
-          title: '  Estética y Personalización',
-          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
+          title: 'Compatibilidad con vidrios 3+3 y 4+4',
+          text: 'Adaptabilidad para satisfacer diversas necesidades de diseño y seguridad.'
         },
         {
-          title: '  Bajo Mantenimiento',
-          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
+          title: 'Anclaje químico sencillo',
+          text: 'Facilitamos la instalación con la posibilidad de anclaje químico a través de inserto metálico sobre el hormigón, asegurando una sujeción robusta y duradera.'
         }
       ],
+      features: [
+        'Grampa de Fijación a Frente de Losa: Garantiza una fijación segura y estable.',
+        'Refuerzo de Parante: Aumenta la resistencia estructural para una mayor durabilidad.',
+        'Tapa de Fijación y Soporte Inferior: Detalles que marcan la diferencia en la estética y la funcionalidad.',
+        'Bulonería de Acero Inoxidable: Resistencia a la corrosión para una vida útil prolongada',
+      ]
     }
   },
   {
-    name: 'Baranda',
-    id: 'aberturasPVC',
+    name: 'SP-02',
+    img: ['sp-02'],
+    id: 'sp-02',
     filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
-    description: '-',
+    description: `Baranda SP, una obra maestra de diseño moderno que redefine la experiencia visual en cualquier espacio. 
+    Esta baranda innovadora prescinde de parantes, ofreciendo una vista panorámica ininterrumpida y convirtiéndose en la elección exclusiva para proyectos modernos de cualquier escala.
+
+    Esta baranda va más allá de los límites convencionales, creando un ambiente moderno y sofisticado. Descubra la elegancia sin restricciones con la Baranda Minimalista SP.
+    `,
     specs: {
       description: [
         {
-          title: 'Eficiencia Energética',
-          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
+          title: 'Sin parantes',
+          text: 'La Baranda Minimalista SP es la esencia de la modernidad, sin parantes que obstruyan la visión, proporcionando una estética limpia y contemporánea.'
         },
         {
-          title: '  Durabilidad',
-          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
+          title: 'Fijación inferior para vista panorámica',
+          text: 'La fijación inferior permite una vista panorámica, conectando perfectamente el interior y el exterior.'
         },
         {
-          title: '  Estética y Personalización',
-          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
+          title: 'Compatibilidad con vidrios 8+8 y 10+10',
+          text: ' Diseñada para aceptar vidrios más gruesos, asegurando una resistencia y seguridad excepcionales.'
         },
         {
-          title: '  Bajo Mantenimiento',
-          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
-        }
+          title: 'Fijación mediante Brocas sobre Hormigón',
+          text: 'La instalación es rápida y eficiente, asegurando una sujeción sólida y duradera.'
+        },
+        {
+          title: 'Opción de Pasamanos',
+          text: 'La Baranda Minimalista SP ofrece la posibilidad de incorporar un pasamanos, brindando una solución versátil y funcional.'
+        },
+        {
+          title: 'Ocultamiento Elegante',
+          text: 'Permite ocultar la parte superior del vidrio con el pasamanos, agregando un toque de elegancia al diseño.'
+        },
+        {
+          title: 'Armado por Tramos, Tapas Corridas',
+          text: 'Facilitando el proceso de instalación, la Baranda Minimalista SP se arma por tramos, con tapas corridas para un acabado uniforme y pulido.'
+        },
       ],
+      features: [
+        'Diseño Único: La Baranda Minimalista SP es exclusiva y diseñada para proyectos modernos, ofreciendo una estética contemporánea sin igual.',
+        'Adaptable a Cualquier Escala: Perfecta para proyectos de cualquier magnitud, desde espacios residenciales hasta grandes proyectos comerciales.',
+        'Óptima Relación Costo-Resultado: La Baranda Minimalista SP ofrece una relación costo-resultado excepcional en proyectos de gran envergadura, maximizando el valor y la elegancia sin comprometer el presupuesto.',
+      ]
     }
   },
   {
-    name: 'Baranda',
-    id: 'aberturasPVC',
+    name: 'SPU-02',
+    img: ['spu-02'],
+    id: 'spu-02',
     filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
-    description: '-',
+    description: `Innovadora Baranda SPU, donde la modernidad se encuentra con la ligereza del diseño. Esta baranda sin parantes redefine el espacio con su presencia sutil y detalles funcionales.
+
+    Descubra la fusión perfecta entre elegancia moderna y ligereza con la Baranda SPU. Su diseño sutil y su funcionalidad excepcional la convierten en la opción perfecta para aquellos que buscan lo mejor en estética y rendimiento.
+    `,
     specs: {
       description: [
         {
-          title: 'Eficiencia Energética',
-          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
+          title: 'Diseño sin Parantes',
+          text: 'La Baranda SPU se caracteriza por su diseño sin parantes, ofreciendo una estética moderna y limpia que transforma cualquier espacio.'
         },
         {
-          title: '  Durabilidad',
-          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
+          title: 'Fijación Inferior para Vista Amplia',
+          text: 'Con fijación inferior, se logra una conexión fluida entre el interior y el exterior, proporcionando una vista panorámica inigualable.'
         },
         {
-          title: '  Estética y Personalización',
-          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
+          title: 'Compatibilidad con vidrios 8+8 y 10+10',
+          text: ' Diseñada para adaptarse a diversos proyectos, asegurando seguridad y resistencia con vidrios más gruesos.'
         },
         {
-          title: '  Bajo Mantenimiento',
-          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
-        }
+          title: 'Fijación mediante Brocas sobre Hormigón',
+          text: 'La instalación es rápida y eficiente, asegurando una sujeción sólida y duradera.'
+        },
+        {
+          title: 'Opción de Pasamanos',
+          text: 'La Baranda Minimalista SPU ofrece la posibilidad de incorporar un pasamanos, brindando una solución versátil y funcional.'
+        },
       ],
+      features: [
+        'Ocultamiento Elegante: Permite ocultar la parte superior del vidrio con el pasamanos, agregando un toque de elegancia al diseño.',
+        'Reducida Presencia de Aluminio: Destacándose por su sutileza, la Baranda SPU presenta una presencia de aluminio mínima, resaltando la transparencia del vidrio.',
+        'Diseño Ligero y Vanguardista: La Baranda SPU es la elección ideal para proyectos modernos que buscan una presencia sutil y contemporánea.',
+        "Versatilidad y Adaptabilidad: Adaptable a distintas escalas y usos, desde espacios residenciales hasta proyectos comerciales de gran envergadura."
+      ]
     }
   },
   {
-    name: 'Baranda',
-    id: 'aberturasPVC',
+    name: 'SPL-02',
+    img: ['spl-02'],
+    id: 'spl-02',
     filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
-    description: '-',
+    description: `Descubra la Baranda SPL, una manifestación de diseño vanguardista que rompe con lo convencional. Esta baranda sin parantes redefine la elegancia y versatilidad en proyectos de cualquier tamaño.
+    Descubra una nueva dimensión de modernidad y elegancia con la Baranda SPL. Su diseño innovador y su facilidad de instalación la convierten en la opción perfecta para destacar en cualquier proyecto.
+    `,
     specs: {
       description: [
         {
-          title: 'Eficiencia Energética',
-          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
+          title: 'Diseño sin Parantes',
+          text: 'La Baranda SPL se caracteriza por su diseño sin parantes, ofreciendo una estética moderna y limpia que transforma cualquier espacio.'
         },
         {
-          title: '  Durabilidad',
-          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
+          title: 'Fijación Inferior para vista abierta',
+          text: 'Con fijación inferior, logramos una conexión perfecta entre el interior y el exterior, ofreciendo una experiencia visual única.'
         },
         {
-          title: '  Estética y Personalización',
-          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
+          title: 'Compatibilidad con vidrios 8+8 y 10+10',
+          text: ' Diseñada para adaptarse a diversos proyectos, asegurando seguridad y resistencia con vidrios más gruesos.'
         },
         {
-          title: '  Bajo Mantenimiento',
-          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
-        }
+          title: 'Fijación mediante Brocas sobre Hormigón',
+          text: 'La instalación es eficiente y robusta, asegurando una sujeción sólida y duradera.'
+        },
+        {
+          title: 'Opción de Pasamanos',
+          text: 'La Baranda Minimalista SPL ofrece la posibilidad de incorporar un pasamanos, brindando una solución versátil y funcional.'
+        },
       ],
+      features: [
+        'Versatilidad sin Límites: Adaptable a diversas escalas, desde espacios residenciales hasta grandes proyectos comerciales.',
+        'Diseño Moderno y Exclusivo: La Baranda SPL es la elección ideal para proyectos modernos, ofreciendo un diseño exclusivo y contemporáneo.',
+        'Fácil Armado y Colocación: La Baranda SPL se destaca por su proceso de armado y colocación sencillo, garantizando eficiencia sin comprometer la calidad.',
+        'Distanciamiento de Fijación: Permite distanciar la fijación, facilitando acercarse al filo de la losa para una integración más estilizada.'
+      ]
     }
   },
   {
-    name: 'Baranda',
-    id: 'aberturasPVC',
+    name: 'Clásica P475 Curvo-02',
+    img: ['clasicaP475curvo-02'],
+    id: 'clasicaP475curvo-02',
     filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
-    description: '-',
+    description: `Baranda Clásica, una fusión perfecta de estética clásica y funcionalidad moderna. Este sistema destaca por su imponente presencia de vidrio y se adapta a proyectos de cualquier escala con facilidad.
+    La Baranda Clásica no solo es una elección segura, sino también una declaración de estilo atemporal. Descubra cómo esta baranda puede transformar sus proyectos con su elegancia distintiva.
+    `,
     specs: {
       description: [
         {
-          title: 'Eficiencia Energética',
-          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
+          title: 'Diseño versátil',
+          text: 'Disponible con pasamanos redondo o recto, ambos ofreciendo una impresionante presencia de vidrio que eleva la estética de cualquier espacio.'
         },
         {
-          title: '  Durabilidad',
-          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
+          title: 'Fijación Inferior para vista abierta',
+          text: 'Con fijación inferior, logramos una conexión perfecta entre el interior y el exterior, ofreciendo una experiencia visual única.'
         },
         {
-          title: '  Estética y Personalización',
-          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
+          title: 'Compatibilidad con vidrios 3+3 y 4+4',
+          text: ' Asegura la seguridad y se adapta a diversas necesidades de diseño.'
         },
         {
-          title: '  Bajo Mantenimiento',
-          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
-        }
+          title: 'Parante Angosto para Barrotillo',
+          text: ' Diseño estilizado que agrega un toque de elegancia y versatilidad para su uso como barrotillo.'
+        },
+        {
+          title: 'Segura y Versátil',
+          text: 'Una baranda que combina seguridad y versatilidad, equilibrada estéticamente y adaptable a cualquier proyecto moderno.'
+        },
       ],
+      features: [
+        'Sistema de Armado Sencillo: Una solución fácil de ensamblar para una instalación sin complicaciones.',
+        'Adaptable a Diversos Diseños y Escalas: Perfecta tanto para balcones de edificios como para espacios interiores, se adapta a proyectos de cualquier magnitud.',
+        'Comodidad en el Uso: Diseñados para brindar comodidad durante el uso, los pasamanos son ergonómicos y de alta calidad.',
+        'Estética Atractiva: El diseño del pasamanos complementa la atractiva estética de la baranda, fusionando funcionalidad y estilo.'
+      ]
     }
   },
   {
-    name: 'Baranda',
-    id: 'aberturasPVC',
+    name: 'Clásica P479 Recto-02',
+    img: ['clasicaP479recto-02'],
+    id: 'clasicaP479recto-02',
     filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
-    description: '-',
+    description: `Baranda Clásica, una fusión perfecta de estética clásica y funcionalidad moderna. Este sistema destaca por su imponente presencia de vidrio y se adapta a proyectos de cualquier escala con facilidad.
+    La Baranda Clásica no solo es una elección segura, sino también una declaración de estilo atemporal. Descubra cómo esta baranda puede transformar sus proyectos con su elegancia distintiva.
+    `,
     specs: {
       description: [
         {
-          title: 'Eficiencia Energética',
-          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
+          title: 'Diseño versátil',
+          text: 'Disponible con pasamanos redondo o recto, ambos ofreciendo una impresionante presencia de vidrio que eleva la estética de cualquier espacio.'
         },
         {
-          title: '  Durabilidad',
-          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
+          title: 'Fijación Inferior para vista abierta',
+          text: 'Con fijación inferior, logramos una conexión perfecta entre el interior y el exterior, ofreciendo una experiencia visual única.'
         },
         {
-          title: '  Estética y Personalización',
-          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
+          title: 'Compatibilidad con vidrios 3+3 y 4+4',
+          text: ' Asegura la seguridad y se adapta a diversas necesidades de diseño.'
         },
         {
-          title: '  Bajo Mantenimiento',
-          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
-        }
+          title: 'Parante Angosto para Barrotillo',
+          text: ' Diseño estilizado que agrega un toque de elegancia y versatilidad para su uso como barrotillo.'
+        },
+        {
+          title: 'Segura y Versátil',
+          text: 'Una baranda que combina seguridad y versatilidad, equilibrada estéticamente y adaptable a cualquier proyecto moderno.'
+        },
       ],
+      features: [
+        'Sistema de Armado Sencillo: Una solución fácil de ensamblar para una instalación sin complicaciones.',
+        'Adaptable a Diversos Diseños y Escalas: Perfecta tanto para balcones de edificios como para espacios interiores, se adapta a proyectos de cualquier magnitud.',
+        'Comodidad en el Uso: Diseñados para brindar comodidad durante el uso, los pasamanos son ergonómicos y de alta calidad.',
+        'Estética Atractiva: El diseño del pasamanos complementa la atractiva estética de la baranda, fusionando funcionalidad y estilo.'
+      ]
     }
   },
   {
-    name: 'Baranda',
-    id: 'aberturasPVC',
+    name: 'Pasamanos barandas sin parantes',
+    img: ['pasamanosbarandassinparantes-02'],
+    id: 'pasamanosbarandassinparantes-02',
     filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
-    description: '-',
+    description: `-`,
     specs: {
-      description: [
-        {
-          title: 'Eficiencia Energética',
-          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
-        },
-        {
-          title: '  Durabilidad',
-          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
-        },
-        {
-          title: '  Estética y Personalización',
-          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
-        },
-        {
-          title: '  Bajo Mantenimiento',
-          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
-        }
-      ],
-    }
-  },
-  {
-    name: 'Baranda',
-    id: 'aberturasPVC',
-    filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
-    description: '-',
-    specs: {
-      description: [
-        {
-          title: 'Eficiencia Energética',
-          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
-        },
-        {
-          title: '  Durabilidad',
-          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
-        },
-        {
-          title: '  Estética y Personalización',
-          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
-        },
-        {
-          title: '  Bajo Mantenimiento',
-          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
-        }
-      ],
-    }
-  },
-  {
-    name: 'Baranda',
-    id: 'aberturasPVC',
-    filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
-    description: '-',
-    specs: {
-      description: [
-        {
-          title: 'Eficiencia Energética',
-          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
-        },
-        {
-          title: '  Durabilidad',
-          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
-        },
-        {
-          title: '  Estética y Personalización',
-          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
-        },
-        {
-          title: '  Bajo Mantenimiento',
-          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
-        }
-      ],
-    }
-  },
-  {
-    name: 'Mamapara de baño',
-    id: 'aberturasPVC',
-    filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
-    description: '-',
-    specs: {
-      description: [
-        {
-          title: 'Eficiencia Energética',
-          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
-        },
-        {
-          title: '  Durabilidad',
-          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
-        },
-        {
-          title: '  Estética y Personalización',
-          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
-        },
-        {
-          title: '  Bajo Mantenimiento',
-          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
-        }
-      ],
-    }
-  },
-  {
-    name: 'Puerta placard',
-    id: 'aberturasPVC',
-    filters: [ProductFathersTypes.RESALES, TypeProduct.RESALES_DOOR],
-    description: '-',
-    specs: {
-      description: [
-        {
-          title: 'Eficiencia Energética',
-          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
-        },
-        {
-          title: '  Durabilidad',
-          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
-        },
-        {
-          title: '  Estética y Personalización',
-          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
-        },
-        {
-          title: '  Bajo Mantenimiento',
-          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
-        }
-      ],
-    }
-  },
-  {
-    name: 'Cortina',
-    id: 'aberturasPVC',
-    filters: [ProductFathersTypes.RESALES, TypeProduct.CURTAINS],
-    description: '-',
-    specs: {
-      description: [
-        {
-          title: 'Eficiencia Energética',
-          text: 'Contribuyen al aislamiento térmico y acústico del hogar.'
-        },
-        {
-          title: '  Durabilidad',
-          text: 'Construcción resistente y duradera para un rendimiento a largo plazo.'
-        },
-        {
-          title: '  Estética y Personalización',
-          text: 'Variedad de acabados y estilos para adaptarse a la arquitectura.'
-        },
-        {
-          title: '  Bajo Mantenimiento',
-          text: 'Requieren poco mantenimiento y conservan su apariencia original.'
-        }
-      ],
+      
     }
   },
 ];
+
+export const doorsResalesData: CatalogData[] = [
+  {
+    name: 'Línea 2000',
+    img: ['main', 'avalon', 'camden', 'colonial', 'florencia', 'veronica'],
+    id: 'puertaslinea2000',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.RESALES_DOOR],
+    description: `Puertas de abrir: 
+    Hojas: Construidas con bastidor perimetral de madera de pino y panel interior “nido de abejas” de material celulósico. Con tableros de MDF de 5.5 / 9 y 12 mm. de mediana densidad en una sola pieza, moldurados con molduras profundas en ambas caras.
+    Doble faz de 43mm de espesor. 
+    
+    Marcos: De chapa DD Nº18, o madera. 
+    
+    Cierres: 
+    Cerraduras “Kallay” en puertas con paneles de 12mm. 
+    Cerradura común en puertas con paneles de 9mm.
+    Bisagras pomeja con 3 tornillos del tipo zincado o bronce. 
+    
+    Opciones: Marcos preparados para tabiquería durlock únicamente con marcos de chapa. Hojas tratadas con 3 manos de base blanca, listas para su acabado con pintura de color a eleccion. Puertas dobles en todos los modelos y en todas las medidas, solamente para tabiques de 10 o 15 cm. 
+    
+    Puertas de embutir: 
+    Hojas: Igual a las puertas de abrir. 
+    
+    Marcos: Marco y nicho de chapa DD Nº18 revestido con metal desplegado o madera. 
+    
+    Cierres: cerraduras y cubetas embutidas. 
+    
+    Rodamientos: con 2 carros de 2 ruedas de nylon. 
+    
+    Opcionales: Marcos preparados para tabiquería Durlock, únicamente con marcos de chapa. Marcos revestidos con madera solamente para tabiques de 12 y 15 cm. Puertas dobles en todos los modelos y en todas las medidas, solamente para tabiques de 10 o 15cm. 
+    `,
+    
+  },
+  {
+    name: 'Línea Elite',
+    img: ['main', 'puertahaya'],
+    id: 'puertaslineaelite',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.RESALES_DOOR],
+    description: `Nuevas puertas de interior listas y terminadas para instalar en seco. 
+
+    -Libre de mantenimiento 
+    -Fácil instalación 
+    -Kit de contramarco regulable 
+    -Burlete con aislacion acustica 
+    -Cerradura reforzada 
+    -No requieren ser pintadas. 
+
+
+    Puertas de Abrir 
+    Hojas: Puertas construidas con bastidor perimetral de madera estacionada de pino clear, y panel interior en nido de abeja de material celulósico. Emplacadas con tableros de fibra de madera, (MDF de 5.5mm) de mediana densidad, en una sola pieza. 
+    
+    Marcos: Marco de pino Finger Foliado 1. ½ pulgada 
+    Contramarco regulable
+    Burlete termoacústico 
+    
+    Cierre: Cerradura reforzada 
+    
+    Opcionales: Marcos preparados para tabiquería Durlock.
+    
+    Puertas de Embutir 
+    Hojas: Puertas construidas con bastidor perimetral de madera estacionada de pino clear, y panel interior en nido de abeja de material celulósico. Emplacadas con tableros de fibra de madera, (MDF de 5.5mm) de mediana densidad, en una sola pieza. 
+    
+    Marcos: Marco de pino Finger Foliado 1. ½ pulgada 
+    Contramarco regulable
+    Burlete termoacústico 
+    
+    Cierre: Cerraduras y cubetas embutidas 
+    
+    Rodamientos: Con 2 carros de 2 ruedas de nylon. 
+    
+    Opcionales: Marcos preparados para tabiqueria Durlock 
+    
+    Medidas exteriores: 
+    Anchos: 67cm, 77cm, 92cm y 97cm 
+    Altos: 204cm, 220cm, 230cm, 240cm 
+    `,
+  },
+  {
+    name: 'Línea 2006',
+    img: ['main'],
+    id: 'puertaslinea2006',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.RESALES_DOOR],
+    description: `Puertas de abrir: 
+
+    Hojas: Construidas con bastidor perimetral de madera de pino clear estacionada y panel interior “nido de abejas” de material celulosico. Emplacadas en MDF de 5.5mm. Acabados en MDF para pintar o enchapadas para lustrar con sabugueiro, cedrillo, cerejeira o caoba. En doble faz de 43mm de espesor. 
+    Emplacadas con buñas horizontales y verticales. Mod Americana 2 (con insertos de aluminio). 
+    
+    Marcos: de chapa DD Nº18, o madera. 
+    
+    Cierres: Cerradura común y bisagras pomela con 3 tornillos del tipo zincado o bronce. 
+    
+    Opcionales: Marcos preparados para tabiquería Durlock únicamente con marcos de chapa. 
+    
+    Puertas de embutir: 
+    
+    Hojas: Construidas con bastidor perimetral de madera de pino estacionada y panel interior “nido de abejas” de material celulósico. Emplacadas en MDF de 5.5mm. Acabados en MDF para pintar o enchapadas para lustrar con sabugueiro, cedrillo, cerejeira o caoba. En doble faz de 43mm de espesor. 
+    Emplacadas con buñas horizontales y verticales. Mod Americana 2 (con insertos de aluminio). 
+    
+    Marcos: Marco y nicho de chapa Nº18 revestido con metal desplegado o madera. 
+    
+    Cierres: Cerradura y cubetas embutidas. 
+    
+    Rodamientos: Con 2 carros de 2 ruedas de nylon. 
+    
+    Opcionales: Marcos preparados para tabiquería Durlock únicamente con marcos de chapa. Marcos revestidos con madera solamente para tabiques de 12 y 15 cm. 
+    `,
+  },
+  {
+    name: 'Línea F30',
+    img: ['sofia', 'monica'],
+    id: 'puertaslineaf30',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.RESALES_DOOR],
+    description: `El nuevo modelo F-30 Resistente al fuego, ha sido ensayado por el INTI conforme a las normativas vigentes, arrojando excelentes resultados en estabilidad mecánica y estanqueidad a las llamas, sin emisión de gases inflamables, demostrando que es una excelente solución y un diferencial en calidad, con tecnología de punta y un concepto industrial a la vanguardia en puertas. 
+
+    -Mayor aislación térmica 
+    -Mayor aislación acústica
+    -Alta resistencia a los impactos 
+    -Precisión en el espesor 
+    -Reducción de peso 
+    -Mayor estabilidad 
+    -Con tablero tubular de 38mm 
+    Resistentes al fuego. 
+
+    Puertas de Abrir: 
+Hojas:  Construidas con bastidor de madera semi-dura, relleno ignífugo, dos tapas de MDF 5.5mm y herrajes. Puerta a una hoja de abrir simple contacto. 
+
+Marcos: Marco de chapa 18, bisagra munición con burlete intumescente. 
+
+Cierres: Cerradura de seguridad, Euro + Cilindro 
+
+Opciones: Marcos preparados para tabiquería Durlock, únicamente con marcos de chapa. 
+
+Espesor y medidas: 
+Espesor: 49mm
+Medidas exteriores: 980mm / 2040mm 
+Peso: aprox. 17kg/m 
+    `,
+  },
+  {
+    name: 'Línea Masonite',
+    img: ['mariel'],
+    id: 'puertaslineamasonite',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.RESALES_DOOR],
+    description: `
+    Puertas de abrir:
+
+    Hojas: Construidas con bastidor de Pino Clear estacionado y panel interior “nido de abejas” de material celulosico y emplacadas con paneles moldeados en HDF elaborados con fibras seleccionadas de las mejores maderas y procesadas con la tecnología más avanzada. Tableros con molduras profundas y superficies texturadas. Terminación prepintadas, listas para su acabado con laca o pintura de color a eleccion. Doble faz de 43mm de espesor. 
+
+    Marcos: De chapa DD Nº18,22,24 o madera. 
+
+    Cierres: Cerradura común y bisagras pomela de 3 tornillos del tipo zincado o bronce. 
+
+    Opcionales: Marcos preparados para tabiquería Durlock, únicamente con marcos de chapa. Puertas dobles en todas las medidas para tabiques de 10 o 15 cm. 
+
+    Puertas de embutir: 
+
+    Hojas: puertas de abrir.
+
+    Marcos: Marco y nicho de chapa DD Nº18 revestido con metal desplegado o Madera. 
+
+    Cierres: Cerraduras y cubetas embutidas. 
+
+    Rodamientos: De nylon a ruleman que permiten el mejor y más silencioso deslizamiento. 
+
+    Opcionales: Marcos revestidos en madera, solamente para tabiques de 12 y 15 cm. 
+    `,
+  },
+];
+
+export const resalesData: CatalogData[] = [
+  ...barData,
+  ...doorsResalesData,
+] 
 
 export const texturesData: TexturesTypes[] = [
   {

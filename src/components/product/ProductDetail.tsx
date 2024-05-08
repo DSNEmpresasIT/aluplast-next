@@ -88,7 +88,7 @@ export const ProductDetail = ({
             <i className="fa fa-star" aria-hidden="true"></i>
             <i className="fa fa-star" aria-hidden="true"></i>
           </div>
-          <p>{productSelected.description}</p>
+          <p style={{ whiteSpace: 'pre-line' }} >{productSelected.description}</p>
           <div className="row no-gutters m-t-20">
             {productSelected.specs?.features && (
               <>
@@ -117,7 +117,7 @@ export const ProductDetail = ({
                       aria-controls="all"
                       aria-expanded="true"
                     >
-                      Descripción
+                      Características
                     </a>
                   </li>
                 </ul>
