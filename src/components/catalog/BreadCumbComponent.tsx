@@ -1,4 +1,5 @@
 import { PAGES_PATH } from '@/utils/pages'
+import Link from 'next/link'
 import React from 'react'
 
 export const BreadCumbComponent = ({ product }: { product: string | undefined }) => {
@@ -6,7 +7,7 @@ export const BreadCumbComponent = ({ product }: { product: string | undefined })
     <section className="breadcrumbs-wrap" style={{ paddingTop: '13vh'}}>
     <div className="section-content section-content--w1140">
       <div className="container clearfix">
-        <div className="breadcrumbs-inner">
+        <div className="breadcrumbs-inner" style={{ display: 'flex', justifyContent: 'space-between' }}>
           <ul className="breadcrumbs1 ul--inline ul--no-style">
             <li>
               <a href="/">Home</a>
@@ -30,6 +31,16 @@ export const BreadCumbComponent = ({ product }: { product: string | undefined })
               )
             }
           </ul>
+          {
+            product && (
+              <Link
+                className='au-btn au-btn--pill au-btn--big au-btn--yellow text-white'
+                href={PAGES_PATH.CATALOG_PATH}
+              >
+                Volver catálogo
+              </Link>
+            )
+          }
         </div>
       </div>
     </div>

@@ -1807,46 +1807,11 @@ export const garageDoorsData: CatalogData[] = [
 
 export const barData: CatalogData[] = [
   {
-    name: 'BBA P025-02',
-    img: ['bbap025-02'],
-    id: 'bbap025-02',
-    filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
+    name: 'Línea BBA',
+    img: ['bbap025-02', 'bbap028-02'],
+    id: 'bba',
+    filters: [ProductFathersTypes.CS_TYPES, TypeProduct.BAR_PRODDUCT],
     description: `Baranda BBA, testimonio de elegancia y funcionalidad, diseñado específicamente para satisfacer los estándares más exigentes. 
-    La Baranda BBA es la elección ideal para aquellos que buscan la combinación perfecta de estética moderna y funcionalidad duradera.
-    `,
-    specs: {
-      description: [
-        {
-          title: 'Diseño sofisticado',
-          text: 'Ofrece versatilidad, con opciones de pasamanos elíptico o recto, brindando no solo una imagen agradable sino también una sensación táctil excepcional.'
-        },
-        {
-          title: 'Amplia visibilidad de vidrio',
-          text: 'Diseñada para resaltar la presencia del vidrio, el pasamanos permite que este nazca dentro de él, maximizando la exposición y la estética.'
-        },
-        {
-          title: 'Compatibilidad con vidrios 3+3 y 4+4',
-          text: 'Adaptabilidad para satisfacer diversas necesidades de diseño y seguridad.'
-        },
-        {
-          title: 'Anclaje químico sencillo',
-          text: 'Facilitamos la instalación con la posibilidad de anclaje químico a través de inserto metálico sobre el hormigón, asegurando una sujeción robusta y duradera.'
-        }
-      ],
-      features: [
-        'Grampa de Fijación a Frente de Losa: Garantiza una fijación segura y estable.',
-        'Refuerzo de Parante: Aumenta la resistencia estructural para una mayor durabilidad.',
-        'Tapa de Fijación y Soporte Inferior: Detalles que marcan la diferencia en la estética y la funcionalidad.',
-        'Bulonería de Acero Inoxidable: Resistencia a la corrosión para una vida útil prolongada',
-      ]
-    }
-  },
-  {
-    name: 'BBA P028-02',
-    img: ['bbap028-02'],
-    id: 'bbap028-02',
-    filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
-    description: `Baranda BBA, testimonio de elegancia y funcionalidad, diseñado específicamente para satisfacer los estándares más exigentes.
     La Baranda BBA es la elección ideal para aquellos que buscan la combinación perfecta de estética moderna y funcionalidad duradera.
     `,
     specs: {
@@ -1880,7 +1845,7 @@ export const barData: CatalogData[] = [
     name: 'SP-02',
     img: ['sp-02'],
     id: 'sp-02',
-    filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
+    filters: [ProductFathersTypes.CS_TYPES, TypeProduct.BAR_PRODDUCT],
     description: `Baranda SP, una obra maestra de diseño moderno que redefine la experiencia visual en cualquier espacio. 
     Esta baranda innovadora prescinde de parantes, ofreciendo una vista panorámica ininterrumpida y convirtiéndose en la elección exclusiva para proyectos modernos de cualquier escala.
 
@@ -1928,7 +1893,7 @@ export const barData: CatalogData[] = [
     name: 'SPU-02',
     img: ['spu-02'],
     id: 'spu-02',
-    filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
+    filters: [ProductFathersTypes.CS_TYPES, TypeProduct.BAR_PRODDUCT],
     description: `Innovadora Baranda SPU, donde la modernidad se encuentra con la ligereza del diseño. Esta baranda sin parantes redefine el espacio con su presencia sutil y detalles funcionales.
 
     Descubra la fusión perfecta entre elegancia moderna y ligereza con la Baranda SPU. Su diseño sutil y su funcionalidad excepcional la convierten en la opción perfecta para aquellos que buscan lo mejor en estética y rendimiento.
@@ -1968,7 +1933,7 @@ export const barData: CatalogData[] = [
     name: 'SPL-02',
     img: ['spl-02'],
     id: 'spl-02',
-    filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
+    filters: [ProductFathersTypes.CS_TYPES, TypeProduct.BAR_PRODDUCT],
     description: `Descubra la Baranda SPL, una manifestación de diseño vanguardista que rompe con lo convencional. Esta baranda sin parantes redefine la elegancia y versatilidad en proyectos de cualquier tamaño.
     Descubra una nueva dimensión de modernidad y elegancia con la Baranda SPL. Su diseño innovador y su facilidad de instalación la convierten en la opción perfecta para destacar en cualquier proyecto.
     `,
@@ -2007,7 +1972,7 @@ export const barData: CatalogData[] = [
     name: 'Clásica P475 Curvo-02',
     img: ['clasicaP475curvo-02'],
     id: 'clasicaP475curvo-02',
-    filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
+    filters: [ProductFathersTypes.CS_TYPES, TypeProduct.BAR_PRODDUCT],
     description: `Baranda Clásica, una fusión perfecta de estética clásica y funcionalidad moderna. Este sistema destaca por su imponente presencia de vidrio y se adapta a proyectos de cualquier escala con facilidad.
     La Baranda Clásica no solo es una elección segura, sino también una declaración de estilo atemporal. Descubra cómo esta baranda puede transformar sus proyectos con su elegancia distintiva.
     `,
@@ -2046,7 +2011,7 @@ export const barData: CatalogData[] = [
     name: 'Clásica P479 Recto-02',
     img: ['clasicaP479recto-02'],
     id: 'clasicaP479recto-02',
-    filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
+    filters: [ProductFathersTypes.CS_TYPES, TypeProduct.BAR_PRODDUCT],
     description: `Baranda Clásica, una fusión perfecta de estética clásica y funcionalidad moderna. Este sistema destaca por su imponente presencia de vidrio y se adapta a proyectos de cualquier escala con facilidad.
     La Baranda Clásica no solo es una elección segura, sino también una declaración de estilo atemporal. Descubra cómo esta baranda puede transformar sus proyectos con su elegancia distintiva.
     `,
@@ -2085,7 +2050,7 @@ export const barData: CatalogData[] = [
     name: 'Pasamanos barandas sin parantes',
     img: ['pasamanosbarandassinparantes-02'],
     id: 'pasamanosbarandassinparantes-02',
-    filters: [ProductFathersTypes.RESALES, TypeProduct.BAR_PRODDUCT],
+    filters: [ProductFathersTypes.CS_TYPES, TypeProduct.BAR_PRODDUCT],
     description: `-`,
     specs: {
       
@@ -2261,36 +2226,551 @@ Peso: aprox. 17kg/m
   },
 ];
 
+export const bathroomPartitionData: CatalogData[] = [
+  {
+    name: 'Linea 1000/Panel',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
+    id: 'mamparalinea1000',
+    description: `Paño fijo de cierre parcial del espacio de ducha.
+    Moderno, económico y seguro.
+    Instalación rápida y sencilla. 
+    La ausencia total de parantes confiere una gran sensación de amplitud. 
+    
+    Medidas: Se fabrican en medida estándar, aunque a pedido se pueden hacer medidas especiales. 
+    
+    
+    Cristales: Templado de seguridad, espesor 8mm. 
+    Transparentes: incoloros, gris y bronce 
+    Opacos: Satén, Esmerilado, Pacific y Dreamline. 
+    
+    
+    Perfiles: Aluminio anodizado: Plata, Acero mate, Negro, Blanco y Oro. 
+    
+    
+    Modelos:
+    
+    1000 - Panel: 
+    
+    1) 1000 - Panel: 
+    Base: 800mm
+    Altura: 1600mm / 1900mm 
+    
+    2) 1010 - Panel punta curva: 
+    Base: 800mm
+    Altura 1600mm / 1900mm
+    `
+  },
+  {
+    name: 'Linea 2000/Rebatible Pivot',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
+    id: 'mamparalinea2000',
+    description: `Hoja abatible de cierre parcial con bisagra corrida de aluminio.
+    Simple, práctica y segura. 
+    Instalación rápida y sencilla. 
+    Apertura hacia adentro y hacia afuera (-90º/0º/+90º) 
+    Con exclusivo perfil telescópico para regulación de falsa escuadra. 
+    
+    Medidas: Se fabrican en medida estándar, aunque a pedido se pueden hacer medidas especiales. 
+    
+    Cristales: Templado de seguridad con espesor de 6mm para medidas hasta 1410mm de altura y 8mm para medidas mayores. 
+    Tipos de cristales: 
+    Transparentes: incoloros, gris y bronce 
+    Opacos: Saten, Esmerilado, Pacific y Dreamline. 
+    Serigrafias: Puntos. Franjas y Cuadros. 
+    
+    Perfiles: Aluminio anodizado: Plata, Acero mate, Negro, Blanco y Oro
+    
+    Modelos: 
+    
+    
+    2000 - Rebatible Pivot:
+    
+    1) 2000-Rebatible pivot: 
+    Base 850mm
+    Altura: 1410 / 1820mm 
+    
+    2) 2010 - Rebatible pivot punta curva: 
+    Base: 850mm
+    Altura: 1410 / 1820mm 
+    
+    2100-Rebatible Pivot Par 
+    
+    1) 2100-Rebatible Pivot 
+    Base:1000mm 
+    (Hoja de 700mm / Fijo 300mm) 
+    Altura: 1410 / 1820mm 
+    
+    2) 2110-Rebatible Pivot Par Punta Curva
+    Base: 1000mm 
+    (Hoja 700mm / Fijo 300mm) 
+    Altura: 1410 / 1820mm 
+    
+    2200-Rebatible Pivot forma 
+    Base: 950mm
+    Altura: 1410mm 
+    
+    `
+  },
+  {
+    name: 'Linea 3000/Rebatible Bolt',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
+    id: 'mamparalinea2000',
+    description: `Hoja rebatible de cierre parcial con bisagra tomada a paño fijo lateral. 
+    Elegante, práctica y decorativa. 
+    Adaptable a falsas escuadras mediante tornillos reguladores. 
+    Apertura hacia adentro y hacia afuera (-90º/0º/+90º) 
+    Con exclusivo zócalo que contribuye a la estanqueidad. 
+    
+    Medidas: Se fabrican en medida estándar, aunque a pedido se pueden hacer medidas especiales. 
+    
+    Cristales: templado de seguridad de espesor 8mm.
+    Transparentes: Incoloro, Girs y Bronce
+    Opacos: Satén, Esmerilado, Pacific y Dreamline
+    
+    Perfiles y herrajes: Plata, Acero mate, Negro y oro. 
+    
+    Modelos:
+    
+    
+    3100-Rebatible Bolt 
+    
+    
+    1) 3100 - Rebatible Bolt 
+    Base: 1000mm 
+    (Hoja 600mm / Fijo 400mm) 
+    Altura: 1430 / 1850mm 
+    
+    2) 3110 - Rebatible Bolt Punta Curva
+    Base: 1000mm
+    (Hoja 600mm / Fijo 400mm) 
+    Altura: 1430 / 1850mm 
+    
+    3200-Rebatible Bolt Forma 
+    Base: 1000mm 
+    (Hoja 710mm / Fijo 290mm) 
+    Altura: 1430mm 
+    `
+  },
+  {
+    name: 'Linea 4000/Box Puerta corrediza',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
+    id: 'mamparalinea4000',
+    description: `Puertas corredizas y paños fijos.
+    Deslizamiento suave y silencioso 
+    Brindan gran sensación de amplitud debido a la ausencia de parantes verticales.
+    El monorriel superior es compacto y de pequeñas dimensiones. 
+    El zócalo inferior sin canaletas evita la acumulación de suciedad. 
+    Presenta gran rigidez estructural. 
+    
+    Medidas: Se fabrican en medida estándar, aunque a pedido se pueden hacer medidas especiales. 
+    
+    Cristales: templado de seguridad de espesor 8mm.
+    Transparentes: Incoloro, Gris y Bronce
+    Opacos: Satén, Esmerilado, Pacifi y Dreamline
+    
+    Perfiles: Plata, Acero mate, Negro y oro. 
+    
+    Modelos: 
+    
+    4000-BOX FRONTAL 
+    
+    1) 4000-A
+    Base: 1000 a 1600mm 
+    Altura: 1600 / 1900mm 
+    
+    2) 4000-B 
+    Base: 1600 a 2000mm 
+    Altura: 1600 / 1900mm 
+    
+    3) 4000-C
+    Base: 1300 a 1800mm 
+    Altura: 1600 / 1900mm 
+    
+    4) 4000-D
+    Base: 1400 a 2500mm
+    Altura: 1600 / 1900mm   
+
+    ---------------------------
+
+    4200-BOX ANGULAR 
+
+    1) 4200-A 
+    Base: 1000 a 1600 x 700mm
+    Altura: 1600 / 1900mm 
+
+    2) 4200-B
+    Base: 1600 a 2000 x 700mm
+    Altura:1600 / 1900mm 
+
+    3) 4200-C
+    Base: 1300 a 1800mm x 700mm 
+    Altura: 1600 / 1900mm 
+
+    4) 4200-D
+    Base: 1400 a 2500 x 700mm 
+    Altura: 1600 / 1900mm 
+
+    ---------------------------
+
+    4100-BOX ESQUINERO
+    Base: 700X700 a 1200X1200 mm 
+    Altura: 1900mm  
+
+    `
+  },
+  {
+    name: 'Linea 5000/Open Pivot',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
+    id: 'mamparalinea5000',
+    description: `Compuestas por hojas abatibles con bisagra corrida de aluminio y paños fijos. 
+    Con exclusivo perfil telescópico para regulación de falsa escuadra. 
+    Cierre magnético corrido.
+    Posibilidad de aperturas hacia adentro o hacia afuera. 
+    
+    Medidas: Se fabrican a medidas dentro del rango especificado para cada modelo. 
+    
+    
+    Cristales: Templado de seguridad de 8mm. 
+    Transparentes: Incoloro, Gris y Bronce. 
+    Opacos: Satén, Esmerilado, Pacific y Dreamline. 
+    
+    Perfiles: Aluminio anodizado: Plata, Acero mate, Negro, Blanco y Oro. 
+    
+    Modelos:
+    
+    5000- Open Pivot 1 Puerta 
+    
+    5000-A
+    Base: 500 a 870 mm
+    Altura: 1850mm 
+    
+    5000-B
+    Base: 750 a 1000mm 
+    Altura:1850mm 
+    
+    5000-C
+    Base:750 a 1000mm 
+    Altura: 1850mm 
+    
+    5000-D
+    Base: 1000 a 1600mm 
+    Altura: 1850mm
+    5100 - Open Pivot 2 Puertas 
+
+    5100-A
+    Base:750 a 1000mm 
+    Altura: 1850mm 
+
+    5100-B 
+    Base: 1000 a 1600mm 
+    Altura: 1850mm 
+
+    ------------------------------
+
+    5200-Open Pivot Esquinero 
+
+    5200-A
+    Base: 700X700 a 900X900 mm 
+    Altura: 1850mm 
+
+    5200-B
+    Base:700X700 a 1200X1200 mm 
+    Altura: 1850mm 
+
+    5200-C
+    Base: 700X700 a 1200X1200mm 
+    Altura: 1850mm 
+
+    5200-D
+    Base: 700X700 a 1200X1200 mm
+    Altura: 1850mm 
+
+    ------------------------------
+
+    5300-Open Pivot Corner 
+
+    5300-A
+    Base:700X700 a 900X900 mm
+    Altura:1850mm 
+    `
+  },
+  {
+    name: 'Linea 6000/Open Bolt',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
+    id: 'mamparalinea6000',
+    description: `Compuestas por hojas abatibles con bisagras y paños fijos. 
+    Elegante bisagra con traba -90º / 0º / +90º 
+    Cierre magnético corrido 
+    Posibilidad de aperturas de puerta hacia adentro o hacia afuera 
+    El zócalo inferior sin canaletas evita la acumulación de la suciedad. 
+    Adaptable a falsas escuadras mediante tornillos reguladores. 
+    
+    Medidas: Se fabrican a medida dentro del rango especificado para cada modelo. 
+    
+    Cristales: Templado de seguridad de espesor 8mm 
+    Transparentes: Incoloro, Gris y Bronce. 
+    Opacos: Saten, Esmerilado, Pacific y Dreamline 
+    
+    Perfiles: Aluminio anodizado: Plata, Acero mate, Negro y Oro. 
+    
+    Modelos: 
+    
+    6000-Open Bolt 1 Puerta
+    
+    
+    6000-C
+    Base: 750 a 1000mm 
+    Altura: 1850mm 
+    
+    6000-D
+    Base: 1000 a 1600mm 
+    Altura: 1850mm 
+    
+    -----------------------------------
+
+    6100- Open Bolt 2 Puertas 
+
+    6100-B
+    Base: 1000 a 1600mm 
+    Altura: 1850mm 
+    
+    -----------------------------------
+
+    6200-Open Bolt Esquinero: 
+
+    6200-G
+    Base: 700X700 a 900X900 mm 
+    Altura: 1850 mm 
+
+    6200-H
+    Base: 700X700 a 1200X1200 mm
+    Altura: 1850mm 
+
+    6200-C
+    Base: 700X700 a 1200X1200mm 
+    Altura: 1850mm 
+
+    6200-D
+    Base: 700X700 a 1200X1200mm 
+    Altura: 1850mm 
+
+    -----------------------------------
+
+    6300-Open Bolt Corner 
+
+    6300-A
+    Base:700X700 a 900X900 mm
+    Altura:1850mm 
+    `
+  },
+  {
+    name: 'Linea 7000/Steel One',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
+    id: 'mamparalinea7000',
+    description: `Puertas corredizas y paños fijos con elegantes herrajes a la vista de acero inoxidable. 
+    Deslizamiento suave y silencioso. 
+    Brindan gran sensación de amplitud debido a la ausencia de parantes verticales. 
+    El zócalo inferior sin canaletas evita la acumulación de suciedad. 
+    Steel one está a la vanguardia en el diseño de mamparas para baños. 
+    
+    Medidas: se fabrican a medida dentro del rango especificado para cada modelo. 
+    
+    Cristales: Templado de seguridad espesor de 8mm 
+    Transparentes: Incoloro, Gris y bronce 
+    Opacos: Saten,Esmerilado, Pacific y Dreamline 
+    
+    Herrajes: Acero inoxidable 304 mate. 
+    
+    Modelos:
+    
+    7000-Steel One Frontal 
+    
+    7000-A
+    Base: 1000 a 1600mm 
+    Altura: 1600 / 1900mm 
+    
+    7000-B
+    Base: 1600 a 2000mm 
+    Altura: 1600 / 1900mm 
+    
+    7000-C
+    Base: 1300 a 2000mm 
+    Altura: 1600 / 1900mm 
+    
+    7000-D
+    Base: 1400 a 2000mm 
+    Altura: 1600 / 1900mm 
+
+    -----------------------------
+
+    7100- Steel One Esquinero 
+
+    7100
+    Base: 700x700 a 1000x1000 mm 
+    Altura: 1600 / 1900mm     
+
+    -----------------------------
+
+    7200-Steel one Angular 
+
+    7200-A
+    Base: 1000 a 1600 X 700mm 
+    Altura: 1600/1900mm 
+
+    `
+  },
+  {
+    name: 'Linea 8000/Espacio',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
+    id: 'mamparalinea8000',
+    description: `
+    Las mamparas Espacio inauguran un nuevo concepto: La zona de ducha. 
+    Divididas en dos espacios, una zona húmeda de ducha y una de secado. 
+    Compuesta por paños fijos y aletas abatibles, anclados mediante elegantes brazos y barrales metálicos. 
+    Sus líneas minimalistas y su elevado diseño crean un espacio de vanguardia. 
+
+    Medidas: Se fabrican a medida dentro del rango especificado. 
+
+    Cristales: Templado de seguridad de 8mm. 
+    Transparentes: Incoloro, Gris y Bronce. 
+    Opacos: Saten, Esmerilado, Pacific y Dreamline. 
+
+    Perfiles: Aluminio anodizado: Plata, Acero mate y Negro. 
+
+    Modelos: 
+
+
+    8100- Espacio Recta
+
+    8100-A
+    Base: 1500X700 mm 
+    Altura: 1900mm 
+
+    8100-B 
+    Base: 1500X700mm 
+    Altura: 1900mm 
+
+    8100-C 
+    Base: 1500X700mm 
+    Altura: 1900mm 
+
+    8100-D 
+    Base: 1500X700mm
+    Altura: 1900mm 
+    `
+  },
+  {
+    name: 'Linea 9000/MEKA',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
+    id: 'mamparalinea9000',
+    description: `Puertas corredizas y paños fijos con elegantes herrajes a la vista. 
+    Deslizamiento suave y silencioso. 
+    Brindan gran sensación de amplitud debido a la ausencia de parantes verticales. 
+    El zócalo inferior sin canaletas evita la acumulación de suciedad. 
+    Un concepto moderno e innovador que le confiere al baño un toque de vanguardia. 
+    
+    Medidas: Se fabrican a medida dentro del rango especificado en cada modelo. 
+    
+    Cristales: Templado de seguridad, espesor de 8mm. 
+    Transparentes: Incoloro, Gris y Bronce. 
+    Opacos: Saten, Esmerilado, Pacific y Dreamline. 
+    
+    Perfiles y herrajes: Plata, Acero mate y Negro. 
+    
+    Modelos: 
+    
+    9000-Meka Frontal 
+    
+    9000-A
+    Base: 1000 a 1600 mm 
+    Altura: 1600 / 2000 mm 
+    
+    9000-B 
+    Base: 1600 a 2000 mm 
+    Altura: 1600 / 2000 mm 
+    
+    9000-C 
+    Base: 1300 a 1800 mm 
+    Altura: 1600 / 2000 mm 
+    
+    9000-D
+    Base: 1400 a 2500 mm 
+    Altura: 1600 / 2000 mm 
+
+    -----------------------------------
+
+    9200 - Meka Angular 
+
+    9200-A 
+    Base: 1000 a 1600 x 700mm 
+    Altura: 1600 / 2000 mm 
+
+    9200-B
+    Base: 1600 a 2000 x 700mm 
+    Altura: 1600 / 2000 mm 
+
+    9200-C 
+    Base: 1300 a 1800 x 700mm 
+    Altura: 1600 / 2000 mm 
+
+    9200-D
+    Base: 1400 a 2500 x 700mm 
+    Altura: 1600 / 2000mm 
+    `
+  },
+  {
+    name: 'Linea 5500/Open plegadiza',
+    filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
+    id: 'mamparalinea5500',
+    description: `Dos hojas plegadizas con bisagra corrida de aluminio a la pared y dos bisagras entre hojas de acero inoxidable. 
+    Especialmente pensada y diseñada para espacios de ducha de reducidas dimensiones, donde es imposible instalar una puerta de abrir. 
+    Con exclusivo perfil telescópico para regulación de falsa escuadra. 
+    Posee un zócalo guía sin ranura superior para evitar la acumulación de suciedad. 
+    
+    Medidas: Se fabrican a medida dentro del rango especificado para cada modelo. 
+    
+    Cristales: Templado de seguridad, espesor de 8mm 
+    Transparentes: Incoloro, Gris y Bronce 
+    Opacos: Satén, Esmerilado, Pacific y Dreamline
+    
+    Perfiles y Herrajes: Plata 
+    
+    Modelos:
+    
+    5500 - Open Plegadiza 
+    
+    5500-A
+    Base: 800 a 1100 mm 
+    Altura: 1850 mm 
+    
+    5500-B 
+    Base: 1000 a 1500 mm 
+    Altura: 1850mm 
+    
+    5500-C
+    Base: 1000 a 1500 x 700mm 
+    Altura: 1850mm 
+    `
+  },
+];
+
+export const resaleCurtainsData: CatalogData[] = [
+  {
+    name: '',
+    id: '',
+    filters: [],
+    description: `
+    `
+  }
+]
+
 export const resalesData: CatalogData[] = [
   ...barData,
   ...doorsResalesData,
+  ...bathroomPartitionData
 ] 
 
 export const texturesData: TexturesTypes[] = [
-  {
-    name: "Anodizado gris",
-    img: "anodizadogris",
-  },
-  {
-    name: "Anodizado natural",
-    img: "anodizadonatural",
-  },
-  {
-    name: "Anodizado natural brillante",
-    img: "anodizadonaturalbrillante",
-  },
-  {
-    name: "Anodizado natural lijado",
-    img: "anodizadonaturallijado",
-  },
-  {
-    name: "Anodizado negro",
-    img: "anodizadonegro",
-  },
-  {
-    name: "Anodizado peltre",
-    img: "anodizadopeltre",
-  },
   {
     name: "Bronce claro",
     img: "bronceclaro",
@@ -2316,16 +2796,36 @@ export const texturesData: TexturesTypes[] = [
     img: "negrosemimate",
   },
   {
+    name: "Anodizado gris",
+    img: "anodizadogris",
+  },
+  {
+    name: "Anodizado natural",
+    img: "anodizadonatural",
+  },
+  {
+    name: "Anodizado natural brillante",
+    img: "anodizadonaturalbrillante",
+  },
+  {
+    name: "Anodizado natural lijado",
+    img: "anodizadonaturallijado",
+  },
+  {
+    name: "Anodizado negro",
+    img: "anodizadonegro",
+  },
+  {
+    name: "Anodizado peltre",
+    img: "anodizadopeltre",
+  },
+  {
     name: "Simil cedro",
     img: "similcedro",
   },
   {
     name: "Simil roble oscuro",
     img: "similrobleoscuro",
-  },
-  {
-    name: "Anodizado natural brillante",
-    img: "anodizadogris",
   },
 ];
 

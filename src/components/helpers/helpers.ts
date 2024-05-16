@@ -26,7 +26,7 @@ const typeName: any = {
   [TypeProduct.WINDOW_PRODUCT]: 'Ventanas',
   [TypeProduct.BAR_PRODDUCT]: 'Barandas',
   [TypeProduct.BATHROOM_PARTITION_PRODUCT]: 'Mamparas de baño',
-  [TypeProduct.RESALES_DOOR]: 'Puertas placar',
+  [TypeProduct.RESALES_DOOR]: 'Puertas placa',
   [TypeProduct.CURTAINS]: 'Cortinas',
 }
 

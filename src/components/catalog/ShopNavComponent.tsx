@@ -51,10 +51,6 @@ const openersSubCategories = [
 
 const resalesSubCategories = [
   {
-    name: getProductTypeName(TypeProduct.BAR_PRODDUCT),
-    filter: TypeProduct.BAR_PRODDUCT
-  },
-  {
     name: getProductTypeName(TypeProduct.RESALES_DOOR),
     filter: TypeProduct.RESALES_DOOR
   },
@@ -67,6 +63,13 @@ const resalesSubCategories = [
     filter: TypeProduct.CURTAINS
   },
 ];
+
+const complementarySistemSubCategories = [
+  {
+    name: getProductTypeName(TypeProduct.BAR_PRODDUCT),
+    filter: TypeProduct.BAR_PRODDUCT
+  },
+]
 
 interface ShopNavComponentProps {
   handleToggleFilter: (string: ProductFathersTypes) => void;
@@ -222,6 +225,41 @@ export const ShopNavComponent: FC<ShopNavComponentProps> = ({
           <ul className="blog__cate ul--no-style">
             <h4 className="title-sidebar">Tipos de {filters[0]}</h4>
             {resalesSubCategories?.map((buttonData: any) => {
+              return (
+                <li
+                  key={`shop-nav-${buttonData.name}`}
+                  style={{
+                    cursor: "pointer",
+                    color: filters.includes(buttonData.filter) ? "red" : "",
+                  }}
+                  onClick={() => handleSetFilters(buttonData)}
+                >
+                  <a type="button">
+                    {buttonData.name}
+                    <span>
+                      <em>
+                        (
+                        {
+                          allCatalogData.filter((product) =>
+                            product.filters.includes(buttonData.filter)
+                          ).length
+                        }
+                        )
+                      </em>
+                    </span>
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        )
+      }
+
+{
+        category === ProductFathersTypes.CS_TYPES && (
+          <ul className="blog__cate ul--no-style">
+            <h4 className="title-sidebar">Tipos de {filters[0]}</h4>
+            {complementarySistemSubCategories?.map((buttonData: any) => {
               return (
                 <li
                   key={`shop-nav-${buttonData.name}`}
