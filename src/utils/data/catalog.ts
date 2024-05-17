@@ -2767,6 +2767,7 @@ export const bathroomPartitionData: CatalogData[] = [
 export const resaleCurtainsData: CatalogData[] = [
   {
     name: 'Cortinas celulares',
+    img: ['Sunset_Celulares', 'Sunset_Celulares_2', 'Sunset_Celulares_3'],
     id: 'cortinascelulares',
     filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
     description: `Las cortinas celulares se destacan por su tela con un exclusivo diseño de celdas, que permite una alta protección térmica y control de la acústica.Permite reducir la pérdida energética en el hogar hasta un 50%, según el tejido. 
@@ -2786,6 +2787,7 @@ export const resaleCurtainsData: CatalogData[] = [
   },
   {
     name: 'Cortinas enrollables',
+    img: ['Sunset_Enrollables_Black_Out', 'Sunset_Enrollables_Black_Out1'],
     id: 'cortinasenrollables',
     filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
     description: `Las cortinas enrollables ofrecen un sistema de control superior, de alta calidad, durabilidad y muy fácil instalación.Ofrece un hardware excelente y un inigualable abanico de telas que proveen las soluciones ideales para el control de la luz y la temperatura de cualquier ambiente. 
@@ -2804,6 +2806,7 @@ export const resaleCurtainsData: CatalogData[] = [
   },
   {
     name: 'Cortinas enrollables duo',
+    img: ['Sunset_Enrollables_Duo', 'Sunset_Enrollables_Duo_1', 'Sunset_Enrollables_Duo_2', 'Sunset_Enrollables_Duo_3',],
     id: 'cortinasenrollablesduo',
     filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
     description: `La cortina con sus segmentos alternados opacos y traslúcidos, crea una atmósfera armónica y funcional, sin perder de vista la elegancia. Acorde a la arquitectura contemporánea, combina el equilibrio de sus telas con un alto control de la iluminación. 
@@ -2825,6 +2828,7 @@ export const resaleCurtainsData: CatalogData[] = [
   },
   {
     name: 'Cortinas horizontales de aluminio',
+    img: ['Sunset_Horizontales_de_Aluminio', 'Sunset_Horizontales_de_Aluminio_2', 'Sunset_Horizontales_de_Aluminio_3'],
     id: 'cortinashorizontalesdealuminio',
     filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
     description: `Fabricadas con aluminio de alta calidad, que brinda gran resistencia a las deformaciones. 
@@ -2833,6 +2837,7 @@ export const resaleCurtainsData: CatalogData[] = [
   },
   {
     name: 'Cortinas horizontales de madera',
+    img: ['Sunset_Horizontales_de_Madera', 'Sunset_Horizontales_de_Madera_2', 'Sunset_Horizontales_de_Madera_3',],
     id: 'cortinashorizontalesdemadera',
     filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
     description: `Realizadas con láminas de madera natural, en una amplia gama de tonos y acabados. Su nuevo diseño de base y cenefa coordina con el color de las láminas. 
@@ -2840,6 +2845,7 @@ export const resaleCurtainsData: CatalogData[] = [
   },
   {
     name: 'Cortina Nantucket',
+    img: ['Sunset_Nantucket1', 'Nantucket-Living2', 'Sunset_Nantucket_Living2'],
     id: 'cortinanantucket',
     filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
     description: `Las cortinas Nantucket combinan la suavidad y la transparencia de una cortina con la funcionalidad de una persiana. Sus suaves láminas de tela opaca y semiopaca, suspendidas entre dos velos traslúcidos, permiten graduar la entrada de luz creando un juego único entre transparencia y privacidad. 
@@ -2855,6 +2861,7 @@ export const resaleCurtainsData: CatalogData[] = [
   },
   {
     name: 'Panel oriental',
+    img: ['Sunset_Paneles_Orientales', 'Sunset_Paneles_Orientales1', 'Sunset_Paneles_Orientales_2', 'Sunset_Paneles_Orientales_3', 'Sunset_Paneles_Orientales_4', 'Sunset_Paneles_Orientales_5',],
     id: 'cortinapaneloriental',
     filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
     description: `Los paneles orientales es una cortina diseñada para ventanas de gran formato. Conformada por un sistema de paneles de tela que se deslizan suavemente a lo largo de canales independientes en un discreto cabezal de aluminio.
@@ -2871,6 +2878,7 @@ export const resaleCurtainsData: CatalogData[] = [
   },
   {
     name: 'Toldos',
+    img: ['Sunset_Toldo_de_Proyección', 'Sunset_Toldo_de_Proyección_2', 'Sunset_Toldo_de_Proyección1', 'Sunset_Toldo_Vertical', 'Sunset_Toldo_Vertical_2'],
     id: 'cortinastoldos',
     filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
     description: `Se fabrican con una innovadora técnica de juntas soldadas que ofrece un acabado liso y uniforme, en telas de alta performance a la intemperie. Disponibles en accionamiento manual y motorizado. 
