@@ -2229,6 +2229,7 @@ Peso: aprox. 17kg/m
 export const bathroomPartitionData: CatalogData[] = [
   {
     name: 'Linea 1000/Panel',
+    img: ['panel1000', 'panel1000brazosrectos', 'panel1010barraltoallero'],
     filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
     id: 'mamparalinea1000',
     description: `Paño fijo de cierre parcial del espacio de ducha.
@@ -2262,6 +2263,7 @@ export const bathroomPartitionData: CatalogData[] = [
   },
   {
     name: 'Linea 2000/Rebatible Pivot',
+    img: ['2010', 'rebatiblepivot2000', 'rebatiblepivot2200', 'rebatiblepivotpar2100', 'rebatiblepivotparptared2110'],
     filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
     id: 'mamparalinea2000',
     description: `Hoja abatible de cierre parcial con bisagra corrida de aluminio.
@@ -2313,8 +2315,9 @@ export const bathroomPartitionData: CatalogData[] = [
   },
   {
     name: 'Linea 3000/Rebatible Bolt',
+    img: ['rebatiblebolt3000conbrazo', 'rebatibleboltforma3100conbrazo', 'rebatibleboltptacurva3110conbrazo'],
     filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
-    id: 'mamparalinea2000',
+    id: 'mamparalinea3000',
     description: `Hoja rebatible de cierre parcial con bisagra tomada a paño fijo lateral. 
     Elegante, práctica y decorativa. 
     Adaptable a falsas escuadras mediante tornillos reguladores. 
@@ -2353,6 +2356,7 @@ export const bathroomPartitionData: CatalogData[] = [
   },
   {
     name: 'Linea 4000/Box Puerta corrediza',
+    img: ['4000-B', '4200-A', 'Box Angular 4200-D Arenado 1 franja', 'Box Esquinero 4100', 'Box Frontal 4000-A', 'Box Frontal 4000-D'],
     filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
     id: 'mamparalinea4000',
     description: `Puertas corredizas y paños fijos.
@@ -2420,6 +2424,7 @@ export const bathroomPartitionData: CatalogData[] = [
   },
   {
     name: 'Linea 5000/Open Pivot',
+    img: ['5000-A', '5000-C', '5100-A', '5200-D', 'Open Pivot 5000-B', 'Open Pivot 5000-D ', 'Open Pivot Esquinero 5200-B', 'Open Pivot Esquinero 5200-B con barral y esm 3 fjas', 'Open Pivot Esquinero 5200-C'],
     filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
     id: 'mamparalinea5000',
     description: `Compuestas por hojas abatibles con bisagra corrida de aluminio y paños fijos. 
@@ -2496,6 +2501,7 @@ export const bathroomPartitionData: CatalogData[] = [
   },
   {
     name: 'Linea 6000/Open Bolt',
+    img: ['6200-G', '6200-H', 'Open Bolt 6000-C', 'Open Bolt 6000-D', 'Open Bolt Esquinero 6200-D'],
     filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
     id: 'mamparalinea6000',
     description: `Compuestas por hojas abatibles con bisagras y paños fijos. 
@@ -2565,6 +2571,7 @@ export const bathroomPartitionData: CatalogData[] = [
   },
   {
     name: 'Linea 7000/Steel One',
+    img: ['7000-A', 'Steel One Angular 7200-A', 'Steel One Esquinero 7300', 'Steel One Frontal 7000-D'],
     filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
     id: 'mamparalinea7000',
     description: `Puertas corredizas y paños fijos con elegantes herrajes a la vista de acero inoxidable. 
@@ -2621,6 +2628,7 @@ export const bathroomPartitionData: CatalogData[] = [
   },
   {
     name: 'Linea 8000/Espacio',
+    img: ['Espacio 8100-D'],
     filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
     id: 'mamparalinea8000',
     description: `
@@ -2661,6 +2669,7 @@ export const bathroomPartitionData: CatalogData[] = [
   },
   {
     name: 'Linea 9000/MEKA',
+    img: ['9000-C', '9200-A', 'Meka Angular 9200-A', 'Meka Frontal 9000-A', 'Meka Frontal 9000-D'],
     filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
     id: 'mamparalinea9000',
     description: `Puertas corredizas y paños fijos con elegantes herrajes a la vista. 
@@ -2720,6 +2729,7 @@ export const bathroomPartitionData: CatalogData[] = [
   },
   {
     name: 'Linea 5500/Open plegadiza',
+    img: ['5500-C', 'Open Pivot Plegadiza 5500 abierta', 'Open Pivot Plegadiza 5500 cerrada'],
     filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
     id: 'mamparalinea5500',
     description: `Dos hojas plegadizas con bisagra corrida de aluminio a la pared y dos bisagras entre hojas de acero inoxidable. 
@@ -2756,18 +2766,123 @@ export const bathroomPartitionData: CatalogData[] = [
 
 export const resaleCurtainsData: CatalogData[] = [
   {
-    name: '',
-    id: '',
-    filters: [],
-    description: `
+    name: 'Cortinas celulares',
+    id: 'cortinascelulares',
+    filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
+    description: `Las cortinas celulares se destacan por su tela con un exclusivo diseño de celdas, que permite una alta protección térmica y control de la acústica.Permite reducir la pérdida energética en el hogar hasta un 50%, según el tejido. 
+    Las telas celulares están disponibles en 10mm y 20mm. Gracias a su composición, 100% poliéster, la tela repele el polvo evitando que se acumule en sus pliegues. 
+    
+    Niveles de opacidad: 
+    1- Translucido 
+    2- Semi-Translúcido 
+    3- Semi-Opaco 
+    4- Opaco 
+    
+    Accionamientos: 
+    1-Manual (Top-Down ; Top-Down Bottom-Up y Duolite)
+    2- EasyRise 
+    3- Motorizado 
     `
-  }
+  },
+  {
+    name: 'Cortinas enrollables',
+    id: 'cortinasenrollables',
+    filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
+    description: `Las cortinas enrollables ofrecen un sistema de control superior, de alta calidad, durabilidad y muy fácil instalación.Ofrece un hardware excelente y un inigualable abanico de telas que proveen las soluciones ideales para el control de la luz y la temperatura de cualquier ambiente. 
+    Telas: Screen, Black Out y Decorativas. 
+    
+    Niveles de opacidad: 
+    1- Translucido 
+    2- Semi-Translúcido 
+    3- Semi-Opaco 
+    4- Opaco 
+    
+    Accionamientos: 
+    Sistema manual (sistema de cadenas)
+    Sistema motorizado 
+    `
+  },
+  {
+    name: 'Cortinas enrollables duo',
+    id: 'cortinasenrollablesduo',
+    filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
+    description: `La cortina con sus segmentos alternados opacos y traslúcidos, crea una atmósfera armónica y funcional, sin perder de vista la elegancia. Acorde a la arquitectura contemporánea, combina el equilibrio de sus telas con un alto control de la iluminación. 
+    Textil que bloquea un alto porcentaje de los rayos UV, cuando sus segmentos se encuentran alternados.
+    Sus colecciones de telas ofrecen diferentes texturas y niveles de privacidad que armonizan la decoración de cualquier ambiente.
+    
+    Segmento Duo
+    El posicionamiento adecuado de los segmentos y su variedad de colecciones permiten desde una suave y delicada luminosidad, hasta un alto nivel de privacidad.
+    
+    Opacidad: 
+    Semi Opacidad
+    Opacidad 
+    
+    Accionamientos: 
+    Sistema Cadena Plástica
+    Sistema Motorizado
+    
+    `
+  },
+  {
+    name: 'Cortinas horizontales de aluminio',
+    id: 'cortinashorizontalesdealuminio',
+    filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
+    description: `Fabricadas con aluminio de alta calidad, que brinda gran resistencia a las deformaciones. 
+    Disponibles en láminas de 16 y 25 mm, en diferentes colores y texturas. 
+    `
+  },
+  {
+    name: 'Cortinas horizontales de madera',
+    id: 'cortinashorizontalesdemadera',
+    filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
+    description: `Realizadas con láminas de madera natural, en una amplia gama de tonos y acabados. Su nuevo diseño de base y cenefa coordina con el color de las láminas. 
+    `
+  },
+  {
+    name: 'Cortina Nantucket',
+    id: 'cortinanantucket',
+    filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
+    description: `Las cortinas Nantucket combinan la suavidad y la transparencia de una cortina con la funcionalidad de una persiana. Sus suaves láminas de tela opaca y semiopaca, suspendidas entre dos velos traslúcidos, permiten graduar la entrada de luz creando un juego único entre transparencia y privacidad. 
+
+    Accionamientos: 
+    Manual EasyRise 
+    Motorizado 
+    
+    Opacidad: 
+    Semi Opacidad
+    Opacidad 
+    `
+  },
+  {
+    name: 'Panel oriental',
+    id: 'cortinapaneloriental',
+    filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
+    description: `Los paneles orientales es una cortina diseñada para ventanas de gran formato. Conformada por un sistema de paneles de tela que se deslizan suavemente a lo largo de canales independientes en un discreto cabezal de aluminio.
+    Está disponible en diferentes opciones de apertura las cuales se adaptan a las necesidades de cada ambiente: Lateral, Bilateral y Central. 
+    
+    Niveles de opacidad:
+    Traslúcido
+    Semitraslúcido
+    Semiopaco
+    
+    Accionamientos: 
+    Manual 
+    `
+  },
+  {
+    name: 'Toldos',
+    id: 'cortinastoldos',
+    filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
+    description: `Se fabrican con una innovadora técnica de juntas soldadas que ofrece un acabado liso y uniforme, en telas de alta performance a la intemperie. Disponibles en accionamiento manual y motorizado. 
+    `
+  },
 ]
 
 export const resalesData: CatalogData[] = [
   ...barData,
   ...doorsResalesData,
-  ...bathroomPartitionData
+  ...bathroomPartitionData,
+  ...resaleCurtainsData
 ] 
 
 export const texturesData: TexturesTypes[] = [
