@@ -24,20 +24,20 @@ export const navData:NavData[] = [
           query: ProductFathersTypes.OPENERS_TYPES
         }
       },
-      // {
-      //   label: 'Cerramientos',
-      //   link: PAGES_PATH.CATALOG_PATH,
-      //   query: {
-      //     queryName: 'categoria',
-      //     query: ProductFathersTypes.CLOSERS_TYPES
-      //   }
-      // },
       {
         label: 'Sistemas complementarios',
         link: PAGES_PATH.CATALOG_PATH,
         query: {
           queryName: 'categoria',
           query: ProductFathersTypes.CS_TYPES
+        }
+      },
+      {
+        label: 'Fachadas y lamas',
+        link: PAGES_PATH.CATALOG_PATH,
+        query: {
+          queryName: 'categoria',
+          query: ProductFathersTypes.FACHADAS
         }
       },
       {

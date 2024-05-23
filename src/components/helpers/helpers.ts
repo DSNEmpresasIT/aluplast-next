@@ -18,7 +18,8 @@ const productNames: any = {
   [ProductFathersTypes.RESALES]: 'Reventas',
   [ProductFathersTypes.SOLAR_CONTROL]: 'Control solar',
   [ProductFathersTypes.WINDOWS]: 'Vidrios',
-  [ProductFathersTypes.CS_TYPES]: 'Sistemas complementarios'
+  [ProductFathersTypes.CS_TYPES]: 'Sistemas complementarios',
+  [ProductFathersTypes.FACHADAS]: 'Lamas y fachadas',
 }
 
 const typeName: any = {
@@ -40,15 +41,18 @@ const text: any = {
   [ProductFathersTypes.CS_TYPES]: 'Te damos la bienvenida a nuestro catálogo de sistemas complementarios, donde encontrarás una amplia variedad de soluciones diseñadas para mejorar y enriquecer tus proyectos. Cada página de nuestro catálogo te presenta una cuidadosa selección de sistemas en aluminio y PVC que añaden funcionalidad, seguridad y diseño a tus espacios.'
 }
 
-export function pagination(arr: any[], index: paginationIndex) {
-  let paginated;
-  if (index.lastIndex <= arr.length) {
-    paginated = arr.slice(index.startIndex, index.lastIndex); 
-  } else {
-    paginated = arr.slice(index.startIndex, arr.length);
-  }
+export function pagination(arr: any[], page: number) {
+
+  const limit = 9;
+  const skip = limit * page;
   
-  return paginated;
+  if (page * limit > arr.length) {
+  
+    return arr.slice(0, limit); 
+  } else {
+    
+    return arr.slice(skip - limit, skip);
+  }
 } 
 
 export function getFormatDate(date: string, config: Intl.DateTimeFormatOptions = { weekday: "short", year:"2-digit", month:"short", day:"2-digit"}) {

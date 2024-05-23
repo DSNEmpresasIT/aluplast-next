@@ -21,6 +21,10 @@ const navData = [
     filter: ProductFathersTypes.CS_TYPES,
   },
   {
+    name: getProductTypeName(ProductFathersTypes.FACHADAS),
+    filter: ProductFathersTypes.FACHADAS,
+  },
+  {
     name: getProductTypeName(ProductFathersTypes.WINDOWS),
     filter: ProductFathersTypes.WINDOWS,
   },
@@ -255,7 +259,7 @@ export const ShopNavComponent: FC<ShopNavComponentProps> = ({
         )
       }
 
-{
+      {/* {
         category === ProductFathersTypes.CS_TYPES && (
           <ul className="blog__cate ul--no-style">
             <h4 className="title-sidebar">Tipos de {filters[0]}</h4>
@@ -288,7 +292,7 @@ export const ShopNavComponent: FC<ShopNavComponentProps> = ({
             })}
           </ul>
         )
-      }
+      } */}
     </div>
   );
 };

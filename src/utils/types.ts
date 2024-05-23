@@ -40,7 +40,8 @@ export enum ProductFathersTypes {
   SOLAR_CONTROL = 'control-solar',
   WINDOWS = 'vidrios',
   GARAGE_DOORS = 'puertas-garaje',
-  RESALES = 'reventas'
+  RESALES = 'reventas',
+  FACHADAS = 'fachadas-y-lamas'
 }
 
 export enum TypeProduct {

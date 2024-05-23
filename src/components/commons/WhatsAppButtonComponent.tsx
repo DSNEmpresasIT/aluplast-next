@@ -27,11 +27,11 @@ const PhonesData = [
   //   city: 'Colón',
   //   type: 'Administración'  
   // },
-  // {
-  //   phone: '543446354009',
-  //   city: 'Concepción del Uruguay',
-  //   type: "Administración/Ventas"
-  // },
+  {
+    phone: '543446354009',
+    city: 'Concepción del Uruguay',
+    type: "Administración/Ventas"
+  },
   {
     phone: '543446636419',
     city: 'Gualeguaychu',

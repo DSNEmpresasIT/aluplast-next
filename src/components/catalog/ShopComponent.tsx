@@ -7,6 +7,7 @@ import { getProductTypeName, getProdutTypeText, pagination } from "../helpers/he
 import { ShopNavComponent } from "./ShopNavComponent";
 import { useRouter, useSearchParams } from "next/navigation";
 import { PAGES_PATH } from "@/utils/pages";
+import { PaginationComponent } from "./PaginationComponent";
 
 
 const sortFunction = (product_1: CatalogData, product_2: CatalogData) => {
@@ -31,9 +32,9 @@ export const ShopComponent = ({ query }: any) => {
   const router = useRouter();
   const searchQuery = useSearchParams().get('search');
   const productError = useSearchParams().get('productError');
+  const page = useSearchParams().get('page'); 
   const [ filters, setFilters ] = useState<ProductFathersTypes[]>([]);
   const [ catalogData,  setCatalogData ] = useState<CatalogData[]>(initialState);
-  const [ indexPagination, setIndexPagination ] = useState({ startIndex: 0, lastIndex: 6 });
   const [ dataPaginated, setDataPaginated ] = useState<CatalogData[]>(catalogData || []);
   
   const handleToggleFilters = (filter: ProductFathersTypes | null) => {
@@ -51,8 +52,6 @@ export const ShopComponent = ({ query }: any) => {
         newData = [...newData, ...data]
       }
       setCatalogData(newData.sort(sortFunction));
-
-      setIndexPagination({ startIndex: 0, lastIndex: 6 })
     }
 
     if (searchQuery) {
@@ -64,28 +63,26 @@ export const ShopComponent = ({ query }: any) => {
   const handleSearchByName = (name: string) => {
     const newData = catalogData.filter(product => product.name.toLowerCase().indexOf(name.toLowerCase()) !== -1); 
     setCatalogData(newData);
-    setIndexPagination({ startIndex: 0, lastIndex: 6 });
     return undefined;
-  }
-
-  const handlePagination = () => {
-    setIndexPagination({
-      startIndex: 0,
-      lastIndex: indexPagination.lastIndex + 3
-    })
   }
 
   useEffect(() => {
     if (query) {
+
       setFilters([...filters, query])
     } else {
+
       setFilters([]);
     }
   }, [query]);
 
   useEffect(() => {
-    setDataPaginated(pagination(catalogData, indexPagination));
-  }, [indexPagination, catalogData]);
+    if (page) {
+      setDataPaginated(pagination(catalogData, +page));
+    } else {
+      setDataPaginated(pagination(catalogData, 1));
+    }
+  }, [catalogData, page, query]);
 
   useEffect(() => {
     if (filters.length || searchQuery) {
@@ -153,25 +150,11 @@ export const ShopComponent = ({ query }: any) => {
                       )
                     })
                   }
-                  {
-                    (catalogData && indexPagination.lastIndex <= catalogData.length) && (
-                      <div className="col-12 see-more">
-                        <a 
-                          onClick={handlePagination}
-                          type='button' 
-                          style={{ color: 'white', cursor: 'pointer' }} 
-                          className="au-btn au-btn--pill au-btn--yellow au-btn--big au-btn--white"
-                        >
-                          Cargar Más
-                        </a>
-                      </div>
-                    )
-                  }
                 </div>
               </div>
             </div>
           </div>
-          {/* <PaginationShopComponent />  */}
+          <PaginationComponent actualPage={page} catalogLength={catalogData.length} category={query} /> 
         </div>
       </div>
     </section>

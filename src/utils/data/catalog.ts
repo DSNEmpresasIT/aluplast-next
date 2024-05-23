@@ -1158,6 +1158,7 @@ export const complementarySystemData: CatalogData[] = [
 export const controlSolar: CatalogData[] = [
   {
     name: "Cortina de enrollar",
+    img: ['2B', '1A', '1B', '2A',],
     id: 'cortinadeenrrollar',
     filters: [ProductFathersTypes.SOLAR_CONTROL, "cortinadeenrollar"],
     description:
@@ -1208,6 +1209,7 @@ export const controlSolar: CatalogData[] = [
   },
   {
     name: "Persiana regulable",
+    img: ['2B', '3A', '3B', '1A', '1B', '2A', ],
     id: 'persianaregulable',
     filters: [ProductFathersTypes.SOLAR_CONTROL, "persianaregulable"],
     description:
@@ -1415,60 +1417,7 @@ export const controlSolar: CatalogData[] = [
       ],
     },
   },
-  {
-    name: "Parasol",
-    // img: ['parasol'],
-    id: 'parasol',
-    filters: [ProductFathersTypes.SOLAR_CONTROL, "parasol"],
-    description:
-      "Los parasoles son ideales para áreas exteriores que requieren protección contra la luz solar directa. Estas aberturas ofrecen sombra y confort sin comprometer la estética de la obra y proporcionan seguridad a las ventanas. Perfectos para instituciones, fachadas y contra fachadas. Pueden ser de lamas tubulares o laminares. Fijos o móviles.",
-    specs: {
-      description: [
-        {
-          title: 'Tipo de Producto',
-          text: 'Parasol de Aluminio de Aluplast.'
-        },
-        {
-          title: '  Composición',
-          text: 'Fabricado con perfiles de aluminio de alta calidad y lamas tubulares o laminares, según la preferencia del cliente.'
-        },
-        {
-          title: '  Conexión entre Módulos',
-          text: 'Diseñado con un sistema modular que permite un montaje sólido y estable.'
-        },
-        {
-          title: '  Eficiencia en el Montaje',
-          text: 'Montaje sencillo y rápido.'
-        },
-        {
-          title: '  Estética Elegante',
-          text: 'Proporciona sombra y confort sin comprometer la estética de la obra.'
-        },
-        {
-          title: '  Flexibilidad de Diseño',
-          text: 'Se adapta a diferentes tamaños y formas de espacios exteriores.'
-        },
-        {
-          title: '  Control de Calidad',
-          text: 'Fabricado bajo estrictos estándares de calidad para garantizar durabilidad y resistencia.'
-        },
-        {
-          title: '  Aplicaciones Versátiles',
-          text: 'Ideal para áreas exteriores que requieren protección solar, como instituciones, fachadas y contrafachadas.'
-        },
-        {
-          title: '  Practicidad',
-          text: 'Ofrece soluciones de sombra con lamas tubulares o laminares fijas o móviles, según las necesidades del cliente'
-        }
-      ],
-      features: [
-        "Protección solar efectiva.",
-        "Mayor comodidad en exteriores.",
-        "Estética arquitectónica conservada.",
-        "Configuraciones adaptables.",
-      ],
-    },
-  },
+  
 ];
 
 export const windowsFatherData:CatalogData[] = [
@@ -2884,13 +2833,125 @@ export const resaleCurtainsData: CatalogData[] = [
     description: `Se fabrican con una innovadora técnica de juntas soldadas que ofrece un acabado liso y uniforme, en telas de alta performance a la intemperie. Disponibles en accionamiento manual y motorizado. 
     `
   },
-]
+];
 
 export const resalesData: CatalogData[] = [
   ...barData,
   ...doorsResalesData,
   ...bathroomPartitionData,
   ...resaleCurtainsData
+];
+
+export const fachadasYLamas: CatalogData[] = [
+  {
+    name: "Parasol",
+    img: ['PARASOL'],
+    id: 'parasol',
+    filters: [ProductFathersTypes.FACHADAS, "parasol"],
+    description:
+      "Los parasoles son ideales para áreas exteriores que requieren protección contra la luz solar directa. Estas aberturas ofrecen sombra y confort sin comprometer la estética de la obra y proporcionan seguridad a las ventanas. Perfectos para instituciones, fachadas y contra fachadas. Pueden ser de lamas tubulares o laminares. Fijos o móviles.",
+    specs: {
+      description: [
+        {
+          title: 'Tipo de Producto',
+          text: 'Parasol de Aluminio de Aluplast.'
+        },
+        {
+          title: '  Composición',
+          text: 'Fabricado con perfiles de aluminio de alta calidad y lamas tubulares o laminares, según la preferencia del cliente.'
+        },
+        {
+          title: '  Conexión entre Módulos',
+          text: 'Diseñado con un sistema modular que permite un montaje sólido y estable.'
+        },
+        {
+          title: '  Eficiencia en el Montaje',
+          text: 'Montaje sencillo y rápido.'
+        },
+        {
+          title: '  Estética Elegante',
+          text: 'Proporciona sombra y confort sin comprometer la estética de la obra.'
+        },
+        {
+          title: '  Flexibilidad de Diseño',
+          text: 'Se adapta a diferentes tamaños y formas de espacios exteriores.'
+        },
+        {
+          title: '  Control de Calidad',
+          text: 'Fabricado bajo estrictos estándares de calidad para garantizar durabilidad y resistencia.'
+        },
+        {
+          title: '  Aplicaciones Versátiles',
+          text: 'Ideal para áreas exteriores que requieren protección solar, como instituciones, fachadas y contrafachadas.'
+        },
+        {
+          title: '  Practicidad',
+          text: 'Ofrece soluciones de sombra con lamas tubulares o laminares fijas o móviles, según las necesidades del cliente'
+        }
+      ],
+      features: [
+        "Protección solar efectiva.",
+        "Mayor comodidad en exteriores.",
+        "Estética arquitectónica conservada.",
+        "Configuraciones adaptables.",
+      ],
+    },
+  },
+  {
+    name: "Frame",
+    img: ["FRAME"],
+    id: 'frame',
+    filters: [ProductFathersTypes.FACHADAS, "frame"],
+    description:`Estética
+    ●Diseño actual e imagen continua de vidrio (sin presencia de aluminio visto desde el exterior).
+    ●Admite, si el proyecto lo contempla, el montaje de perfiles cosméticos de aluminio en el exterior.
+
+    Características
+    ●Sistema modular acoplable de montaje rápido.
+    ●Sistema de fijación con regulación en 3 dimensiones.
+    
+    Hermeticidad – Estanqueidad
+    ●Junta de unión sellada.
+    ●Burletes de silicona.
+    ●Alta prestación ante cargas de viento.
+    ●Sistema de alta eficiencia para edificios en altura.
+    `,
+    
+  },
+  {
+    name: "Frente Integral",
+    img: ["FRENTE-INTEGRAL"],
+    id: 'frente-integral',
+    filters: [ProductFathersTypes.FACHADAS, "frente-integral"],
+    description:`Estética
+    ●Diseñada en base a una vista frontal de 60 milímetros, con diversas profundidades de columna
+    ●Permite generar Paños Vidriados, a los que puede añadirse Ventanas Desplazable, Puertas de Rebatir y otras Tipologías.
+    ●Adaptable a diversos espesores de vidrio
+    
+    ●Corte a 90º
+    ●Admite vidrios laminado, templados y DVH.
+    
+    ●Los paños fijos generados a partir de este sistema son aptos para responder a las más altas exigencias de Hermeticidad y Estanqueidad
+    `,
+    
+  },
+  {
+    name: "Frente Vidriado",
+    img: ["F-VIDRIADO"],
+    id: 'frente-vidriado',
+    filters: [ProductFathersTypes.FACHADAS, "frente-vidriado"],
+    description:`Estética
+    ●Diseñada en base a una vista frontal de 60 milímetros, con diversas profundidades de columna
+    ●Permite generar Paños Vidriados, a los que puede añadirse Ventanas Desplazable, Puertas de Rebatir y otras Tipologías.
+    ●Adaptable a diversos espesores de vidrio
+    
+    ●Corte a 90º
+    ●Admite vidrios laminado, templados y DVH.
+    
+    ●Los paños fijos generados a partir de este sistema son aptos para responder a las más altas exigencias de Hermeticidad y Estanqueidad
+    `,
+    
+  },
 ] 
 
 export const texturesData: TexturesTypes[] = [
@@ -2954,150 +3015,16 @@ export const texturesData: TexturesTypes[] = [
 
 export const doorsModel = [
   {
-    name: "Mod.100",
-    img: ['1'],
-    id: '100',
-    filters: [
-      ProductFathersTypes.OPENERS_TYPES,
-      TypeProduct.DOOR_PRODUCT,
-    ],
-  }, 
-  {
-    name: "Mod.101",
-    img: ['1'],
-    id: '101',
-    filters: [
-      ProductFathersTypes.OPENERS_TYPES,
-      TypeProduct.DOOR_PRODUCT,
-    ],
-  }, 
-  {
-    name: "Mod.102",
-    img: ['1'],
-    id: '102',
-    filters: [
-      ProductFathersTypes.OPENERS_TYPES,
-      TypeProduct.DOOR_PRODUCT,
-    ],
-  }, 
-  {
-    name: "Mod.103",
-    img: ['1'],
-    id: '103',
-    filters: [
-      ProductFathersTypes.OPENERS_TYPES,
-      TypeProduct.DOOR_PRODUCT,
-    ],
-  }, 
-  {
-    name: "Mod.105",
-    img: ['1'],
-    id: '105',
-    filters: [
-      ProductFathersTypes.OPENERS_TYPES,
-      TypeProduct.DOOR_PRODUCT,
-    ],
-  },
-  {
-    name: "Mod.106",
-    img: ['1'],
-    id: '106',
-    filters: [
-      ProductFathersTypes.OPENERS_TYPES,
-      TypeProduct.DOOR_PRODUCT,
-    ],
-  },
-  {
-    name: "Mod.109",
-    img: ['1'],
-    id: '109',
-    filters: [
-      ProductFathersTypes.OPENERS_TYPES,
-      TypeProduct.DOOR_PRODUCT,
-    ],
-  },
-  {
-    name: "Mod.218",
-    img: ['1'],
-    id: '218',
-    filters: [
-      ProductFathersTypes.OPENERS_TYPES,
-      TypeProduct.DOOR_PRODUCT,
-    ],
-  }, 
-  {
-    name: "Mod.219",
-    img: ['219'],
-    id: '219',
-    filters: [
-      ProductFathersTypes.OPENERS_TYPES,
-      TypeProduct.DOOR_PRODUCT,
-    ],
-  }, 
-  {
-    name: "Mod.221",
-    img: ['221'],
-    id: '221',
-    filters: [
-      ProductFathersTypes.OPENERS_TYPES,
-      TypeProduct.DOOR_PRODUCT,
-    ],
-  }, 
-  {
-    name: "Mod.223",
-    img: ['223'],
-    id: '223',
-    filters: [
-      ProductFathersTypes.OPENERS_TYPES,
-      TypeProduct.DOOR_PRODUCT,
-    ],
-  }, 
-  {
-    name: "Mod.223 lisa",
-    img: ['223-lisa'],
-    id: '223-lisa',
-    filters: [
-      ProductFathersTypes.OPENERS_TYPES,
-      TypeProduct.DOOR_PRODUCT,
-    ],
-  },
-  {
-    name: "Mod.227",
-    img: ['227'],
-    id: '227',
-    filters: [
-      ProductFathersTypes.OPENERS_TYPES,
-      TypeProduct.DOOR_PRODUCT,
-    ],
-  },  
-  {
-    name: "Mod.227 con molduras",
-    img: ['227-molduras'],
-    id: '227-molduras',
-    filters: [
-      ProductFathersTypes.OPENERS_TYPES,
-      TypeProduct.DOOR_PRODUCT,
-    ],
-  },  
-  {
-    name: "Mod.228",
-    img: ['228'],
-    id: '228',
-    filters: [
-      ProductFathersTypes.OPENERS_TYPES,
-      TypeProduct.DOOR_PRODUCT,
-    ],
-  }, 
-  {
-    name: "Mod.235",
-    img: ['235'],
-    id: '235',
+    name: "Modelos de puerta",
+    img: ['100', '101', '102', '103', '105', '106', '109', '218', '219', '221', '223', '223-lisa', '227', '227-molduras', '228', '235', '236', '237', '241', '242', '243', '244', '245', '246', '247', '250', '251', '252'],
+    id: 'modelosdepuerta',
     filters: [
       ProductFathersTypes.OPENERS_TYPES,
       TypeProduct.DOOR_PRODUCT,
     ],
   }, 
 ]
+
 
 
 export const allCatalogData: CatalogData[] = [
@@ -3109,5 +3036,6 @@ export const allCatalogData: CatalogData[] = [
   ...controlSolar,
   ...windowsFatherData,
   ...garageDoorsData,
-  ...resalesData
+  ...resalesData,
+  ...fachadasYLamas
 ];
