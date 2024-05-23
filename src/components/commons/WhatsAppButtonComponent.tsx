@@ -29,7 +29,7 @@ const PhonesData = [
   // },
   {
     phone: '543446354009',
-    city: 'Concepción del Uruguay',
+    city: 'C. del Uruguay',
     type: "Administración/Ventas"
   },
   {

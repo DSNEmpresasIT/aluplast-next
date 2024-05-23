@@ -111,9 +111,13 @@ export const ShopNavComponent: FC<ShopNavComponentProps> = ({
                   className="animate__animated animate__fadeIn"
                   key={`shop-nav-filters-${filter}`}
                   href={{
-                    pathname: PAGES_PATH.CATALOG_PATH,
-                    query: { categoria: undefined },
+                    query: {
+                      //@ts-ignore
+                      categoria: Object.values(ProductFathersTypes).includes(filter || '') ? undefined : category
+                    }
                   }}
+                  type="button"
+                  onClick={() => handleSetFilters({ name: '', filter })}
                 >
                   {getProductTypeName(filter)}{" "}
                   <span style={{ marginLeft: "4px" }}>x</span>
