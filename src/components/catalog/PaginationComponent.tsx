@@ -10,7 +10,7 @@ export const PaginationComponent = ({
   useEffect(() => {
     const totalPages: number[] = [];
     
-    for (let i = 0; i < Math.round(catalogLength / 9); i++) {
+    for (let i = 0; i < Math.ceil(catalogLength / 9); i++) {
       totalPages.push(i+1);
     }
 
@@ -59,12 +59,12 @@ export const PaginationComponent = ({
           <a type='button' className="page-number dots">...</a>
         </li>
         <li>
-          <Link href={{ query: { categoria: category, page: Math.round(catalogLength / 9) } }} className="page-number">
-            {Math.round(catalogLength / 9)}
+          <Link href={{ query: { categoria: category, page: Math.ceil(catalogLength / 9) } }} className="page-number">
+            {Math.ceil(catalogLength / 9)}
           </Link>
         </li>
         {
-          actualPage && +actualPage < Math.round(catalogLength / 9) && (
+          actualPage && +actualPage < Math.ceil(catalogLength / 9) && (
             <li>
               <Link href={{ query: { categoria: category, page: +actualPage + 1 } }} className="page-number">
                 <i className="fa fa-chevron-right" aria-hidden="true"></i>

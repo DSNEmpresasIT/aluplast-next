@@ -41,18 +41,17 @@ const text: any = {
   [ProductFathersTypes.CS_TYPES]: 'Te damos la bienvenida a nuestro catálogo de sistemas complementarios, donde encontrarás una amplia variedad de soluciones diseñadas para mejorar y enriquecer tus proyectos. Cada página de nuestro catálogo te presenta una cuidadosa selección de sistemas en aluminio y PVC que añaden funcionalidad, seguridad y diseño a tus espacios.'
 }
 
-export function pagination(arr: any[], page: number) {
+export function pagination(arr: any[], page: any) {
 
   const limit = 9;
   const skip = limit * page;
   
   if (page * limit > arr.length) {
   
-    return arr.slice(0, limit); 
-  } else {
-    
-    return arr.slice(skip - limit, skip);
-  }
+    return arr.slice(arr.length - 9, arr.length); 
+  } 
+
+  return arr.slice(skip - limit, skip);
 } 
 
 export function getFormatDate(date: string, config: Intl.DateTimeFormatOptions = { weekday: "short", year:"2-digit", month:"short", day:"2-digit"}) {

@@ -1699,58 +1699,58 @@ export const garageDoorsData: CatalogData[] = [
       ]
     }
   },
-  {
-    name: "Puerta plegadiza",
-    img: ['1', '2', '3', '4',],
-    id: "puertaplegadiza",
-      filters: [
-      ProductFathersTypes.GARAGE_DOORS,
-    ],
-    description:
-      "La puerta Plegadiza es una solución práctica para cerrar grandes luces. Su forma de plegarse permite una cantidad de hojas variables según la longitud del vano a cubrir y agrega un toque moderno a la obra. Esta tipología permite el casi 100% de la apertura, ideal para quinchos, galerías.",
-    specs: {
-      description: [
-        {
-          title: "Tipo",
-          text: "Puertas plegadizas de aluminio.",
-        },
-        {
-          title: "Material",
-          text: "Aluminio de alta calidad.",
-        },
-        {
-          title: "Diseño",
-          text: "Estilo contemporáneo y elegante, Ideal para maximizar el espacio en áreas con limitaciones.",
-        },
-        {
-          title: "Durabilidad",
-          text: "Construcción resistente y duradera.",
-        },
-        {
-          title: "Entrada de Luz",
-          text: "Maximiza la entrada de luz natural, creando ambientes luminosos.",
-        },
-        {
-          title: "Transición sin Barreras",
-          text: "Facilita la conexión entre espacios interiores y exteriores.",
-        },
-        {
-          title: "Mantenimiento",
-          text: "Requieren poco mantenimiento para una vida útil prolongada.",
-        },
-        {
-          title: "Personalización",
-          text: "Disponibles en diversos acabados y colores.",
-        },
-      ],
-      features: [
-        "Amplían galerías y quinchos al conectar espacios.",
-        "Facilitan la transición suave entre interiores y exteriores.",
-        "Ofrecen ventilación natural al abrir parcialmente.",
-        "Aumentan la entrada de luz para un ambiente acogedor.",
-      ],
-    },
-  },
+  // {
+  //   name: "Puerta plegadiza",
+  //   img: ['1', '2', '3', '4',],
+  //   id: "puertaplegadiza",
+  //     filters: [
+  //     ProductFathersTypes.GARAGE_DOORS,
+  //   ],
+  //   description:
+  //     "La puerta Plegadiza es una solución práctica para cerrar grandes luces. Su forma de plegarse permite una cantidad de hojas variables según la longitud del vano a cubrir y agrega un toque moderno a la obra. Esta tipología permite el casi 100% de la apertura, ideal para quinchos, galerías.",
+  //   specs: {
+  //     description: [
+  //       {
+  //         title: "Tipo",
+  //         text: "Puertas plegadizas de aluminio.",
+  //       },
+  //       {
+  //         title: "Material",
+  //         text: "Aluminio de alta calidad.",
+  //       },
+  //       {
+  //         title: "Diseño",
+  //         text: "Estilo contemporáneo y elegante, Ideal para maximizar el espacio en áreas con limitaciones.",
+  //       },
+  //       {
+  //         title: "Durabilidad",
+  //         text: "Construcción resistente y duradera.",
+  //       },
+  //       {
+  //         title: "Entrada de Luz",
+  //         text: "Maximiza la entrada de luz natural, creando ambientes luminosos.",
+  //       },
+  //       {
+  //         title: "Transición sin Barreras",
+  //         text: "Facilita la conexión entre espacios interiores y exteriores.",
+  //       },
+  //       {
+  //         title: "Mantenimiento",
+  //         text: "Requieren poco mantenimiento para una vida útil prolongada.",
+  //       },
+  //       {
+  //         title: "Personalización",
+  //         text: "Disponibles en diversos acabados y colores.",
+  //       },
+  //     ],
+  //     features: [
+  //       "Amplían galerías y quinchos al conectar espacios.",
+  //       "Facilitan la transición suave entre interiores y exteriores.",
+  //       "Ofrecen ventilación natural al abrir parcialmente.",
+  //       "Aumentan la entrada de luz para un ambiente acogedor.",
+  //     ],
+  //   },
+  // },
 ];
 
 
@@ -1918,48 +1918,9 @@ export const barData: CatalogData[] = [
     }
   },
   {
-    name: 'Clásica P475 Curvo-02',
-    img: ['clasicaP475curvo-02'],
-    id: 'clasicaP475curvo-02',
-    filters: [ProductFathersTypes.CS_TYPES, TypeProduct.BAR_PRODDUCT],
-    description: `Baranda Clásica, una fusión perfecta de estética clásica y funcionalidad moderna. Este sistema destaca por su imponente presencia de vidrio y se adapta a proyectos de cualquier escala con facilidad.
-    La Baranda Clásica no solo es una elección segura, sino también una declaración de estilo atemporal. Descubra cómo esta baranda puede transformar sus proyectos con su elegancia distintiva.
-    `,
-    specs: {
-      description: [
-        {
-          title: 'Diseño versátil',
-          text: 'Disponible con pasamanos redondo o recto, ambos ofreciendo una impresionante presencia de vidrio que eleva la estética de cualquier espacio.'
-        },
-        {
-          title: 'Fijación Inferior para vista abierta',
-          text: 'Con fijación inferior, logramos una conexión perfecta entre el interior y el exterior, ofreciendo una experiencia visual única.'
-        },
-        {
-          title: 'Compatibilidad con vidrios 3+3 y 4+4',
-          text: ' Asegura la seguridad y se adapta a diversas necesidades de diseño.'
-        },
-        {
-          title: 'Parante Angosto para Barrotillo',
-          text: ' Diseño estilizado que agrega un toque de elegancia y versatilidad para su uso como barrotillo.'
-        },
-        {
-          title: 'Segura y Versátil',
-          text: 'Una baranda que combina seguridad y versatilidad, equilibrada estéticamente y adaptable a cualquier proyecto moderno.'
-        },
-      ],
-      features: [
-        'Sistema de Armado Sencillo: Una solución fácil de ensamblar para una instalación sin complicaciones.',
-        'Adaptable a Diversos Diseños y Escalas: Perfecta tanto para balcones de edificios como para espacios interiores, se adapta a proyectos de cualquier magnitud.',
-        'Comodidad en el Uso: Diseñados para brindar comodidad durante el uso, los pasamanos son ergonómicos y de alta calidad.',
-        'Estética Atractiva: El diseño del pasamanos complementa la atractiva estética de la baranda, fusionando funcionalidad y estilo.'
-      ]
-    }
-  },
-  {
-    name: 'Clásica P479 Recto-02',
+    name: 'Línea clásica',
     img: ['clasicaP479recto-02'],
-    id: 'clasicaP479recto-02',
+    id: 'barandasclasicas',
     filters: [ProductFathersTypes.CS_TYPES, TypeProduct.BAR_PRODDUCT],
     description: `Baranda Clásica, una fusión perfecta de estética clásica y funcionalidad moderna. Este sistema destaca por su imponente presencia de vidrio y se adapta a proyectos de cualquier escala con facilidad.
     La Baranda Clásica no solo es una elección segura, sino también una declaración de estilo atemporal. Descubra cómo esta baranda puede transformar sus proyectos con su elegancia distintiva.
