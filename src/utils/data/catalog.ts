@@ -630,9 +630,10 @@ export const complementarySystemData: CatalogData[] = [
   //   },
   // },
   {
-    name: 'Cerramiento de oficinas',
-    id: 'cerramientosoificinas',
-    filters: [ProductFathersTypes.CS_TYPES, "cerramientooficinas"],
+    name: 'Divisor de oficinas',
+    img: ['cerramientosoficinas'],
+    id: 'cerramientosoficinas',
+    filters: [ProductFathersTypes.CS_TYPES, "cerramientosoficinas"],
     description: 'Usos:',
     specs: {
       description: [
@@ -791,7 +792,9 @@ export const complementarySystemData: CatalogData[] = [
     description: 'Usos:',
     specs: {
       description: [
-        { title: 'Tipo de Producto', text: 'Mamparas de Baño de Aluplast.' },
+        { 
+          title: 'Tipo de Producto', 
+          text: 'Mamparas de Baño de Aluplast.' },
         {
           title: '  Composición',
           text: 'Perfiles de aluminio y vidrio templado.'
@@ -835,6 +838,7 @@ export const complementarySystemData: CatalogData[] = [
   },
   {
     name: 'Techo vidriado',
+    img: ['1'],
     id: 'techovidriado',
     filters: [ProductFathersTypes.CS_TYPES, "techovidriado"],
     description: 'Usos:',
@@ -2679,7 +2683,7 @@ export const resaleCurtainsData: CatalogData[] = [
     name: 'Cortinas celulares',
     img: ['Sunset_Celulares', 'Sunset_Celulares_2', 'Sunset_Celulares_3'],
     id: 'cortinascelulares',
-    filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
+    filters: [ProductFathersTypes.RESALES, TypeProduct.CURTAINS],
     description: `Las cortinas celulares se destacan por su tela con un exclusivo diseño de celdas, que permite una alta protección térmica y control de la acústica.Permite reducir la pérdida energética en el hogar hasta un 50%, según el tejido. 
     Las telas celulares están disponibles en 10mm y 20mm. Gracias a su composición, 100% poliéster, la tela repele el polvo evitando que se acumule en sus pliegues. 
     
@@ -2699,7 +2703,7 @@ export const resaleCurtainsData: CatalogData[] = [
     name: 'Cortinas enrollables',
     img: ['Sunset_Enrollables_Black_Out', 'Sunset_Enrollables_Black_Out1'],
     id: 'cortinasenrollables',
-    filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
+    filters: [ProductFathersTypes.RESALES, TypeProduct.CURTAINS],
     description: `Las cortinas enrollables ofrecen un sistema de control superior, de alta calidad, durabilidad y muy fácil instalación.Ofrece un hardware excelente y un inigualable abanico de telas que proveen las soluciones ideales para el control de la luz y la temperatura de cualquier ambiente. 
     Telas: Screen, Black Out y Decorativas. 
     
@@ -2718,7 +2722,7 @@ export const resaleCurtainsData: CatalogData[] = [
     name: 'Cortinas enrollables duo',
     img: ['Sunset_Enrollables_Duo', 'Sunset_Enrollables_Duo_1', 'Sunset_Enrollables_Duo_2', 'Sunset_Enrollables_Duo_3',],
     id: 'cortinasenrollablesduo',
-    filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
+    filters: [ProductFathersTypes.RESALES, TypeProduct.CURTAINS],
     description: `La cortina con sus segmentos alternados opacos y traslúcidos, crea una atmósfera armónica y funcional, sin perder de vista la elegancia. Acorde a la arquitectura contemporánea, combina el equilibrio de sus telas con un alto control de la iluminación. 
     Textil que bloquea un alto porcentaje de los rayos UV, cuando sus segmentos se encuentran alternados.
     Sus colecciones de telas ofrecen diferentes texturas y niveles de privacidad que armonizan la decoración de cualquier ambiente.
@@ -2740,7 +2744,7 @@ export const resaleCurtainsData: CatalogData[] = [
     name: 'Cortinas horizontales de aluminio',
     img: ['Sunset_Horizontales_de_Aluminio', 'Sunset_Horizontales_de_Aluminio_2', 'Sunset_Horizontales_de_Aluminio_3'],
     id: 'cortinashorizontalesdealuminio',
-    filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
+    filters: [ProductFathersTypes.RESALES, TypeProduct.CURTAINS],
     description: `Fabricadas con aluminio de alta calidad, que brinda gran resistencia a las deformaciones. 
     Disponibles en láminas de 16 y 25 mm, en diferentes colores y texturas. 
     `
@@ -2749,7 +2753,7 @@ export const resaleCurtainsData: CatalogData[] = [
     name: 'Cortinas horizontales de madera',
     img: ['Sunset_Horizontales_de_Madera', 'Sunset_Horizontales_de_Madera_2', 'Sunset_Horizontales_de_Madera_3',],
     id: 'cortinashorizontalesdemadera',
-    filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
+    filters: [ProductFathersTypes.RESALES, TypeProduct.CURTAINS],
     description: `Realizadas con láminas de madera natural, en una amplia gama de tonos y acabados. Su nuevo diseño de base y cenefa coordina con el color de las láminas. 
     `
   },
@@ -2757,7 +2761,7 @@ export const resaleCurtainsData: CatalogData[] = [
     name: 'Cortina Nantucket',
     img: ['Sunset_Nantucket1', 'Nantucket-Living2', 'Sunset_Nantucket_Living2'],
     id: 'cortinanantucket',
-    filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
+    filters: [ProductFathersTypes.RESALES, TypeProduct.CURTAINS],
     description: `Las cortinas Nantucket combinan la suavidad y la transparencia de una cortina con la funcionalidad de una persiana. Sus suaves láminas de tela opaca y semiopaca, suspendidas entre dos velos traslúcidos, permiten graduar la entrada de luz creando un juego único entre transparencia y privacidad. 
 
     Accionamientos: 

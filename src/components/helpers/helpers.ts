@@ -1,3 +1,4 @@
+import { Constants } from "@/utils/constants";
 import { ProductFathersTypes, TypeProduct } from "@/utils/types";
 enum PlaceholdersPath {
   WINDOW_PRODUCT = "/img/products/placeholder/windows-placeholder.png",
@@ -43,12 +44,16 @@ const text: any = {
 
 export function pagination(arr: any[], page: any) {
 
-  const limit = 9;
+  const limit = Constants.PAGINATION;
   const skip = limit * page;
   
+  if (arr.length < limit) {
+    return arr;
+  }
+
   if (page * limit > arr.length) {
   
-    return arr.slice(arr.length - 9, arr.length); 
+    return arr.slice(arr.length - limit, arr.length); 
   } 
 
   return arr.slice(skip - limit, skip);

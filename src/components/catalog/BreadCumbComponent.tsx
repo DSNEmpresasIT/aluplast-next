@@ -7,7 +7,7 @@ export const BreadCumbComponent = ({ product }: { product: string | undefined })
   const router = useRouter();
 
   return (
-    <section className="breadcrumbs-wrap" style={{ paddingTop: '13vh', height: '120px'}}>
+    <section className="breadcrumbs-wrap" style={{ paddingTop: '13vh', height: '150px'}}>
     <div className="section-content section-content--w1140">
       <div className="container clearfix">
         <div className="breadcrumbs-inner" style={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -37,7 +37,7 @@ export const BreadCumbComponent = ({ product }: { product: string | undefined })
           {
             product && (
               <a
-                className='au-btn au-btn--pill au-btn--big au-btn--yellow text-white'
+                className='au-btn au-btn--pill au-btn--yellow text-white'
                 type='button'
                 onClick={() => router.back()}
               >

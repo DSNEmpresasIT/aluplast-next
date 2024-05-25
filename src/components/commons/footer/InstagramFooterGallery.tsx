@@ -1,4 +1,5 @@
 import { getInstagramImages } from "@/services/instagram-services";
+import { Constants } from "@/utils/constants";
 import React, { useEffect, useState } from "react";
 
 interface InstagramObject {
@@ -40,7 +41,7 @@ export const InstagramGalleryFooter = ({ instagramToken }: any) => {
                 imagesData
                 ? (
                   imagesData.map((img, i) => {
-                    if (i < 9) {
+                    if (i < Constants.FOOTER_IG_GALLERY_NUMBER) {
                       return (
                         <div className="gallery__item" key={`${img.id}${i}`}>
                           <img title={`Imagen ${i+1} traida del Instagram oficial de Alupast`} alt={`Imagen instagram ${i+1}`} src={img.media_url} style={{ maxHeight: '82.5px', minWidth: '82.5px', minHeight: '82.5px' }}/>

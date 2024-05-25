@@ -47,7 +47,20 @@ export const ShopComponent = ({ query }: any) => {
   const handleFilterData = () => {
     let newData: CatalogData[] = [];
     if (filters) {
-      const data = allCatalogData.filter((product) => product.filters.includes(filters[filters.length - 1]))
+      const data = allCatalogData.filter((product) => {
+        let isInclude: boolean = false;
+        filters.forEach((filter, index) => {
+          if (filters.length > 1 && index === 0) {
+            return isInclude;
+          }
+
+          if (product.filters.includes(filter)) {
+            isInclude = true
+          }
+        })
+
+        return isInclude;
+      })
       if (data.length) {
         newData = [...newData, ...data]
       }
