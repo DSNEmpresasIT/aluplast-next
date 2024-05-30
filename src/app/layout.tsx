@@ -31,8 +31,8 @@ export const metadata: Metadata = {
       default: PAGES.HOME,
       template: '%s | Urdinarrain - Entre Ríos'
     },
-    description: "Descubre la excelencia en aberturas de aluminio y PVC en Urdinarrain, Entre Ríos. Fabricamos oscilobatientes, corredizas, pivotantes y más. Garantizamos calidad y satisfacción para nuestros clientes.",
-    authors: ['David Caro - @FullStack Developer', 'DSN Empresas @2024'],
+    description: "Descubre la excelencia en aberturas de aluminio y pvc en Concordia, Concepción del Uruguay y todo Argentina. Conoce nuestro variado catálogo de variados modelos a los mejores precios.",
+    authors: ['David Caro - @FullStack Developer', '@DSN Empresas'],
     images: [
       {
         url: 'https://aluplast.com.ar/img/whoweare/we-are-01.jpg',

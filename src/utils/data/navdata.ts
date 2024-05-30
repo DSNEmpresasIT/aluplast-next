@@ -13,7 +13,7 @@ export interface NavData {
 
 export const navData:NavData[] = [
   {
-    label: 'Productos',
+    label: 'Catálogo',
     link: PAGES_PATH.CATALOG_PATH,
     subPages: [
       {

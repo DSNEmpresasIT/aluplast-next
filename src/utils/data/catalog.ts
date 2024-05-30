@@ -683,58 +683,6 @@ export const complementarySystemData: CatalogData[] = [
     }
   },
   {
-    name: 'Divisorio sanitarios',
-    id: 'divisoriosanitario',
-    filters: [ProductFathersTypes.CS_TYPES, "divisoriosanitario"],
-    description: 'Usos:',
-    specs: {
-      description: [
-        {
-          title: 'Tipo de Producto',
-          text: 'Divisorios de Sanitarios de Aluplast.'
-        },
-        {
-          title: '  Composición',
-          text: 'Perfiles de aluminio y paneles de alta resistencia.'
-        },
-        {
-          title: '  Conexión entre Módulos',
-          text: 'Sistema de ensamblaje sólido y seguro.'
-        },
-        {
-          title: '  Eficiencia en el Montaje',
-          text: 'Instalación rápida sin interrupción del servicio.'
-        },
-        {
-          title: '  Estética Elegante',
-          text: 'Diseño limpio y moderno que mejora la higiene y estética del baño.'
-        },
-        {
-          title: '  Flexibilidad de Diseño',
-          text: 'Opciones de color y acabados para adaptarse a la decoración.'
-        },
-        {
-          title: '  Control de Calidad',
-          text: 'Resistente y duradero, diseñado para un uso constante.'
-        },
-        {
-          title: '  Aplicaciones Versátiles',
-          text: 'Adecuados para baños públicos, comercios y espacios corporativos.'
-        },
-        {
-          title: '  Practicidad',
-          text: 'Facilitan la organización y el mantenimiento del área sanitaria.'
-        }
-      ],
-      features: [
-        'Proporcionan privacidad y separación en entornos de alto tráfico.',
-        'Resisten la humedad y el uso intensivo.',
-        'Mejoran la comodidad y la experiencia de los visitantes.',
-        'Son duraderos y resistentes al desgaste.',
-      ]
-    }
-  },
-  {
     name: 'Baranda balcón',
     img: ['1', '2', '3', '4', ],
     id: 'barandabalcon',

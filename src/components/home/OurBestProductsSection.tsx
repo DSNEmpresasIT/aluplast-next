@@ -23,19 +23,19 @@ const OurBestProductsSection = () => {
             </div>
           </div>
         </div>
-        <Link title="Visitar detalle producto Aluplast" href={{ pathname: PAGES_PATH.CATALOG_PATH, query: { categoria: ProductFathersTypes.CS_TYPES } }} className="service__item" style={{backgroundImage: "url('/img/products/courtainwall/courtainwall.png')" }}>
+        <Link title="Visitar detalle producto Aluplast" href={{ pathname: PAGES_PATH.CATALOG_PATH, query: { categoria: ProductFathersTypes.CS_TYPES } }} className="service__item" style={{backgroundImage: "url('/img/products/mosquiteros/1.png')" }}>
           <div className="service__item-inner">
             <img title='icono de seccion algunos de nuestros productos en la home Aluplast' alt="Icono complementario sección alguno de nuestros productos 1" src="/img/icon/icon-service-01.png" />
             <h4>COMPLEMENTOS</h4>
           </div>
         </Link>
-        <Link title="Visitar detalle producto Aluplast" href={{ pathname: PAGES_PATH.CATALOG_PATH, query: { categoria: ProductFathersTypes.OPENERS_TYPES } }} className="service__item" style={{ backgroundImage: "url('/img/products/puertarebatir/puertarebatir.png')" }}>
+        <Link title="Visitar detalle producto Aluplast" href={{ pathname: PAGES_PATH.CATALOG_PATH, query: { categoria: ProductFathersTypes.OPENERS_TYPES } }} className="service__item" style={{ backgroundImage: "url('/img/products/puertaplegadiza/1.png')" }}>
           <div className="service__item-inner">
             <img title='icono de seccion algunos de nuestros productos en la home Aluplast' alt="Icono complementario sección alguno de nuestros productos 2" src="/img/icon/icon-service-02.png" />
             <h4>PUERTAS</h4>
           </div> 
         </Link>
-        <Link title="Visitar detalle producto Aluplast" href={{ pathname: PAGES_PATH.CATALOG_PATH, query: { categoria: ProductFathersTypes.OPENERS_TYPES } }} className="service__item" style={{ backgroundImage: "url('/img/products/banderola/banderola.png')" }}>
+        <Link title="Visitar detalle producto Aluplast" href={{ pathname: PAGES_PATH.CATALOG_PATH, query: { categoria: ProductFathersTypes.OPENERS_TYPES } }} className="service__item" style={{ backgroundImage: "url('/img/products/oscilobatiente/1.png')" }}>
           <div className="service__item-inner">
             <img title='icono de seccion algunos de nuestros productos en la home Aluplast' alt="Icono complementario sección alguno de nuestros productos 3" src="/img/icon/icon-service-03.png" />
             <h4>VENTANAS</h4>

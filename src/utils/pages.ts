@@ -1,5 +1,5 @@
 export enum PAGES {
-  HOME = "Aluplast | Expertos en aluminio y PVC",
+  HOME = "Aluplast | Catálogo de aberturas en aluminio y pvc Concordia",
   ABOUT_US = "Sobre nosotros",
   CONTACT = "Contacto",
   CATALOG = 'Catálogo',
@@ -16,7 +16,7 @@ export enum PAGES_PATH {
   HOME_PATH = '/',
   ABOUT_US_PATH = 'sobre-aluplast-aberturas-y-cerramientos-de-aluminio-y-pvc',
   CONTACT_PATH = 'contacto-aluplast-entre-rios-argentina',
-  CATALOG_PATH = 'productos-de-aluminio-y-pvc',
+  CATALOG_PATH = 'catalogo-de-aluminio-y-pvc',
   PRODUCT_PATH = 'producto-detalle',
   NEWS_PATH = 'ultimas-noticias-aluplast',
   SOME_PROJECTS = 'nuestro-trabajo',
@@ -27,6 +27,16 @@ export enum PAGES_PATH {
 }
 
 export const keywords = [
+  'catálogo',
+  "precios",
+  "modelos",
+  "variedad",
+  "calidad",
+  "concordia",
+  "ventanas",
+  "puertas",
+  "aberturas",
+  "concepción del uruguay",
   'Aberturas en Urdinarrain',
   'Fabrica de Aberturas en Entre Ríos',
   'Aberturas de Aluminio y PVC en Argentina',

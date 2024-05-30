@@ -6,7 +6,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: PAGES.HOME,
-  description: 'Descubre la excelencia en aberturas de aluminio y PVC en Urdinarrain, Entre Ríos. Fabricamos oscilobatientes, corredizas, pivotantes y más. Garantizamos calidad y satisfacción para nuestros clientes.',
+  description: 'Descubre la excelencia en aberturas de aluminio y pvc en Concordia, Concepción del Uruguay y todo Argentina. Conoce nuestro variado catálogo de variados modelos a los mejores precios.',
   alternates: {
     canonical: 'https://aluplast.com.ar/'
   }
