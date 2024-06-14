@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic';
 import OurContactSection from '@/components/home/OurContactSection';
 import SliderComponent from '@/components/home/SliderComponent';
 import { ProjectsComponent } from '@/components/home/ProjectsComponent';
+import { SliderComponent_2 } from './SliderComponent_2';
 
 // const SliderComponent = dynamic(() => import('@/components/home/SliderComponent'), { ssr: false })
 const WhoWeAreSection = dynamic(() => import('@/components/home/WhoWeAreSection'), { ssr: false })
@@ -16,7 +17,8 @@ const OurBestProductsSection = dynamic(() => import('@/components/home/OurBestPr
 const Home = () => {
   return (
     <div className='page-wrap'>
-      <SliderComponent />
+      {/* <SliderComponent />  */}
+      <SliderComponent_2 /> 
       <WhoWeAreSection />
       <HomeVideoSection />
       <OurProcessSection />

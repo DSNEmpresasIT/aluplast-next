@@ -1374,8 +1374,44 @@ export const controlSolar: CatalogData[] = [
 
 export const windowsFatherData:CatalogData[] = [
   {
+    name: 'Blindex acústico',
+    img: ['VIDRIOS5b'],
+    id: 'blindex-acustico',
+    filters: [ProductFathersTypes.WINDOWS, 'blindex-acustico'],
+    description: `Los vidrios laminados están compuestos por dos o más capas de vidrio unidas por una capa de película de polivinilo (PVB) que actúa como una barrera protectora. Este diseño mejora la seguridad al mantener el vidrio unido en caso de rotura, lo que reduce el riesgo de lesiones. Los vidrios laminados son ideales para aplicaciones que requieren tanto seguridad como estética, como ventanas y fachadas de edificios.
+    
+    Blindex Acústico se puede combinar con los diferentes productos Blindex, adaptándose a diversos tipos de clima para ofrecer siempre el mejor rendimiento.
+
+    Para un espacio silencioso, seguro y protegido, elige Blindex Acústico. ¡Disfruta del confort y la tranquilidad que mereces!
+    `,
+    specs: {
+
+      description: [
+        {
+          title: 'Máxima aislación acústica:',
+          text: 'Disfruta de un ambiente silencioso y libre de ruidos molestos'
+        },
+        {
+          title: 'Evita accidentes: ',
+          text: 'Proporciona seguridad adicional en caso de roturas'
+        },
+        {
+          title: 'Protección UV: ',
+          text: 'Filtra más del 99% de la radiación UV, protegiendo tu salud y muebles'
+        },
+      ],
+      // features: [
+      //   '',
+      //   '',
+      //   '',
+      //   '',
+      // ]
+    }
+  },
+  {
     name: 'Vidrio templado',
     id: 'vidriotemplado',
+    img: ['20160909142636493'],
     filters: [ProductFathersTypes.WINDOWS, 'vidriotemplado'],
     description: 'Los vidrios templados son una elección ideal para la seguridad y la resistencia en aplicaciones arquitectónicas. Producidos mediante un proceso de calentamiento y enfriamiento controlado, estos vidrios ofrecen una mayor resistencia a los impactos en comparación con los vidrios estándar. Son altamente versátiles y se utilizan en puertas, ventanas, barandas y divisorios, proporcionando una mayor seguridad y durabilidad.',
     specs: {
@@ -1407,6 +1443,7 @@ export const windowsFatherData:CatalogData[] = [
   },
   {
     name: 'Vidrio laminado',
+    img: ['VIDRIOS5a'],
     id: 'vidriolaminado',
     filters: [ProductFathersTypes.WINDOWS, 'vidriolaminado'],
     description: 'Los vidrios laminados están compuestos por dos o más capas de vidrio unidas por una capa de película de polivinilo (PVB) que actúa como una barrera protectora. Este diseño mejora la seguridad al mantener el vidrio unido en caso de rotura, lo que reduce el riesgo de lesiones. Los vidrios laminados son ideales para aplicaciones que requieren tanto seguridad como estética, como ventanas y fachadas de edificios.',
@@ -1438,70 +1475,70 @@ export const windowsFatherData:CatalogData[] = [
     }
       
   },
-  {
-    name: 'Termopaneles DVH (Doble Vidriado Hermético)',
-    id: 'termopaneledvh',
-    filters: [ProductFathersTypes.WINDOWS, 'termopanelesdvh'],
-    description: 'Los termopaneles, también conocidos como vidrios dobles herméticos (DVH), están diseñados para mejorar el aislamiento térmico y acústico de los espacios. Están compuestos por dos o más vidrios separados por una cámara de aire deshidratado. Esto ayuda a mantener una temperatura interior confortable y reduce la transmisión de sonido, lo que los convierte en una elección ideal para aplicaciones residenciales y comerciales.',
-    specs: {
-      description: [
-        {
-          title: 'Ventanas y Puertas',
-          text: 'Mejoran la eficiencia energética y el confort en hogares y edificios.'
-        },
-        {
-          title: '  Fachadas de Edificios',
-          text: 'Contribuyen al ahorro de energía y a un ambiente más silencioso.'
-        },
-        {
-          title: '  Oficinas y Espacios Comerciales',
-          text: 'Proporcionan una temperatura y sonoridad óptimas.'
-        },
-        {
-          title: '  Estudios de Grabación',
-          text: 'Minimizan la entrada de ruido exterior.'
-        }
-      ],
-      // features: [
-      //   '',
-      //   '',
-      //   '',
-      //   '',
-      // ]
-    }
-  },
-  {
-    name: 'Vidrios especiales',
-    id: 'vidriosespeciales',
-    filters: [ProductFathersTypes.WINDOWS, 'vidriosespeciales'],
-    description: 'Los vidrios especiales son productos únicos diseñados para aplicaciones específicas. Estos vidrios pueden incluir propiedades como la resistencia a impactos, la protección UV, la autolimpieza o la opacidad controlable. Se utilizan en proyectos donde se requieren características personalizadas para satisfacer necesidades específicas.',
-    specs: {
-      description: [
-        {
-          title: 'Museos y Galerías',
-          text: 'Protegen las obras de arte de la luz solar y el daño UV.'
-        },
-        {
-          title: '  Espacios de Alta Seguridad',
-          text: 'Ofrecen resistencia a impactos y protección contra robos.'
-        },
-        {
-          title: '  Hospitales y Laboratorios',
-          text: 'Mantienen la higiene y la seguridad.'
-        },
-        {
-          title: '  Edificios segmento ABC1 e Inteligentes',
-          text: 'Controlan la opacidad y la privacidad en tiempo real.'
-        }
-      ],
-      // features: [
-      //   '',
-      //   '',
-      //   '',
-      //   '',
-      // ]
-    }
-  },
+  // {
+  //   name: 'Termopaneles DVH (Doble Vidriado Hermético)',
+  //   id: 'termopaneledvh',
+  //   filters: [ProductFathersTypes.WINDOWS, 'termopanelesdvh'],
+  //   description: 'Los termopaneles, también conocidos como vidrios dobles herméticos (DVH), están diseñados para mejorar el aislamiento térmico y acústico de los espacios. Están compuestos por dos o más vidrios separados por una cámara de aire deshidratado. Esto ayuda a mantener una temperatura interior confortable y reduce la transmisión de sonido, lo que los convierte en una elección ideal para aplicaciones residenciales y comerciales.',
+  //   specs: {
+  //     description: [
+  //       {
+  //         title: 'Ventanas y Puertas',
+  //         text: 'Mejoran la eficiencia energética y el confort en hogares y edificios.'
+  //       },
+  //       {
+  //         title: '  Fachadas de Edificios',
+  //         text: 'Contribuyen al ahorro de energía y a un ambiente más silencioso.'
+  //       },
+  //       {
+  //         title: '  Oficinas y Espacios Comerciales',
+  //         text: 'Proporcionan una temperatura y sonoridad óptimas.'
+  //       },
+  //       {
+  //         title: '  Estudios de Grabación',
+  //         text: 'Minimizan la entrada de ruido exterior.'
+  //       }
+  //     ],
+  //     // features: [
+  //     //   '',
+  //     //   '',
+  //     //   '',
+  //     //   '',
+  //     // ]
+  //   }
+  // },
+  // {
+  //   name: 'Vidrios especiales',
+  //   id: 'vidriosespeciales',
+  //   filters: [ProductFathersTypes.WINDOWS, 'vidriosespeciales'],
+  //   description: 'Los vidrios especiales son productos únicos diseñados para aplicaciones específicas. Estos vidrios pueden incluir propiedades como la resistencia a impactos, la protección UV, la autolimpieza o la opacidad controlable. Se utilizan en proyectos donde se requieren características personalizadas para satisfacer necesidades específicas.',
+  //   specs: {
+  //     description: [
+  //       {
+  //         title: 'Museos y Galerías',
+  //         text: 'Protegen las obras de arte de la luz solar y el daño UV.'
+  //       },
+  //       {
+  //         title: '  Espacios de Alta Seguridad',
+  //         text: 'Ofrecen resistencia a impactos y protección contra robos.'
+  //       },
+  //       {
+  //         title: '  Hospitales y Laboratorios',
+  //         text: 'Mantienen la higiene y la seguridad.'
+  //       },
+  //       {
+  //         title: '  Edificios segmento ABC1 e Inteligentes',
+  //         text: 'Controlan la opacidad y la privacidad en tiempo real.'
+  //       }
+  //     ],
+  //     // features: [
+  //     //   '',
+  //     //   '',
+  //     //   '',
+  //     //   '',
+  //     // ]
+  //   }
+  // },
   {
     name: 'Vidrios decorativos VIIO',
     id: 'vidriosdecorativosVIIO',
@@ -1531,6 +1568,125 @@ export const windowsFatherData:CatalogData[] = [
       //   '',
       //   '',
       //   '',
+      // ]
+    }
+  },
+  {
+    name: 'Blindex anti robo',
+    img: ['VIDRIOS5'],
+    id: 'blindex-anti-robo',
+    filters: [ProductFathersTypes.WINDOWS, 'vidriosdecorativos'],
+    description: `Blindex Anti Robo: Protección Total para Tu Hogar
+
+    El Blindex Anti Robo es un vidrio compuesto por dos vidrios float de 5mm, unidos a una lámina de alta elasticidad, cuatro veces más gruesa que la convencional (1.52mm vs 0.38mm). Este vidrio está diseñado para ofrecer máxima seguridad y protección en tu hogar o negocio.
+
+    Blindex Anti Robo es la solución definitiva para quienes buscan seguridad y tranquilidad sin comprometer el estilo y la elegancia. ¡Protege lo que más importa!
+    `,
+    specs: {
+      description: [
+        {
+          title: 'Antiintrusión: ',
+          text: 'Resistente a intentos de robo y vandalismo.'
+        },
+        {
+          title: ' Evita accidentes:',
+          text: ' Proporciona una barrera segura para prevenir lesiones.'
+        },
+        {
+          title: ' Protección UV: ',
+          text: 'Filtra el 99% de la radiación UV, protegiendo tu salud y mobiliario.'
+        },
+        {
+          title: 'Mayor aislación acústica:',
+          text: ' Disfruta de un ambiente más tranquilo y silencioso.'
+        }
+      ],
+      // features: [
+      //   '',
+      //   '',
+      //   '',
+      //   '',
+      // ]
+    }
+  },
+  {
+    name: 'Blindex energy',
+    img: ['VIDRIOS5c'],
+    id: 'blindex-energy',
+    filters: [ProductFathersTypes.WINDOWS, 'blindex-energy'],
+    description: `Blindex Energy: Eficiencia Energética y Confort Superior
+
+    Blindex Energy es la solución perfecta para los proyectos más exigentes que requieren máxima aislación térmica en unidades de doble vidriado hermético (DVH). Compuesto por un vidrio float incoloro y un float Low-E de baja emisividad, este vidrio está diseñado para optimizar la eficiencia energética y el confort en cualquier espacio.
+
+    Blindex Energy es la respuesta integral para quienes buscan eficiencia energética y confort superior en sus proyectos. ¡Aprovecha la tecnología avanzada de Blindex para tu hogar o negocio!
+    `,
+    specs: {
+      description: [
+        {
+          title: 'Baja emisividad: ',
+          text: 'Minimiza la pérdida de calor, manteniendo tu espacio cálido en invierno y fresco en verano.'
+        },
+        {
+          title: ' Eficiencia energética: ',
+          text: 'Reduce un 70% la transmitancia térmica, ahorrando en costos de energía.'
+        },
+        {
+          title: 'Evita accidentes:',
+          text: ' Proporciona una capa adicional de seguridad.'
+        },
+        {
+          title: 'Protección UV:',
+          text: 'Filtra los dañinos rayos UV, protegiendo tus interiores.'
+        }
+      ],
+      features: [
+        'Mejora el aislamiento sonoro para un ambiente más tranquilo.',
+        'Al combinar Blindex Energy con Blindex Solar, se logra una filtración aún mayor del calor solar.',
+      ]
+    }
+  },
+  {
+    name: 'Blindex solar',
+    img: ['VIDRIOS5d'],
+    id: 'blindex-solar',
+    filters: [ProductFathersTypes.WINDOWS, 'blindex-solar'],
+    description: `Blindex Solar: La Solución Definitiva en Confort y Protección Solar
+
+    Blindex Solar es una línea de vidrios laminados de control solar, diseñada especialmente para superficies que reciben radiación solar directa. Este vidrio reduce significativamente el ingreso de calor y la excesiva luminosidad, mejorando el confort y la eficiencia energética de tu hogar o negocio.
+
+    Disponible en tonos gris y azul reflectivo para edificios comerciales, y en tonos neutro y verde para proyectos residenciales.
+
+    Blindex Solar es la respuesta integral en seguridad y confort, brindando tecnología de punta en vidrios al alcance de tu hogar. ¡Dale a tu espacio la protección y eficiencia que merece!
+
+    Colores: 
+    Solar Neutro Light 
+    Neutro
+    Gris
+    Verde
+    Azul 
+    `,
+    specs: {
+      description: [
+        {
+          title: ' Protección solar: Reduce un 70% el ingreso de calor del sol, manteniendo tu espacio fresco.',
+          text: 'Minimiza la pérdida de calor, manteniendo tu espacio cálido en invierno y fresco en verano.'
+        },
+        {
+          title: ' Eficiencia energética: ',
+          text: 'Reduce un 70% la transmitancia térmica, ahorrando en costos de energía.'
+        },
+        {
+          title: 'Evita accidentes:',
+          text: ' Proporciona una capa adicional de seguridad.'
+        },
+        {
+          title: 'Protección UV:',
+          text: 'Filtra los dañinos rayos UV, protegiendo tus interiores.'
+        }
+      ],
+      // features: [
+      //   'Mejora el aislamiento sonoro para un ambiente más tranquilo.',
+      //   'Al combinar Blindex Energy con Blindex Solar, se logra una filtración aún mayor del calor solar.',
       // ]
     }
   },
@@ -2866,6 +3022,10 @@ export const fachadasYLamas: CatalogData[] = [
     
   },
 ] 
+
+export const glassesData: CatalogData[] = [
+
+];
 
 export const texturesData: TexturesTypes[] = [
   {

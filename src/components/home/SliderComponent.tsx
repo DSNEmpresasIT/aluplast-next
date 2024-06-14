@@ -1,60 +1,9 @@
+import { TransitionTypes, sliderData } from "@/utils/data/home";
 import Image from "next/image";
 import React from "react";
 
-const transitionTypes = {
-  incube: "incube",
-  fade: "fade",
-  slidedown: "slidedown",
-};
 
 const SliderComponent = () => {
-  const sliderData = [
-    {
-      text: () => (
-        <>
-          Soluciones que
-          <br /> 
-          <span>transforman</span> espacios, 
-          <br />
-          <span>Unicenter Shopping</span>
-        </>
-      ),
-      transition: transitionTypes.incube,
-    },
-    {
-      text: () => (
-        <>
-          Edificio <span>Bureau Diagonal</span>: 
-          <br />
-          cerramientos de <span>última</span>
-          <br />
-          generación
-        </>
-      ),
-      transition: transitionTypes.slidedown,
-    },
-    {
-      text: () => (
-        <>
-          Aberturas de <span>alta</span> prestación
-          <br />
-           para residencias <span>exclusivas</span>
-
-        </>
-      ),
-      transition: transitionTypes.incube,
-    },
-    {
-      text: () => (
-        <>
-          La <span>calidad</span> no es
-          <br /> un acto, es un <span>Hábito</span>
-        </>
-      ),
-      transition: transitionTypes.slidedown,
-    },
-  ];
-
   return (
     <section className="slide">
       <div className="rev_slider_wrapper">
@@ -66,7 +15,7 @@ const SliderComponent = () => {
           <ul>
             {sliderData.map((slide, index) => (
               <li
-                data-transition={slide.transition}
+                data-transition={index % 2 === 0 ? TransitionTypes.slidedown : TransitionTypes.incube}
                 data-slotamount="7"
                 data-masterspeed="2000"
                 key={`${index}-slider-component-key`}

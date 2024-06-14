@@ -144,23 +144,6 @@
       }
     }
   });
-  /* Slider HomePage 6 */
-  $('#revolution-slider6').show().revolution({
-    /* options are 'auto', 'fullwidth' or 'fullscreen' */
-    sliderLayout: 'auto',
-    responsiveLevels: [1600, 1200, 992, 768],
-    gridwidth: [960, 800, 600, 450],
-    gridheight: [432, 432, 400, 300],
-    spinner: 'spinner4',
-    disableProgressBar: "on"
-  });
-  $('.mouse').on('click', function () {
-    var t = $(this).attr("href");
-    console.log(t);
-    $("html").animate({
-      scrollTop: $(t).offset().top
-    }, 600);
-    return false;
-  });
+
 
 })(jQuery);
