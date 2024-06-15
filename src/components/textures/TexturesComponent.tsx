@@ -55,8 +55,11 @@ export const TexturesComponent = () => {
                 </div>
               </div>
               <div className="col-lg-6 col-md-12 pt-5 ">
-                <div className={`row animate__animated ${ isAnimationOn && 'animate__fadeIn' }`}>
+                <div className={`row mt-2 animate__animated ${ isAnimationOn && 'animate__fadeIn' }`}>
                   <img className='ml-5' src={`/img/textures/examples/${imageName}.png`} alt="example" />
+                </div>
+                <div className={`row mt-3 animate__animated ${ isAnimationOn && 'animate__fadeIn' }`}>
+                  <img className='ml-5' src={`/img/textures/zoom/${imageName}.png`} alt="example" />
                 </div>
               </div>
             </div>
