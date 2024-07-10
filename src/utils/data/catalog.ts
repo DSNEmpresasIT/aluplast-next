@@ -1690,6 +1690,67 @@ export const windowsFatherData:CatalogData[] = [
       // ]
     }
   },
+  {
+    name: 'DVH (Doble Vidrio Hermético)',
+    img: ['DVH'],
+    id: 'vidrio-dvh',
+    filters: [ProductFathersTypes.WINDOWS, 'vidrio-dvh'],
+    description: `El DVH es la solución perfecta para tus ventanas, ofreciendo comodidad, eficiencia y elegancia. 
+    Se trata de un componente prefabricado hecho a medida, compuesto por dos o más vidrios planos, separados por un espaciador y sellados herméticamente. Este diseño crea una cámara aislada con aire deshidratado o gases inertes que mejoran significativamente el rendimiento térmico y acústico.
+    
+    Seguridad:
+    Para superficies mayores a 1.50m², se utilizan vidrios seguros para garantizar la protección de las personas.
+    `,
+    specs: {
+      description: [
+        {
+          title: 'Aislamiento Térmico Superior:',
+          text: 'Mejora el aislamiento térmico del vidrio en más del 100%, manteniendo tu hogar cálido en invierno y fresco en verano.'
+        },
+        {
+          title: ' Aislamiento acústico:',
+          text: ' Reduce notablemente el ruido exterior, creando un ambiente más tranquilo y confortable.'
+        },
+        {
+          title: 'Eficiencia Energética:',
+          text: ' Disminuye hasta un 70% la pérdida de calor a través del vidrio, ayudándote a ahorrar en costos de climatización.'
+        },
+        {
+          title: 'Mayor Confort:',
+          text: 'Elimina el efecto de "muro frío", permitiendo disfrutar de un ambiente acogedor junto a las ventanas.'
+        },
+        {
+          title: ' Prevención de Condensación:',
+          text: 'Minimiza la humedad y evita que los vidrios se empañen.'
+        },
+        {
+          title: 'Control Solar:',
+          text: 'Con vidrios de color o reflectivos, reduce el resplandor y controla la luz solar, mejorando el confort visual.'
+        },
+      ],
+      // features: [
+      //   'Mejora el aislamiento sonoro para un ambiente más tranquilo.',
+      //   'Al combinar Blindex Energy con Blindex Solar, se logra una filtración aún mayor del calor solar.',
+      // ]
+    }
+  },
+  {
+    name: 'prolifit',
+    img: ['prolifit'],
+    id: 'vidrio-prolifit',
+    filters: [ProductFathersTypes.WINDOWS, 'vidrio-prolifit'],
+    description: `
+    `,
+    specs: {
+      description: [
+
+      ],
+      // features: [
+      //   'Mejora el aislamiento sonoro para un ambiente más tranquilo.',
+      //   'Al combinar Blindex Energy con Blindex Solar, se logra una filtración aún mayor del calor solar.',
+      // ]
+    }
+  },
 ] 
 
 export const garageDoorsData: CatalogData[] = [
@@ -1865,7 +1926,7 @@ export const garageDoorsData: CatalogData[] = [
 export const barData: CatalogData[] = [
   {
     name: 'Línea BBA',
-    img: ['bbap025-02', 'bbap028-02'],
+    img: ['Baranda BBA P025-02', 'Baranda BBA P028-02'],
     id: 'bba',
     filters: [ProductFathersTypes.CS_TYPES, TypeProduct.BAR_PRODDUCT],
     description: `Baranda BBA, testimonio de elegancia y funcionalidad, diseñado específicamente para satisfacer los estándares más exigentes. 
@@ -1900,7 +1961,7 @@ export const barData: CatalogData[] = [
   },
   {
     name: 'SP-02',
-    img: ['sp-02'],
+    img: ['Baranda SP-02'],
     id: 'sp-02',
     filters: [ProductFathersTypes.CS_TYPES, TypeProduct.BAR_PRODDUCT],
     description: `Baranda SP, una obra maestra de diseño moderno que redefine la experiencia visual en cualquier espacio. 
@@ -1948,7 +2009,7 @@ export const barData: CatalogData[] = [
   },
   {
     name: 'SPU-02',
-    img: ['spu-02'],
+    img: ['Baranda SPU-02'],
     id: 'spu-02',
     filters: [ProductFathersTypes.CS_TYPES, TypeProduct.BAR_PRODDUCT],
     description: `Innovadora Baranda SPU, donde la modernidad se encuentra con la ligereza del diseño. Esta baranda sin parantes redefine el espacio con su presencia sutil y detalles funcionales.
@@ -1988,7 +2049,7 @@ export const barData: CatalogData[] = [
   },
   {
     name: 'SPL-02',
-    img: ['spl-02'],
+    img: ['Baranda SPL-02'],
     id: 'spl-02',
     filters: [ProductFathersTypes.CS_TYPES, TypeProduct.BAR_PRODDUCT],
     description: `Descubra la Baranda SPL, una manifestación de diseño vanguardista que rompe con lo convencional. Esta baranda sin parantes redefine la elegancia y versatilidad en proyectos de cualquier tamaño.
@@ -2027,7 +2088,7 @@ export const barData: CatalogData[] = [
   },
   {
     name: 'Línea clásica',
-    img: ['clasicaP479recto-02'],
+    img: ['Baranda Claísica P475 Curvo-02', "Baranda Claísica P479 Recto-02"],
     id: 'barandasclasicas',
     filters: [ProductFathersTypes.CS_TYPES, TypeProduct.BAR_PRODDUCT],
     description: `Baranda Clásica, una fusión perfecta de estética clásica y funcionalidad moderna. Este sistema destaca por su imponente presencia de vidrio y se adapta a proyectos de cualquier escala con facilidad.
@@ -2066,7 +2127,7 @@ export const barData: CatalogData[] = [
   },
   {
     name: 'Pasamanos barandas sin parantes',
-    img: ['pasamanosbarandassinparantes-02'],
+    img: ['Pasamanos Barandas Sin Parantes-02'],
     id: 'pasamanosbarandassinparantes-02',
     filters: [ProductFathersTypes.CS_TYPES, TypeProduct.BAR_PRODDUCT],
     description: `-`,
@@ -2110,7 +2171,7 @@ export const doorsResalesData: CatalogData[] = [
   },
   {
     name: 'Línea Elite',
-    img: ['main', 'puertahaya'],
+    img: ['02', '01', '03', '05', '04', '06', 'puerta haya', 'VISON'],
     id: 'puertaslineaelite',
     filters: [ProductFathersTypes.RESALES, TypeProduct.RESALES_DOOR],
     description: `Nuevas puertas de interior listas y terminadas para instalar en seco. 
@@ -2184,7 +2245,7 @@ export const doorsResalesData: CatalogData[] = [
   },
   {
     name: 'Línea F30',
-    img: ['sofia', 'monica'],
+    img: ['sofia', 'monica', 'sofia blanca'],
     id: 'puertaslineaf30',
     filters: [ProductFathersTypes.RESALES, TypeProduct.RESALES_DOOR],
     description: `El nuevo modelo F-30 Resistente al fuego, ha sido ensayado por el INTI conforme a las normativas vigentes, arrojando excelentes resultados en estabilidad mecánica y estanqueidad a las llamas, sin emisión de gases inflamables, demostrando que es una excelente solución y un diferencial en calidad, con tecnología de punta y un concepto industrial a la vanguardia en puertas. 
@@ -2215,7 +2276,7 @@ Peso: aprox. 17kg/m
   },
   {
     name: 'Línea Masonite',
-    img: ['mariel'],
+    img: ['mariel', 'camden'],
     id: 'puertaslineamasonite',
     filters: [ProductFathersTypes.RESALES, TypeProduct.RESALES_DOOR],
     description: `
@@ -2247,7 +2308,7 @@ Peso: aprox. 17kg/m
 export const bathroomPartitionData: CatalogData[] = [
   {
     name: 'Linea 1000/Panel',
-    img: ['panel1000', 'panel1000brazosrectos', 'panel1010barraltoallero'],
+    img: ['Panel 1000', 'Panel 1000 brazos rectos', 'Panel 1010 Barral Toallero'],
     filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
     id: 'mamparalinea1000',
     description: `Paño fijo de cierre parcial del espacio de ducha.
@@ -2281,7 +2342,7 @@ export const bathroomPartitionData: CatalogData[] = [
   },
   {
     name: 'Linea 2000/Rebatible Pivot',
-    img: ['2010', 'rebatiblepivot2000', 'rebatiblepivot2200', 'rebatiblepivotpar2100', 'rebatiblepivotparptared2110'],
+    img: ['2010', 'Rebatible Pivot 2000', 'Rebatible Pivot 2200', 'rebatiblepivotpar2100', 'rebatiblepivotparptared2110'],
     filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
     id: 'mamparalinea2000',
     description: `Hoja abatible de cierre parcial con bisagra corrida de aluminio.
@@ -2333,7 +2394,7 @@ export const bathroomPartitionData: CatalogData[] = [
   },
   {
     name: 'Linea 3000/Rebatible Bolt',
-    img: ['rebatiblebolt3000conbrazo', 'rebatibleboltforma3100conbrazo', 'rebatibleboltptacurva3110conbrazo'],
+    img: ['Rebatible Bolt Forma 3100 con brazo', 'rebatiblebolt3000conbrazo', 'Rebatible Bolt pta curva 3110 con brazo'],
     filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
     id: 'mamparalinea3000',
     description: `Hoja rebatible de cierre parcial con bisagra tomada a paño fijo lateral. 
@@ -2912,6 +2973,16 @@ export const resalesData: CatalogData[] = [
 ];
 
 export const fachadasYLamas: CatalogData[] = [
+  {
+    name: 'Vidrio corrido V2',
+    img: ['Vidrio corrido v2'],
+    id: 'vidrio-corrido-v2',
+    filters: [ProductFathersTypes.FACHADAS],
+    description: `-`,
+    specs: {
+      
+    }
+  },
   {
     name: "Parasol",
     img: ['PARASOL'],
