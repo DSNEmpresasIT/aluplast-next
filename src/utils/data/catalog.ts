@@ -1541,7 +1541,8 @@ export const windowsFatherData:CatalogData[] = [
   // },
   {
     name: 'Vidrios decorativos VIIO',
-    id: 'vidriosdecorativosVIIO',
+    img: ['1'],
+    id: 'vidrio-decorativo-viio',
     filters: [ProductFathersTypes.WINDOWS, 'vidriosdecorativos'],
     description: 'Los vidrios decorativos "VIIO" son una elección innovadora para proyectos de diseño interior y arquitectura. Estos vidrios personalizables ofrecen una amplia gama de opciones de diseño, desde patrones geométricos hasta impresiones personalizadas. Combinan la estética con la funcionalidad, permitiendo la creación de espacios únicos y elegantes.',
     specs: {
@@ -2503,7 +2504,7 @@ export const bathroomPartitionData: CatalogData[] = [
   },
   {
     name: 'Linea 5000/Open Pivot',
-    img: ['5000-A', '5000-C', '5100-A', '5200-D', 'Open Pivot 5000-B', 'Open Pivot 5000-D ', 'Open Pivot Esquinero 5200-B', 'Open Pivot Esquinero 5200-B con barral y esm 3 fjas', 'Open Pivot Esquinero 5200-C'],
+    img: ['5000-A', '5000-C', '5100-A', '5200-D', 'Open Pivot 5000-B', 'Open Pivot Esquinero 5200-B', 'Open Pivot Esquinero 5200-B con barral y esm 3 fjas', 'Open Pivot Esquinero 5200-C'],
     filters: [ProductFathersTypes.RESALES, TypeProduct.BATHROOM_PARTITION_PRODUCT],
     id: 'mamparalinea5000',
     description: `Compuestas por hojas abatibles con bisagra corrida de aluminio y paños fijos. 
@@ -2962,6 +2963,27 @@ export const resaleCurtainsData: CatalogData[] = [
     filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
     description: `Se fabrican con una innovadora técnica de juntas soldadas que ofrece un acabado liso y uniforme, en telas de alta performance a la intemperie. Disponibles en accionamiento manual y motorizado. 
     `
+  },
+  {
+    name: 'Enrollable BlackOut',
+    img: ['Sunset_Enrollables_Black_Out', 'Sunset_Enrollables_Black_Out1'],
+    id: 'enrollable-blackout',
+    filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
+    pdfButton: 'Copia de Copia de FT_Enrollables_Sunset_3-21'
+  },
+  {
+    name: 'Enrollable Decorativa',
+    img: ['Sunset__Enrollables__Decorativa', 'Sunset__Enrollables__Decorativa1', 'Sunset__Enrollables__Decorativa_2'],
+    id: 'enrollable-decorativa',
+    filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
+    pdfButton: 'Copia de FT_Enrollables_Sunset_3-21'
+  },
+  {
+    name: 'Enrollable Screen',
+    img: ['2', '3', '4', 'Sunset_Enrollables_Screen', 'Sunset_Enrollables_Screen_4'],
+    id: 'enrollable-screen',
+    filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
+    pdfButton: 'FT_Enrollables_Sunset_3-21'
   },
 ];
 

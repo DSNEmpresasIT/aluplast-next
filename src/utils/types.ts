@@ -19,6 +19,7 @@ export interface CatalogData {
   id?: string;
   specs?: Specs; 
   description?: string;
+  pdfButton?: any;
   filters: string[];
 }
 

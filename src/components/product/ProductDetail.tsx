@@ -3,6 +3,7 @@ import React, { Fragment } from "react";
 import { getThePlaceholderImage } from "@/components/helpers/helpers";
 import Image from "next/image";
 import { useCartContext } from "@/context/cart-context";
+import Link from "next/link";
 
 export const ProductDetail = ({
   productSelected,
@@ -155,6 +156,16 @@ export const ProductDetail = ({
               </>
             )}
             <div className="single-product-form">
+              <div className="row p-3">
+                  <Link
+                    className="au-btn au-btn--pill au-btn--yellow au-btn--white"
+                    href={`/img/products/${productSelected.id}/${productSelected.pdfButton}.pdf`}
+                    target="_blank" 
+                    download={`${productSelected.name.trim()}.pdf`}
+                  >
+                    Descargar PDF
+                  </Link>
+                </div>
               <div>
                 {/* <button
               type="button"
