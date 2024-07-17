@@ -1737,7 +1737,7 @@ export const windowsFatherData:CatalogData[] = [
   },
   {
     name: 'prolifit',
-    img: ['prolifit'],
+    img: ['Prolifit'],
     id: 'vidrio-prolifit',
     filters: [ProductFathersTypes.WINDOWS, 'vidrio-prolifit'],
     description: `

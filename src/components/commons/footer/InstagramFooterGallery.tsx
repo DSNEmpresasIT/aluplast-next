@@ -30,6 +30,10 @@ export const InstagramGalleryFooter = ({ instagramToken }: any) => {
     }
   }, [nextLink])
 
+
+  useEffect(() => {
+    console.log(imagesData)
+  }, [imagesData])
   return (
     <div className="col-lg-4 col-md-6">
       {
