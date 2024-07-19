@@ -5,7 +5,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 
 import { PAGES_PATH } from '@/utils/pages';
 import { InstagramPost } from '@/utils/types';
-import { SkeletonLoaderComponent } from '@/components/blog/SkeletonLoaderComponent';
+import { SkeletonLoaderComponent } from '@/components/blog-detail/SkeletonLoaderComponent';
 import { BlogDetail } from '@/components/blog-detail/BlogDetailComponent';
 import { getInstagramPosts } from '@/services/instagram-services';
 
@@ -15,15 +15,14 @@ const Index = () => {
   const [ posts, setPosts ] = useState<InstagramPost[]>();
   const [ isPostIdValid, setIsPostIdValid ] = useState<boolean>();
   const [ postDetail, setPostDetail ] = useState<InstagramPost>();
+  const [ fetchError, setError ] = useState<boolean>(false);
 
   const handlePostDetail = () => posts?.filter(post => post.id === postId)[0] ?? null
 
   useEffect(() => {
-    if (process.env.INSTAGRAM_TOKEN) {
-      getInstagramPosts(process.env.INSTAGRAM_TOKEN)
-      .then(response => (setPosts(response)))
-      .catch(err => console.log(err))
-    }
+    getInstagramPosts()
+    .then(response => (setPosts(response)))
+    .catch(err => (console.log(err), setError(true)))
   }, [])
 
   useEffect(() => (postId ? setIsPostIdValid(true) : setIsPostIdValid(false)), [postId])
@@ -57,7 +56,8 @@ const Index = () => {
         </div>
       </section>
       {
-         (posts && isPostIdValid && postDetail)
+
+        (posts && isPostIdValid && postDetail && !fetchError)
           ? (<BlogDetail instagramPostDetail={postDetail} instagramPosts={posts} /> )
           : (<SkeletonLoaderComponent />)
       }

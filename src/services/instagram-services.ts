@@ -2,8 +2,9 @@ import axios from "axios";
 import { InstagramPost } from "@/utils/types";
 
 const url:string = `https://graph.instagram.com/me/media?fields=id,media_type,media_url,permalink,caption,timestamp,thumbnail_url&access_token=`;
+const token = process.env.INSTAGRAM_TOKEN;
 
-export async function getInstagramImages(token: string, next?: string) {
+export async function getInstagramImages(next?: string) {
   try {
     const data = await axios.get(`${next ?? url+token}`)
 
@@ -22,7 +23,7 @@ export async function getInstagramImages(token: string, next?: string) {
 }
 
 
-export async function getInstagramPosts(token: string) {
+export async function getInstagramPosts() {
   try {
     const dataFetched = await fetch(`${url}${token}`)
     const dataParsed = (await dataFetched.json()).data;

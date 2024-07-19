@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { getTheLastInstagramVideo } from '@/services/instagram-services';
 
+import errorData from '@/utils/data/handlerData.json'
+
 const VideoComponent = ({ videoData }: any) => {
   return (
     <a 
@@ -27,6 +29,12 @@ export const InstagramVideoFooter = ({ instagramToken }: any) => {
         setFetchError(true)
       })
   }, [instagramToken])
+
+  useEffect(() => {
+    if (fetchError) {
+      setVideoData(errorData.lastReel)
+    }
+  }, [fetchError])
 
   return (
     <p 

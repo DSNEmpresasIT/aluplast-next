@@ -25,6 +25,7 @@ const nextConfig = {
         'bufferutil': 'commonjs bufferutil',
         'supports-color': 'commonjs supports-color',
     })
+    
     return config
 },
 }

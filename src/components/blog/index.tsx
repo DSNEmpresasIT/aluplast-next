@@ -4,9 +4,8 @@ import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 
 import { BlogPosts } from '@/components/blog/BlogPostsComponent';
-import { getFacebookImagePosts, getFacebookPageToken } from '@/services/facebook-services';
 import { PAGES_PATH } from '@/utils/pages';
-import { FacebookPost, InstagramPost } from '@/utils/types';
+import { InstagramPost } from '@/utils/types';
 import { SkeletonLoaderComponent } from '@/components/blog/SkeletonLoaderComponent';
 import { getInstagramPosts } from '@/services/instagram-services';
 
@@ -15,14 +14,16 @@ const Index = () => {
   const [ posts, setPosts ] = useState<InstagramPost[]>();
   const [ postNotFoundNotification, setPostNotFoundNotification ] = useState<boolean>();
   // const [ nextLink, setNextLink ] = useState<string | null>(null);
+  const [ fetchError, setError ] = useState<boolean>(false);
 
   useEffect(() => {
-    if (process.env.INSTAGRAM_TOKEN) {
-      getInstagramPosts(process.env.INSTAGRAM_TOKEN)
+      getInstagramPosts()
         .then(response => setPosts(response))
-        .catch(error => console.log(error))
-    }
-  },[process.env.INSTAGRAM_TOKEN]);
+        .catch(_ => {
+          console.error('Error in instagram token')
+          setError(true)
+        })
+  },[]);
 
   useEffect(() => {
     if (postDetailError === 'true') {
@@ -54,13 +55,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-      <section className='instagram-section-wrap mt-5'>
-        <a href="https://www.instagram.com/aluplast.aberturas/" target='_blank'>
-          <i className="fa-brands fa-instagram"></i>
-          {" "}
-          aluplast.aberturas
-        </a>
-      </section>
       {
         postNotFoundNotification && (
           <div className='container animate__animated animate__fadeIn' onClick={() => setPostNotFoundNotification(false)}>
@@ -83,10 +77,36 @@ const Index = () => {
           </div>
         )
       }
+
       {
-        posts 
-          ? (<BlogPosts posts={posts} />)
-          : (<SkeletonLoaderComponent />)
+        fetchError ? (
+          <section className="project5 mt-5 px-5 pt-0">
+            <div id="isotope-grid" className="project--hover clearfix row no-gutters d-flex align-items-center justify-content-center">
+              <a href='https://www.instagram.com/aluplast.aberturas/' target='_blank' className='w-50 h1 text-center' style={{ height: '500px' }}>
+                Al parecer ha habido un error de conexión con Instagram
+                <br />
+                Intenta ver nuestras ultimas noticias desde acá!
+                <br />
+                <i className="fa-brands fa-instagram mt-5" style={{ fontSize: '150px' }}></i>
+              </a>
+            </div>
+          </section>
+        ) : (
+          <>
+            <section className='instagram-section-wrap mt-5'>
+              <a href="https://www.instagram.com/aluplast.aberturas/" target='_blank'>
+                <i className="fa-brands fa-instagram"></i>
+                {" "}
+                aluplast.aberturas
+              </a>
+            </section>
+            {
+              posts
+              ? (<BlogPosts posts={posts} />)
+              : (<SkeletonLoaderComponent />)
+            }
+          </>
+        )
       }
     </>
   )

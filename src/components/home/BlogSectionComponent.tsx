@@ -27,13 +27,11 @@ const BlogSectionComponent: FC = () => {
   const [error, setIsError] = useState<boolean>();
 
   useEffect(() => {
-    if (process.env.INSTAGRAM_TOKEN) {
-      getInstagramPosts(process.env.INSTAGRAM_TOKEN)
+      getInstagramPosts()
         .then((res) => (setLastInstagramPost(res)))
         .catch(() => setIsError(true))
         .finally(() => setIsLoading(false))
-    }
-  }, [process.env]);
+  }, []);
 
 
   return (

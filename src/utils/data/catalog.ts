@@ -2968,13 +2968,37 @@ export const resaleCurtainsData: CatalogData[] = [
     name: 'Enrollable BlackOut',
     img: ['Sunset_Enrollables_Black_Out', 'Sunset_Enrollables_Black_Out1'],
     id: 'enrollable-blackout',
+    description: `Flexibilidad & Diseño
+
+    Las cortinas Enrollables ofrecen un sistema de control superior, de alta calidad, durabilidad y muy fácil instalación. Desde cortinas manuales hasta sistemas completamente
+    automatizados. Ofrece un hardware excelente y un inigualable abanico de telas que proveen las soluciones ideales para el control de la luz y la temperatura de cualquier
+    ambiente.
+
+    Las cortinas Enrollables complementan el estilo de cualquier edificio. Desde pequeñas oficinas a grandes espacios públicos, realzan la performance y el aspecto de los espacios.
+    Las amplia variedad de colecciones disponibles, permite a arquitectos y decoradores aproximarse a cualquier proyecto.
+    
+    Presenta también un rango de complementos opcionales, ideales para adaptar el producto a las necesidades de cualquier abertura.
+    Componentes exclusivos, fáciles de instalar, como cenefas, cajas, canales, guías, tensores, son algunas de las tantas alternativas.
+    `,
     filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
     pdfButton: 'Copia de Copia de FT_Enrollables_Sunset_3-21'
   },
   {
     name: 'Enrollable Decorativa',
-    img: ['Sunset__Enrollables__Decorativa', 'Sunset__Enrollables__Decorativa1', 'Sunset__Enrollables__Decorativa_2'],
+    img: ['Sunset__Enrollables__Decorativa', 'Sunset_Enrollables_Decorativas', 'Sunset_Enrollables_Decorativas1', 'Sunset_Enrollables_Decorativas_2'],
     id: 'enrollable-decorativa',
+    description: `Flexibilidad & Diseño
+
+    Las cortinas Enrollables ofrecen un sistema de control superior, de alta calidad, durabilidad y muy fácil instalación. Desde cortinas manuales hasta sistemas completamente
+    automatizados. Ofrece un hardware excelente y un inigualable abanico de telas que proveen las soluciones ideales para el control de la luz y la temperatura de cualquier
+    ambiente.
+
+    Las cortinas Enrollables complementan el estilo de cualquier edificio. Desde pequeñas oficinas a grandes espacios públicos, realzan la performance y el aspecto de los espacios.
+    Las amplia variedad de colecciones disponibles, permite a arquitectos y decoradores aproximarse a cualquier proyecto.
+    
+    Presenta también un rango de complementos opcionales, ideales para adaptar el producto a las necesidades de cualquier abertura.
+    Componentes exclusivos, fáciles de instalar, como cenefas, cajas, canales, guías, tensores, son algunas de las tantas alternativas.
+    `,
     filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
     pdfButton: 'Copia de FT_Enrollables_Sunset_3-21'
   },
@@ -2982,6 +3006,18 @@ export const resaleCurtainsData: CatalogData[] = [
     name: 'Enrollable Screen',
     img: ['2', '3', '4', 'Sunset_Enrollables_Screen', 'Sunset_Enrollables_Screen_4'],
     id: 'enrollable-screen',
+    description: `Flexibilidad & Diseño
+
+    Las cortinas Enrollables ofrecen un sistema de control superior, de alta calidad, durabilidad y muy fácil instalación. Desde cortinas manuales hasta sistemas completamente
+    automatizados. Ofrece un hardware excelente y un inigualable abanico de telas que proveen las soluciones ideales para el control de la luz y la temperatura de cualquier
+    ambiente.
+
+    Las cortinas Enrollables complementan el estilo de cualquier edificio. Desde pequeñas oficinas a grandes espacios públicos, realzan la performance y el aspecto de los espacios.
+    Las amplia variedad de colecciones disponibles, permite a arquitectos y decoradores aproximarse a cualquier proyecto.
+    
+    Presenta también un rango de complementos opcionales, ideales para adaptar el producto a las necesidades de cualquier abertura.
+    Componentes exclusivos, fáciles de instalar, como cenefas, cajas, canales, guías, tensores, son algunas de las tantas alternativas.
+    `,
     filters: [ProductFathersTypes.RESALES,TypeProduct.CURTAINS],
     pdfButton: 'FT_Enrollables_Sunset_3-21'
   },
