@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import dynamic from 'next/dynamic';
 
 import OurContactSection from '@/components/home/OurContactSection';
@@ -15,10 +15,16 @@ const BlogSectionComponent = dynamic(() => import('@/components/home/BlogSection
 const OurBestProductsSection = dynamic(() => import('@/components/home/OurBestProductsSection'), { ssr: false })
 
 const Home = () => {
+
+
   return (
     <div className='page-wrap'>
-      {/* <SliderComponent />  */}
-      <SliderComponent_2 /> 
+      <SliderComponent />
+      {/* {
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+        ? <SliderComponent />
+        : <SliderComponent_2 /> 
+      } */}
       <WhoWeAreSection />
       <HomeVideoSection />
       <OurProcessSection />
