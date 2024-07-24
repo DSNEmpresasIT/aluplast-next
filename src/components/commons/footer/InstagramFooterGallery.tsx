@@ -9,13 +9,13 @@ interface InstagramObject {
   permalink: string;
 }
 
-export const InstagramGalleryFooter = ({ instagramToken }: any) => {
+export const InstagramGalleryFooter = () => {
   const [ imagesData, setImagesData ] = useState<InstagramObject[]>();
   const [ nextLink, setNextLink ] = useState<string>()
   const [ fetchError, setError ] = useState<boolean>(false);
 
   useEffect(() => {
-    getInstagramImages(instagramToken)
+    getInstagramImages()
       .then((response) => {
         setNextLink(response.next)
         setImagesData(response.images)
