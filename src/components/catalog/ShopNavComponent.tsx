@@ -2,95 +2,32 @@ import React, { useState, type FC, useEffect } from "react";
 import Link from "next/link";
 import { PAGES_PATH } from "@/utils/pages";
 import { getProductTypeName } from "../helpers/helpers";
-import { ProductFathersTypes, TypeProduct } from "@/utils/types";
+import { Categories, ProductFathersTypes, TypeProduct } from "@/utils/types";
 import { allCatalogData } from "@/utils/data/catalog";
 import { SearchComponent } from "./SearchComponent";
 import { useSearchParams } from "next/navigation";
 
-const navData = [
-  {
-    name: getProductTypeName(ProductFathersTypes.OPENERS_TYPES),
-    filter: ProductFathersTypes.OPENERS_TYPES,
-  },
-  // {
-  //   name: getProductTypeName(ProductFathersTypes.CLOSERS_TYPES),
-  //   filter: ProductFathersTypes.CLOSERS_TYPES,
-  // },
-  {
-    name: getProductTypeName(ProductFathersTypes.CS_TYPES),
-    filter: ProductFathersTypes.CS_TYPES,
-  },
-  {
-    name: getProductTypeName(ProductFathersTypes.FACHADAS),
-    filter: ProductFathersTypes.FACHADAS,
-  },
-  {
-    name: getProductTypeName(ProductFathersTypes.WINDOWS),
-    filter: ProductFathersTypes.WINDOWS,
-  },
-  {
-    name: getProductTypeName(ProductFathersTypes.GARAGE_DOORS),
-    filter: ProductFathersTypes.GARAGE_DOORS,
-  },
-  {
-    name: getProductTypeName(ProductFathersTypes.RESALES),
-    filter: ProductFathersTypes.RESALES,
-  },
-  {
-    name: getProductTypeName(ProductFathersTypes.SOLAR_CONTROL),
-    filter: ProductFathersTypes.SOLAR_CONTROL,
-  },
-];
-
-const openersSubCategories = [
-  {
-    name: getProductTypeName(TypeProduct.DOOR_PRODUCT),
-    filter: TypeProduct.DOOR_PRODUCT,
-  },
-  {
-    name: getProductTypeName(TypeProduct.WINDOW_PRODUCT),
-    filter: TypeProduct.WINDOW_PRODUCT,
-  },
-];
-
-const resalesSubCategories = [
-  {
-    name: getProductTypeName(TypeProduct.RESALES_DOOR),
-    filter: TypeProduct.RESALES_DOOR
-  },
-  {
-    name: getProductTypeName(TypeProduct.BATHROOM_PARTITION_PRODUCT),
-    filter: TypeProduct.BATHROOM_PARTITION_PRODUCT
-  },
-  {
-    name: getProductTypeName(TypeProduct.CURTAINS),
-    filter: TypeProduct.CURTAINS
-  },
-];
-
-const complementarySistemSubCategories = [
-  {
-    name: getProductTypeName(TypeProduct.BAR_PRODDUCT),
-    filter: TypeProduct.BAR_PRODDUCT
-  },
-]
+function compare( a: Categories, b: Categories ) {
+  if ( a.value < b.value ){
+    return -1;
+  }
+  if ( a.value > b.value ){
+    return 1;
+  }
+  return 0;
+}
 
 interface ShopNavComponentProps {
-  handleToggleFilter: (string: ProductFathersTypes) => void;
-  filters: ProductFathersTypes[];
-  totalProducts: number;
+  taggedCategory?: Categories;
+  categories: Categories[];
+  totalProducts?: number | undefined;
 }
 
 export const ShopNavComponent: FC<ShopNavComponentProps> = ({
-  handleToggleFilter,
-  filters,
+  taggedCategory,
+  categories,
   totalProducts,
 }) => {
-  const category = useSearchParams().get("categoria");
-
-  const handleSetFilters = (data: any) => {
-    handleToggleFilter(data.filter);
-  };
 
   return (
     <div
@@ -98,32 +35,26 @@ export const ShopNavComponent: FC<ShopNavComponentProps> = ({
       style={{ display: "flex", flexDirection: "column", marginTop: "15px" }}
     >
       {/* <SearchComponent /> */}
-      {filters.length > 0 && (
+      {taggedCategory && (
         <div className="blog__tag-wrap animate__animated animate__fadeIn">
           <h4 className="title-sidebar">
-            Productos {filters.map((filter) => filter + " ")}
+            Productos {taggedCategory.label}
           </h4>
-          <span>{totalProducts} resultados</span>
+          {totalProducts ? <span>{totalProducts} resultados</span> : ''}
           <div className="blog__tag mt-3">
-            {filters.map((filter) => {
-              return (
-                <Link
-                  className="animate__animated animate__fadeIn"
-                  key={`shop-nav-filters-${filter}`}
-                  href={{
-                    query: {
-                      //@ts-ignore
-                      categoria: Object.values(ProductFathersTypes).includes(filter || '') ? undefined : category
-                    }
-                  }}
-                  type="button"
-                  onClick={() => handleSetFilters({ name: '', filter })}
-                >
-                  {getProductTypeName(filter)}{" "}
-                  <span style={{ marginLeft: "4px" }}>x</span>
-                </Link>
-              );
-            })}
+            <Link
+              className="animate__animated animate__fadeIn"
+              key={`shop-nav-filters-${taggedCategory.value}`}
+              href={{
+                query: {
+                  categoria: null
+                }
+              }}
+              type="button"
+            >
+              {taggedCategory.label}{" "}
+              <span style={{ marginLeft: "4px" }}>x</span>
+            </Link>
           </div>
           <button
             type="button"
@@ -148,26 +79,25 @@ export const ShopNavComponent: FC<ShopNavComponentProps> = ({
           </button>
         </div>
       )}
-      {!filters.length ? (
+      {categories.length ? (
         <ul className="blog__cate ul--no-style" style={{ marginTop: "25px" }}>
           <h4 className="title-sidebar">Categorias</h4>
-          {navData?.map((buttonData) => {
+          {categories?.sort(compare).map((category) => {
             return (
               <li
-                key={`shop-nav-${buttonData.name}`}
+                key={`shop-nav-${category.value}`}
                 style={{
                   cursor: "pointer",
-                  color: filters.includes(buttonData.filter) ? "red" : "",
                 }}
               >
                 <Link
                   href={{
                     pathname: PAGES_PATH.CATALOG_PATH,
-                    query: { categoria: buttonData.filter },
+                    query: { categoria: category.id },
                   }}
                 >
-                  {buttonData.name}
-                  <span>
+                  {category.label}
+                  {/* <span>
                     <em>
                       (
                       {
@@ -177,126 +107,27 @@ export const ShopNavComponent: FC<ShopNavComponentProps> = ({
                       }
                       )
                     </em>
-                  </span>
+                  </span> */}
                 </Link>
               </li>
             );
           })}
-          <li
-            style={{
-              cursor: "pointer",
-            }}
-          >
-            <Link href={PAGES_PATH.TEXTURES}>
-              Texturas
-            </Link>
-          </li>
-        </ul>
-      ) : (
-        ""
-      )}
-      {category === ProductFathersTypes.OPENERS_TYPES && (
-        <ul className="blog__cate ul--no-style">
-          <h4 className="title-sidebar">Tipos de {filters[0]}</h4>
-          {openersSubCategories?.map((buttonData: any) => {
-            return (
-              <li
-                key={`shop-nav-${buttonData.name}`}
-                style={{
-                  cursor: "pointer",
-                  color: filters.includes(buttonData.filter) ? "red" : "",
-                }}
-                onClick={() => handleSetFilters(buttonData)}
-              >
-                <a type="button">
-                  {buttonData.name}
-                  <span>
-                    <em>
-                      (
-                      {
-                        allCatalogData.filter((product) =>
-                          product.filters.includes(buttonData.filter)
-                        ).length
-                      }
-                      )
-                    </em>
-                  </span>
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-      )}
-
-      {
-        category === ProductFathersTypes.RESALES && (
-          <ul className="blog__cate ul--no-style">
-            <h4 className="title-sidebar">Tipos de {filters[0]}</h4>
-            {resalesSubCategories?.map((buttonData: any) => {
-              return (
+            {
+              !taggedCategory && (
                 <li
-                  key={`shop-nav-${buttonData.name}`}
                   style={{
                     cursor: "pointer",
-                    color: filters.includes(buttonData.filter) ? "red" : "",
                   }}
-                  onClick={() => handleSetFilters(buttonData)}
                 >
-                  <a type="button">
-                    {buttonData.name}
-                    <span>
-                      <em>
-                        (
-                        {
-                          allCatalogData.filter((product) =>
-                            product.filters.includes(buttonData.filter)
-                          ).length
-                        }
-                        )
-                      </em>
-                    </span>
-                  </a>
+                  <Link href={PAGES_PATH.TEXTURES}>
+                    Texturas
+                  </Link>
                 </li>
-              );
-            })}
+              ) 
+            }
           </ul>
-        )
+        ) : ''
       }
-
-      {/* {
-        category === ProductFathersTypes.CS_TYPES && (
-          <ul className="blog__cate ul--no-style">
-            <h4 className="title-sidebar">Tipos de {filters[0]}</h4>
-            {complementarySistemSubCategories?.map((buttonData: any) => {
-              return (
-                <li
-                  key={`shop-nav-${buttonData.name}`}
-                  style={{
-                    cursor: "pointer",
-                    color: filters.includes(buttonData.filter) ? "red" : "",
-                  }}
-                  onClick={() => handleSetFilters(buttonData)}
-                >
-                  <a type="button">
-                    {buttonData.name}
-                    <span>
-                      <em>
-                        (
-                        {
-                          allCatalogData.filter((product) =>
-                            product.filters.includes(buttonData.filter)
-                          ).length
-                        }
-                        )
-                      </em>
-                    </span>
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-        )
-      } */}
     </div>
   );
 };

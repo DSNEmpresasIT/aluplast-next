@@ -1,11 +1,11 @@
 import { PAGES_PATH } from '@/utils/pages';
-import { ProjectDetail } from '@/utils/types';
+import { Project } from '@/utils/types';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { Dispatch, FC, SetStateAction, useState } from 'react'
 
 interface ProjectDetailComponentProps { 
-  projectDetail: ProjectDetail | undefined 
+  projectDetail: Project | undefined 
 }
 
 export const ProjectDetailComponent:FC<ProjectDetailComponentProps> = ({ projectDetail }) => {
@@ -18,13 +18,13 @@ export const ProjectDetailComponent:FC<ProjectDetailComponentProps> = ({ project
               <div className="col-lg-8 mt-4 col-md-12">
                 
                 <div className="port1__big-img">
-                  <a href={projectDetail?.imageUrl[0].url} data-lightbox="portfolio">
-                    <img alt="Portfolio 1" src={projectDetail?.imageUrl[0].url} />
+                  <a href={projectDetail?.images[0].url} data-lightbox="portfolio">
+                    <img alt="Portfolio 1" src={projectDetail?.images[0].url} />
                   </a>
                 </div>
                 <div className="port1__img-wrap">
                   {
-                    projectDetail?.imageUrl.map((img, index) => {
+                    projectDetail?.images.map((img, index) => {
                       if (index === 0) return;
                       return (
                         <div 
@@ -53,46 +53,43 @@ export const ProjectDetailComponent:FC<ProjectDetailComponentProps> = ({ project
                   <p>
                   </p>
                 </div>
-                <div className="port__info">
-                  <ul className="port__info-list clearfix ul--no-style">
-                    <li>
-                      <span className="port__info-title">Cliente</span>
-                      <span className="port__info-value">{projectDetail?.projectClient}</span>
-                    </li>
-                    {/* <li>
-                      <span className="port__info-title">Acreage</span>
-                      <span className="port__info-value">400.00 m
-                        <sup>2</sup>
-                      </span>
-                    </li> */}
-                    <li>
-                      {projectDetail?.project_date && (
-                          <>
-                            <span className="port__info-title">Fecha</span>
-                            <span className="port__info-value">{projectDetail?.project_date}</span>
-                          </> 
+                { (projectDetail?.project_client || projectDetail?.project_date || projectDetail?.project_type) && 
+                  (<div className="port__info">
+                    <ul className="port__info-list clearfix ul--no-style">
+                      {
+                        projectDetail?.project_client && (
+                          <li>
+                            <span className="port__info-title">Cliente</span>
+                            <span className="port__info-value">{projectDetail?.project_client}</span>
+                          </li>
                         )
                       }
-                    </li>
-                  </ul>
-                  <div className="social--port">
-                    {/* <a href="">
-                      <i className="zmdi zmdi-facebook"></i>
-                    </a>
-                    <a href="">
-                      <i className="zmdi zmdi-dribbble"></i>
-                    </a>
-                    <a href="">
-                      <i className="zmdi zmdi-google"></i>
-                    </a>
-                    <a href="">
-                      <i className="zmdi zmdi-twitter"></i>
-                    </a>
-                    <a href="">
-                      <i className="zmdi zmdi-instagram"></i>
-                    </a> */}
-                  </div>
-                </div>
+                      {
+                        projectDetail?.project_client && (
+                          <li>
+                            <span className="port__info-title">Tipo</span>
+                            <span className="port__info-value">{projectDetail?.project_type.label}</span>
+                          </li>
+                        )
+                      }
+                      {/* <li>
+                        <span className="port__info-title">Acreage</span>
+                        <span className="port__info-value">400.00 m
+                          <sup>2</sup>
+                        </span>
+                      </li> */}
+                      <li>
+                        {projectDetail?.project_date && (
+                            <>
+                              <span className="port__info-title">Fecha</span>
+                              <span className="port__info-value">{projectDetail?.project_date}</span>
+                            </> 
+                          )
+                        }
+                      </li>
+                    </ul>
+                  </div>)
+                }
               </div>
               <div className='col-12 p-5' style={{ display: 'flex', justifyContent: 'end', alignContent: 'center' }}>
                 <Link 

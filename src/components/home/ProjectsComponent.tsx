@@ -1,15 +1,15 @@
 import { getAllProjects } from "@/services/projects-service";
 import { PAGES, PAGES_PATH } from "@/utils/pages";
-import { ProjectDetail } from "@/utils/types";
+import { Project } from "@/utils/types";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 export const ProjectsComponent = () => {
-  const [projectsData, setProjectsData] = useState<ProjectDetail[]>();
+  const [projectsData, setProjectsData] = useState<Project[]>();
 
   useEffect(() => {
     getAllProjects()
-      .then((response) => (setProjectsData(response)))
+      .then((response) => setProjectsData(response))
       .catch((err) => console.log(err));
   }, []);
 
@@ -39,14 +39,13 @@ export const ProjectsComponent = () => {
             return (
               <div className="col-lg-4 col-md-6">
                 <div className="latest__item" style={{ overflow: 'hidden', maxHeight: '270px'}}>
-                  <img alt={`Proyecto ${index} de Aluplast`} referrerPolicy="no-referrer" title="Imagen ilustrativa de un proyecto en aluminio | Aluplast" src={project.imageUrl[0].url} />
+                  <img alt={`Proyecto ${index} de Aluplast`} referrerPolicy="no-referrer" title="Imagen ilustrativa de un proyecto en aluminio | Aluplast" src={project.images[0].url} />
                   <Link
                     title="Visitar detalle de proyecto"
                     href={{
                       pathname: PAGES_PATH.PROJECT_DETAIL,
-                      query: { projectId: project._id },
+                      query: { projectId: project.id },
                     }}
-                    data-lightbox="Lastest Project"
                     className="overlay overlay--invisible overlay--p-15"
                   >
                     <div className="overlay--border"></div>
@@ -57,21 +56,26 @@ export const ProjectsComponent = () => {
                         title="Visitar detalle de proyecto"
                         href={{
                           pathname: PAGES_PATH.PROJECT_DETAIL,
-                          query: { projectId: project._id },
+                          query: { projectId: project.id },
                         }}
                       >
                         <h3>{project.title}</h3>
                       </Link>
-                      <div className="cat-name">
-                        <Link
-                          href={{
-                            pathname: PAGES_PATH.PROJECT_DETAIL,
-                            query: { projectId: project._id },
-                          }}
-                        >
-                          <em>{project.type}</em>
-                        </Link>
-                      </div>
+                      {
+                        project.project_type && (
+                          <div className="cat-name">
+                            <Link
+                              href={{
+                                pathname: PAGES_PATH.PROJECT_DETAIL,
+                                query: { projectId: project.id },
+                              }}
+                            >
+                              <em>{project.project_type.label}</em>
+                            </Link>
+                          </div>
+                        )
+                      }
+                      
                     </div>
                   </div>
                 </div>

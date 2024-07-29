@@ -1,4 +1,4 @@
-import { ProjectDetail, ProjectTypes } from '@/utils/types';
+import { Project, ProjectTypes } from '@/utils/types';
 import React, { Dispatch, SetStateAction, useEffect, useState } from 'react'
 import { pagination } from '../helpers/helpers';
 import { projects } from '@/utils/data/projects';
@@ -13,9 +13,9 @@ interface paginationIndex {
 
 export const ProjectsComponent = () => {
   const router = useRouter();
-  const [ projectData, setProjectData ] = useState<ProjectDetail[]>();
-  const [ projectBlog, setProjectBlog ] = useState<ProjectDetail[]>();
-  const [ projectBlogFilter, setProjectBlogFilter ] = useState<ProjectDetail[]>();
+  const [ projectData, setProjectData ] = useState<Project[]>();
+  const [ projectBlog, setProjectBlog ] = useState<Project[]>();
+  const [ projectBlogFilter, setProjectBlogFilter ] = useState<Project[]>();
   const [ sliceIndex, setSliceIndex ] = useState<paginationIndex>({ startIndex: 0, lastIndex: 6 });
   const [ projectFilter, setProjectFilter ] = useState<ProjectTypes | undefined>(undefined);
 
@@ -25,26 +25,14 @@ export const ProjectsComponent = () => {
     }
   }, [projectBlogFilter, sliceIndex]);
 
-  const handlePagination = () => {
-    setSliceIndex({
-      startIndex: sliceIndex.startIndex,
-      lastIndex: sliceIndex.lastIndex + 6,
-    })
-  }
 
   useEffect(() => {
     getAllProjects()
       .then(response => setProjectData(response))
       .catch(err => console.log(err))
-    // getProjectTypes()
   }, [])
 
   useEffect(() => {
-    if (projectFilter && projectData) {
-      setProjectBlogFilter(projectData.filter(project => project.type === projectFilter));
-    } else {
-      setProjectBlogFilter(projectData);
-    }
     setSliceIndex({ startIndex: 0, lastIndex: 6 })
   }, [projectFilter, projectData]);
 
@@ -52,7 +40,7 @@ export const ProjectsComponent = () => {
     <>
       <section className="project1">
         <div className="container">
-          <div className="row">
+          {/* <div className="row">
             <div className="col-md-12">
               <div id="filter-wrap">
                 <ul id="filter" className="ul--no-style ul--inline mt-5">
@@ -65,36 +53,36 @@ export const ProjectsComponent = () => {
                   <li onClick={() => setProjectFilter(ProjectTypes.RESIDENCIAL)}>
                     <span>Residencial</span>
                   </li>
-                  {/* <li onClick={() => setProjectFilter(ProjectTypes.INSTITUCIONAL)}>
+                  <li onClick={() => setProjectFilter(ProjectTypes.INSTITUCIONAL)}>
                     <span>Institucional</span>
-                  </li> */}
+                  </li>
                   <li onClick={() => setProjectFilter(ProjectTypes.EDIFICIOS)}>
                     <span>Edificios</span>
                   </li>
-                  {/* <li onClick={() => setProjectFilter(ProjectTypes.INTERIORISMO)}>
+                  <li onClick={() => setProjectFilter(ProjectTypes.INTERIORISMO)}>
                     <span>Interiorismo</span>
-                  </li> */}
+                  </li>
                 </ul>
               </div>
             </div>
-          </div>
-          <div id="isotope-grid" className="project--hover clearfix">
-            { projectBlog?.map( project => {
+          </div> */}
+          <div id="isotope-grid" className="project--hover clearfix mt-5">
+            { projectData?.map( project => {
               return (
                 <div 
-                  onClick={() => router.push(`/${PAGES_PATH.PROJECT_DETAIL}?projectId=${project._id}`)}
-                  className={`col-md-6 col-sm-12 item ${project.type} animate__animated animate__fadeIn`}
+                  onClick={() => router.push(`/${PAGES_PATH.PROJECT_DETAIL}?projectId=${project.id}`)}
+                  className={`col-md-6 col-sm-12 item ${project.project_type} animate__animated animate__fadeIn`}
                   key={project.title}
                 >
                   <div className="project__item">
                     <div className="pro__img">
                       <div style={{  maxHeight: '350px', overflow: 'hidden' }}>
-                        <img alt="Project 1" src={project.imageUrl[0].url} />
+                        <img alt="Project 1" src={project.images[0].url} />
                       </div>
                       <a type='button' style={{ cursor: 'pointer' }} className="pro-link">
                         <div className="pro-info pro-info--darker">
                           <h2 className="company" style={{ color: 'white' }}>
-                            { project.projectClient }
+                            { project.project_client }
                           </h2>
                           <p className="cat-name">
                             <em>
@@ -109,7 +97,7 @@ export const ProjectsComponent = () => {
               )
             }) }
           </div>
-          {
+          {/* {
             !(projectBlogFilter && sliceIndex.lastIndex >= projectBlogFilter.length) && (
               <div className="see-more">
                 <a 
@@ -122,7 +110,7 @@ export const ProjectsComponent = () => {
                 </a>
               </div>
             )
-          }
+          } */}
         </div>
       </section>
     </>

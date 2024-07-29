@@ -4,3 +4,4 @@ export const API_SERVICE = axios.create({
   baseURL: process.env.GLOBAL_API,
   timeout: 3000,
 }) 
+

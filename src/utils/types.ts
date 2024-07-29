@@ -1,16 +1,50 @@
-export interface CartContextState {
-  cart: CatalogData[];
+export interface Categories {
+  id: number;
+  created_at: string;
+  is_active: boolean;
+  deactivated_at: boolean;
+  label: string;
+  value: string;
+  is_substance_active: null;
+  childrens?: Categories[];
 }
 
-export enum CartContextAcions {
-  ADD_PRODUCT = 'ADD_PRODUCT_ACTION',
-  REMOVE_PRODUCT = 'REMOVE_PRODUCT_ACTION'
+export interface Product {
+  id: number;
+  name: string;
+  description: string;
+  images: ImageUrl[]
+  created_at: Date;
+  stock?: number;
+  code?: string;
+  unid?: string;
+  env?: number;
+  product_features: {
+    feature_text?: string;
+    pdffiles?: ImageUrl;
+    items?: {
+      title: string;
+      text: string;
+    }[];
+    specs: string[]
+  }
 }
 
-export enum InstagramPostMediaTypes {
-  VIDEO = 'VIDEO',
-  IMAGE = 'IMAGE',
-  CAROUSEL = "CAROUSEL_ALBUM"
+export interface Project {
+  id: number;
+  active: boolean;
+  title: string;
+  description: string;
+  project_client: string;
+  project_date: string;
+  images: ImageUrl[];
+  project_type: ProjectType;
+}
+
+export interface ProjectType {
+  id: number;
+  label: string;
+  value: string;
 }
 
 export interface CatalogData { 
@@ -31,6 +65,21 @@ interface Specs {
   minMeasures?: string;
   maxMeasures?: string;
   features?: string[];
+}
+
+export interface CartContextState {
+  cart: CatalogData[];
+}
+
+export enum CartContextAcions {
+  ADD_PRODUCT = 'ADD_PRODUCT_ACTION',
+  REMOVE_PRODUCT = 'REMOVE_PRODUCT_ACTION'
+}
+
+export enum InstagramPostMediaTypes {
+  VIDEO = 'VIDEO',
+  IMAGE = 'IMAGE',
+  CAROUSEL = "CAROUSEL_ALBUM"
 }
 
 export enum ProductFathersTypes {
@@ -151,4 +200,3 @@ export interface SendEmailDto {
   subject: string;
   message: string;
 }
-

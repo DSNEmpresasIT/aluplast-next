@@ -1,22 +1,36 @@
 'use client'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { BreadCumbComponent } from '@/components/catalog/BreadCumbComponent';
 import { ProductDetail } from '@/components/product/ProductDetail';
 import { allCatalogData } from '@/utils/data/catalog';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { LoaderComponent } from '@/components/commons/LoaderComponent';
 import { PAGES_PATH } from '@/utils/pages';
+import { getProductById } from '@/services/products-service';
+import { Product } from '@/utils/types';
 
 const Index = () => {
-  const productId = useSearchParams().get('productId')
-  const productSelected = allCatalogData.filter(product => product.id === productId)[0]
   const router = useRouter();
+  const productId = useSearchParams().get('productId')
+  const [ productSelected, setProductSelected ] = useState<Product>()
 
   useEffect(() => {
-    if (!productSelected) {
+    if (!productId || isNaN(+productId)) {
       router.push(`/${PAGES_PATH.CATALOG_PATH}?productError=true`)
     }
-  }, [productSelected])
+  }, [productId]);
+
+  useEffect(() => {
+    if (productId) {
+      getProductById(productId)
+        .then((res) => setProductSelected(res))
+        .catch((err) => {
+          console.log(err)
+          router.push(`/${PAGES_PATH.CATALOG_PATH}?productError=true`)
+        })
+    }
+  }, [productId])
+
   return (
     <>
       {
