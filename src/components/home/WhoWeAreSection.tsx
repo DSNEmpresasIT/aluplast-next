@@ -31,27 +31,16 @@ const WhoWeAreSection = () => {
           </div>
           <div className="col-lg-7 col-md-12 col-12">
             <div className="we-are__right">
-              <h2 className="title--small">Somos Aluplast</h2>
+              <h2 className="title--small">Conocé la calidad de nuestros productos</h2>
 
-              <h5>Innovación en Aberturas de Aluminio y PVC</h5>
+              <h5>Soluciones de de Aluminio y PVC</h5>
               <p className="m-b-10">
-                ALUPLAST es una empresa familiar dedicada, desde los años '70, a
-                la Fabricación y Comercialización de Aberturas de Aluminio y
-                otros, siendo una de las pioneras en la provincia. En la
-                actualidad, la Fábrica cuenta con más de 4000 m2 cubiertos
-                destinados a la fabricación de aberturas standard y a medida,
-                cinco salones comerciales y de exposición con las últimas
-                novedades del mercado en Urdinarrain, Gualeguaychú, Concepción
-                del Uruguay, Colón y Concordia, y un equipo de más de 80
-                personas que nos permiten brindarle asesoramiento profesional.
+                Aluplast es una empresa familiar fundada en los años '70, dedicada a la fabricación y comercialización de aberturas de aluminio.
+                Con más de 4000 m² cubiertos para producción y cinco salones comerciales en varias ciudades, somos líderes en el mercado. 
               </p>
               <p>
-                En Aluplast, lideramos el mercado con aberturas de la más alta
-                calidad. Nuestra pasión por el diseño y la dedicación a la
-                excelencia garantizan soluciones excepcionales para espacios
-                inspiradores y funcionales. Descubra la distinción y durabilidad
-                que solo Aluplast puede ofrecer. Bienvenidos a un mundo de
-                innovación en aberturas.
+              Contamos con un equipo de más de 80 personas que ofrecen asesoramiento profesional.
+              En Aluplast, nuestra pasion por el diseño y la excelencia nos permite ofrecer aberturas de las alta calidad, garantizando soluciones innovadoras y duraderas.
               </p>
             </div>
           </div>

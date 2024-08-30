@@ -1,7 +1,8 @@
 import axios from "axios";
 
+console.log(process.env.GLOBAL_API_BASE_URL)
+
 export const API_SERVICE = axios.create({
-  // baseURL: process.env.GLOBAL_API_BASE_URL_DEVELOPMENT,
-  baseURL: process.env.GLOBAL_API_BASE_URL_PRODUCTION,
+  baseURL: process.env.GLOBAL_API_BASE_URL,
   timeout: 3000,
 }) 

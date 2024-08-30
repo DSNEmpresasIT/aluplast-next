@@ -17,8 +17,8 @@ const OurBestProductsSection = dynamic(() => import('@/components/home/OurBestPr
 const Home = () => {
   return (
     <div className='page-wrap'>
-      {/* <SliderComponent />  */}
-      <SliderComponent_2 /> 
+      <SliderComponent /> 
+      {/* <SliderComponent_2 />  */}
       <WhoWeAreSection />
       <HomeVideoSection />
       <OurProcessSection />

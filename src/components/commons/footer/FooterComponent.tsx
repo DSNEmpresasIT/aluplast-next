@@ -80,7 +80,7 @@ export const FooterComponent = () => {
                 })
               }
             </div>
-            <InstagramGalleryFooter  instagramToken={process.env.INSTAGRAM_TOKEN} />
+            <InstagramGalleryFooter />
           </div>
           <div className="copyright-2">
             <div>

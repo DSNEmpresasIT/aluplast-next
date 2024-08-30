@@ -1622,6 +1622,7 @@ nav.menu-mobile>ul>li>ul {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-position: center;
     width: 25%;
     float: left;
     display: table-cell;
@@ -3097,7 +3098,7 @@ a.sbold {
 }
 
 .we-are__right>h2:first-child {
-    font-size: 48px;
+    font-size: 36px;
 }
 
 .we-are .see-more.see-more--left {
@@ -3105,7 +3106,7 @@ a.sbold {
 }
 
 h2.title--small {
-    margin-bottom: 37px;
+    margin-bottom: 27px;
 }
 
 .we-are__right {
@@ -3116,7 +3117,7 @@ h2.title--small {
     font-weight: 600;
     text-transform: initial;
     margin-bottom: 19px;
-    font-size: 16px;
+    font-size: 26px;
     color: var(--grey-3);
 }
 

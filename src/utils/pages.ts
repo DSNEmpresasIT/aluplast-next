@@ -1,5 +1,5 @@
 export enum PAGES {
-  HOME = "Aluplast | Aberturas en aluminio y pvc Concordia",
+  HOME = "Aluplast | Aberturas en aluminio y PVC",
   ABOUT_US = "Sobre nosotros",
   CONTACT = "Contacto",
   CATALOG = 'Catálogo',
