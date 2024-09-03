@@ -13,14 +13,16 @@ export const InstagramGalleryFooter = () => {
   const [ imagesData, setImagesData ] = useState<InstagramObject[]>();
   const [ nextLink, setNextLink ] = useState<string>()
   const [ fetchError, setError ] = useState<boolean>(false);
+  const [ isLoading, setIsLoading ] = useState<boolean>(true);
 
   useEffect(() => {
-    getInstagramImages()
+    getInstagramImages(nextLink)
       .then((response) => {
         setNextLink(response.next)
         setImagesData(response.images)
       })
       .catch((err) => (console.log(err), setError(true)))
+      .finally(() => setIsLoading(false))
   }, [])
   
   useEffect(() => {
@@ -31,20 +33,14 @@ export const InstagramGalleryFooter = () => {
     }
   }, [nextLink])
 
-
-  useEffect(() => {
-    if (fetchError) {
-      setImagesData([...errorData.lastPosts])
-    }
-  }, [fetchError])
   return (
     <div className="col-lg-4 col-md-6">
       <>
-        <h5 className="title-footer m-b-30">Instagram</h5>
+        { !fetchError && <h5 className="title-footer m-b-30">Instagram</h5> }
         <div className="gallery clearfix">
           {
-            imagesData
-            ? (
+            imagesData && !fetchError && !isLoading
+            && (
               imagesData.map((img, i) => {
                 if (i < Constants.FOOTER_IG_GALLERY_NUMBER) {
                   return (
@@ -58,7 +54,9 @@ export const InstagramGalleryFooter = () => {
                 }
               })
             )
-            : (
+          }
+          {
+            isLoading && (
               <span style={{ marginTop: '30px' }} className='page-loader__spin'></span>   
             )
           }

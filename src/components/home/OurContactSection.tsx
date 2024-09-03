@@ -20,6 +20,24 @@ const OurContactSection = () => {
     "",
     "",
     "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
   ];
   return (
     <section className="service-list">
@@ -38,7 +56,7 @@ const OurContactSection = () => {
               </div>
             </div>
             <div className="col-lg-8 col-md-12">
-              <div className="partner-wrap1 owl-carousel owl-theme" id="owl-partner-2">
+              <div className="partner-wrap1 owl-carousel owl-theme mt-0" id="owl-partner-2">
                 {
                   partners.map((img, i) => (
                     <a title='Visitar contacto Aluplast' key={`${i}-ourcontactsection-key`} type="button" className="partner__item item">
