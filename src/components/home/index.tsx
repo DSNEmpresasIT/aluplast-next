@@ -19,11 +19,11 @@ const Home = () => {
 
   return (
     <div className='page-wrap'>
-      {/* <SliderComponent /> */}
+      <SliderComponent />
       {
-        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-        ? <SliderComponent />
-        : <SliderComponent_2 /> 
+        // /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+        // ? <SliderComponent />
+        // : <SliderComponent_2 /> 
       }
       <WhoWeAreSection />
       <HomeVideoSection />

@@ -21,7 +21,7 @@ export const ProductDetail = ({
             target="_blank"
             href={
               productSelected.images
-                ? productSelected.images[0].url  
+                ? productSelected.images[0]?.url  
                 : getThePlaceholderImage([''])
             }
             data-lightbox="product"
@@ -147,7 +147,7 @@ export const ProductDetail = ({
             )}
             <div className="single-product-form">
               {
-                productSelected.product_features.pdffiles && (
+                productSelected.product_features?.pdffiles  && (
                   <div className="row p-3">
                     <Link
                       className="au-btn au-btn--pill au-btn--yellow au-btn--white"

@@ -108,7 +108,7 @@ export const ShopComponent = () => {
                   {
                     products?.map(product => {
                       return (
-                        <ShopCardComponent product={product} key={product.name} />
+                        <ShopCardComponent product={product} key={product.id} />
                       )
                     })
                   }

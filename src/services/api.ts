@@ -7,3 +7,7 @@ export const API_SERVICE = axios.create({
   timeout: 3000,
 }) 
 
+export const BASE_URL = axios.create({
+  baseURL: process.env.GLOBAL_API_BASE_URL_DEVELOPMENT,
+  timeout: 3000,
+}) 
