@@ -3158,62 +3158,67 @@ export const glassesData: CatalogData[] = [
 
 export const texturesData: TexturesTypes[] = [
   {
-    name: "Bronce claro",
+    name: "Bronce Claro",
     img: "bronceclaro",
   },
   {
-    name: "Bronce colonial",
+    name: "Bronce Colonial",
     img: "broncecolonial",
   },
   {
-    name: "Bronce medio",
+    name: "Bronce Medio",
     img: "broncemedio",
   },
   {
-    name: "Gris micro texturado",
+    name: "Gris Micro Texturado",
     img: "grismicrotexturado",
   },
   {
-    name: "Negro micro texturado",
+    name: "Negro Micro Texturado",
     img: "negromicrotexturado",
   },
   {
-    name: "Negro semimate",
+    name: "Negro Semimate",
     img: "negrosemimate",
   },
   {
-    name: "Anodizado gris",
+    name: "Anodizado Gris",
     img: "anodizadogris",
   },
   {
-    name: "Anodizado natural",
+    name: "Anodizado Natural",
     img: "anodizadonatural",
   },
   {
-    name: "Anodizado natural brillante",
+    name: "Anodizado Natural Brillante",
     img: "anodizadonaturalbrillante",
   },
   {
-    name: "Anodizado natural lijado",
+    name: "Anodizado Natural Lijado",
     img: "anodizadonaturallijado",
   },
   {
-    name: "Anodizado negro",
+    name: "Anodizado Negro",
     img: "anodizadonegro",
   },
   {
-    name: "Anodizado peltre",
+    name: "Anodizado Peltre",
     img: "anodizadopeltre",
   },
   {
-    name: "Simil cedro",
+    name: "Simil Cedro",
     img: "similcedro",
   },
   {
-    name: "Simil roble oscuro",
+    name: "Simil Roble Oscuro",
     img: "similrobleoscuro",
   },
+  {
+    name: "Blanco Semimate",
+    img: "blancosemimate",
+  },
 ];
+
 
 export const doorsModel = [
   {
