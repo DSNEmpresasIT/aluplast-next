@@ -3157,54 +3157,67 @@ export const glassesData: CatalogData[] = [
 ];
 
 export const texturesData: TexturesTypes[] = [
+  // Pintados
   {
-    name: "Bronce Claro",
-    img: "bronceclaro",
+    name: "Blanco Brillante",
+    img: "blancobrillante",
   },
   {
-    name: "Bronce Colonial",
-    img: "broncecolonial",
-  },
-  {
-    name: "Bronce Medio",
-    img: "broncemedio",
+    name: "Blanco Semimate",
+    img: "blancosemimate",
   },
   {
     name: "Gris Micro Texturado",
     img: "grismicrotexturado",
   },
   {
-    name: "Negro Micro Texturado",
-    img: "negromicrotexturado",
+    name: "Bronce Claro",
+    img: "bronceclaro",
+  },
+  {
+    name: "Bronce Medio",
+    img: "broncemedio",
+  },
+  {
+    name: "Bronce Colonial",
+    img: "broncecolonial",
   },
   {
     name: "Negro Semimate",
     img: "negrosemimate",
   },
   {
-    name: "Anodizado Gris",
-    img: "anodizadogris",
+    name: "Negro Micro Texturado",
+    img: "negromicrotexturado",
+  },
+  
+  // Anodizados
+  {
+    name: "Anodizado Natural Brillante",
+    img: "anodizadonaturalbrillante",
   },
   {
     name: "Anodizado Natural",
     img: "anodizadonatural",
   },
   {
-    name: "Anodizado Natural Brillante",
-    img: "anodizadonaturalbrillante",
-  },
-  {
     name: "Anodizado Natural Lijado",
     img: "anodizadonaturallijado",
   },
   {
-    name: "Anodizado Negro",
-    img: "anodizadonegro",
+    name: "Anodizado Gris",
+    img: "anodizadogris",
   },
   {
     name: "Anodizado Peltre",
     img: "anodizadopeltre",
   },
+  {
+    name: "Anodizado Negro",
+    img: "anodizadonegro",
+  },
+  
+  // Sublimación Madera
   {
     name: "Simil Cedro",
     img: "similcedro",
@@ -3213,11 +3226,9 @@ export const texturesData: TexturesTypes[] = [
     name: "Simil Roble Oscuro",
     img: "similrobleoscuro",
   },
-  {
-    name: "Blanco Semimate",
-    img: "blancosemimate",
-  },
 ];
+
+
 
 
 export const doorsModel = [

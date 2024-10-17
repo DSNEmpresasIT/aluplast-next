@@ -1,5 +1,4 @@
 'use client'
-import { projects } from "@/utils/data/projects";
 import { PAGES_PATH } from "@/utils/pages";
 import { useRouter, useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";

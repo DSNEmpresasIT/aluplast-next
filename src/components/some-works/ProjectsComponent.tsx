@@ -70,14 +70,14 @@ export const ProjectsComponent = () => {
             { projectData?.map( project => {
               return (
                 <div 
-                  onClick={() => router.push(`/${PAGES_PATH.PROJECT_DETAIL}?projectId=${project.id}`)}
+                  onClick={() => router.push(`/${PAGES_PATH.PROJECT_DETAIL}?projectId=${project._id}`)}
                   className={`col-md-6 col-sm-12 item ${project.project_type} animate__animated animate__fadeIn`}
                   key={project.title}
                 >
                   <div className="project__item">
                     <div className="pro__img">
                       <div style={{  maxHeight: '350px', overflow: 'hidden' }}>
-                        <img alt="Project 1" src={project.images[0].url} />
+                        <img alt="Project 1" src={project.imageUrl[0].url} />
                       </div>
                       <a type='button' style={{ cursor: 'pointer' }} className="pro-link">
                         <div className="pro-info pro-info--darker">

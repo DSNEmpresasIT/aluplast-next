@@ -32,12 +32,13 @@ export interface Product {
 
 export interface Project {
   id: number;
+  _id?:number;
   active: boolean;
   title: string;
   description: string;
   project_client: string;
   project_date: string;
-  images: ImageUrl[];
+  imageUrl: ImageUrl[];
   project_type: ProjectType;
 }
 

@@ -23,7 +23,7 @@ export async function getAllProjects() {
       url: API_ENDPOINTS.GET_PROYECTS
     })
 
-    return response.data;
+    return response.data.projects;
   } catch (error) {
     console.log(error);
   }
@@ -33,7 +33,7 @@ export async function getProjectDetail(projectId: string) {
   try {
     const response = await API_SERVICE({
       method: 'GET',
-      url: `${API_ENDPOINTS.GET_PROYECTS}/${projectId}`,
+      url: `${API_ENDPOINTS.GET_PROYECT}/${projectId}`,
     })
 
     return response.data;

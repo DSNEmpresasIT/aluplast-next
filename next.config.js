@@ -17,7 +17,8 @@ const nextConfig = {
     GLOBAL_API_BASE_URL_DEVELOPMENT:process.env.GLOBAL_API_BASE_URL_DEVELOPMENT,
     API_COMPANY_ID: process.env.API_COMPANY_ID,
     LOCAL: process.env.LOCAL,
-    API_CATALOG_ID: process.env.API_CATALOG_ID
+    API_CATALOG_ID: process.env.API_CATALOG_ID,
+    CLIENT_ID: process.env.CLIENT_ID,
   },
   experimental: { serverComponentsExternalPackages: ["axios"] },
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
