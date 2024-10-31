@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 import { getFormatDate } from "../helpers/helpers";
@@ -7,10 +7,30 @@ import { InstagramPostMediaTypes } from "@/utils/types";
 import { PAGES_PATH } from "@/utils/pages";
 import { BlogDetailRelatedPost } from "./RelatedPostsSection";
 
-const VideoComponent = ({instagramPost}: { instagramPost: InstagramPost }) => (
-  <video autoPlay muted loop width="70%" src={instagramPost.media_url}></video>
-)
+export const VideoComponent = ({ instagramPost,  }: { instagramPost: InstagramPost}) => {
+  const videoRef = useRef<HTMLVideoElement>(null);
 
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.muted = true;
+    }
+  }, []);
+
+  return (
+    
+      <video
+        ref={videoRef}
+        width="100%"
+        style={{aspectRatio:570/700,}}
+        autoPlay
+        muted
+        loop
+        controls
+        src={instagramPost.media_url}
+      ></video>
+   
+  );
+};
 export const BlogDetail = ({
   instagramPostDetail,
   instagramPosts,
