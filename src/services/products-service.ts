@@ -33,6 +33,12 @@ export async function getProductById(productId: string) {
 
     const response = await BASE_URL({
       method: 'GET',
+      headers: {
+        user: JSON.stringify({
+          company: { id: 1 },
+          role: { key: 'DSN_CUSTOMER_ACCESS' }
+        })
+      },
       url: API_ENDPOINTS.GET_PRODUCT_BY_ID+`/${productId}`
     })
 
@@ -48,6 +54,12 @@ export async function getProductByName(productName: string): Promise<Product[]> 
 
     const response = await BASE_URL({
       method: 'GET',
+      headers: {
+        user: JSON.stringify({
+          company: { id: 1 },
+          role: { key: 'DSN_CUSTOMER_ACCESS' }
+        })
+      },
       url: API_ENDPOINTS.GET_PRODUCT_BY_NAME+`/${productName}`
     })
 
