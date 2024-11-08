@@ -34,7 +34,7 @@ export const ShopNavComponent: FC<ShopNavComponentProps> = ({
       className="blog-sidebar"
       style={{ display: "flex", flexDirection: "column", marginTop: "15px" }}
     >
-      {/* <SearchComponent /> */}
+        <SearchComponent />
       {taggedCategory && (
         <div className="blog__tag-wrap animate__animated animate__fadeIn">
           <h4 className="title-sidebar">

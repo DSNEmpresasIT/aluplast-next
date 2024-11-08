@@ -6,7 +6,7 @@ import { PAGES_PATH } from "@/utils/pages";
 import { PaginationComponent } from "./PaginationComponent";
 import { getAllCategories } from "@/services/categories-service";
 import { Categories, Product } from "@/utils/types";
-import { getAllProducts } from "@/services/products-service";
+import { getAllProducts, getProductByName } from "@/services/products-service";
 import { ShopNavComponent } from "./ShopNavComponent";
 
 const ShopCardComponent = dynamic(() => import("./ShopCardComponent"));
@@ -50,10 +50,22 @@ export const ShopComponent = () => {
   }, [category]);
 
   useEffect(() => {
-    getAllProducts(category)
-      .then((response: Product[]) => setProducts(response))
-      .catch((err) => console.log(err));
-  }, [category]);
+    const fetchProducts = async () => {
+      try {
+        if (searchQuery) {
+          const response = await getProductByName(searchQuery);
+          setProducts(Array.isArray(response) ? response : []);
+        } else {
+          const response = await getAllProducts(category);
+          setProducts(response);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchProducts();
+  }, [category, searchQuery]); 
 
   const paginatedProducts = products.slice(
     (currentPage - 1) * itemsPerPage,
@@ -66,7 +78,7 @@ export const ShopComponent = () => {
   };
 
   return (
-    <section className="pro-list-wrap">
+    <section style={{marginTop:'20px'}} className="pro-list-wrap">
       <div className="section-content section-content--w1140" style={{ width: '100%' }}>
         {productError && (
           <div className='container animate__animated animate__fadeIn' onClick={() => router.push(`/${PAGES_PATH.CATALOG_PATH}`)}>
@@ -100,9 +112,11 @@ export const ShopComponent = () => {
               </div>
               <div className="col-lg-8 col-md-12">
                 <div className="row">
-                  {paginatedProducts.map(product => (
-                    <ShopCardComponent product={product} key={product.id} />
-                  ))}
+                  {
+                    paginatedProducts.map(product => (
+                      <ShopCardComponent product={product} key={product.id} />
+                    ))
+                  }
                 </div>
               </div>
             </div>

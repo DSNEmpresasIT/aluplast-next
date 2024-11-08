@@ -1,6 +1,7 @@
 import { API_ENDPOINTS } from "@/utils/endpoints";
 import { API_SERVICE, BASE_URL } from "./api";
 import axios from "axios";
+import { Product } from "@/utils/types";
 
 export async function getAllProducts(categoryId: string | null) {
   try {
@@ -11,6 +12,12 @@ export async function getAllProducts(categoryId: string | null) {
 
     const response = await BASE_URL({
       method: 'GET',
+      headers: {
+        user: JSON.stringify({
+          company: { id: 1 },
+          role: { key: 'DSN_CUSTOMER_ACCESS' }
+        })
+      },
       url: query
     })
    
@@ -27,6 +34,21 @@ export async function getProductById(productId: string) {
     const response = await BASE_URL({
       method: 'GET',
       url: API_ENDPOINTS.GET_PRODUCT_BY_ID+`/${productId}`
+    })
+
+    return response.data
+  } catch (error) {
+    console.log(error)
+    throw new Error('Error in getProductById service')
+  }
+}
+
+export async function getProductByName(productName: string): Promise<Product[]> {
+  try {
+
+    const response = await BASE_URL({
+      method: 'GET',
+      url: API_ENDPOINTS.GET_PRODUCT_BY_NAME+`/${productName}`
     })
 
     return response.data
