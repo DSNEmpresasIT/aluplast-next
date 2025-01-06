@@ -13,8 +13,12 @@ const nextConfig = {
     INSTAGRAM_TOKEN: process.env.INSTAGRAM_TOKEN,
     FACEBOOK_TOKEN: process.env.FACEBOOK_TOKEN,
     FACEBOOK_PAGE_ID: process.env.FACEBOOK_PAGE_ID,
+    GLOBAL_API: process.env.LOCAL ? process.env.GLOBAL_API_BASE_URL_DEVELOPMENT : process.env.GLOBAL_API_BASE_URL_PRODUCTION,
+    GLOBAL_API_BASE_URL_DEVELOPMENT:process.env.GLOBAL_API_BASE_URL_DEVELOPMENT,
+    API_COMPANY_ID: process.env.API_COMPANY_ID,
+    LOCAL: process.env.LOCAL,
+    API_CATALOG_ID: process.env.API_CATALOG_ID,
     CLIENT_ID: process.env.CLIENT_ID,
-    GLOBAL_API_BASE_URL: process.env.MODE === 'prod' ? process.env.GLOBAL_API_BASE_URL_PRODUCTION : process.env.GLOBAL_API_BASE_URL_DEVELOPMENT
   },
   experimental: { serverComponentsExternalPackages: ["axios"] },
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {

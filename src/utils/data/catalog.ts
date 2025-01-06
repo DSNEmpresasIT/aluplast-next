@@ -1736,7 +1736,7 @@ export const windowsFatherData:CatalogData[] = [
     }
   },
   {
-    name: 'prolifit',
+    name: 'Prolifit',
     img: ['Prolifit'],
     id: 'vidrio-prolifit',
     filters: [ProductFathersTypes.WINDOWS, 'vidrio-prolifit'],
@@ -3157,63 +3157,79 @@ export const glassesData: CatalogData[] = [
 ];
 
 export const texturesData: TexturesTypes[] = [
+  // Pintados
   {
-    name: "Bronce claro",
-    img: "bronceclaro",
+    name: "Blanco Brillante",
+    img: "blancobrillante",
   },
   {
-    name: "Bronce colonial",
-    img: "broncecolonial",
+    name: "Blanco Semimate",
+    img: "blancosemimate",
   },
   {
-    name: "Bronce medio",
-    img: "broncemedio",
-  },
-  {
-    name: "Gris micro texturado",
+    name: "Gris Micro Texturado",
     img: "grismicrotexturado",
   },
   {
-    name: "Negro micro texturado",
-    img: "negromicrotexturado",
+    name: "Bronce Claro",
+    img: "bronceclaro",
   },
   {
-    name: "Negro semimate",
+    name: "Bronce Medio",
+    img: "broncemedio",
+  },
+  {
+    name: "Bronce Colonial",
+    img: "broncecolonial",
+  },
+  {
+    name: "Negro Semimate",
     img: "negrosemimate",
   },
   {
-    name: "Anodizado gris",
-    img: "anodizadogris",
+    name: "Negro Micro Texturado",
+    img: "negromicrotexturado",
   },
+  
+  // Anodizados
   {
-    name: "Anodizado natural",
-    img: "anodizadonatural",
-  },
-  {
-    name: "Anodizado natural brillante",
+    name: "Anodizado Natural Brillante",
     img: "anodizadonaturalbrillante",
   },
   {
-    name: "Anodizado natural lijado",
+    name: "Anodizado Natural",
+    img: "anodizadonatural",
+  },
+  {
+    name: "Anodizado Natural Lijado",
     img: "anodizadonaturallijado",
   },
   {
-    name: "Anodizado negro",
-    img: "anodizadonegro",
+    name: "Anodizado Gris",
+    img: "anodizadogris",
   },
   {
-    name: "Anodizado peltre",
+    name: "Anodizado Peltre",
     img: "anodizadopeltre",
   },
   {
-    name: "Simil cedro",
+    name: "Anodizado Negro",
+    img: "anodizadonegro",
+  },
+  
+  // Sublimación Madera
+  {
+    name: "Simil Cedro",
     img: "similcedro",
   },
   {
-    name: "Simil roble oscuro",
+    name: "Simil Roble Oscuro",
     img: "similrobleoscuro",
   },
 ];
+
+
+
 
 export const doorsModel = [
   {

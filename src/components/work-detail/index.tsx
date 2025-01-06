@@ -1,22 +1,17 @@
 'use client'
-import { projects } from "@/utils/data/projects";
 import { PAGES_PATH } from "@/utils/pages";
 import { useRouter, useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { ProjectDetailComponent } from "./ProjectDetailComponent";
 import { getProjectDetail } from "@/services/projects-service";
-import { ProjectDetail } from "@/utils/types";
+import { Project } from "@/utils/types";
 
 export const  Index = () => {
   const router = useRouter();
   const projectId = useSearchParams().get('projectId');
-  const [ projectDetail, setProjectDetail ] = useState<ProjectDetail>() 
+  const [ projectDetail, setProjectDetail ] = useState<Project>() 
 
   useEffect(() => {
-    // if (!projectSelected) {
-    //   router.push(`/${PAGES_PATH.SOME_PROJECTS}?errorProject=true`);
-    // }
-
     if (projectId) {
       getProjectDetail(projectId)
         .then(res => setProjectDetail(res))
