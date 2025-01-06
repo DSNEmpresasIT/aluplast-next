@@ -82,10 +82,10 @@ export const navData:NavData[] = [
     label: 'Servicios',
     link: PAGES_PATH.SERVICES
   },
-  {
-    label: 'Noticias',
-    link: PAGES_PATH.NEWS_PATH
-  },
+  // {
+  //   label: 'Noticias',
+  //   link: PAGES_PATH.NEWS_PATH
+  // },
   {
     label: 'Proyectos',
     link: PAGES_PATH.SOME_PROJECTS
