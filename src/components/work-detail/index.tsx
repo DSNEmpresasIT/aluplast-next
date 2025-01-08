@@ -8,16 +8,16 @@ import { Project } from "@/utils/types";
 
 export const  Index = () => {
   const router = useRouter();
-  const projectId = useSearchParams().get('projectId');
+  const customerId = useSearchParams().get('customerId');
   const [ projectDetail, setProjectDetail ] = useState<Project>() 
 
   useEffect(() => {
-    if (projectId) {
-      getProjectDetail(projectId)
+    if (customerId) {
+      getProjectDetail(customerId)
         .then(res => setProjectDetail(res))
         .catch(err => router.push(`/${PAGES_PATH.SOME_PROJECTS}?errorProject=true`))
     }
-  }, [projectId])
+  }, [customerId])
   return (
     <div className="page-wrap">
       <section className="breadcrumbs-wrap" style={{ paddingTop: "13vh" }}>

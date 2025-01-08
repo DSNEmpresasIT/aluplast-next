@@ -3,10 +3,33 @@ import { Project } from '@/utils/types';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { Dispatch, FC, SetStateAction, useState } from 'react'
-
+import DOMPurify from "dompurify";
 interface ProjectDetailComponentProps { 
-  projectDetail: Project | undefined 
+  projectDetail: any | undefined 
 }
+interface ProjectDescriptionProps {
+  description: string;
+}
+const ProjectDescription: React.FC<ProjectDescriptionProps> = ({ description }) => {
+  const cleanHtml = (html: string) => {
+    return html.replace(/&nbsp;/g, " ").trim();
+  };
+
+  const sanitizedDescription = DOMPurify.sanitize(cleanHtml(description), {
+    ALLOWED_TAGS: ["p", "span", "b", "i", "strong", "em", "ul", "li", "ol"],
+    ALLOWED_ATTR: ["class", "style"],
+    FORBID_ATTR: ["background"],
+  });
+
+  return (
+    <div className="project-description">
+      <p
+        className="m-b-20 pre-wrap"
+        dangerouslySetInnerHTML={{ __html: sanitizedDescription }}
+      ></p>
+    </div>
+  );
+};
 
 export const ProjectDetailComponent: FC<ProjectDetailComponentProps> = ({ projectDetail }) => {
   return (
@@ -18,13 +41,13 @@ export const ProjectDetailComponent: FC<ProjectDetailComponentProps> = ({ projec
               <div className="col-lg-8 mt-4 col-md-12">
                 
                 <div className="port1__big-img">
-                  <a href={projectDetail?.imageUrl?.[0]?.url} data-lightbox="portfolio">
-                    <img alt="Portfolio 1" src={projectDetail?.imageUrl?.[0]?.url} />
+                  <a href={projectDetail?.images?.[0]?.url} data-lightbox="portfolio">
+                    <img alt="Portfolio 1" src={projectDetail?.images?.[0]?.url} />
                   </a>
                 </div>
                 <div className="port1__img-wrap">
                   {
-                    Array.isArray(projectDetail?.imageUrl) && projectDetail.imageUrl.map((img, index) => {
+                    Array.isArray(projectDetail?.images) && projectDetail.images.map((img:any, index:number) => {
                       if (index === 0) return null;
                       return (
                         <div 
@@ -47,9 +70,7 @@ export const ProjectDetailComponent: FC<ProjectDetailComponentProps> = ({ projec
               <div className="col-lg-4 col-md-12">
                 <div className="port__text">
                   <h3>{ projectDetail?.title }</h3>
-                  <p className="m-b-20 pre-wrap" >
-                    { projectDetail?.description }
-                  </p>
+                  <ProjectDescription description={projectDetail?.description}/>
                   <p>
                   </p>
                 </div>

@@ -1,6 +1,9 @@
 const companyId = process.env.API_COMPANY_ID
 const catalogId = process.env.API_CATALOG_ID;
 const clientId = process.env.CLIENT_ID;
+
+
+
 export const API_ENDPOINTS = {
   // PRODUCTS
   GET_ALL_PRODUCTS: `/products/catalog/${catalogId}`,
@@ -12,7 +15,7 @@ export const API_ENDPOINTS = {
   GET_CATEGORIES: `/catalog/categories/${catalogId}`,
 
   // PROYECTS
-  GET_PROYECTS: `/projects/client/${clientId}`,
+  GET_PROYECTS: `/customers`,
 
   GET_PROYECT: `/projects`,
 }

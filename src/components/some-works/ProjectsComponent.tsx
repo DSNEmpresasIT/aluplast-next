@@ -1,45 +1,48 @@
-import { Project, ProjectTypes } from '@/utils/types';
-import React, { Dispatch, SetStateAction, useEffect, useState } from 'react'
-import { pagination } from '../helpers/helpers';
-import { projects } from '@/utils/data/projects';
-import { useRouter } from 'next/navigation';
-import { PAGES_PATH } from '@/utils/pages';
-import { getAllProjects, getProjectTypes } from '@/services/projects-service';
+import { getAllProjects } from "@/services/projects-service";
+import { PAGES_PATH } from "@/utils/pages";
+import { ProjectTypes } from "@/utils/types";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
+import { pagination } from "../helpers/helpers";
+import { useRouter } from "next/navigation";
 
-interface paginationIndex {
+type PaginationIndex = {
   startIndex: number;
-  lastIndex: number; 
-}
+  lastIndex: number;
+};
 
 export const ProjectsComponent = () => {
   const router = useRouter();
-  const [ projectData, setProjectData ] = useState<Project[]>();
-  const [ projectBlog, setProjectBlog ] = useState<Project[]>();
-  const [ projectBlogFilter, setProjectBlogFilter ] = useState<Project[]>();
-  const [ sliceIndex, setSliceIndex ] = useState<paginationIndex>({ startIndex: 0, lastIndex: 6 });
-  const [ projectFilter, setProjectFilter ] = useState<ProjectTypes | undefined>(undefined);
+  const [projectData, setProjectData] = useState<any[]>();
+  const [projectBlog, setProjectBlog] = useState<any[]>();
+  const [projectBlogFilter, setProjectBlogFilter] = useState<any[]>();
+  const [sliceIndex, setSliceIndex] = useState<PaginationIndex>({ startIndex: 0, lastIndex: 6 });
+  const [projectFilter, setProjectFilter] = useState<ProjectTypes | undefined>(undefined);
 
   useEffect(() => {
     if (projectBlogFilter) {
-      setProjectBlog(pagination(projectBlogFilter, sliceIndex))
+      setProjectBlog(pagination(projectBlogFilter, sliceIndex));
     }
   }, [projectBlogFilter, sliceIndex]);
 
+  useEffect(() => {
+    getAllProjects(1, 10, "")
+      .then((response) => {
+        setProjectData(response.data);
+        console.log(response, " response de get all projects");
+      })
+      .catch((err) => console.log(err));
+  }, []);
 
   useEffect(() => {
-    getAllProjects()
-      .then(response => setProjectData(response))
-      .catch(err => console.log(err))
-  }, [])
-
-  useEffect(() => {
-    setSliceIndex({ startIndex: 0, lastIndex: 6 })
+    setSliceIndex({ startIndex: 0, lastIndex: 6 });
   }, [projectFilter, projectData]);
 
   return (
     <>
       <section className="project1">
         <div className="container">
+          {/* Filtro comentado */}
           {/* <div className="row">
             <div className="col-md-12">
               <div id="filter-wrap">
@@ -66,53 +69,42 @@ export const ProjectsComponent = () => {
               </div>
             </div>
           </div> */}
+
           <div id="isotope-grid" className="project--hover clearfix mt-5">
-            { projectData?.map( project => {
+            {projectData?.map((project, i) => {
+              const projectImage = project.projects[0].images[0].url;
+              console.log(projectImage, 'imagen de proyecto map')
               return (
-                <div 
-                  onClick={() => router.push(`/${PAGES_PATH.PROJECT_DETAIL}?projectId=${project._id}`)}
+                <div
+                  onClick={() =>
+                    router.push(`${PAGES_PATH.PROJECT_DETAIL}?customerId=${project.id}`)
+                  }
                   className={`col-md-6 col-sm-12 item ${project.project_type} animate__animated animate__fadeIn`}
-                  key={project.title}
+                  key={i}
                 >
                   <div className="project__item">
                     <div className="pro__img">
-                      <div style={{  maxHeight: '350px', overflow: 'hidden' }}>
-                        <img alt="Project 1" src={project.imageUrl[0].url} />
+                      <div style={{ maxHeight: "350px", overflow: "hidden" }}>
+                        {projectImage && <img alt={project.title} src={projectImage} />}
                       </div>
-                      <a type='button' style={{ cursor: 'pointer' }} className="pro-link">
+                      <a type="button" style={{ cursor: "pointer" }} className="pro-link">
                         <div className="pro-info pro-info--darker">
-                          <h2 className="company" style={{ color: 'white' }}>
-                            { project.project_client }
+                          <h2 className="company" style={{ color: "white" }}>
+                            {project.name}
                           </h2>
                           <p className="cat-name">
-                            <em>
-                              { project.title }
-                            </em>
+                            <em>{project.projects[0].title}</em>
                           </p>
                         </div>
                       </a>
                     </div>
                   </div>
                 </div>
-              )
-            }) }
+              );
+            })}
           </div>
-          {/* {
-            !(projectBlogFilter && sliceIndex.lastIndex >= projectBlogFilter.length) && (
-              <div className="see-more">
-                <a 
-                  onClick={handlePagination}
-                  type='button' 
-                  style={{ color: 'white', cursor: 'pointer' }} 
-                  className="au-btn au-btn--pill au-btn--yellow au-btn--big au-btn--white"
-                >
-                  Cargar Más
-                </a>
-              </div>
-            )
-          } */}
         </div>
       </section>
     </>
-  )
-}
+  );
+};

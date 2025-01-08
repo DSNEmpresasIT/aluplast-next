@@ -16,14 +16,14 @@ export async function getProjectTypes() {
   }
 }
 
-export async function getAllProjects() {
+export async function getAllProjects(page: number, limit: number, search: string) {
   try {
     const response = await API_SERVICE({
       method: 'GET',
-      url: API_ENDPOINTS.GET_PROYECTS
+      url: `${API_ENDPOINTS.GET_PROYECTS}?page=${page}&limit=${limit}&search=${search}`
     })
 
-    return response.data.projects;
+    return response.data;
   } catch (error) {
     console.log(error);
   }
